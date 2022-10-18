@@ -7,7 +7,7 @@ public class healthInfo {
     private ArrayList<String> dietaryRestrictions = new ArrayList<String>();
     private ArrayList<String> allergies = new ArrayList<String>();
 
-    public healthCare(insurance, policyNumber, doctor, dietaryRestrictions, allergies) {
-        
+    public healthInfo(String insurance, String policyNumber, String doctor, String dietaryRestrictions[], String allergies[]) {
+        return null;
     }
 }
