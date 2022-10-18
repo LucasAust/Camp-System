@@ -1,0 +1,18 @@
+[
+    {
+      "id": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
+      "title": "Week 1",
+      "cost": 800,
+      "cabins":[
+        {
+            "id":"ac37b1aa-cd15-438f-b984-5c6720d8658c",
+            "counsellor":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
+            "campers":["06a42ac5-730b-41ad-9ad8-41336ae7973f","09127ee4-d9ad-410b-b317-6a3eeccb0d81","34b3a910-b0b4-40c7-bb08-5c29c2fe6e1b","dc4d2425-4b05-4c28-b15a-767690f7e6a6","b02dbd07-87ca-403b-847d-64d512782118","7af25449-0539-4818-b82f-dbb376b1d4dd","a5c8b6f0-8feb-45a1-ab12-56bf94b8fcfe","967ffccf-bcfd-4622-9441-134c9d05e7af"]
+        },{
+            "id":"55651d66-926d-4a50-a957-019ad82e5873",
+            "counsellor":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
+            "campers":["b9a4118b-3c17-46ab-8a67-517c3293e32d","1a24adc3-9cf0-4a06-96e1-2c843c55bd55","752126e1-5067-4846-9e01-cf3822215162","3e53f165-8412-4c3d-ae0d-e54144274be4","0a188e15-2c34-46ce-87f9-ad6ae71d1968","b4dcf63b-2e23-41ef-8bbe-e114b8427fe1","1be75f65-0287-407b-a1f6-2682d18429bd","fd83807d-aecc-455b-aa4a-b34e41cf0177"]
+        }
+      ]
+    }
+  ]
