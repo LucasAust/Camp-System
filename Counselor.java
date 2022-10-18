@@ -1,26 +1,28 @@
+import java.util.ArrayList;
+
 public class Counselor {
   public Schedule schedule;
   public ArrayList<String> campers;
-  public wmergencyContact emergencyContact;
+  public emergencyContact emergencyContact;
   public healthInfo healthcare;
 
-  public viewSchdule(Schedule schedule){
+  public void viewSchdule(Schedule schedule){
 
   }
 
-  public viewCampers(){
+  public ArrayList<String> viewCampers(){
+    return null;
+  }
+
+  public void addAlergies(){
 
   }
 
-  public addAlergies(){
+  public void addEmergencyContact(){
 
   }
 
-  public addEmergencyContact(){
-
-  }
-
-  public addHealthInfo(){
+  public void addHealthInfo(){
     
   }
 

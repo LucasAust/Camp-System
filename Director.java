@@ -5,27 +5,27 @@ import java.util.ArrayList;
 public class Director {
   public ArrayList<String> Activities;
 
-public addActivities(Activities activity){
+public void addActivities(Activity activity){
 
 }
 
-public Remove(Activities activity){
+public void Remove(Activity activity){
 
 }
 
-public setCounselorSchedule(Schedule schedule){
+public void setCounselorSchedule(Schedule schedule){
 
 }
 
-public removeChild(Child child){
+public void removeChild(Child child){
 
 }
 
-public assignCabins(Cabin cabin){
+public void assignCabins(Cabin cabin){
 
 }
 
-public addSession(Session session){
+public void addSession(Sessions session){
 
 }
 }

@@ -4,15 +4,15 @@ import java.util.ArrayList;
 //Ali Omer
 public class DataReader {
 
-  public saveAllUsers(ArrayList<User>){
+  public void saveAllUsers(ArrayList<User> users){
 
   }
 
-  public getAllSchedules(ArrayList<Schedule>){
+  public void getAllSchedules(ArrayList<Schedule> schedule){
 
   }
 
-  public getAllSessions(ArrayList<Sessions>){
+  public void getAllSessions(ArrayList<Sessions> sessions){
     
   }
 
