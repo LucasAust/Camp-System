@@ -1,18 +1,403 @@
 [
     {
-      "id": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
-      "title": "Week 1",
-      "cost": 800,
-      "cabins":[
+
+        "id": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
+        "title": "Week 1",
+        "cost": 800,
+        "cabins":[
         {
             "id":"ac37b1aa-cd15-438f-b984-5c6720d8658c",
-            "counsellor":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
+            "counselor":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
             "campers":["06a42ac5-730b-41ad-9ad8-41336ae7973f","09127ee4-d9ad-410b-b317-6a3eeccb0d81","34b3a910-b0b4-40c7-bb08-5c29c2fe6e1b","dc4d2425-4b05-4c28-b15a-767690f7e6a6","b02dbd07-87ca-403b-847d-64d512782118","7af25449-0539-4818-b82f-dbb376b1d4dd","a5c8b6f0-8feb-45a1-ab12-56bf94b8fcfe","967ffccf-bcfd-4622-9441-134c9d05e7af"]
         },{
             "id":"55651d66-926d-4a50-a957-019ad82e5873",
-            "counsellor":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
+            "counselor":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
             "campers":["b9a4118b-3c17-46ab-8a67-517c3293e32d","1a24adc3-9cf0-4a06-96e1-2c843c55bd55","752126e1-5067-4846-9e01-cf3822215162","3e53f165-8412-4c3d-ae0d-e54144274be4","0a188e15-2c34-46ce-87f9-ad6ae71d1968","b4dcf63b-2e23-41ef-8bbe-e114b8427fe1","1be75f65-0287-407b-a1f6-2682d18429bd","fd83807d-aecc-455b-aa4a-b34e41cf0177"]
+        },{
+            "id":"343e2a77-20fe-453d-b4b6-fd49ad86c056",
+            "counselor":"542a6a0e-aecb-42f5-aeb1-ddf0c6551bcd",
+            "campers":["07691482-14fa-4542-b239-1d7dac0ba26c","dd1893fc-bb11-48b7-9cd1-45639bb44802","046399f5-bf8b-4664-802c-54988d45fcf4","7ec9eca7-b911-45f0-b65e-1430d5fd50a1","d6c0ebe5-ba02-4e93-adb8-26c77dcdd7f5","92baa418-1f72-4990-8407-cdb2434fbf02","d5a9fbac-5716-4ee5-aed9-efa7b6a13586","4e7f8252-fc34-46a5-81e9-3bb0d3c0abff"]
+        },{
+            "id":"6633382b-16dc-44b7-a43a-e895d431624d",
+            "counselor":"5f28d4a8-2ec8-4c49-a04f-b661a2979d3c",
+            "campers":["7d0c3cdc-5864-44bc-9472-e2bf59e505f2","3394e0c5-8a8a-44d6-8904-52b506177426","dc87819a-020f-4af5-b251-cbf8797b1174","e9caf311-ae49-4484-b8a2-78791adbb90e","7b9c152a-6842-4eaa-a684-059141408e04","7bb81d7d-b90a-4252-8d72-16b7525bd081","2ee4f3c9-1307-41ee-a409-fa8e74e1e349","5de38696-f343-4855-bcc1-89c2f817c2c8"]
+        },{
+            "id":"71284663-76a0-44fd-b20d-f6f8307e2173",
+            "counselor":"aba8e8f7-4c41-4a79-be76-a4793c6f5ceb",
+            "campers":["188c083d-f019-4846-b066-84431b5e1010","c9c799ee-86ef-4391-ab3a-881668452599","94b4b393-4020-45f8-951b-efa8d13fa3dc","28a5cfa4-1645-46a0-9947-fd52c34ec28d","a0a2fd06-c5b5-488b-8770-235c421e19bd","a71927b3-f354-4155-b38a-ec1c8b8b58fd","907cfe97-cf17-4471-a3a2-3db40016b89c","1ddac087-5e80-457c-81ff-cdf392b2c9f8"]
+        },{
+            "id":"55f1c88d-268b-4879-8713-b64a39345ca0",
+            "counselor":"2f97af20-172e-49df-8d4c-c427f9422679",
+            "campers":["082666c5-9f4c-416f-ab4e-96d9602698e8","95391836-f2d1-4ce1-8bc3-6de6fa0bb3f9","1c6aff9f-2280-4451-a4d0-16c9d5502ece","739ef14c-20dd-4f18-bce0-f90abcebd05b","384785f1-c532-4cf5-9fa0-92d8997a77df","5fc3813f-1bfd-4722-9a83-9579dcf304d7","1c90b73c-05e5-419e-af67-20a8739554c1","e4bc7eda-b9cf-4f75-be9e-5b34cfcca38f"]
+        },{
+            "id":"48ada540-c627-439e-89bf-4b1ed57fb5ed",
+            "counselor":"aa4d03ba-b56f-4d10-8a91-7275ef010193",
+            "campers":["8e6a6e1c-3c10-4df3-a607-c81af6719f57","948646db-d4cb-4693-852d-1f48cc69f3b1","8018608a-39a1-497e-9bdd-6ca49d789ba3","5245ac76-384d-420f-a370-6b86ebdfe157","ee7e6b3e-8513-4dc7-a2ab-c0238f052512","9a8ee970-256d-4b9a-b688-e0d31a254d65","2492ea4c-a692-4b99-9f0b-e2aef2540b2f","967fbed5-8728-42cc-ada9-ab2d4666e5f4"]
+        },{
+            "id":"a5e429e2-928f-4977-8b5b-96c97902d017",
+            "counselor":"d35374a2-9b52-42b9-9148-a1e2ad9a20fc",
+            "campers":["dc9cf153-a7fb-4ca0-a9eb-3ac3ddb581cb","f53a89ba-7a48-4995-8285-046453878c7f","694f4e46-87b0-477b-afe6-a6f3864f6adb","d9a95e4f-765f-4f77-92af-7f94e1c2ba25","498f98e5-3212-4968-9a19-3ba00fdabbd7","3e464278-5994-498b-a403-a3ca7985ba55","af0cef4f-ecb4-4b4b-b14f-75a876848384","a2e214e5-d69c-4365-9ec7-fa320cda34b1"]
         }
-      ]
+    ]
+    },
+    {
+        "id": "41ef8608-392d-49cc-bcbd-82bdadaeed1d",
+        "title": "Week 2",
+        "cost": 900,
+        "cabins":[
+            {
+                "id":"5aa4527d-f9d2-44c7-9a13-0806848c96b1",
+                "counselor":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
+                "campers":["9e62984b-18b4-4063-abad-0a3a56a29eb8","1d3d0f17-4718-4ceb-90d7-dc156b637522","8e7c49ea-bb33-43cc-a43a-c81aad780af7","2dda4a50-53d7-46bf-8f76-c7b215123a2c","8f7a7894-a030-4394-935b-2ce92e111674","bc3a05e6-5b37-4435-a460-25ec1bde0351","77e3dc92-34f8-47e4-9762-ea17b91d4207","feac2de0-99ab-4020-9bd1-30f7c068bf98"]
+            },{
+                "id":"b4739f65-7917-42e8-8f61-7588a3476195",
+                "counselor":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
+                "campers":["bdc17e37-83c3-4078-9783-ffdc267d1683","8f44847c-c308-404b-8e86-f03ffd5aac62","5a0ffb19-390f-47b9-97b6-c86080facab7","b8c2d87e-8c27-4a9a-8ba4-decdcaceca54","08e9c821-2602-4244-a1f1-674524913490","f24bb2b2-d16e-41d2-89e7-9c8c70a6d86f","61096f4e-97e9-4768-94a5-ec2906dae778","60bfc731-a4ca-45c9-ac75-230a63ce6225"]
+            },{
+                "id":"523a101b-953b-40cd-919c-8fb63188fabe",
+                "counselor":"542a6a0e-aecb-42f5-aeb1-ddf0c6551bcd",
+                "campers":["7ae96033-17fe-4000-b169-78354bc4447d","c48bc918-322e-4aa0-983b-803a35ba3f5b","55523ab2-ec49-4046-9672-b9bb7de51f57","e54e32bf-5c41-4cfd-a191-bc96ee3b6645","f5ae09be-e90b-45cf-b767-064a0a3b3af6","7ce767de-d1cc-4404-aaa2-c81a0a435fe0","13d09519-a96a-4124-ab3b-a33b95390ea0","25e2bb95-4871-4902-b9bd-9cc9d1ff7f22"]
+            },{
+                "id":"77e3762c-9aab-4fd9-bd72-b45eb4dd9bdd",
+                "counselor":"5f28d4a8-2ec8-4c49-a04f-b661a2979d3c",
+                "campers":["582616c5-ebb0-4d98-ab9f-9adf3f6c73e3","2e1aaac6-4f8a-43d4-9d6f-6560e9a75296","6aea7c05-01b0-48b3-b144-c860bcc35150","5f0bb213-6c46-40e2-86af-e1a9270affdf","8d942328-0071-4326-8235-533df0d1f107","f4ee8f6b-028c-47c8-bcc3-97bc25593c87","9f4449e2-f45d-4a4c-bf7f-78793cf9ee6e","a58808b2-7372-4cb8-87e4-25fd45d14c15"]
+            },{
+                "id":"a205d815-a117-4787-a310-7ebd092b8b53",
+                "counselor":"aba8e8f7-4c41-4a79-be76-a4793c6f5ceb",
+                "campers":["88866bf3-64a6-471e-94ce-fb4fa7d2779a","12f7982f-b86c-45ff-9831-577e1768cc20","bd7bd321-0f8a-4015-94c6-bb51fb597ee7","4af07856-f997-4a37-af4e-4fc93b740785","7748bcc2-a0f0-4c3f-8da7-6b8212e5d6e3","cbb8aa71-a902-4b71-9486-a00b1e656c18","ecf3f286-4a01-4b5c-94c8-c34d39773e7f","39b95760-8a44-40e7-ba52-d57f157ad22a"]
+            },{
+                "id":"206ecb26-b0f4-4229-bf3d-6787e84c8644",
+                "counselor":"2f97af20-172e-49df-8d4c-c427f9422679",
+                "campers":["062f3044-10b4-4e26-8842-4332973e4ecd","7cbc0176-5c99-4bb1-967a-8d63e5345f57","a20e9d6e-24cc-4272-91b4-789e4b28cc9a","aa7c918f-f117-41a7-809c-254c003b5832","f91045ba-e4fe-4447-9579-cbdaa0f857cc","039ceda6-f5f9-4146-901d-b6dedb6d73a5","5e39b731-be41-4ca7-96ad-3a4835a90308","25d19828-ad9f-441d-8bc5-bf8ecc5c3afd"]
+            },{
+                "id":"c339e88e-1c0c-40c8-916e-97684da740f1",
+                "counselor":"aa4d03ba-b56f-4d10-8a91-7275ef010193",
+                "campers":["c97b9a0d-1b96-40c6-9c75-c1a474e0f186","d7ac7eca-4520-440f-a922-32b64dfdb5fb","7c83f0e6-5996-4a72-8d15-f54bc00a566b","9c7d861a-303f-4cd8-88d7-19b7882070c2","25502215-2b3c-44d7-a41b-a8901b9019aa","3c438ade-4c2d-4b4e-96ea-3d6644ac4473","8e06cc95-1ae3-436a-9d56-0bc3df87a197","ca7b8c6f-ecf7-4771-bfa0-2e465b8e771c"]
+            },{
+                "id":"c68df7ec-eee8-41c3-9e1a-939f7f76948b",
+                "counselor":"d35374a2-9b52-42b9-9148-a1e2ad9a20fc",
+                "campers":["517471e8-d3fe-42b1-9df5-86bfa07b9ab2","d204ea63-4849-4817-8e9e-11fe134a7d04","41087b44-391b-4549-b65e-f308790919d1","35c52d73-531b-4dfc-bbb8-c5a291c7f544","d18c3d50-e995-4e82-bca6-8426918356a4","4161581b-c2de-4785-9f6c-2ac2bdba946e","11dc8194-16de-498f-8e69-370d5a425b3c","ffd17f02-310c-4bf2-8f4b-031b27b5be91"]
+            }
+        ]
+    },
+    {
+        "id": "7acfa5ec-c0ab-4250-8640-8cbc42e12def",
+        "title": "Week 3",
+        "cost": 1000,
+        "cabins":[
+            {
+                "id":"afa846e6-0d8f-48f0-972e-e9afee0a0f04",
+                "counselor":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"cf480267-230d-498c-bc54-fa72df71d5ed",
+                "counselor":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"34d1014b-eeac-4cb5-a8e9-d5f50da64396",
+                "counselor":"542a6a0e-aecb-42f5-aeb1-ddf0c6551bcd",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"a712d832-8506-4afb-ae39-4e7e8af6ffa1",
+                "counselor":"5f28d4a8-2ec8-4c49-a04f-b661a2979d3c",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"638bd72a-d137-4d57-b4f6-2d99f0da24a0",
+                "counselor":"aba8e8f7-4c41-4a79-be76-a4793c6f5ceb",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"9ce21e22-89cd-424d-bb3d-66b7f58233d1",
+                "counselor":"2f97af20-172e-49df-8d4c-c427f9422679",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"e8cbe1a1-5fd0-4fb8-92c4-44606d17da8d",
+                "counselor":"aa4d03ba-b56f-4d10-8a91-7275ef010193",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"f4b5c89b-c07e-4789-bf89-f9404c138c55",
+                "counselor":"d35374a2-9b52-42b9-9148-a1e2ad9a20fc",
+                "campers":["","","","","","","",""]
+            }
+        ]
+    },
+    {
+        "id": "b91d5a20-8821-478b-a1c6-d31a1aea43ed",
+        "title": "Week 4",
+        "cost": 1150,
+        "cabins":[
+            {
+                "id":"8a3d1a9b-c7bd-49b9-8f99-1c4d5a77d161",
+                "counselor":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"250be1fa-a065-4e58-8c22-4536f63a620d",
+                "counselor":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"4db6cad5-add4-4131-9f49-b4a5e2bf3f9a",
+                "counselor":"542a6a0e-aecb-42f5-aeb1-ddf0c6551bcd",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"4b727aa3-5293-44b5-98f9-743c20ff5809",
+                "counselor":"5f28d4a8-2ec8-4c49-a04f-b661a2979d3c",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"c1df20d0-ff30-48b0-98e0-787eadbb7eb5",
+                "counselor":"aba8e8f7-4c41-4a79-be76-a4793c6f5ceb",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"5de91099-b46a-40b1-8902-d08184f9570a",
+                "counselor":"2f97af20-172e-49df-8d4c-c427f9422679",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"6e20a267-a46a-47e8-bd18-82d6b52ae339",
+                "counselor":"aa4d03ba-b56f-4d10-8a91-7275ef010193",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"dd664f44-b888-4d19-8f98-017083f3e971",
+                "counselor":"d35374a2-9b52-42b9-9148-a1e2ad9a20fc",
+                "campers":["","","","","","","",""]
+            }
+        ]
+    },
+    {
+        "id": "3cf6b143-bd60-4dc9-a78c-e3d6ecb8b14a",
+        "title": "Week 5",
+        "cost": 1200,
+        "cabins":[
+            {
+                "id":"11211328-19a0-4440-b707-f01ccabef943",
+                "counselor":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"80cc802c-b8e4-4268-83bd-31ae569a8d81",
+                "counselor":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"dda7d1e3-ef63-4328-bad6-a8a0c3914ae0",
+                "counselor":"542a6a0e-aecb-42f5-aeb1-ddf0c6551bcd",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"a88a5eb9-d1f9-4f16-b539-218a7ee55173",
+                "counselor":"5f28d4a8-2ec8-4c49-a04f-b661a2979d3c",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"c4fb91b1-e0b1-4e1e-bb36-0bc72a18e233",
+                "counselor":"aba8e8f7-4c41-4a79-be76-a4793c6f5ceb",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"e8638c27-dae8-4ddc-88e3-9b5b2b38d8b1",
+                "counselor":"2f97af20-172e-49df-8d4c-c427f9422679",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"26147189-4174-4c5d-855e-fae3c62e8d2f",
+                "counselor":"aa4d03ba-b56f-4d10-8a91-7275ef010193",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"62bcff24-d28a-4cf8-865a-3d9f517abdc9",
+                "counselor":"d35374a2-9b52-42b9-9148-a1e2ad9a20fc",
+                "campers":["","","","","","","",""]
+            }
+        ]
+    },
+    {
+        "id": "e121ce90-0a69-49b1-81c1-eae1ab0fd58b",
+        "title": "Week 6",
+        "cost": 1300,
+        "cabins":[
+            {
+                "id":"54dd7887-3eca-459f-9226-650064ccd710",
+                "counselor":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"dff80c7a-0e7a-4306-952d-b14ac71074bc",
+                "counselor":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"0d07b4a2-2b27-4140-b390-770a1d09b053",
+                "counselor":"542a6a0e-aecb-42f5-aeb1-ddf0c6551bcd",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"1ad0d6d1-436b-462a-b0e7-c209eec718be",
+                "counselor":"5f28d4a8-2ec8-4c49-a04f-b661a2979d3c",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"60850817-3915-46dc-bab6-9e4113071ee8",
+                "counselor":"aba8e8f7-4c41-4a79-be76-a4793c6f5ceb",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"b065f2c0-2f8d-483c-b4bd-a1f1d42cddb3",
+                "counselor":"2f97af20-172e-49df-8d4c-c427f9422679",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"61f1d4ef-6763-44ce-8942-ae7ee9a8e591",
+                "counselor":"aa4d03ba-b56f-4d10-8a91-7275ef010193",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"33b9c321-8c78-4c25-af44-3818d77da152",
+                "counselor":"d35374a2-9b52-42b9-9148-a1e2ad9a20fc",
+                "campers":["","","","","","","",""]
+            }
+        ]
+    },
+    {
+        "id": "c136c6f9-478c-483a-96fa-4df7537ae75f",
+        "title": "Week 7",
+        "cost": 1250,
+        "cabins":[
+            {
+                "id":"b7e68670-439b-45db-9b3c-7cab993a4018",
+                "counselor":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"80c5b5d3-56fb-48d0-b935-ee143c3a5e80",
+                "counselor":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"5df2b7ba-f0e6-4f77-95a9-d4a93b618940",
+                "counselor":"542a6a0e-aecb-42f5-aeb1-ddf0c6551bcd",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"7aea89b7-3863-4adf-b46c-b2735932712a",
+                "counselor":"5f28d4a8-2ec8-4c49-a04f-b661a2979d3c",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"a1a455d9-d046-4577-b14b-4a18e3ddc20b",
+                "counselor":"aba8e8f7-4c41-4a79-be76-a4793c6f5ceb",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"5fc03a4a-16ac-4d5c-8cd1-d34734678a1c",
+                "counselor":"2f97af20-172e-49df-8d4c-c427f9422679",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"e07ec05d-ef53-46c6-b063-f9e65ec4589f",
+                "counselor":"aa4d03ba-b56f-4d10-8a91-7275ef010193",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"e384e468-51d4-4e3a-9d74-e94a05145546",
+                "counselor":"d35374a2-9b52-42b9-9148-a1e2ad9a20fc",
+                "campers":["","","","","","","",""]
+            }
+        ]
+    },
+    {
+        "id": "c985d1a0-de60-4f30-9b21-5d9e8afd1d26",
+        "title": "Week 8",
+        "cost": 1000,
+        "cabins":[
+            {
+                "id":"8bb26a56-a0de-49fc-a5bb-d5f0b4155fd4",
+                "counselor":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"90bc0354-9992-4a17-ac43-e31784bfba27",
+                "counselor":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"3c8afadd-cbe9-4494-8eb6-43e56c71c342",
+                "counselor":"542a6a0e-aecb-42f5-aeb1-ddf0c6551bcd",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"8d4272e6-635f-4581-ac34-bddb6a8241a2",
+                "counselor":"5f28d4a8-2ec8-4c49-a04f-b661a2979d3c",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"925c61f8-0c18-4da3-81a1-042c2d603d22",
+                "counselor":"aba8e8f7-4c41-4a79-be76-a4793c6f5ceb",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"74fa2e2c-45bc-4c51-8da2-679b3c2102eb",
+                "counselor":"2f97af20-172e-49df-8d4c-c427f9422679",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"898cdbba-88c3-499c-9303-a55fa0ea6278",
+                "counselor":"aa4d03ba-b56f-4d10-8a91-7275ef010193",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"442f451d-4a70-4fb0-9c74-13ad186752c4",
+                "counselor":"d35374a2-9b52-42b9-9148-a1e2ad9a20fc",
+                "campers":["","","","","","","",""]
+            }
+        ]
+    },
+    {
+        "id": "d43cbfd2-978e-4712-822d-8e347ec24222",
+        "title": "Week 9",
+        "cost": 1000,
+        "cabins":[
+            {
+                "id":"920e6b1e-10be-4fac-ba77-c95b0fd48c64",
+                "counselor":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"169dda60-63fa-4463-a983-6e861f9d99ab",
+                "counselor":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"d1a4119e-7ad0-445b-a311-1217e60bf280",
+                "counselor":"542a6a0e-aecb-42f5-aeb1-ddf0c6551bcd",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"b0d6669f-2a49-4183-85ec-b32f403183d5",
+                "counselor":"5f28d4a8-2ec8-4c49-a04f-b661a2979d3c",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"b21eeea2-bb45-47d7-9e89-707c3afb1ef5",
+                "counselor":"aba8e8f7-4c41-4a79-be76-a4793c6f5ceb",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"00e063b0-a0aa-4190-ba99-58e1b0d0a5f9",
+                "counselor":"2f97af20-172e-49df-8d4c-c427f9422679",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"eb7325c9-a974-4901-bf74-4b4cfaeaaa10",
+                "counselor":"aa4d03ba-b56f-4d10-8a91-7275ef010193",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"21c4170d-c85c-4467-a4c2-6f53c8fe0f54",
+                "counselor":"d35374a2-9b52-42b9-9148-a1e2ad9a20fc",
+                "campers":["","","","","","","",""]
+            }
+        ]
+    },
+    {
+        "id": "662d4674-dbf1-472a-9d07-aa3091baa21b",
+        "title": "Week 10",
+        "cost": 950,
+        "cabins":[
+            {
+                "id":"ac6f2ad6-4aa4-4a8c-965f-eaf02a419443",
+                "counselor":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"37acc096-513d-4b6b-90f6-6398d93f79ed",
+                "counselor":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"7bc6a9a7-2577-4b46-b820-a346439b6014",
+                "counselor":"542a6a0e-aecb-42f5-aeb1-ddf0c6551bcd",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"d64461ff-cf38-465f-a470-bca8f8b63677",
+                "counselor":"5f28d4a8-2ec8-4c49-a04f-b661a2979d3c",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"59d253a3-27ba-4b17-b8a9-948b14173b75",
+                "counselor":"aba8e8f7-4c41-4a79-be76-a4793c6f5ceb",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"c53f9bf4-f0ab-44c8-9948-e9822af94b5a",
+                "counselor":"2f97af20-172e-49df-8d4c-c427f9422679",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"bd8874da-95a4-45d4-83a4-a7fefc9e94b4",
+                "counselor":"aa4d03ba-b56f-4d10-8a91-7275ef010193",
+                "campers":["","","","","","","",""]
+            },{
+                "id":"9ef22a97-f3b1-402b-8c9a-3998010a06ac",
+                "counselor":"d35374a2-9b52-42b9-9148-a1e2ad9a20fc",
+                "campers":["","","","","","","",""]
+            }
+        ]
     }
   ]
