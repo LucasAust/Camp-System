@@ -1,13 +1,10 @@
-import java.util.ArrayList;
-
-// Ali Omer
 public class Counselor {
   public Schedule schedule;
   public ArrayList<String> campers;
-  public EmergencyContact emergencyContact;
-  public HealthInfo healthcare;
+  public wmergencyContact emergencyContact;
+  public healthInfo healthcare;
 
-  public viewSchedule(Schedule schedule){
+  public viewSchdule(Schedule schedule){
 
   }
 
@@ -26,4 +23,5 @@ public class Counselor {
   public addHealthInfo(){
     
   }
+
 }
