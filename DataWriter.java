@@ -9,7 +9,7 @@ public class DataWriter {
 
     public static boolean saveAllSchedules(ArrayList<Schedule> schedules)
     {
-
+        return true;
     }
-    
+
 }

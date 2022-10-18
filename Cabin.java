@@ -22,7 +22,7 @@ public class Cabin {
     }
     public Schedule getSchedule()
     {
-
+        return null;
     }
 
 }
