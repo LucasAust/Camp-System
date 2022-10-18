@@ -14,13 +14,13 @@ public class Cabin {
         this.counselor = counselor;
         this.maxCampers = maxCampers;
     }
-    public void addCounselor()
+    public void addCounselor(Counselor counselor)
     {
-        cabins.add(counselors);
+        this.counselor=counselor;
     }
-    public void addCampers()
+    public void addCampers(Child child)
     {
-        cabins.add(campers);
+        campers.add(child);
     }
     public Schedule getSchedule()
     {
