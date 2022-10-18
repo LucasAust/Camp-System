@@ -1,0 +1,46 @@
+[
+    {
+      "id": "123456789",
+      "firstName": "Josh",
+      "lastName": "Huger",
+      "age": "11",
+      "session": "Session 1",
+      "deitaryRestrictions": "Corn",
+      "allergies": ["Corn"],
+      "medications": "None",
+      "healthCare":
+        [{
+            "name":"Medicaid",
+            "policyNumber":"TXF343243244", 
+            "doctor":"Dr. Henley"
+        }],
+      "emergencyContact":
+        [{
+            "name":"Karen Huger", 
+            "relationship":"Mother",
+            "phoneNumber":"843-832-8881"
+        }]
+    },
+    {
+      "id": "123456788",
+      "firstName": "Darrell",
+      "lastName": "Jones",
+      "age": "12",
+      "session": "Session 1",
+      "deitaryRestrictions": "Peanut foods",
+      "allergies": ["Peanuts"],
+      "medications": "Epi-Pen",
+      "healthCare":
+        [{
+            "name":"BlueCross BlueShield",
+            "policyNumber":"56382922",
+            "doctor":"Dr. Herbert"
+        }],
+      "emergencyContact":
+        [{
+            "name":"Martha Jones",
+            "relationship":"Mother",
+            "phoneNumber":"414-591-0092"
+        }]
+    }
+]
