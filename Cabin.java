@@ -2,26 +2,27 @@ import java.util.ArrayList;
 
 public class Cabin {
     public String ageRange;
-    public Counselor counselor;
-    public int maxCampers; 
-    public ArrayList<Child> campers = new ArrayList<>();
-    public ArrayList<Cabins> cabins = new ArrayList<>();
+    public Counselor couneslor;
+    public int maxCampers;
+    public ArrayList<Child> campers;
+    public ArrayList<Cabin> cabins;
     public Schedule schedule;
-    
-    public Cabin(ageRange, Counselor, maxCampers) {
+
+    public Cabin(String ageRange, Counselor counselor , int maxCampers)
+    {
 
     }
-
-    public addCounselor() {
-
-    }
-
-    public addCampers() {
+    public void addCounselor()
+    {
 
     }
+    public void addCampers()
+    {
 
-    public Schedule getSchedule() {
-        
+    }
+    public Schedule getSchedule()
+    {
+
     }
 
 }
