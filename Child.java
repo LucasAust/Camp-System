@@ -24,11 +24,11 @@ public class Child {
     {
 
     }
-    public void addEmergencyContact(EmergencyContact emergencyContact)
+    public void addEmergencyContact(emergencyContact emergencyContact)
     {
 
     }
-    public void addHealthInfo(HealthInfo healthInfo)
+    public void addHealthInfo(healthInfo healthInfo)
     {
 
     }
