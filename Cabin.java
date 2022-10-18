@@ -20,15 +20,9 @@ public class Cabin {
     {
 
     }
-<<<<<<< HEAD
     public Schedule getSchedule()
     {
         return null;
-=======
-
-    public Schedule getSchedule() {
-
->>>>>>> DeepNPatel
     }
 
 }
