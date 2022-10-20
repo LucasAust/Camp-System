@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Child {
+public class Child extends RegisteredUser{
     
     public String firstName;
     public String lastName;
@@ -16,6 +16,7 @@ public class Child {
 
     public Child(String firstName, String lastName, String age)
     {
+        super(firstName, lastName, firstName, lastName, age);
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;

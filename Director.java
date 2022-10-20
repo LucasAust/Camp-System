@@ -2,7 +2,10 @@ import java.rmi.Remote;
 import java.util.ArrayList;
 
 //Ali Omer
-public class Director {
+public class Director extends RegisteredUser{
+  public Director(String firstName, String lastName, String userName, String email, String password) {
+    super(firstName, lastName, userName, email, password);  }
+
   private ArrayList<String> activities;
 
 public void addActivities(Activity activity){

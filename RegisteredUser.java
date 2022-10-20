@@ -1,4 +1,4 @@
-public class RegisteredUser {
+public class RegisteredUser extends User {
   public String firstName;
   public String lastName;
   public String userName;
