@@ -5,31 +5,23 @@ public class UserList {
   private static UserList UserList;
 
   private UserList() {
-
+    users = DataReader.getUser();
   }
 
   public static UserList getInstance() {
 
   }
 
-  public boolean addUser(String firstName, String lastName, String username, String email, String password)
-  {
+  public boolean addUser(String firstName, String lastName, String username, String email, String password) {
 
   }
 
-  public ArrayList<User> getUser(User)
-  {
-
+  public ArrayList<UserList> getUser() {
+    return UserList;
   }
 
-  public editUser(User)
-  {
-
+  public void saveUser() {
+    DataWriter.saveAllUsers(users);
   }
-
-  public saveUser(User){
-
-  }
-  
 
 }

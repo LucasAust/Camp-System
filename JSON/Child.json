@@ -208,214 +208,214 @@
       ]
   },
 
-  {
-      "id":"b9a4118b-3c17-46ab-8a67-517c3293e32d",
-      "firstName":"Jeremy",
-      "lastName":"Owens",
-      "age":"11",
-      "session":"Session 2",
-      "deitaryRestrictions":"None",
-      "allergies":"None",
-      "medications": [
-          "None"
-      ],
-      "healthCare":
-         [{
-           "name":"AffordableHealthCare",
-           "policyNumber":"3432432342",
-           "doctor":"Dr. Colby"
-         }
-      ],
-      "emergencyContact":
-         [{
-           "name":"Paula Owens",
-           "relationship":"Mother",
-           "phoneNumber":"323-232-4754"
-         }
-      ]
-  },
-  {
-      "id":"1a24adc3-9cf0-4a06-96e1-2c843c55bd55",
-      "firstName":"Thomas",
-      "lastName":"Crocker",
-      "age":"12",
-      "session":"Session 2",
-      "deitaryRestrictions":"Gluten",
-      "allergies":"Gluten",
-      "medications": [
-          "None"
-      ],
-      "healthCare":
-         [{
-           "name":"AffordableHealthCare",
-           "policyNumber":"23234215",
-           "doctor":"Dr. Chanel"
-         }
-      ],
-      "emergencyContact":
-         [{
-           "name":"Sadie Crocker",
-           "relationship":"Mother",
-           "phoneNumber":"803-123-4754"
-         }
-      ]
-  },
-  {
-      "id":"752126e1-5067-4846-9e01-cf3822215162",
-      "firstName":"Thomas",
-      "lastName":"Crocker",
-      "age":"12",
-      "session":"Session 2",
-      "deitaryRestrictions":"Gluten",
-      "allergies":"Gluten",
-      "medications": [
-          "None"
-      ],
-      "healthCare":
-         [{
-           "name":"AffordableHealthCare",
-           "policyNumber":"23234215",
-           "doctor":"Dr. Chanel"
-         }
-      ],
-      "emergencyContact":
-         [{
-           "name":"Sadie Crocker",
-           "relationship":"Mother",
-           "phoneNumber":"803-123-4754"
-         }
-      ]   
-  },
-  {
-      "id":"3e53f165-8412-4c3d-ae0d-e54144274be4",
-      "firstName":"Edison",
-      "lastName":"Thomas",
-      "age":"13",
-      "session":"Session 2",
-      "deitaryRestrictions":"None",
-      "allergies":"None",
-      "medications": [
-          "None"
-      ],
-      "healthCare":
-         [{
-           "name":"InsuranceForU",
-           "policyNumber":"HY324324212329",
-           "doctor":"Dr. Henderson"
-         }
-      ],
-      "emergencyContact":
-         [{
-           "name":"Margot Thomas",
-           "relationship":"Grandmother",
-           "phoneNumber":"758-901-8423"
-         }
-      ]   
-  },
-  {
-      "id":"0a188e15-2c34-46ce-87f9-ad6ae71d1968",
-      "firstName":"Carson",
-      "lastName":"Wentz",
-      "age":"14",
-      "session":"Session 2",
-      "deitaryRestrictions":"Diabetes",
-      "allergies":"None",
-      "medications": [
-          "None"
-      ],
-      "healthCare":
-         [{
-           "name":"FederalHealth",
-           "policyNumber":"F234342",
-           "doctor":"Dr. Commander"
-         }
-      ],
-      "emergencyContact":
-         [{
-           "name":"Tony Wentz",
-           "relationship":"Father",
-           "phoneNumber":"753-900-0234"
-         }
-      ]   
-  },
-  {
-      "id":"b4dcf63b-2e23-41ef-8bbe-e114b8427fe1",
-      "firstName":"Daisy",
-      "lastName":"Rogers",
-      "age":"15",
-      "session":"Session 2",
-      "deitaryRestrictions":"None",
-      "allergies":"None",
-      "medications": [
-          "None"
-      ],
-      "healthCare":
-         [{
-           "name":"Gary's Insurance",
-           "policyNumber":"FFRFNK34",
-           "doctor":"Dr. Simons"
-         }
-      ],
-      "emergencyContact":
-         [{
-           "name":"Ricky Rogers",
-           "relationship":"Father",
-           "phoneNumber":"234-575-8345"
-         }
-      ]   
-  },
-  {
-      "id":"1be75f65-0287-407b-a1f6-2682d18429bd",
-      "firstName":"Cedrick",
-      "lastName":"Highsmif",
-      "age":"15",
-      "session":"Session 2",
-      "deitaryRestrictions":"Gluten",
-      "allergies":"Tree nuts",
-      "medications": [
-          "Epi-Pen"
-      ],
-      "healthCare":
-         [{
-           "name":"ObamaCare",
-           "policyNumber":"90903039503490909364134",
-           "doctor":"Dr. Stamps"
-         }
-      ],
-      "emergencyContact":
-         [{
-           "name":"Gregory Highsmif",
-           "relationship":"Father",
-           "phoneNumber":"233-676-6834"
-         }
-      ] 
-  },
-  {
-      "id":"fd83807d-aecc-455b-aa4a-b34e41cf0177",
-      "firstName":"Kevin",
-      "lastName":"Stark",
-      "age":"16",
-      "session":"Session 2",
-      "deitaryRestrictions":"None",
-      "allergies":"None",
-      "medications": [
-          "None"
-      ],
-      "healthCare":
-         [{
-           "name":"BlueCross BlueShield",
-           "policyNumber":"234324234",
-           "doctor":"Dr. Faulkner"
-         }
-      ],
-      "emergencyContact":
-         [{
-           "name":"Patrick Stark",
-           "relationship":"Guardian",
-           "phoneNumber":"546-634-3284"
-         }
-      ] 
-  },
+    {
+        "id":"b9a4118b-3c17-46ab-8a67-517c3293e32d",
+        "firstName":"Jeremy",
+        "lastName":"Owens",
+        "age":"11",
+        "session":"Session 2",
+        "deitaryRestrictions":"None",
+        "allergies":"None",
+        "medications": [
+            "None"
+        ],
+        "healthCare":
+           [{
+             "name":"AffordableHealthCare",
+             "policyNumber":"3432432342",
+             "doctor":"Dr. Colby"
+           }
+        ],
+        "emergencyContact":
+           [{
+             "name":"Paula Owens",
+             "relationship":"Mother",
+             "phoneNumber":"323-232-4754"
+           }
+        ]
+    },
+    {
+        "id":"1a24adc3-9cf0-4a06-96e1-2c843c55bd55",
+        "firstName":"Thomas",
+        "lastName":"Crocker",
+        "age":"12",
+        "session":"Session 2",
+        "deitaryRestrictions":"Gluten",
+        "allergies":"Gluten",
+        "medications": [
+            "None"
+        ],
+        "healthCare":
+           [{
+             "name":"AffordableHealthCare",
+             "policyNumber":"23234215",
+             "doctor":"Dr. Chanel"
+           }
+        ],
+        "emergencyContact":
+           [{
+             "name":"Sadie Crocker",
+             "relationship":"Mother",
+             "phoneNumber":"803-123-4754"
+           }
+        ]
+    },
+    {
+        "id":"752126e1-5067-4846-9e01-cf3822215162",
+        "firstName":"Thomas",
+        "lastName":"Crocker",
+        "age":"12",
+        "session":"Session 2",
+        "deitaryRestrictions":"Gluten",
+        "allergies":"Gluten",
+        "medications": [
+            "None"
+        ],
+        "healthCare":
+           [{
+             "name":"AffordableHealthCare",
+             "policyNumber":"23234215",
+             "doctor":"Dr. Chanel"
+           }
+        ],
+        "emergencyContact":
+           [{
+             "name":"Sadie Crocker",
+             "relationship":"Mother",
+             "phoneNumber":"803-123-4754"
+           }
+        ]   
+    },
+    {
+        "id":"3e53f165-8412-4c3d-ae0d-e54144274be4",
+        "firstName":"Edison",
+        "lastName":"Thomas",
+        "age":"13",
+        "session":"Session 2",
+        "deitaryRestrictions":"None",
+        "allergies":"None",
+        "medications": [
+            "None"
+        ],
+        "healthCare":
+           [{
+             "name":"InsuranceForU",
+             "policyNumber":"HY324324212329",
+             "doctor":"Dr. Henderson"
+           }
+        ],
+        "emergencyContact":
+           [{
+             "name":"Margot Thomas",
+             "relationship":"Grandmother",
+             "phoneNumber":"758-901-8423"
+           }
+        ]   
+    },
+    {
+        "id":"0a188e15-2c34-46ce-87f9-ad6ae71d1968",
+        "firstName":"Carson",
+        "lastName":"Wentz",
+        "age":"14",
+        "session":"Session 2",
+        "deitaryRestrictions":"Diabetes",
+        "allergies":"None",
+        "medications": [
+            "None"
+        ],
+        "healthCare":
+           [{
+             "name":"FederalHealth",
+             "policyNumber":"F234342",
+             "doctor":"Dr. Commander"
+           }
+        ],
+        "emergencyContact":
+           [{
+             "name":"Tony Wentz",
+             "relationship":"Father",
+             "phoneNumber":"753-900-0234"
+           }
+        ]   
+    },
+    {
+        "id":"b4dcf63b-2e23-41ef-8bbe-e114b8427fe1",
+        "firstName":"Daisy",
+        "lastName":"Rogers",
+        "age":"15",
+        "session":"Session 2",
+        "deitaryRestrictions":"None",
+        "allergies":"None",
+        "medications": [
+            "None"
+        ],
+        "healthCare":
+           [{
+             "name":"Gary's Insurance",
+             "policyNumber":"FFRFNK34",
+             "doctor":"Dr. Simons"
+           }
+        ],
+        "emergencyContact":
+           [{
+             "name":"Ricky Rogers",
+             "relationship":"Father",
+             "phoneNumber":"234-575-8345"
+           }
+        ]   
+    },
+    {
+        "id":"1be75f65-0287-407b-a1f6-2682d18429bd",
+        "firstName":"Cedrick",
+        "lastName":"Highsmif",
+        "age":"15",
+        "session":"Session 2",
+        "deitaryRestrictions":"Gluten",
+        "allergies":"Tree nuts",
+        "medications": [
+            "Epi-Pen"
+        ],
+        "healthCare":
+           [{
+             "name":"ObamaCare",
+             "policyNumber":"90903039503490909364134",
+             "doctor":"Dr. Stamps"
+           }
+        ],
+        "emergencyContact":
+           [{
+             "name":"Gregory Highsmif",
+             "relationship":"Father",
+             "phoneNumber":"233-676-6834"
+           }
+        ] 
+    },
+    {
+        "id":"fd83807d-aecc-455b-aa4a-b34e41cf0177",
+        "firstName":"Kevin",
+        "lastName":"Stark",
+        "age":"16",
+        "session":"Session 2",
+        "deitaryRestrictions":"None",
+        "allergies":"None",
+        "medications": [
+            "None"
+        ],
+        "healthCare":
+           [{
+             "name":"BlueCross BlueShield",
+             "policyNumber":"234324234",
+             "doctor":"Dr. Faulkner"
+           }
+        ],
+        "emergencyContact":
+           [{
+             "name":"Patrick Stark",
+             "relationship":"Guardian",
+             "phoneNumber":"546-634-3284"
+           }
+        ] 
+    },
 
   {
     "id":"07691482-14fa-4542-b239-1d7dac0ba26c",
@@ -626,212 +626,213 @@
     ] 
   },
 
-  {
-    "id":"7d0c3cdc-5864-44bc-9472-e2bf59e505f2",
-    "firstName":"Terry",
-    "lastName":"Scary",
-    "age":"11",
-    "session":"Session 4",
-    "deitaryRestrictions":"None",
-    "allergies":"None",
-    "medications": [
-        "None"
-    ],
-    "healthCare":
-       [{
-         "name":"AffordableHealthCare",
-         "policyNumber":"37348",
-         "doctor":"Dr. Towns"
-       }
-    ],
-    "emergencyContact":
-       [{
-         "name":"Jamie Scary",
-         "relationship":"Mother",
-         "phoneNumber":"234-784-6578"
-       }
-    ] 
-  },
-  {
-    "id":"5de38696-f343-4855-bcc1-89c2f817c2c8",
-    "firstName":"Matthew",
-    "lastName":"Shaheen",
-    "age":"12",
-    "session":"Session 4",
-    "deitaryRestrictions":"Gluten",
-    "allergies":"Gluten",
-    "medications": [
-        "None"
-    ],
-    "healthCare":
-       [{
-         "name":"AffordableHealthCare",
-         "policyNumber":"H393854395839453",
-         "doctor":"Dr. Lacy"
-       }
-    ],
-    "emergencyContact":
-       [{
-         "name":"Sydney Shaheen",
-         "relationship":"Mother",
-         "phoneNumber":"823-412-5464"
-       }
-    ] 
-  },
-  {
-    "id":"3394e0c5-8a8a-44d6-8904-52b506177426",
-    "firstName":"Joe",
-    "lastName":"Shiesty",
-    "age":"13",
-    "session":"Session 4",
-    "deitaryRestrictions":"None",
-    "allergies":"None",
-    "medications": [
-        "None"
-    ],
-    "healthCare":
-       [{
-         "name":"InsuranceForU",
-         "policyNumber":"G234235785535",
-         "doctor":"Dr. Margallia"
-       }
-    ],
-    "emergencyContact":
-       [{
-         "name":"Pooh Shiesty",
-         "relationship":"Father",
-         "phoneNumber":"843-234-6435"
-       }
-    ] 
-  },
-  {
-    "id":"dc87819a-020f-4af5-b251-cbf8797b1174",
-    "firstName":"Norman",
-    "lastName":"Cella",
-    "age":"14",
-    "session":"Session 4",
-    "deitaryRestrictions":"None",
-    "allergies":"None",
-    "medications": [
-        "None"
-    ],
-    "healthCare":
-       [{
-         "name":"FederalHealth",
-         "policyNumber":"FFF2342349845045",
-         "doctor":"Dr. Mostert"
-       }
-    ],
-    "emergencyContact":
-       [{
-         "name":"Hannah Cella",
-         "relationship":"Mother",
-         "phoneNumber":"344-540-9012"
-       }
-    ] 
-  },
-  {
-    "id":"e9caf311-ae49-4484-b8a2-78791adbb90e",
-    "firstName":"Emma",
-    "lastName":"Granger",
-    "age":"15",
-    "session":"Session 4",
-    "deitaryRestrictions":"None",
-    "allergies":"None",
-    "medications": [
-        "None"
-    ],
-    "healthCare":
-       [{
-         "name":"Gary's Insurance",
-         "policyNumber":"3495843",
-         "doctor":"Dr. Gary"
-       }
-    ],
-    "emergencyContact":
-       [{
-         "name":"Ellis Granger",
-         "relationship":"Father",
-         "phoneNumber":"342-698-4389"
-       }
-    ] 
-  },
-  {
-    "id":"7b9c152a-6842-4eaa-a684-059141408e04",
-    "firstName":"Marquise",
-    "lastName":"Brown",
-    "age":"15",
-    "session":"Session 4",
-    "deitaryRestrictions":"Gluten",
-    "allergies":"None",
-    "medications": [
-        "None"
-    ],
-    "healthCare":
-       [{
-         "name":"ObamaCare",
-         "policyNumber":"39348579GG4",
-         "doctor":"Dr. Ferdanand"
-       }
-    ],
-    "emergencyContact":
-       [{
-         "name":"AJ Brown",
-         "relationship":"Father",
-         "phoneNumber":"348-569-0005"
-       }
-    ] 
-  },
-  {
-    "id":"7bb81d7d-b90a-4252-8d72-16b7525bd081",
-    "firstName":"Kate",
-    "lastName":"Moore",
-    "age":"16",
-    "session":"Session 4",
-    "deitaryRestrictions":"None",
-    "allergies":"None",
-    "medications": [
-        "None"
-    ],
-    "healthCare":
-       [{
-         "name":"BlueCross BlueShield",
-         "policyNumber":"HHH53243535345",
-         "doctor":"Dr. John"
-       }
-    ],
-    "emergencyContact":
-       [{
-         "name":"Ronald Moore",
-         "relationship":"Father",
-         "phoneNumber":"345-536-9849"
-       }
-    ] 
-  },
-  {
-    "id":"2ee4f3c9-1307-41ee-a409-fa8e74e1e349",
-    "firstName":"Miller",
-    "lastName":"Amendola",
-    "age":"17",
-    "session":"Session 4",
-    "deitaryRestrictions":"None",
-    "allergies":"None",
-    "medications": [
-        "None"
-    ],
-    "healthCare":
-       [{
-         "name":"Medicare",
-         "policyNumber":"JJ4359348535",
-         "doctor":"Dr. Donald"
-       }
-    ],
-    "emergencyContact":
-       [{
-         "name":"Heather Amendola",
-         "relationship":"Mother",
-         "phoneNumber":"095-345-6094"
-       }
-    ]
-  }
+
+    {
+      "id":"7d0c3cdc-5864-44bc-9472-e2bf59e505f2",
+      "firstName":"Terry",
+      "lastName":"Scary",
+      "age":"11",
+      "session":"Session 4",
+      "deitaryRestrictions":"None",
+      "allergies":"None",
+      "medications": [
+          "None"
+      ],
+      "healthCare":
+         [{
+           "name":"AffordableHealthCare",
+           "policyNumber":"37348",
+           "doctor":"Dr. Towns"
+         }
+      ],
+      "emergencyContact":
+         [{
+           "name":"Jamie Scary",
+           "relationship":"Mother",
+           "phoneNumber":"234-784-6578"
+         }
+      ] 
+    },
+    {
+      "id":"5de38696-f343-4855-bcc1-89c2f817c2c8",
+      "firstName":"Matthew",
+      "lastName":"Shaheen",
+      "age":"12",
+      "session":"Session 4",
+      "deitaryRestrictions":"Gluten",
+      "allergies":"Gluten",
+      "medications": [
+          "None"
+      ],
+      "healthCare":
+         [{
+           "name":"AffordableHealthCare",
+           "policyNumber":"H393854395839453",
+           "doctor":"Dr. Lacy"
+         }
+      ],
+      "emergencyContact":
+         [{
+           "name":"Sydney Shaheen",
+           "relationship":"Mother",
+           "phoneNumber":"823-412-5464"
+         }
+      ] 
+    },
+    {
+      "id":"3394e0c5-8a8a-44d6-8904-52b506177426",
+      "firstName":"Joe",
+      "lastName":"Shiesty",
+      "age":"13",
+      "session":"Session 4",
+      "deitaryRestrictions":"None",
+      "allergies":"None",
+      "medications": [
+          "None"
+      ],
+      "healthCare":
+         [{
+           "name":"InsuranceForU",
+           "policyNumber":"G234235785535",
+           "doctor":"Dr. Margallia"
+         }
+      ],
+      "emergencyContact":
+         [{
+           "name":"Pooh Shiesty",
+           "relationship":"Father",
+           "phoneNumber":"843-234-6435"
+         }
+      ] 
+    },
+    {
+      "id":"dc87819a-020f-4af5-b251-cbf8797b1174",
+      "firstName":"Norman",
+      "lastName":"Cella",
+      "age":"14",
+      "session":"Session 4",
+      "deitaryRestrictions":"None",
+      "allergies":"None",
+      "medications": [
+          "None"
+      ],
+      "healthCare":
+         [{
+           "name":"FederalHealth",
+           "policyNumber":"FFF2342349845045",
+           "doctor":"Dr. Mostert"
+         }
+      ],
+      "emergencyContact":
+         [{
+           "name":"Hannah Cella",
+           "relationship":"Mother",
+           "phoneNumber":"344-540-9012"
+         }
+      ] 
+    },
+    {
+      "id":"e9caf311-ae49-4484-b8a2-78791adbb90e",
+      "firstName":"Emma",
+      "lastName":"Granger",
+      "age":"15",
+      "session":"Session 4",
+      "deitaryRestrictions":"None",
+      "allergies":"None",
+      "medications": [
+          "None"
+      ],
+      "healthCare":
+         [{
+           "name":"Gary's Insurance",
+           "policyNumber":"3495843",
+           "doctor":"Dr. Gary"
+         }
+      ],
+      "emergencyContact":
+         [{
+           "name":"Ellis Granger",
+           "relationship":"Father",
+           "phoneNumber":"342-698-4389"
+         }
+      ] 
+    },
+    {
+      "id":"7b9c152a-6842-4eaa-a684-059141408e04",
+      "firstName":"Marquise",
+      "lastName":"Brown",
+      "age":"15",
+      "session":"Session 4",
+      "deitaryRestrictions":"Gluten",
+      "allergies":"None",
+      "medications": [
+          "None"
+      ],
+      "healthCare":
+         [{
+           "name":"ObamaCare",
+           "policyNumber":"39348579GG4",
+           "doctor":"Dr. Ferdanand"
+         }
+      ],
+      "emergencyContact":
+         [{
+           "name":"AJ Brown",
+           "relationship":"Father",
+           "phoneNumber":"348-569-0005"
+         }
+      ] 
+    },
+    {
+      "id":"7bb81d7d-b90a-4252-8d72-16b7525bd081",
+      "firstName":"Kate",
+      "lastName":"Moore",
+      "age":"16",
+      "session":"Session 4",
+      "deitaryRestrictions":"None",
+      "allergies":"None",
+      "medications": [
+          "None"
+      ],
+      "healthCare":
+         [{
+           "name":"BlueCross BlueShield",
+           "policyNumber":"HHH53243535345",
+           "doctor":"Dr. John"
+         }
+      ],
+      "emergencyContact":
+         [{
+           "name":"Ronald Moore",
+           "relationship":"Father",
+           "phoneNumber":"345-536-9849"
+         }
+      ] 
+    },
+    {
+      "id":"2ee4f3c9-1307-41ee-a409-fa8e74e1e349",
+      "firstName":"Miller",
+      "lastName":"Amendola",
+      "age":"17",
+      "session":"Session 4",
+      "deitaryRestrictions":"None",
+      "allergies":"None",
+      "medications": [
+          "None"
+      ],
+      "healthCare":
+         [{
+           "name":"Medicare",
+           "policyNumber":"JJ4359348535",
+           "doctor":"Dr. Donald"
+         }
+      ],
+      "emergencyContact":
+         [{
+           "name":"Heather Amendola",
+           "relationship":"Mother",
+           "phoneNumber":"095-345-6094"
+         }
+      ]
+    }
 ]
