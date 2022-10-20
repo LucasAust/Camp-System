@@ -4,12 +4,13 @@ public class Sessions {
     
     public String title;
     public double cost;
-    public Child user;
+    public ArrayList<Child> campers;
     public ArrayList<Cabin> cabins;
 
-    public Sessions(String title, double cost, Child user)
+    public Sessions(String title, double cost)
     {
-
+        this.title = title;
+        this.cost = cost;
     }
     public boolean isFull()
     {
