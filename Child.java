@@ -12,7 +12,7 @@ public class Child {
     public healthInfo healthInfo;
     public ArrayList<String> allergies = new ArrayList<String>();
     public ArrayList<String> medications = new ArrayList<String>();
-    public ArrayList<String> emergencyContacts = new ArrayList<String>();
+    public ArrayList<emergencyContact> emergencyContacts;
 
     public Child(String firstName, String lastName, String age)
     {
