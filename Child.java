@@ -12,8 +12,8 @@ public class Child {
     public healthInfo healthInfo;
     public ArrayList<String> allergies = new ArrayList<String>();
     public ArrayList<String> medications = new ArrayList<String>();
-    public ArrayList<String> emergencyContacts = new ArrayList<String>();
-
+    public ArrayList<emergencyContact> emergencyContacts;
+    
     public Child(String firstName, String lastName, String age)
     {
         this.firstName = firstName;
@@ -31,9 +31,8 @@ public class Child {
     }
     public void addEmergencyContact(ArrayList<String> emergencyContacts)
     {
-        emergencyContact contact = new emergencyContact(emergencyContact.name, emergencyContact.relationship, emergencyContact.phoneNumber);
-        for(int i=0;i<3;i++) {
-            emergencyContacts.add(contact);
+        emergencyContact contact = new emergencyContact(emergencyContact.name,emergencyContact.relationship,emergencyContact.phoneNumber);
+        emergencyContacts.add(contact);
         }
     }
     public void addHealthInfo(healthInfo healthInfo)
