@@ -12,6 +12,7 @@ public class Child {
     public healthInfo healthInfo;
     public ArrayList<String> allergies = new ArrayList<String>();
     public ArrayList<String> medications = new ArrayList<String>();
+    public ArrayList<String> emergencyContacts = new ArrayList<String>();
 
     public Child(String firstName, String lastName, String age)
     {
@@ -30,7 +31,7 @@ public class Child {
     }
     public void addEmergencyContact(emergencyContact emergencyContact)
     {
-        emergencyContact.add(emergencyContact);
+        emergencyContacts.add(emergencyContact);
     }
     public void addHealthInfo(healthInfo healthInfo)
     {
