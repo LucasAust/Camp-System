@@ -51,9 +51,12 @@ public class Child {
     {
         medications.add(medication);
     }
-    public void addEmergencyContact(emergencyContact emergencyContact)
+    public void addEmergencyContact(ArrayList<String> emergencyContacts)
     {
-        emergencyContacts.add(emergencyContact);
+        emergencyContact contact = new emergencyContact(emergencyContact.name, emergencyContact.relationship, emergencyContact.phoneNumber);
+        for(int i=0;i<3;i++) {
+            emergencyContacts.add(contact);
+        }
     }
     public void addHealthInfo(healthInfo healthInfo)
     {
