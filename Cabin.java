@@ -16,6 +16,8 @@ public class Cabin {
     }
     public void addCounselor()
     {
+        //WIP
+        Cabin cabin = new Cabin(ageRange, counselor, maxCampers);
         Counselor counselor = new Counselor();
         cabins.add(counselor);
     }
@@ -27,5 +29,4 @@ public class Cabin {
     {
         return null;
     }
-
 }
