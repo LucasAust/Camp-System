@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Child {
-    
+
     public String firstName;
     public String lastName;
     public String age;
@@ -11,25 +11,25 @@ public class Child {
     public ArrayList<String> allergies;
     public ArrayList<String> medications;
 
-    public Child(String firstName, String lastName, String age)
-    {
+    public Child(String firstName, String lastName, String age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
 
     }
 
-    public void addAllergies(ArrayList<String> allergies)
-    {
+    public void addAllergies(ArrayList<String> allergies) {
 
     }
-    public void addMedication(ArrayList<String> medications)
-    {
+
+    public void addMedication(ArrayList<String> medications) {
 
     }
-    public void addEmergencyContact(emergencyContact emergencyContact)
-    {
+
+    public void addEmergencyContact(emergencyContact emergencyContact) {
 
     }
-    public void addHealthInfo(healthInfo healthInfo)
-    {
+
+    public void addHealthInfo(healthInfo healthInfo) {
 
     }
 }
