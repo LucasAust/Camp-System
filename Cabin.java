@@ -4,8 +4,8 @@ public class Cabin {
     public String ageRange;
     public Counselor counselor;
     public int maxCampers;
-    public ArrayList<Child> campers;
-    public ArrayList<Cabin> cabins;
+    public ArrayList<Child> campers = new ArrayList<Child>();
+    public ArrayList<Cabin> cabins = new ArrayList<Cabin>();
     public Schedule schedule;
 
     public Cabin(String ageRange, Counselor counselor , int maxCampers)
@@ -16,7 +16,8 @@ public class Cabin {
     }
     public void addCounselor()
     {
-        cabins.add(counselors);
+        Counselor counselor = new Counselor();
+        cabins.add(counselor);
     }
     public void addCampers()
     {
