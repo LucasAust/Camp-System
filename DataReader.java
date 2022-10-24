@@ -12,8 +12,8 @@ public class DataReader {
 
   JSONParser jsonParser = new JSONParser();
 
-  public ArrayList<User> saveAllUsers() {
-    ArrayList<User> users = new ArrayList<User>();
+  public ArrayList<Child> saveAllUsers() {
+    ArrayList<Child> users = new ArrayList<Child>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/Child.json");
       JSONParser parser = new JSONParser();
@@ -57,14 +57,50 @@ public class DataReader {
     return users;
   }
 
-  public void getAllSchedules(ArrayList<Schedule> schedule) {
+  public void getAllCounselors() {
+    ArrayList<Counselor> counselors = new ArrayList<Counselor>();
+    try {
+      FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/counselor.json");
+      JSONParser parser = new JSONParser();
+      JSONArray counselorList = (JSONArray) new JSONParser().parse(reader);
+      for (int i = 0; i < counselorList.size(); i++) {
+        JSONObject counselor = (JSONObject) counselorList.get(i);
 
+        String id = (String) counselor.get("id");
+        String firstName = (String) counselor.get("firstName");
+        String lastName = (String) counselor.get("lastName");
+        String age = (String) counselor.get("age");
+        JSONObject emergencyContact = (JSONObject) counselor.get("emergencyContact");
+        String eName = (String) emergencyContact.get("name");
+        String relationship = (String) emergencyContact.get("relationship");
+        String phoneNumber = (String) emergencyContact.get("phoneNumber");
+        JSONObject healthCare = (JSONObject) counselor.get("healthCare");
+        String hName = (String) healthCare.get("name");
+        String policyNumber = (String) healthCare.get("policyNumber");
+        String doctor = (String) healthCare.get("doctor");
+
+      }
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
   }
 
-  public void getAllSessions(ArrayList<Sessions> sessions) {
+  public void getAllSessions() {
     ArrayList<Sessions> sessionsList = new ArrayList<Sessions>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/sessions.json");
+      JSONParser parser = new JSONParser();
+      JSONArray sessions = (JSONArray) new JSONParser().parse(reader);
+      for (int i = 0; i < sessions.size(); i++) {
+        JSONObject counselor = (JSONObject) sessions.get(i);
+
+        String id = (String) counselor.get("id");
+        String title = (String) counselor.get("title");
+        Long cost = (Long) counselor.get("cost");
+        JSONArray cabins = (JSONArray) counselor.get("cabins");
+        System.out.println("hello");
+
+      }
     } catch (Exception e) {
       e.printStackTrace();
     }

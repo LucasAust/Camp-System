@@ -37,17 +37,17 @@
         }],
         "schedule":"",
         "emergencyContact":
-        [{
+        {
             "name":"Sarah Adams",
             "relationship":"Mother",
             "phoneNumber":"372-545-2376"
-        }],
+        },
         "healthCare":
-        [{
+        {
             "name":"BlueCross BlueShield",
             "policyNumber":"76373267",
             "doctor":"Dr. Kramer"
-        }]
+        }
     },{
         "id":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
         "firstName":"Carl",
@@ -57,7 +57,6 @@
         [{
             "session": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
             "id": "55651d66-926d-4a50-a957-019ad82e5873"
-            // should I add session title and campers id too
         },{
             "session": "41ef8608-392d-49cc-bcbd-82bdadaeed1d",
             "id": "b4739f65-7917-42e8-8f61-7588a3476195"
