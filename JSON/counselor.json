@@ -4,7 +4,7 @@
         "firstName":"Lacy",
         "lastName":"Adams",
         "age":16,
-        "cabin":"ac37b1aa-cd15-438f-b984-5c6720d8658c",
+        "cabin":["ac37b1aa-cd15-438f-b984-5c6720d8658c","5aa4527d-f9d2-44c7-9a13-0806848c96b1","afa846e6-0d8f-48f0-972e-e9afee0a0f04","8a3d1a9b-c7bd-49b9-8f99-1c4d5a77d161","11211328-19a0-4440-b707-f01ccabef943","54dd7887-3eca-459f-9226-650064ccd710","b7e68670-439b-45db-9b3c-7cab993a4018","8bb26a56-a0de-49fc-a5bb-d5f0b4155fd4","920e6b1e-10be-4fac-ba77-c95b0fd48c64","ac6f2ad6-4aa4-4a8c-965f-eaf02a419443"],
         "schedule":"",
         "emergencyContact":
         [{
@@ -19,22 +19,355 @@
             "doctor":"Dr. Kramer"
         }]
     },{
-        "id":"",
-        "firstName":"",
-        "lastName":"",
+        "id":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
+        "firstName":"Carl",
+        "lastName":"Wheezer",
         "age":16,
+        "cabin":
+        [{
+            "session": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
+            "id": "55651d66-926d-4a50-a957-019ad82e5873"
+            // should I add session title and campers id too
+        },{
+            "session": "41ef8608-392d-49cc-bcbd-82bdadaeed1d",
+            "id": "b4739f65-7917-42e8-8f61-7588a3476195"
+        },{
+            "session": "7acfa5ec-c0ab-4250-8640-8cbc42e12def",
+            "id": "cf480267-230d-498c-bc54-fa72df71d5ed"
+        },{
+            "session": "b91d5a20-8821-478b-a1c6-d31a1aea43ed",
+            "id": "250be1fa-a065-4e58-8c22-4536f63a620d"
+        },{
+            "session": "3cf6b143-bd60-4dc9-a78c-e3d6ecb8b14a",
+            "id": "80cc802c-b8e4-4268-83bd-31ae569a8d81"
+        },{
+            "session": "e121ce90-0a69-49b1-81c1-eae1ab0fd58b",
+            "id": "dff80c7a-0e7a-4306-952d-b14ac71074bc"
+        },{
+            "session": "c136c6f9-478c-483a-96fa-4df7537ae75f",
+            "id": "80c5b5d3-56fb-48d0-b935-ee143c3a5e80"
+        },{
+            "session": "c985d1a0-de60-4f30-9b21-5d9e8afd1d26",
+            "id": "90bc0354-9992-4a17-ac43-e31784bfba27"
+        },{
+            "session": "d43cbfd2-978e-4712-822d-8e347ec24222",
+            "id": "169dda60-63fa-4463-a983-6e861f9d99ab"
+        },{
+            "session": "662d4674-dbf1-472a-9d07-aa3091baa21b",
+            "id": "37acc096-513d-4b6b-90f6-6398d93f79ed"
+        }],
         "schedule":"",
         "emergencyContact":
         [{
-            "name":"",
-            "relationship":"",
-            "phoneNumber":""
+            "name":"Martha Wheezer",
+            "relationship":"Mother",
+            "phoneNumber":"436-603-5923"
         }],
         "healthCare":
         [{
-            "name":"",
-            "policyNumber":"",
-            "doctor":""
+            "name":"InsureUBest",
+            "policyNumber":"43267436",
+            "doctor":"Dr. Jennings"
+        }]
+    },{
+        "id":"542a6a0e-aecb-42f5-aeb1-ddf0c6551bcd",
+        "firstName":"Jimmy",
+        "lastName":"Washington",
+        "age":17,
+        "cabin":
+        [{
+            "session": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
+            "id": "343e2a77-20fe-453d-b4b6-fd49ad86c056"
+        },{
+            "session": "41ef8608-392d-49cc-bcbd-82bdadaeed1d",
+            "id": "523a101b-953b-40cd-919c-8fb63188fabe"
+        },{
+            "session": "7acfa5ec-c0ab-4250-8640-8cbc42e12def",
+            "id": "34d1014b-eeac-4cb5-a8e9-d5f50da64396"
+        },{
+            "session": "b91d5a20-8821-478b-a1c6-d31a1aea43ed",
+            "id": "4db6cad5-add4-4131-9f49-b4a5e2bf3f9a"
+        },{
+            "session": "3cf6b143-bd60-4dc9-a78c-e3d6ecb8b14a",
+            "id": "dda7d1e3-ef63-4328-bad6-a8a0c3914ae0"
+        },{
+            "session": "e121ce90-0a69-49b1-81c1-eae1ab0fd58b",
+            "id": "0d07b4a2-2b27-4140-b390-770a1d09b053"
+        },{
+            "session": "c136c6f9-478c-483a-96fa-4df7537ae75f",
+            "id": "5df2b7ba-f0e6-4f77-95a9-d4a93b618940"
+        },{
+            "session": "c985d1a0-de60-4f30-9b21-5d9e8afd1d26",
+            "id": "3c8afadd-cbe9-4494-8eb6-43e56c71c342"
+        },{
+            "session": "d43cbfd2-978e-4712-822d-8e347ec24222",
+            "id": "d1a4119e-7ad0-445b-a311-1217e60bf280"
+        },{
+            "session": "662d4674-dbf1-472a-9d07-aa3091baa21b",
+            "id": "7bc6a9a7-2577-4b46-b820-a346439b6014"
+        }],
+        "schedule":"",
+        "emergencyContact":
+        [{
+            "name":"Tim Washington",
+            "relationship":"Father",
+            "phoneNumber":"584-252-2576"
+        }],
+        "healthCare":
+        [{
+            "name":"AffordableHealthCare",
+            "policyNumber":"G392582",
+            "doctor":"Dr. Gray"
+        }]
+    },{
+        "id":"5f28d4a8-2ec8-4c49-a04f-b661a2979d3c",
+        "firstName":"Ashley",
+        "lastName":"Freeman",
+        "age":18,
+        "cabin":
+        [{
+            "session": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
+            "id": "6633382b-16dc-44b7-a43a-e895d431624d"
+        },{
+            "session": "41ef8608-392d-49cc-bcbd-82bdadaeed1d",
+            "id": "77e3762c-9aab-4fd9-bd72-b45eb4dd9bdd"
+        },{
+            "session": "7acfa5ec-c0ab-4250-8640-8cbc42e12def",
+            "id": "a712d832-8506-4afb-ae39-4e7e8af6ffa1"
+        },{
+            "session": "b91d5a20-8821-478b-a1c6-d31a1aea43ed",
+            "id": "4b727aa3-5293-44b5-98f9-743c20ff5809"
+        },{
+            "session": "3cf6b143-bd60-4dc9-a78c-e3d6ecb8b14a",
+            "id": "a88a5eb9-d1f9-4f16-b539-218a7ee55173"
+        },{
+            "session": "e121ce90-0a69-49b1-81c1-eae1ab0fd58b",
+            "id": "1ad0d6d1-436b-462a-b0e7-c209eec718be"
+        },{
+            "session": "c136c6f9-478c-483a-96fa-4df7537ae75f",
+            "id": "7aea89b7-3863-4adf-b46c-b2735932712a"
+        },{
+            "session": "c985d1a0-de60-4f30-9b21-5d9e8afd1d26",
+            "id": "8d4272e6-635f-4581-ac34-bddb6a8241a2"
+        },{
+            "session": "d43cbfd2-978e-4712-822d-8e347ec24222",
+            "id": "b0d6669f-2a49-4183-85ec-b32f403183d5"
+        },{
+            "session": "662d4674-dbf1-472a-9d07-aa3091baa21b",
+            "id": "d64461ff-cf38-465f-a470-bca8f8b63677"
+        }],
+        "schedule":"",
+        "emergencyContact":
+        [{
+            "name":"Freddie Freeman",
+            "relationship":"Father",
+            "phoneNumber":"432-584-6812"
+        }],
+        "healthCare":
+        [{
+            "name":"FederalHealth",
+            "policyNumber":"R482910",
+            "doctor":"Dr. Blair"
+        }]
+    },{
+        "id":"aba8e8f7-4c41-4a79-be76-a4793c6f5ceb",
+        "firstName":"Blake",
+        "lastName":"Crawford",
+        "age":16,
+        "cabin":
+        [{
+            "session": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
+            "id": "71284663-76a0-44fd-b20d-f6f8307e2173"
+        },{
+            "session": "41ef8608-392d-49cc-bcbd-82bdadaeed1d",
+            "id": "a205d815-a117-4787-a310-7ebd092b8b53"
+        },{
+            "session": "7acfa5ec-c0ab-4250-8640-8cbc42e12def",
+            "id": "638bd72a-d137-4d57-b4f6-2d99f0da24a0"
+        },{
+            "session": "b91d5a20-8821-478b-a1c6-d31a1aea43ed",
+            "id": "c1df20d0-ff30-48b0-98e0-787eadbb7eb5"
+        },{
+            "session": "3cf6b143-bd60-4dc9-a78c-e3d6ecb8b14a",
+            "id": "c4fb91b1-e0b1-4e1e-bb36-0bc72a18e233"
+        },{
+            "session": "e121ce90-0a69-49b1-81c1-eae1ab0fd58b",
+            "id": "60850817-3915-46dc-bab6-9e4113071ee8"
+        },{
+            "session": "c136c6f9-478c-483a-96fa-4df7537ae75f",
+            "id": "a1a455d9-d046-4577-b14b-4a18e3ddc20b"
+        },{
+            "session": "c985d1a0-de60-4f30-9b21-5d9e8afd1d26",
+            "id": "925c61f8-0c18-4da3-81a1-042c2d603d22"
+        },{
+            "session": "d43cbfd2-978e-4712-822d-8e347ec24222",
+            "id": "b21eeea2-bb45-47d7-9e89-707c3afb1ef5"
+        },{
+            "session": "662d4674-dbf1-472a-9d07-aa3091baa21b",
+            "id": "59d253a3-27ba-4b17-b8a9-948b14173b75"
+        }],
+        "schedule":"",
+        "emergencyContact":
+        [{
+            "name":"Brandon Crawford",
+            "relationship":"Father",
+            "phoneNumber":"653-778-0095"
+        }],
+        "healthCare":
+        [{
+            "name":"AffordableHealthCare",
+            "policyNumber":"6894342",
+            "doctor":"Dr. Hanover"
+        }]
+    },{
+        "id":"2f97af20-172e-49df-8d4c-c427f9422679",
+        "firstName":"Stacy",
+        "lastName":"Barron",
+        "age":17,
+        "cabin":
+        [{
+            "session": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
+            "id": "55f1c88d-268b-4879-8713-b64a39345ca0"
+        },{
+            "session": "41ef8608-392d-49cc-bcbd-82bdadaeed1d",
+            "id": "206ecb26-b0f4-4229-bf3d-6787e84c8644"
+        },{
+            "session": "7acfa5ec-c0ab-4250-8640-8cbc42e12def",
+            "id": "9ce21e22-89cd-424d-bb3d-66b7f58233d1"
+        },{
+            "session": "b91d5a20-8821-478b-a1c6-d31a1aea43ed",
+            "id": "5de91099-b46a-40b1-8902-d08184f9570a"
+        },{
+            "session": "3cf6b143-bd60-4dc9-a78c-e3d6ecb8b14a",
+            "id": "e8638c27-dae8-4ddc-88e3-9b5b2b38d8b1"
+        },{
+            "session": "e121ce90-0a69-49b1-81c1-eae1ab0fd58b",
+            "id": "b065f2c0-2f8d-483c-b4bd-a1f1d42cddb3"
+        },{
+            "session": "c136c6f9-478c-483a-96fa-4df7537ae75f",
+            "id": "5fc03a4a-16ac-4d5c-8cd1-d34734678a1c"
+        },{
+            "session": "c985d1a0-de60-4f30-9b21-5d9e8afd1d26",
+            "id": "74fa2e2c-45bc-4c51-8da2-679b3c2102eb"
+        },{
+            "session": "d43cbfd2-978e-4712-822d-8e347ec24222",
+            "id": "00e063b0-a0aa-4190-ba99-58e1b0d0a5f9"
+        },{
+            "session": "662d4674-dbf1-472a-9d07-aa3091baa21b",
+            "id": "c53f9bf4-f0ab-44c8-9948-e9822af94b5a"
+        }],
+        "schedule":"",
+        "emergencyContact":
+        [{
+            "name":"Michelle Barron",
+            "relationship":"Mother",
+            "phoneNumber":"421-555-7866"
+        }],
+        "healthCare":
+        [{
+            "name":"InsureUBest",
+            "policyNumber":"X349302",
+            "doctor":"Dr. Sanders"
+        }]
+    },{
+        "id":"aa4d03ba-b56f-4d10-8a91-7275ef010193",
+        "firstName":"Jackson",
+        "lastName":"Hoffman",
+        "age":16,
+        "cabin":
+        [{
+            "session": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
+            "id": "48ada540-c627-439e-89bf-4b1ed57fb5ed"
+        },{
+            "session": "41ef8608-392d-49cc-bcbd-82bdadaeed1d",
+            "id": "c339e88e-1c0c-40c8-916e-97684da740f1"
+        },{
+            "session": "7acfa5ec-c0ab-4250-8640-8cbc42e12def",
+            "id": "e8cbe1a1-5fd0-4fb8-92c4-44606d17da8d"
+        },{
+            "session": "b91d5a20-8821-478b-a1c6-d31a1aea43ed",
+            "id": "6e20a267-a46a-47e8-bd18-82d6b52ae339"
+        },{
+            "session": "3cf6b143-bd60-4dc9-a78c-e3d6ecb8b14a",
+            "id": "26147189-4174-4c5d-855e-fae3c62e8d2f"
+        },{
+            "session": "e121ce90-0a69-49b1-81c1-eae1ab0fd58b",
+            "id": "61f1d4ef-6763-44ce-8942-ae7ee9a8e591"
+        },{
+            "session": "c136c6f9-478c-483a-96fa-4df7537ae75f",
+            "id": "e07ec05d-ef53-46c6-b063-f9e65ec4589f"
+        },{
+            "session": "c985d1a0-de60-4f30-9b21-5d9e8afd1d26",
+            "id": "898cdbba-88c3-499c-9303-a55fa0ea6278"
+        },{
+            "session": "d43cbfd2-978e-4712-822d-8e347ec24222",
+            "id": "eb7325c9-a974-4901-bf74-4b4cfaeaaa10"
+        },{
+            "session": "662d4674-dbf1-472a-9d07-aa3091baa21b",
+            "id": "bd8874da-95a4-45d4-83a4-a7fefc9e94b4"
+        }],
+        "schedule":"",
+        "emergencyContact":
+        [{
+            "name":"Aiden Hoffman",
+            "relationship":"Father",
+            "phoneNumber":"332-665-5443"
+        }],
+        "healthCare":
+        [{
+            "name":"FederalHealth",
+            "policyNumber":"Q453797256",
+            "doctor":"Dr. Walters"
+        }]
+    },{
+        "id":"d35374a2-9b52-42b9-9148-a1e2ad9a20fc",
+        "firstName":"Cara",
+        "lastName":"Eckert",
+        "age":18,
+        "cabin":
+        [{
+            "session": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
+            "id": "a5e429e2-928f-4977-8b5b-96c97902d017"
+        },{
+            "session": "41ef8608-392d-49cc-bcbd-82bdadaeed1d",
+            "id": "c68df7ec-eee8-41c3-9e1a-939f7f76948b"
+        },{
+            "session": "7acfa5ec-c0ab-4250-8640-8cbc42e12def",
+            "id": "f4b5c89b-c07e-4789-bf89-f9404c138c55"
+        },{
+            "session": "b91d5a20-8821-478b-a1c6-d31a1aea43ed",
+            "id": "dd664f44-b888-4d19-8f98-017083f3e971"
+        },{
+            "session": "3cf6b143-bd60-4dc9-a78c-e3d6ecb8b14a",
+            "id": "62bcff24-d28a-4cf8-865a-3d9f517abdc9"
+        },{
+            "session": "e121ce90-0a69-49b1-81c1-eae1ab0fd58b",
+            "id": "33b9c321-8c78-4c25-af44-3818d77da152"
+        },{
+            "session": "c136c6f9-478c-483a-96fa-4df7537ae75f",
+            "id": "e384e468-51d4-4e3a-9d74-e94a05145546"
+        },{
+            "session": "c985d1a0-de60-4f30-9b21-5d9e8afd1d26",
+            "id": "442f451d-4a70-4fb0-9c74-13ad186752c4"
+        },{
+            "session": "d43cbfd2-978e-4712-822d-8e347ec24222",
+            "id": "21c4170d-c85c-4467-a4c2-6f53c8fe0f54"
+        },{
+            "session": "662d4674-dbf1-472a-9d07-aa3091baa21b",
+            "id": "9ef22a97-f3b1-402b-8c9a-3998010a06ac"
+        }],
+        "schedule":"",
+        "emergencyContact":
+        [{
+            "name":"Julie Eckert",
+            "relationship":"Mother",
+            "phoneNumber":"609-432-7709"
+        }],
+        "healthCare":
+        [{
+            "name":"UnitedHealthCare",
+            "policyNumber":"79799963",
+            "doctor":"Dr. Reed"
         }]
     }
 ]
