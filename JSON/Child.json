@@ -6,9 +6,9 @@
       "age": "11",
       "session": "Week 1",
       "deitaryRestrictions": "Corn",
-      "allergies": [
-        "Corn"],
-      "medications": "None",
+      "allergies": 
+        "Corn",
+      "medications": ["None"],
       "healthCare": 
         {
           "name": "Medicaid",
@@ -21,11 +21,7 @@
           "name": "Karen Huger",
           "relationship": "Mother",
           "phoneNumber": "843-832-8881"
-<<<<<<< HEAD
-        }
-=======
         }      
->>>>>>> 7d74d6b46b56440f20694d2017e04df45ea382c5
     },
     {
       "id": "09127ee4-d9ad-410b-b317-6a3eeccb0d81",
@@ -34,10 +30,10 @@
       "age": "12",
       "session": "Week 1",
       "deitaryRestrictions": "Peanut foods",
-      "allergies": [
+      "allergies": 
         "Peanuts"
-      ],
-      "medications": "Epi-Pen",
+      ,
+      "medications": ["Epi-Pen"],
       "healthCare": 
         {
           "name": "BlueCross BlueShield",
@@ -60,10 +56,10 @@
       "age": "13",
       "session": "Week 1",
       "deitaryRestrictions": "None",
-      "allergies": [
+      "allergies": 
         "None"
-      ],
-      "medications": "None",
+      ,
+      "medications": ["None"],
       "healthCare": 
         {
           "name": "None",
@@ -85,10 +81,10 @@
         "age": "14",
         "session": "Week 1",
         "deitaryRestrictions": "None",
-        "allergies": [
+        "allergies": 
             "None"
-        ],
-        "medications": "None",
+        ,
+        "medications": ["None"],
         "healthCare":
             {
                 "name":"None",
@@ -707,22 +703,14 @@
            "policyNumber":"FFF2342349845045",
            "doctor":"Dr. Mostert"
          }
-<<<<<<< HEAD
-      ,
-=======
     ,
->>>>>>> 7d74d6b46b56440f20694d2017e04df45ea382c5
       "emergencyContact":
          {
            "name":"Hannah Cella",
            "relationship":"Mother",
            "phoneNumber":"344-540-9012"
          }
-<<<<<<< HEAD
-       
-=======
      
->>>>>>> 7d74d6b46b56440f20694d2017e04df45ea382c5
     },
     {
       "id":"e9caf311-ae49-4484-b8a2-78791adbb90e",

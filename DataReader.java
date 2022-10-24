@@ -29,14 +29,14 @@ public class DataReader  {
         String dietaryRestriction = (String)user.get("deitaryRestrictions");
         ArrayList<String> dietaryRestrictions = new ArrayList<String>();
         dietaryRestrictions.add(dietaryRestriction);
-        ArrayList<String> allergyL = (ArrayList<String>)user.get("allergies");
-        String allergy=allergyL.get(0);
+        String allergy = (String)user.get("allergies");
+        //String allergy=allergyL.get(0);
         ArrayList<String> allergies = new ArrayList<String>();
         allergies.add(allergy);
        //ArrayList<String> allergies = null;
-        String medication = (String)user.get("medications");
+        ArrayList<String> medication = (ArrayList<String>)user.get("medications");
         ArrayList<String> medications = new ArrayList<String>();
-        medications.add(medication);
+        medications.addAll(medication);
         JSONObject emergencyContact =(JSONObject)user.get("healthCare");
         String eName = (String)emergencyContact.get("name");
         String eRelationship = (String)emergencyContact.get("relationship");
