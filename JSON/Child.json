@@ -9,19 +9,19 @@
       "allergies": [
         "Corn"],
       "medications": "None",
-      "healthCare": 
+      "healthCare": [
         {
           "name": "Medicaid",
           "policyNumber": "TXF343243244",
           "doctor": "Dr. Henley"
-        }
+        }]
       ,
-      "emergencyContact": 
+      "emergencyContact": [
         {
           "name": "Karen Huger",
           "relationship": "Mother",
           "phoneNumber": "843-832-8881"
-        }
+        }]
       
     },
     {
