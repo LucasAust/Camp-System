@@ -16,12 +16,8 @@ public class Cabin {
     }
     public void addCounselor()
     {
-<<<<<<< HEAD
-=======
-        //WIP
         Cabin cabin = new Cabin(ageRange, counselor, maxCampers);
         Counselor counselor = new Counselor();
->>>>>>> DeepNPatel
         cabins.add(counselor);
     }
     public void addCampers()
