@@ -6,17 +6,16 @@
       "age": "11",
       "session": "Week 1",
       "deitaryRestrictions": "Corn",
-      "allergies": [
-        "Corn"
-      ],
+      "allergies": 
+        "Corn",
       "medications": "None",
-      "healthCare": [
+      "healthCare": 
         {
           "name": "Medicaid",
           "policyNumber": "TXF343243244",
           "doctor": "Dr. Henley"
         }
-      ],
+      ,
       "emergencyContact": [
         {
           "name": "Karen Huger",

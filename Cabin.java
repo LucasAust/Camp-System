@@ -18,11 +18,12 @@ public class Cabin {
     {
         Cabin cabin = new Cabin(ageRange, counselor, maxCampers);
         Counselor counselor = new Counselor();
-        cabins.add(counselor);
+        this.counselor=counselor;
     }
     public void addCampers()
     {
-        cabins.add(campers);
+        
+        campers.add(Child.getChild());
     }
     public Schedule getSchedule()
     {

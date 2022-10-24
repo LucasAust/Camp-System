@@ -6,12 +6,14 @@ public class healthInfo {
     protected String doctor;
     protected ArrayList<String> dietaryRestrictions = new ArrayList<String>();
     protected ArrayList<String> allergies = new ArrayList<String>();
+    protected ArrayList<String> medications = new ArrayList<String>();
 
-    public healthInfo(String insurance, String policyNumber,String doctor,ArrayList<String> dietaryRestrictions, ArrayList<String> allergies) {
+    public healthInfo(String insurance, String policyNumber,String doctor,ArrayList<String> dietaryRestrictions2, ArrayList<String> allergies2, ArrayList<String> medications) {
         this.insurance = insurance;
         this.policyNumber = policyNumber;
         this.doctor = doctor;
-        this.dietaryRestrictions = dietaryRestrictions;
-        this.allergies = allergies;
+        this.dietaryRestrictions = dietaryRestrictions2;
+        this.allergies = allergies2;
+        this.medications = medications;
     }
 }

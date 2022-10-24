@@ -6,7 +6,7 @@ public class Director extends RegisteredUser{
   public Director(String firstName, String lastName, String userName, String email, String password) {
     super(firstName, lastName, userName, email, password);  }
 
-  private ArrayList<String> activities;
+  private ArrayList<Activity> activities;
 
 public void addActivities(Activity activity){
     activities.add(activity);
