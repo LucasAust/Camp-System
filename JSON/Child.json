@@ -22,7 +22,6 @@
           "relationship": "Mother",
           "phoneNumber": "843-832-8881"
         }
-      
     },
     {
       "id": "09127ee4-d9ad-410b-b317-6a3eeccb0d81",
@@ -61,20 +60,19 @@
         "None"
       ],
       "medications": "None",
-      "healthCare": [
+      "healthCare": 
         {
           "name": "None",
           "policyNumber": "000",
           "doctor": "Dr. Zach"
         }
-      ],
-      "emergencyContact": [
+      ,
+      "emergencyContact": 
         {
           "name": "Oliver Kole",
           "relationship": "Father",
           "phoneNumber": "341-209-3432"
         }
-      ]
     },
     {
         "id": "dc4d2425-4b05-4c28-b15a-767690f7e6a6",
@@ -87,20 +85,19 @@
             "None"
         ],
         "medications": "None",
-        "healthCare":[
+        "healthCare":
             {
                 "name":"None",
                 "policyNumber":"000", 
                 "doctor":"Dr. Zach"
             }
-        ],
-        "emergencyContact": [
+        ,
+        "emergencyContact": 
           {
             "name": "Thomas Grasshopper",
             "relationship": "Father",
             "phoneNumber": "212-323-1232"
-          }
-        ]
+          }  
     },
     {
         "id":"b02dbd07-87ca-403b-847d-64d512782118",
@@ -114,19 +111,18 @@
             "Epi-Pen"
         ],
         "healthCare":
-           [{
+           {
              "name":"InsuranceCare",
              "policyNumber":"G38348222",
              "doctor":"Dr. Gary"
            }
-        ],
+        ,
         "emergencyContact":
-           [{
+          {
              "name":"Thomas Smith",
              "relationship":"Father",
              "phoneNumber":"484-583-9090"
-           }
-        ]
+          }
     },
     {
         "id":"7af25449-0539-4818-b82f-dbb376b1d4dd",
@@ -140,19 +136,18 @@
             "None"
         ],
         "healthCare":
-           [{
+           {
              "name":"InsuranceCare",
              "policyNumber":"G2434243",
              "doctor":"Dr. Bortles"
            }
-        ],
+      ,
         "emergencyContact":
-           [{
+           {
              "name":"Ken Ronald",
              "relationship":"Father",
              "phoneNumber":"682-861-0900"
            }
-        ]
     },
     {
         "id":"a5c8b6f0-8feb-45a1-ab12-56bf94b8fcfe",
@@ -166,19 +161,18 @@
             "None"
         ],
         "healthCare":
-           [{
+           {
              "name":"Medicaid",
              "policyNumber":"F1232359",
              "doctor":"Dr. Thompson"
            }
-        ],
+        ,
         "emergencyContact":
-           [{
+           {
              "name":"Cameron Johnson",
              "relationship":"Mother",
              "phoneNumber":"215-616-1987"
            }
-        ]
     },
     {
         "id":"967ffccf-bcfd-4622-9441-134c9d05e7af",
@@ -192,19 +186,18 @@
             "None"
         ],
         "healthCare":
-           [{
+           {
              "name":"HealthForU",
              "policyNumber":"3393498345",
              "doctor":"Dr. Freddy"
            }
-        ],
+        ,
         "emergencyContact":
-           [{
+           {
              "name":"Ryan Adams",
              "relationship":"Father",
              "phoneNumber":"843-343-7425"
-           }
-        ]
+           }   
     },
   
     {
@@ -219,19 +212,18 @@
             "None"
         ],
         "healthCare":
-           [{
+           {
              "name":"AffordableHealthCare",
              "policyNumber":"3432432342",
              "doctor":"Dr. Colby"
            }
-        ],
+        ,
         "emergencyContact":
-           [{
+           {
              "name":"Paula Owens",
              "relationship":"Mother",
              "phoneNumber":"323-232-4754"
-           }
-        ]
+           }  
     },
     {
         "id":"1a24adc3-9cf0-4a06-96e1-2c843c55bd55",
@@ -245,19 +237,18 @@
             "None"
         ],
         "healthCare":
-           [{
+           {
              "name":"AffordableHealthCare",
              "policyNumber":"23234215",
              "doctor":"Dr. Chanel"
            }
-        ],
+        ,
         "emergencyContact":
-           [{
+          {
              "name":"Sadie Crocker",
              "relationship":"Mother",
              "phoneNumber":"803-123-4754"
-           }
-        ]
+           }  
     },
     {
         "id":"752126e1-5067-4846-9e01-cf3822215162",
@@ -271,19 +262,18 @@
             "None"
         ],
         "healthCare":
-           [{
+           {
              "name":"AffordableHealthCare",
              "policyNumber":"23234215",
              "doctor":"Dr. Chanel"
            }
-        ],
+        ,
         "emergencyContact":
-           [{
+           {
              "name":"Sadie Crocker",
              "relationship":"Mother",
              "phoneNumber":"803-123-4754"
-           }
-        ]   
+           }      
     },
     {
         "id":"3e53f165-8412-4c3d-ae0d-e54144274be4",
@@ -297,19 +287,18 @@
             "None"
         ],
         "healthCare":
-           [{
+           {
              "name":"InsuranceForU",
              "policyNumber":"HY324324212329",
              "doctor":"Dr. Henderson"
            }
-        ],
+        ,
         "emergencyContact":
-           [{
+           {
              "name":"Margot Thomas",
              "relationship":"Grandmother",
              "phoneNumber":"758-901-8423"
-           }
-        ]   
+           }  
     },
     {
         "id":"0a188e15-2c34-46ce-87f9-ad6ae71d1968",
@@ -323,19 +312,18 @@
             "None"
         ],
         "healthCare":
-           [{
+           {
              "name":"FederalHealth",
              "policyNumber":"F234342",
              "doctor":"Dr. Commander"
            }
-        ],
+        ,
         "emergencyContact":
-           [{
+           {
              "name":"Tony Wentz",
              "relationship":"Father",
              "phoneNumber":"753-900-0234"
-           }
-        ]   
+           }          
     },
     {
         "id":"b4dcf63b-2e23-41ef-8bbe-e114b8427fe1",
@@ -349,19 +337,18 @@
             "None"
         ],
         "healthCare":
-           [{
+           {
              "name":"Gary's Insurance",
              "policyNumber":"FFRFNK34",
              "doctor":"Dr. Simons"
            }
-        ],
+        ,
         "emergencyContact":
-           [{
+           {
              "name":"Ricky Rogers",
              "relationship":"Father",
              "phoneNumber":"234-575-8345"
-           }
-        ]   
+           }       
     },
     {
         "id":"1be75f65-0287-407b-a1f6-2682d18429bd",
@@ -375,19 +362,18 @@
             "Epi-Pen"
         ],
         "healthCare":
-           [{
+           {
              "name":"ObamaCare",
              "policyNumber":"90903039503490909364134",
              "doctor":"Dr. Stamps"
            }
-        ],
+      ,
         "emergencyContact":
-           [{
+           {
              "name":"Gregory Highsmif",
              "relationship":"Father",
              "phoneNumber":"233-676-6834"
-           }
-        ] 
+           }         
     },
     {
         "id":"fd83807d-aecc-455b-aa4a-b34e41cf0177",
@@ -401,19 +387,18 @@
             "None"
         ],
         "healthCare":
-           [{
+           {
              "name":"BlueCross BlueShield",
              "policyNumber":"234324234",
              "doctor":"Dr. Faulkner"
            }
-        ],
+        ,
         "emergencyContact":
-           [{
+           {
              "name":"Patrick Stark",
              "relationship":"Guardian",
              "phoneNumber":"546-634-3284"
-           }
-        ] 
+           }    
     },
   
     {
@@ -428,19 +413,18 @@
           "None"
       ],
       "healthCare":
-         [{
+         {
            "name":"AffordableHealthCare",
            "policyNumber":"3453895",
            "doctor":"Dr. Snow"
          }
-      ],
+      ,
       "emergencyContact":
-         [{
+         {
            "name":"Courtney Cannister",
            "relationship":"Mother",
            "phoneNumber":"647-343-8482"
          }
-      ] 
     },
     {
       "id":"dd1893fc-bb11-48b7-9cd1-45639bb44802",
@@ -454,19 +438,18 @@
           "None"
       ],
       "healthCare":
-         [{
+         {
            "name":"AffordableHealthCare",
            "policyNumber":"G23242",
            "doctor":"Dr. George"
          }
-      ],
+      ,
       "emergencyContact":
-         [{
+         {
            "name":"Jules Attkison",
            "relationship":"Mother",
            "phoneNumber":"803-234-6839"
          }
-      ] 
     },
     {
       "id":"046399f5-bf8b-4664-802c-54988d45fcf4",
@@ -480,19 +463,19 @@
           "None"
       ],
       "healthCare":
-         [{
+         {
            "name":"InsuranceForU",
            "policyNumber":"246546456",
            "doctor":"Dr. Smiley"
          }
-      ],
+      ,
       "emergencyContact":
-         [{
+         {
            "name":"Kate Seinfeld",
            "relationship":"Mother",
            "phoneNumber":"843-234-3468"
          }
-      ] 
+       
     },
     {
       "id":"7ec9eca7-b911-45f0-b65e-1430d5fd50a1",
@@ -506,19 +489,19 @@
           "None"
       ],
       "healthCare":
-         [{
+         {
            "name":"FederalHealth",
            "policyNumber":"3453453145",
            "doctor":"Dr. Issac"
          }
-      ],
+      ,
       "emergencyContact":
-         [{
+         {
            "name":"Prashant Patel",
            "relationship":"Father",
            "phoneNumber":"753-234-2346"
          }
-      ] 
+       
     },
     {
       "id":"d6c0ebe5-ba02-4e93-adb8-26c77dcdd7f5",
@@ -532,19 +515,19 @@
           "None"
       ],
       "healthCare":
-         [{
+         {
            "name":"Gary's Insurance",
            "policyNumber":"25323597607",
            "doctor":"Dr. Smith"
          }
-      ],
+      ,
       "emergencyContact":
-         [{
+        {
            "name":"Roger Tillup",
            "relationship":"Father",
            "phoneNumber":"234-567-8490"
          }
-      ] 
+       
     },
     {
       "id":"d5a9fbac-5716-4ee5-aed9-efa7b6a13586",
@@ -558,19 +541,19 @@
           "None"
       ],
       "healthCare":
-         [{
+         {
            "name":"BlueCross BlueShield",
            "policyNumber":"35345GHDF",
            "doctor":"Dr. Kyler"
          }
-      ],
+      ,
       "emergencyContact":
-         [{
+         {
            "name":"Pat Clark",
            "relationship":"Father",
            "phoneNumber":"460-454-3345"
          }
-      ] 
+       
     },
     {
       "id":"4e7f8252-fc34-46a5-81e9-3bb0d3c0abff",
@@ -584,19 +567,19 @@
           "None"
       ],
       "healthCare":
-         [{
+         {
            "name":"Medicare",
            "policyNumber":"234595656460",
            "doctor":"Dr. Hatoff"
          }
-      ],
+      ,
       "emergencyContact":
-         [{
+         {
            "name":"Patricia Rios",
            "relationship":"Mother",
            "phoneNumber":"646-565-3453"
          }
-      ] 
+       
     },
     {
       "id":"92baa418-1f72-4990-8407-cdb2434fbf02",
@@ -610,19 +593,19 @@
           "Epi-Pen"
       ],
       "healthCare":
-         [{
+         {
            "name":"Pilot Health Foundation",
            "policyNumber":"TYTYNGJ85HH3243",
            "doctor":"Dr. Kansas"
          }
-      ],
+      ,
       "emergencyContact":
-         [{
+         {
            "name":"Jill Barkely",
            "relationship":"Mother",
            "phoneNumber":"287-834-3472"
          }
-      ] 
+       
     },
   
     {
@@ -637,19 +620,19 @@
           "None"
       ],
       "healthCare":
-         [{
+         {
            "name":"AffordableHealthCare",
            "policyNumber":"37348",
            "doctor":"Dr. Towns"
          }
-      ],
+      ,
       "emergencyContact":
-         [{
+         {
            "name":"Jamie Scary",
            "relationship":"Mother",
            "phoneNumber":"234-784-6578"
          }
-      ] 
+       
     },
     {
       "id":"5de38696-f343-4855-bcc1-89c2f817c2c8",
@@ -663,19 +646,19 @@
           "None"
       ],
       "healthCare":
-         [{
+         {
            "name":"AffordableHealthCare",
            "policyNumber":"H393854395839453",
            "doctor":"Dr. Lacy"
          }
-      ],
+      ,
       "emergencyContact":
-         [{
+         {
            "name":"Sydney Shaheen",
            "relationship":"Mother",
            "phoneNumber":"823-412-5464"
          }
-      ] 
+       
     },
     {
       "id":"3394e0c5-8a8a-44d6-8904-52b506177426",
@@ -689,19 +672,19 @@
           "None"
       ],
       "healthCare":
-         [{
+         {
            "name":"InsuranceForU",
            "policyNumber":"G234235785535",
            "doctor":"Dr. Margallia"
          }
-      ],
+      ,
       "emergencyContact":
-         [{
+         {
            "name":"Pooh Shiesty",
            "relationship":"Father",
            "phoneNumber":"843-234-6435"
          }
-      ] 
+       
     },
     {
       "id":"dc87819a-020f-4af5-b251-cbf8797b1174",
@@ -715,19 +698,19 @@
           "None"
       ],
       "healthCare":
-         [{
+         {
            "name":"FederalHealth",
            "policyNumber":"FFF2342349845045",
            "doctor":"Dr. Mostert"
          }
-      ],
+      ,
       "emergencyContact":
-         [{
+         {
            "name":"Hannah Cella",
            "relationship":"Mother",
            "phoneNumber":"344-540-9012"
          }
-      ] 
+       
     },
     {
       "id":"e9caf311-ae49-4484-b8a2-78791adbb90e",
