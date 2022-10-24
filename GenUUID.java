@@ -8,6 +8,6 @@ public class GenUUID {
             dataReader.saveAllUsers();
         }*/
         DataReader dataReader = new DataReader();
-            dataReader.saveAllUsers();
+            dataReader.getAllSessions();
     }
 }

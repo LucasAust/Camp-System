@@ -7,17 +7,17 @@
         "cabin":["ac37b1aa-cd15-438f-b984-5c6720d8658c","5aa4527d-f9d2-44c7-9a13-0806848c96b1","afa846e6-0d8f-48f0-972e-e9afee0a0f04","8a3d1a9b-c7bd-49b9-8f99-1c4d5a77d161","11211328-19a0-4440-b707-f01ccabef943","54dd7887-3eca-459f-9226-650064ccd710","b7e68670-439b-45db-9b3c-7cab993a4018","8bb26a56-a0de-49fc-a5bb-d5f0b4155fd4","920e6b1e-10be-4fac-ba77-c95b0fd48c64","ac6f2ad6-4aa4-4a8c-965f-eaf02a419443"],
         "schedule":"",
         "emergencyContact":
-        [{
+        {
             "name":"Sarah Adams",
             "relationship":"Mother",
             "phoneNumber":"372-545-2376"
-        }],
+        },
         "healthCare":
-        [{
+        {
             "name":"BlueCross BlueShield",
             "policyNumber":"76373267",
             "doctor":"Dr. Kramer"
-        }]
+        }
     },{
         "id":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
         "firstName":"Carl",
@@ -27,7 +27,6 @@
         [{
             "session": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
             "id": "55651d66-926d-4a50-a957-019ad82e5873"
-            // should I add session title and campers id too
         },{
             "session": "41ef8608-392d-49cc-bcbd-82bdadaeed1d",
             "id": "b4739f65-7917-42e8-8f61-7588a3476195"
