@@ -1,33 +1,36 @@
-//import java.util.ArrayList;
+import java.util.ArrayList;
 
-public class Counselor {
-  public Schedule schedule;
-  public emergencyContact emergencyContact;
-  public healthInfo healthcare;
-  public Cabin cabin;
+public class Counselor{
+    protected String firstName;
+    protected String lastName;
+    protected int age;
+    protected Schedule schedule;
+    protected Cabin cabin;
+    protected emergencyContact emergencyContact;
+    protected healthInfo healthInfo;
+    protected String allergy;
+    protected ArrayList<String> allergies = new ArrayList<String>();
+    protected ArrayList<emergencyContact> emergencyContacts;
 
-  public void viewSchdule(Schedule schedule){
+    public void viewSchedule(Schedule schedule) {
 
-  }
-  
-  public void viewCabin()
-  {
-      for(int i=0; i<campers.size(); i++)
-      {
-          System.out.println(campers);
-      }
-  }
+    }
 
-  public void addAlergies(){
+    public void addAllergies(ArrayList<String> allergies) {
+        allergies.add(allergy);
+    }
 
-  }
+    public void addEmergencyContact(emergencyContact emergencyContact) {
+        emergencyContact contact = new emergencyContact(emergencyContact.name,emergencyContact.relationship,emergencyContact.phoneNumber);
+        emergencyContacts.add(contact);
+    }
 
-  public void addEmergencyContact(){
+    public void viewCabin() {
 
-  }
+    }
 
-  public void addHealthInfo(){
-    
-  }
-
+    public void addHealthInfo(healthInfo healthInfo)
+    {
+        addHealthInfo(healthInfo);
+    }
 }
