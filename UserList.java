@@ -9,11 +9,14 @@ public class UserList {
   }
 
   public static UserList getInstance() {
-    return null;
+    if (UserList == null) {
+      UserList = new UserList();
+    }
+    return UserList;
   }
 
-  public boolean addUser(String firstName, String lastName, String username, String email, String password) {
-    return true;
+  public void addUser(String firstName, String lastName, String username, String email, String password) {
+    users.add(new RegisteredUser(firstName, lastName, username, email, password));
   }
 
   public ArrayList<User> getUser() {
