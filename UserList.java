@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
 public class UserList {
-  private ArrayList<User> users;
   private static UserList UserList;
+  private ArrayList<User> users;
 
   private UserList() {
-   // users = DataReader.saveAllUsers();
+    users = DataReader.saveAllUsers();
   }
 
   public static UserList getInstance() {
@@ -13,11 +13,11 @@ public class UserList {
   }
 
   public boolean addUser(String firstName, String lastName, String username, String email, String password) {
-return true;
+    return true;
   }
 
-  public ArrayList<UserList> getUser() {
-    return null;
+  public ArrayList<User> getUser() {
+    return users;
   }
 
   public void saveUser() {
