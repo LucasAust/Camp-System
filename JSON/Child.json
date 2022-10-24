@@ -4,7 +4,7 @@
       "firstName": "Josh",
       "lastName": "Huger",
       "age": "11",
-      "session": "Session 1",
+      "session": "Week 1",
       "deitaryRestrictions": "Corn",
       "allergies": [
         "Corn"
@@ -30,7 +30,7 @@
       "firstName": "Darrell",
       "lastName": "Jones",
       "age": "12",
-      "session": "Session 1",
+      "session": "Week 1",
       "deitaryRestrictions": "Peanut foods",
       "allergies": [
         "Peanuts"
@@ -56,7 +56,7 @@
       "firstName": "Jack",
       "lastName": "Kole",
       "age": "13",
-      "session": "Session 1",
+      "session": "Week 1",
       "deitaryRestrictions": "None",
       "allergies": [
         "None"
@@ -82,7 +82,7 @@
         "firstName": "Amy",
         "lastName": "Grasshopper",
         "age": "14",
-        "session": "Session 1",
+        "session": "Week 1",
         "deitaryRestrictions": "None",
         "allergies": [
             "None"
@@ -108,7 +108,7 @@
         "firstName":"Jill",
         "lastName":"Smith",
         "age":"15",
-        "session":"Session 1",
+        "session":"Week 1",
         "deitaryRestrictions":"Seafood",
         "allergies":"Shellfish",
         "medications": [
@@ -134,7 +134,7 @@
         "firstName":"Rebecca",
         "lastName":"Ronald",
         "age":"15",
-        "session":"Session 1",
+        "session":"Week 1",
         "deitaryRestrictions":"Seafood",
         "allergies":"Seafood",
         "medications": [
@@ -160,7 +160,7 @@
         "firstName":"Kasey",
         "lastName":"Johnson",
         "age":"16",
-        "session":"Session 1",
+        "session":"Week 1",
         "deitaryRestrictions":"None",
         "allergies":"None",
         "medications": [
@@ -186,7 +186,7 @@
         "firstName":"Alex",
         "lastName":"Adams",
         "age":"17",
-        "session":"Session 1",
+        "session":"Week 1",
         "deitaryRestrictions":"None",
         "allergies":"None",
         "medications": [
@@ -213,7 +213,7 @@
         "firstName":"Jeremy",
         "lastName":"Owens",
         "age":"11",
-        "session":"Session 2",
+        "session":"Week 1",
         "deitaryRestrictions":"None",
         "allergies":"None",
         "medications": [
@@ -239,7 +239,7 @@
         "firstName":"Thomas",
         "lastName":"Crocker",
         "age":"12",
-        "session":"Session 2",
+        "session":"Week 1",
         "deitaryRestrictions":"Gluten",
         "allergies":"Gluten",
         "medications": [
@@ -265,7 +265,7 @@
         "firstName":"Thomas",
         "lastName":"Crocker",
         "age":"12",
-        "session":"Session 2",
+        "session":"Week 1",
         "deitaryRestrictions":"Gluten",
         "allergies":"Gluten",
         "medications": [
@@ -291,7 +291,7 @@
         "firstName":"Edison",
         "lastName":"Thomas",
         "age":"13",
-        "session":"Session 2",
+        "session":"Week 1",
         "deitaryRestrictions":"None",
         "allergies":"None",
         "medications": [
@@ -317,7 +317,7 @@
         "firstName":"Carson",
         "lastName":"Wentz",
         "age":"14",
-        "session":"Session 2",
+        "session":"Week 1",
         "deitaryRestrictions":"Diabetes",
         "allergies":"None",
         "medications": [
@@ -343,7 +343,7 @@
         "firstName":"Daisy",
         "lastName":"Rogers",
         "age":"15",
-        "session":"Session 2",
+        "session":"Week 1",
         "deitaryRestrictions":"None",
         "allergies":"None",
         "medications": [
@@ -369,7 +369,7 @@
         "firstName":"Cedrick",
         "lastName":"Highsmif",
         "age":"15",
-        "session":"Session 2",
+        "session":"Week 1",
         "deitaryRestrictions":"Gluten",
         "allergies":"Tree nuts",
         "medications": [
@@ -395,7 +395,7 @@
         "firstName":"Kevin",
         "lastName":"Stark",
         "age":"16",
-        "session":"Session 2",
+        "session":"Week 1",
         "deitaryRestrictions":"None",
         "allergies":"None",
         "medications": [
@@ -422,7 +422,7 @@
       "firstName":"Oscar",
       "lastName":"Cannister",
       "age":"11",
-      "session":"Session 3",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -448,7 +448,7 @@
       "firstName":"Jagger",
       "lastName":"Attkison",
       "age":"12",
-      "session":"Session 3",
+      "session":"Week 1",
       "deitaryRestrictions":"Gluten",
       "allergies":"Gluten",
       "medications": [
@@ -474,7 +474,7 @@
       "firstName":"Jerry",
       "lastName":"Seinfeld",
       "age":"13",
-      "session":"Session 3",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -500,7 +500,7 @@
       "firstName":"Deep",
       "lastName":"Patel",
       "age":"14",
-      "session":"Session 3",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -526,7 +526,7 @@
       "firstName":"Mercedes",
       "lastName":"Tillup",
       "age":"15",
-      "session":"Session 3",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -552,7 +552,7 @@
       "firstName":"Austin",
       "lastName":"Clark",
       "age":"16",
-      "session":"Session 3",
+      "session":"Week 1",
       "deitaryRestrictions":"Gluten",
       "allergies":"None",
       "medications": [
@@ -578,7 +578,7 @@
       "firstName":"Jafet",
       "lastName":"Rios",
       "age":"17",
-      "session":"Session 3",
+      "session":"Week 1",
       "deitaryRestrictions":"Gluten",
       "allergies":"None",
       "medications": [
@@ -604,7 +604,7 @@
       "firstName":"Raza",
       "lastName":"Barkely",
       "age":"14",
-      "session":"Session 3",
+      "session":"Week 1",
       "deitaryRestrictions":"Tree nuts",
       "allergies":"Tree nuts",
       "medications": [
@@ -631,7 +631,7 @@
       "firstName":"Terry",
       "lastName":"Scary",
       "age":"11",
-      "session":"Session 4",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -657,7 +657,7 @@
       "firstName":"Matthew",
       "lastName":"Shaheen",
       "age":"12",
-      "session":"Session 4",
+      "session":"Week 1",
       "deitaryRestrictions":"Gluten",
       "allergies":"Gluten",
       "medications": [
@@ -683,7 +683,7 @@
       "firstName":"Joe",
       "lastName":"Shiesty",
       "age":"13",
-      "session":"Session 4",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -709,7 +709,7 @@
       "firstName":"Norman",
       "lastName":"Cella",
       "age":"14",
-      "session":"Session 4",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -735,7 +735,7 @@
       "firstName":"Emma",
       "lastName":"Granger",
       "age":"15",
-      "session":"Session 4",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -761,7 +761,7 @@
       "firstName":"Marquise",
       "lastName":"Brown",
       "age":"15",
-      "session":"Session 4",
+      "session":"Week 1",
       "deitaryRestrictions":"Gluten",
       "allergies":"None",
       "medications": [
@@ -787,7 +787,7 @@
       "firstName":"Kate",
       "lastName":"Moore",
       "age":"16",
-      "session":"Session 4",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -813,7 +813,7 @@
       "firstName":"Miller",
       "lastName":"Amendola",
       "age":"17",
-      "session":"Session 4",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -840,7 +840,7 @@
       "firstName":"Conor",
       "lastName":"McGregor",
       "age":"11",
-      "session":"Session 5",
+      "session":"Week 1",
       "deitaryRestrictions":"Vegetarian",
       "allergies":"Pollen",
       "medications": [
@@ -866,7 +866,7 @@
       "firstName":"Kennedy",
       "lastName":"Ferguson",
       "age":"12",
-      "session":"Session 5",
+      "session":"Week 1",
       "deitaryRestrictions":"Lactose intolerant",
       "allergies":"None",
       "medications": [
@@ -892,7 +892,7 @@
       "firstName":"Tyrod",
       "lastName":"Taylor",
       "age":"13",
-      "session":"Session 5",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"Animal fur",
       "medications": [
@@ -918,7 +918,7 @@
       "firstName":"Phillip",
       "lastName":"Byrant",
       "age":"14",
-      "session":"Session 5",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -944,7 +944,7 @@
       "firstName":"Alyx",
       "lastName":"Kohut",
       "age":"15",
-      "session":"Session 5",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"Latex",
       "medications": [
@@ -970,7 +970,7 @@
       "firstName":"Lucas",
       "lastName":"Bateman",
       "age":"15",
-      "session":"Session 5",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -996,7 +996,7 @@
       "firstName":"Ali",
       "lastName":"Friend",
       "age":"16",
-      "session":"Session 5",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -1022,7 +1022,7 @@
       "firstName":"Zach",
       "lastName":"Thomas",
       "age":"17",
-      "session":"Session 5",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -1049,7 +1049,7 @@
       "firstName":"Paul",
       "lastName":"George",
       "age":"11",
-      "session":"Session 6",
+      "session":"Week 1",
       "deitaryRestrictions":"Vegetarian",
       "allergies":"None",
       "medications": [
@@ -1075,7 +1075,7 @@
       "firstName":"Bishop",
       "lastName":"England",
       "age":"12",
-      "session":"Session 6",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -1101,7 +1101,7 @@
       "firstName":"Maxwell",
       "lastName":"Killament",
       "age":"13",
-      "session":"Session 6",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -1127,7 +1127,7 @@
       "firstName":"Paula",
       "lastName":"Sanders",
       "age":"14",
-      "session":"Session 6",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"Dust",
       "medications": [
@@ -1153,7 +1153,7 @@
       "firstName":"Grayson",
       "lastName":"Squires",
       "age":"15",
-      "session":"Session 6",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -1179,7 +1179,7 @@
       "firstName":"Casey",
       "lastName":"Godbold",
       "age":"15",
-      "session":"Session 6",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -1205,7 +1205,7 @@
       "firstName":"Freddy",
       "lastName":"Myers",
       "age":"16",
-      "session":"Session 6",
+      "session":"Week 1",
       "deitaryRestrictions":"Vegetarian",
       "allergies":"None",
       "medications": [
@@ -1231,7 +1231,7 @@
       "firstName":"Holland",
       "lastName":"Omer",
       "age":"17",
-      "session":"Session 6",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -1258,7 +1258,7 @@
       "firstName":"Monty",
       "lastName":"Montana",
       "age":"11",
-      "session":"Session 7",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -1284,7 +1284,7 @@
       "firstName":"Yellowstone",
       "lastName":"National-Park",
       "age":"12",
-      "session":"Session 7",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"Latex",
       "medications": [
@@ -1310,7 +1310,7 @@
       "firstName":"Gucci",
       "lastName":"Mane",
       "age":"13",
-      "session":"Session 7",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"Shellfish",
       "medications": [
@@ -1336,7 +1336,7 @@
       "firstName":"Pax",
       "lastName":"Dellinger",
       "age":"14",
-      "session":"Session 7",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -1362,7 +1362,7 @@
       "firstName":"Nico",
       "lastName":"Mayes",
       "age":"15",
-      "session":"Session 7",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"None",
       "medications": [
@@ -1388,7 +1388,7 @@
       "firstName":"Nancy",
       "lastName":"Attack",
       "age":"15",
-      "session":"Session 7",
+      "session":"Week 1",
       "deitaryRestrictions":"Vegetarian",
       "allergies":"Shellfish",
       "medications": [
@@ -1414,7 +1414,7 @@
       "firstName":"Drake",
       "lastName":"Bell",
       "age":"16",
-      "session":"Session 7",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"Cat fur",
       "medications": [
@@ -1440,7 +1440,7 @@
       "firstName":"Lacey",
       "lastName":"Dale",
       "age":"17",
-      "session":"Session 7",
+      "session":"Week 1",
       "deitaryRestrictions":"None",
       "allergies":"Pollen",
       "medications": [
