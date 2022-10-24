@@ -6,8 +6,8 @@
       "age": "11",
       "session": "Week 1",
       "deitaryRestrictions": "Corn",
-      "allergies": 
-        "Corn",
+      "allergies": [
+        "Corn"],
       "medications": "None",
       "healthCare": 
         {
@@ -16,13 +16,13 @@
           "doctor": "Dr. Henley"
         }
       ,
-      "emergencyContact": [
+      "emergencyContact": 
         {
           "name": "Karen Huger",
           "relationship": "Mother",
           "phoneNumber": "843-832-8881"
         }
-      ]
+      
     },
     {
       "id": "09127ee4-d9ad-410b-b317-6a3eeccb0d81",
@@ -35,20 +35,20 @@
         "Peanuts"
       ],
       "medications": "Epi-Pen",
-      "healthCare": [
+      "healthCare": 
         {
           "name": "BlueCross BlueShield",
           "policyNumber": "56382922",
           "doctor": "Dr. Herbert"
         }
-      ],
-      "emergencyContact": [
+      ,
+      "emergencyContact": 
         {
           "name": "Martha Jones",
           "relationship": "Mother",
           "phoneNumber": "414-591-0092"
         }
-      ]
+      
     },
     {
       "id": "34b3a910-b0b4-40c7-bb08-5c29c2fe6e1b",

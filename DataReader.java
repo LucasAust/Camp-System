@@ -29,10 +29,10 @@ public class DataReader  {
         String dietaryRestriction = (String)user.get("deitaryRestrictions");
         ArrayList<String> dietaryRestrictions = new ArrayList<String>();
         dietaryRestrictions.add(dietaryRestriction);
-        String allergyL = (String)user.get("allergies");
-        //String allergy=allergyL.get(0).toString();
+        ArrayList<String> allergyL = (ArrayList<String>)user.get("allergies");
+        String allergy=allergyL.get(0);
         ArrayList<String> allergies = new ArrayList<String>();
-        allergies.add(allergyL);
+        allergies.add(allergy);
        //ArrayList<String> allergies = null;
         String medication = (String)user.get("medications");
         ArrayList<String> medications = new ArrayList<String>();
