@@ -1,4 +1,3 @@
-import java.rmi.Remote;
 import java.util.ArrayList;
 
 //Ali Omer
