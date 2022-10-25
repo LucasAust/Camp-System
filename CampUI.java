@@ -15,30 +15,46 @@ public class CampUI {
     }
 
     public void run() {
-        System.out.println("-----Welcome to South Carolina Summer Camp-----");
-        System.out.println(FIRST_PROMPT);
-        int n = scanner.nextInt();
-        switch (n) 
+        boolean run = true;
+        while(run) 
         {
-            case 1:
-                login();
-                userDisplay();
-                break;
-            case 2:
-                login();
-                counselorDisplay();
-                break;
-            case 3:
-                login();
-                directorDisplay();
-                break;
-            case 4:
-                createUser();
-                System.out.println(" ");
-                System.out.println("Now you can login");
-                login();
-                break;
-        }        
+            System.out.println("-----Welcome to South Carolina Summer Camp-----");
+            System.out.println(FIRST_PROMPT);
+            int n = scanner.nextInt();
+            switch (n) 
+            {
+                case 1:
+                    login();
+                    userDisplay();
+                    break;
+                case 2:
+                    login();
+                    counselorDisplay();
+                    break;
+                case 3:
+                    login();
+                    directorDisplay();
+                    break;
+                case 4:
+                    createUser();
+                    System.out.println(" ");
+                    System.out.println("Now you can login");
+                    login();
+                    break;
+            }
+            System.out.println("Would you like to exit the program? Enter 'yes' or 'no'.");
+            String ans = scanner.nextLine();
+            if(ans.equals("n"))
+            {
+                run = true;
+                run();
+            }
+            else {
+                run = false;
+                System.out.println("Thank you for looking at our camp.");
+                System.exit(0);
+            }        
+        }
     }
 
     public void login() {
@@ -79,6 +95,42 @@ public class CampUI {
         if(choice == 1)
         {
 
+            System.out.println("What is your child's first name");
+            String firstName = scanner.next();
+            scanner.nextLine();
+            System.out.println("What is your child's last name");
+            String lastName = scanner.next();
+            scanner.nextLine();
+            System.out.println("What is your childs age");
+            int age = scanner.nextInt();
+            scanner.nextLine();
+            System.out.println("Which session would you like to register for");
+            Sessions session = scanner.nextLine();
+            scanner.nextLine();
+            System.out.println("What is the name of the emergency contact for the child");
+            String name = scanner.nextLine();
+            scanner.nextLine();
+            System.out.println("What is the relationship of the emergency contact to the child");
+            String relationship = scanner.nextLine();
+            scanner.nextLine();
+            System.out.println("What is the phone # of the emergency contact");
+            String phoneNumber = scanner.nextLine();
+            scanner.nextLine();
+            System.out.println("What is the name your insurance provider");
+            String insurance = scanner.nextLine();
+            scanner.nextLine();
+            System.out.println("What is your insurance policy #");
+            String policyNumber = scanner.nextLine();
+            scanner.nextLine();
+            System.out.println("What is the name of your child's doctor");
+            String doctor = scanner.nextLine();
+            scanner.nextLine();
+            System.out.println("Enter any allergies your child may have. Enter 'none' if they do not have any. If more than one add a space between each, then press enter when done.");
+            ArrayList<String> allergies = scanner.nextLine();
+            scanner.nextLine();
+            System.out.println("Enter any medications your child may be on. Enter 'none' if they do not have any. If more than one add a space between each, then press enter when done.");
+            ArrayList<String> medications = scanner.nextLine();
+            scanner.nextLine();
         }
         else
         {
@@ -86,7 +138,7 @@ public class CampUI {
             while(exit)
             {
                 System.out.println("What would you like to change:");
-
+                //edit name, age, allergies, dotor,insurance, etc
                 System.out.println("Are you done editing child information? Enter 'yes' or 'no'.");
                 String ans = scanner.next();
                 if(ans.equals("yes")) {
@@ -101,23 +153,12 @@ public class CampUI {
     }
 
     public void directorDisplay() {
-
         System.out.println("-----Welcome Director-----");
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+      //  Scanner scanner = new Scanner(System.in);
         CampUI campUI = new CampUI();
         campUI.run();
-        System.out.println("Would you like to exit the program? Enter 'yes' or 'no'.");
-        String ans = scanner.nextLine();
-        if(ans.equals("n0"))
-        {
-
-        }
-        else {
-            System.out.println("Thank you for looking at our camp.");
-            System.exit(0);
-        }
     }
 }
