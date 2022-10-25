@@ -87,17 +87,17 @@
         }],
         "schedule":"",
         "emergencyContact":
-        [{
+        {
             "name":"Martha Wheezer",
             "relationship":"Mother",
             "phoneNumber":"436-603-5923"
-        }],
+        },
         "healthCare":
-        [{
+        {
             "name":"InsureUBest",
             "policyNumber":"43267436",
             "doctor":"Dr. Jennings"
-        }]
+        }
     },{
         "id":"542a6a0e-aecb-42f5-aeb1-ddf0c6551bcd",
         "firstName":"Jimmy",
@@ -137,17 +137,17 @@
         }],
         "schedule":"",
         "emergencyContact":
-        [{
+            {
             "name":"Tim Washington",
             "relationship":"Father",
             "phoneNumber":"584-252-2576"
-        }],
+        }   ,
         "healthCare":
-        [{
+            {
             "name":"AffordableHealthCare",
             "policyNumber":"G392582",
             "doctor":"Dr. Gray"
-        }]
+        }   
     },{
         "id":"5f28d4a8-2ec8-4c49-a04f-b661a2979d3c",
         "firstName":"Ashley",
@@ -187,17 +187,17 @@
         }],
         "schedule":"",
         "emergencyContact":
-        [{
+            {
             "name":"Freddie Freeman",
             "relationship":"Father",
             "phoneNumber":"432-584-6812"
-        }],
+        }   ,
         "healthCare":
-        [{
+            {
             "name":"FederalHealth",
             "policyNumber":"R482910",
             "doctor":"Dr. Blair"
-        }]
+        }   
     },{
         "id":"aba8e8f7-4c41-4a79-be76-a4793c6f5ceb",
         "firstName":"Blake",
@@ -237,17 +237,17 @@
         }],
         "schedule":"",
         "emergencyContact":
-        [{
+            {
             "name":"Brandon Crawford",
             "relationship":"Father",
             "phoneNumber":"653-778-0095"
-        }],
+        }   ,
         "healthCare":
-        [{
+            {
             "name":"AffordableHealthCare",
             "policyNumber":"6894342",
             "doctor":"Dr. Hanover"
-        }]
+        }   
     },{
         "id":"2f97af20-172e-49df-8d4c-c427f9422679",
         "firstName":"Stacy",
@@ -287,17 +287,17 @@
         }],
         "schedule":"",
         "emergencyContact":
-        [{
+            {
             "name":"Michelle Barron",
             "relationship":"Mother",
             "phoneNumber":"421-555-7866"
-        }],
+        }   ,
         "healthCare":
-        [{
+            {
             "name":"InsureUBest",
             "policyNumber":"X349302",
             "doctor":"Dr. Sanders"
-        }]
+        }   
     },{
         "id":"aa4d03ba-b56f-4d10-8a91-7275ef010193",
         "firstName":"Jackson",
@@ -337,17 +337,17 @@
         }],
         "schedule":"",
         "emergencyContact":
-        [{
+            {
             "name":"Aiden Hoffman",
             "relationship":"Father",
             "phoneNumber":"332-665-5443"
-        }],
+        }   ,
         "healthCare":
-        [{
+        {
             "name":"FederalHealth",
             "policyNumber":"Q453797256",
             "doctor":"Dr. Walters"
-        }]
+        }   
     },{
         "id":"d35374a2-9b52-42b9-9148-a1e2ad9a20fc",
         "firstName":"Cara",
@@ -387,16 +387,16 @@
         }],
         "schedule":"",
         "emergencyContact":
-        [{
+            {
             "name":"Julie Eckert",
             "relationship":"Mother",
             "phoneNumber":"609-432-7709"
-        }],
+        }   ,
         "healthCare":
-        [{
+            {
             "name":"UnitedHealthCare",
             "policyNumber":"79799963",
             "doctor":"Dr. Reed"
-        }]
+        }   
     }
 ]

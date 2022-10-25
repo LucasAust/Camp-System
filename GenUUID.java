@@ -11,5 +11,7 @@ public class GenUUID {
          */
         DataReader dataReader = new DataReader();
         dataReader.getAllSessions();
+        dataReader.getAllCounselors();
+        dataReader.saveAllUsers();
     }
 }

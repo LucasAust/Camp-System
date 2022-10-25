@@ -5,7 +5,8 @@ public class UserList {
   private ArrayList<User> users;
 
   private UserList() {
-    users = DataReader.saveAllUsers();
+    DataReader dataReader = new DataReader();
+    users = dataReader.saveAllUsers();
   }
 
   public static UserList getInstance() {
