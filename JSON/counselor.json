@@ -37,17 +37,17 @@
         }],
         "schedule":"",
         "emergencyContact":
-        [{
+        {
             "name":"Sarah Adams",
             "relationship":"Mother",
             "phoneNumber":"372-545-2376"
-        }],
+        },
         "healthCare":
-        [{
+        {
             "name":"BlueCross BlueShield",
             "policyNumber":"76373267",
             "doctor":"Dr. Kramer"
-        }]
+        }
     },{
         "id":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
         "firstName":"Carl",
