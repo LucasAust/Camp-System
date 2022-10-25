@@ -26,4 +26,7 @@ public class Schedule {
     public void dinnerAll(Child child, Counselor counselor, Director director) {
 
     }
+    public static Schedule getInstance() {
+        return null;
+    }
 }
