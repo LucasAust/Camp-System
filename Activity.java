@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Activity {
 
     public String name;
@@ -6,7 +8,6 @@ public class Activity {
     public Activity(String name, String description) {
         this.name = name;
         this.description = description;
-
     }
 
     public String getName() {
@@ -14,10 +15,16 @@ public class Activity {
     }
 
     public String getDescription() {
-        return this.description;
+        return this.name;
     }
 
     public void createActivity() {
-        System.out.println(name + ": " + description);
+
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter activity name: ");
+        name = keyboard.nextLine();
+        System.out.println("Enter activity description: ");
+        description = keyboard.nextLine();
+        Activity newActivity = new Activity(name, description);
     }
 }
