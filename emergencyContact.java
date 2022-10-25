@@ -6,6 +6,6 @@ public class emergencyContact {
     public emergencyContact(String name, String relationship, String phoneNumber) {
         this.name = name;
         this.relationship = relationship;
-        this. phoneNumber = phoneNumber;
+        this.phoneNumber = phoneNumber;
     }
 }

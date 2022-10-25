@@ -4,46 +4,16 @@
         "firstName":"Lacy",
         "lastName":"Adams",
         "age":16,
-        "cabin":[{
-            "session": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
-            "id": "ac37b1aa-cd15-438f-b984-5c6720d8658c"
-        },{
-            "session": "41ef8608-392d-49cc-bcbd-82bdadaeed1d",
-            "id": "5aa4527d-f9d2-44c7-9a13-0806848c96b1"
-        },{
-            "session": "7acfa5ec-c0ab-4250-8640-8cbc42e12def",
-            "id": "afa846e6-0d8f-48f0-972e-e9afee0a0f04"
-        },{
-            "session": "b91d5a20-8821-478b-a1c6-d31a1aea43ed",
-            "id": "8a3d1a9b-c7bd-49b9-8f99-1c4d5a77d161"
-        },{
-            "session": "3cf6b143-bd60-4dc9-a78c-e3d6ecb8b14a",
-            "id": "11211328-19a0-4440-b707-f01ccabef943"
-        },{
-            "session": "e121ce90-0a69-49b1-81c1-eae1ab0fd58b",
-            "id": "54dd7887-3eca-459f-9226-650064ccd710"
-        },{
-            "session": "c136c6f9-478c-483a-96fa-4df7537ae75f",
-            "id": "b7e68670-439b-45db-9b3c-7cab993a4018"
-        },{
-            "session": "c985d1a0-de60-4f30-9b21-5d9e8afd1d26",
-            "id": "8bb26a56-a0de-49fc-a5bb-d5f0b4155fd4"
-        },{
-            "session": "d43cbfd2-978e-4712-822d-8e347ec24222",
-            "id": "920e6b1e-10be-4fac-ba77-c95b0fd48c64"
-        },{
-            "session": "662d4674-dbf1-472a-9d07-aa3091baa21b",
-            "id": "ac6f2ad6-4aa4-4a8c-965f-eaf02a419443"
-        }],
+        "cabin":"ac37b1aa-cd15-438f-b984-5c6720d8658c",
         "schedule":"",
         "emergencyContact":
-        {
+        [{
             "name":"Sarah Adams",
             "relationship":"Mother",
             "phoneNumber":"372-545-2376"
-        },
+        }],
         "healthCare":
-        {
+        [{
             "name":"BlueCross BlueShield",
             "policyNumber":"76373267",
             "doctor":"Dr. Kramer"

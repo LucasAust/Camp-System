@@ -57,7 +57,7 @@ public class DataReader {
     return users;
   }
 
-  public void getAllCounselors() {
+  public ArrayList<Counselor> getAllCounselors() {
     ArrayList<Counselor> counselors = new ArrayList<Counselor>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/counselor.json");
@@ -96,9 +96,10 @@ public class DataReader {
     } catch (Exception e) {
       e.printStackTrace();
     }
+    return counselors;
   }
 
-  public void getAllSessions() {
+  public ArrayList<Sessions> getAllSessions() {
     ArrayList<Sessions> sessionsList = new ArrayList<Sessions>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/sessions.json");
@@ -126,6 +127,7 @@ public class DataReader {
     } catch (Exception e) {
       e.printStackTrace();
     }
+    return sessionsList;
   }
 
 }
