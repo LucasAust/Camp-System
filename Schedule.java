@@ -1,30 +1,11 @@
 import java.util.ArrayList;
 
 public class Schedule {
-    public ArrayList<String> activities;
+    public ArrayList<Activity> activities = new ArrayList<Activity>();
 
-    public void addActivity(Activity activity)
-    {
-
-    }
-    public void removeActivity(Activity activity)
-    {
-
-    }
-    public Schedule generateSchedule()
-    {
-        return null;
-    }
-    public void breakfastAll(Child child, Counselor counselor, Director director)
-    {
-
-    }
-    public void lunchAll(Child child, Counselor counselor, Director director)
-    {
-
-    }
-    public void dinnerAll(Child child, Counselor counselor, Director director)
-    {
-        
-    }
+    public void addActivity(Activity activity) {
+        for(int i=0;i<activities.size();i++) {
+            activities.add(activity);            
+        }
+    }    
 }
