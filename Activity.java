@@ -10,14 +10,14 @@ public class Activity {
     }
 
     public String getName() {
-        return null;
+        return this.name;
     }
 
     public String getDescription() {
-        return null;
+        return this.description;
     }
 
     public void createActivity() {
-
+        System.out.println(name + ": " + description);
     }
 }
