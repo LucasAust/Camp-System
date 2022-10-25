@@ -1,17 +1,22 @@
 import java.util.ArrayList;
 
 public class Counselor{
+    public static String getAge;
     protected String firstName;
     protected String lastName;
-    protected int age;
+    protected Long age;
     protected Schedule schedule;
-    protected Cabin cabin;
+    protected ArrayList<Cabin> cabins;
     protected emergencyContact emergencyContact;
     protected healthInfo healthInfo;
     protected String allergy;
     protected ArrayList<String> allergies = new ArrayList<String>();
     protected ArrayList<emergencyContact> emergencyContacts;
 
+    public Counselor(String firstName, String lastName, Long age2, emergencyContact emergencyContact,healthInfo healthInfo,ArrayList<Cabin> cabins)
+    {
+
+    }
     public void viewSchedule(Schedule schedule) {
 
     }

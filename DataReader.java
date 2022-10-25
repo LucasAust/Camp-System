@@ -12,8 +12,8 @@ public class DataReader {
 
   JSONParser jsonParser = new JSONParser();
 
-  public ArrayList<Child> saveAllUsers() {
-    ArrayList<Child> users = new ArrayList<Child>();
+  public ArrayList<User> saveAllUsers() {
+    ArrayList<User> users = new ArrayList<User>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/Child.json");
       JSONParser parser = new JSONParser();
@@ -57,7 +57,7 @@ public class DataReader {
     return users;
   }
 
-  public void getAllCounselors() {
+  public ArrayList<Counselor> getAllCounselors() {
     ArrayList<Counselor> counselors = new ArrayList<Counselor>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/counselor.json");
@@ -69,41 +69,65 @@ public class DataReader {
         String id = (String) counselor.get("id");
         String firstName = (String) counselor.get("firstName");
         String lastName = (String) counselor.get("lastName");
-        String age = (String) counselor.get("age");
+        Long age = (Long) counselor.get("age");
+        JSONArray cabins = (JSONArray)counselor.get("cabin");
+        ArrayList<Cabin> counselorCabins = new ArrayList<Cabin>();
+        for(int j=0;i>cabins.size();j++)
+        {
+        JSONObject cabin = (JSONObject)cabins.get(i);
+        String session = (String)cabin.get("session");
+        String cabinId = (String)cabin.get("id");
+        Cabin addCabin = new Cabin("10-8", null, 10, session, cabinId);
+        counselorCabins.add(addCabin);
+        }
         JSONObject emergencyContact = (JSONObject) counselor.get("emergencyContact");
         String eName = (String) emergencyContact.get("name");
         String relationship = (String) emergencyContact.get("relationship");
         String phoneNumber = (String) emergencyContact.get("phoneNumber");
+        emergencyContact emergencyContact2 = new emergencyContact(eName, relationship, phoneNumber);
         JSONObject healthCare = (JSONObject) counselor.get("healthCare");
         String hName = (String) healthCare.get("name");
         String policyNumber = (String) healthCare.get("policyNumber");
         String doctor = (String) healthCare.get("doctor");
-
+        healthInfo healthInfo = new healthInfo(hName, policyNumber, doctor,null,null,null);
+        Counselor addCounselor = new Counselor(firstName, null, age, emergencyContact2, healthInfo, counselorList);
+        counselors.add(addCounselor);
       }
     } catch (Exception e) {
       e.printStackTrace();
     }
+    return counselors;
   }
 
-  public void getAllSessions() {
+  public ArrayList<Sessions> getAllSessions() {
     ArrayList<Sessions> sessionsList = new ArrayList<Sessions>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/sessions.json");
       JSONParser parser = new JSONParser();
       JSONArray sessions = (JSONArray) new JSONParser().parse(reader);
       for (int i = 0; i < sessions.size(); i++) {
-        JSONObject counselor = (JSONObject) sessions.get(i);
+        JSONObject session = (JSONObject) sessions.get(i);
 
-        String id = (String) counselor.get("id");
-        String title = (String) counselor.get("title");
-        Long cost = (Long) counselor.get("cost");
-        JSONArray cabins = (JSONArray) counselor.get("cabins");
-        System.out.println("hello");
-
+        String id = (String) session.get("id");
+        String title = (String) session.get("title");
+        Long cost = (Long) session.get("cost");
+        JSONArray cabins = (JSONArray) session.get("cabins");
+        ArrayList<Cabin> sessionCabins = new ArrayList<Cabin>();
+        for(int j=0;j<cabins.size()-1;j++)
+        {
+          JSONObject cabin = (JSONObject)cabins.get(j);
+          String cabinID = (String)cabin.get("id");
+          String counselorID = (String)cabin.get("counselor");
+          ArrayList<String>camperIDs = (ArrayList<String>)cabin.get("campers");
+          Cabin addCabin = new Cabin("10-8", null, 10, id, cabinID);
+          sessionCabins.add(addCabin);
+        }
+        Sessions addSession = new Sessions(id,title, i,cabins);
       }
     } catch (Exception e) {
       e.printStackTrace();
     }
+    return sessionsList;
   }
 
 }
