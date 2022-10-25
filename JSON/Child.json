@@ -6,9 +6,9 @@
       "age": "11",
       "session": "Week 1",
       "deitaryRestrictions": "Corn",
-      "allergies": [
-        "Corn"],
-      "medications": "None",
+      "allergies": 
+        "Corn",
+      "medications": ["None"],
       "healthCare": 
         {
           "name": "Medicaid",
@@ -30,10 +30,10 @@
       "age": "12",
       "session": "Week 1",
       "deitaryRestrictions": "Peanut foods",
-      "allergies": [
+      "allergies": 
         "Peanuts"
-      ],
-      "medications": "Epi-Pen",
+      ,
+      "medications": ["Epi-Pen"],
       "healthCare": 
         {
           "name": "BlueCross BlueShield",
@@ -56,10 +56,10 @@
       "age": "13",
       "session": "Week 1",
       "deitaryRestrictions": "None",
-      "allergies": [
+      "allergies": 
         "None"
-      ],
-      "medications": "None",
+      ,
+      "medications": ["None"],
       "healthCare": 
         {
           "name": "None",
@@ -81,10 +81,10 @@
         "age": "14",
         "session": "Week 1",
         "deitaryRestrictions": "None",
-        "allergies": [
+        "allergies": 
             "None"
-        ],
-        "medications": "None",
+        ,
+        "medications": ["None"],
         "healthCare":
             {
                 "name":"None",

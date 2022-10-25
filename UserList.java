@@ -1,23 +1,27 @@
 import java.util.ArrayList;
 
 public class UserList {
-  private ArrayList<User> users;
   private static UserList UserList;
+  private ArrayList<User> users;
 
   private UserList() {
-   // users = DataReader.saveAllUsers();
+    users = DataReader.saveAllUsers();
   }
 
   public static UserList getInstance() {
-    return null;
+    if (UserList == null) {
+      UserList = new UserList();
+    }
+    return UserList;
   }
 
-  public boolean addUser(String firstName, String lastName, String username, String email, String password) {
-return true;
+  // Add a User
+  public void addUser(String firstName, String lastName, String username, String email, String password) {
+    users.add(new RegisteredUser(firstName, lastName, username, email, password));
   }
 
-  public ArrayList<UserList> getUser() {
-    return null;
+  public ArrayList<User> getUser() {
+    return users;
   }
 
   public void saveUser() {

@@ -6,6 +6,11 @@ public class RegisteredUser extends User {
   public String password;
 
   public RegisteredUser(String firstName, String lastName, String userName, String email, String password) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.userName = userName;
+    this.email = email;
+    this.password = password;
 
   }
 
