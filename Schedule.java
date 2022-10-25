@@ -27,4 +27,7 @@ public class Schedule {
     {
         
     }
+    public static Schedule getInstance() {
+        return null;
+    }
 }
