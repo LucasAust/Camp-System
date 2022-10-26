@@ -23,7 +23,7 @@ public class Facade
     public void login(String username, String password)
     {
         System.out.println("Logging you in...");
-        for(int i=0;i<user.length;i++)
+        for(int i=0;i<user.size();i++)
         {
             User user = user.get(i);
 

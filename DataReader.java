@@ -12,7 +12,7 @@ public class DataReader {
 
   JSONParser jsonParser = new JSONParser();
 
-  public ArrayList<User> saveAllUsers() {
+  public static ArrayList<User> saveAllUsers() {
     ArrayList<User> users = new ArrayList<User>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/Child.json");
@@ -57,7 +57,7 @@ public class DataReader {
     return users;
   }
 
-  public ArrayList<Counselor> getAllCounselors() {
+  public static ArrayList<Counselor> getAllCounselors() {
     ArrayList<Counselor> counselors = new ArrayList<Counselor>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/counselor.json");
@@ -99,7 +99,7 @@ public class DataReader {
     return counselors;
   }
 
-  public ArrayList<Sessions> getAllSessions() {
+  public static ArrayList<Sessions> getAllSessions() {
     ArrayList<Sessions> sessionsList = new ArrayList<Sessions>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/sessions.json");
@@ -128,6 +128,30 @@ public class DataReader {
       e.printStackTrace();
     }
     return sessionsList;
+  }
+
+  public static ArrayList<RegisteredUser> getAllRegistered() {
+    ArrayList<RegisteredUser> RegisteredsList = new ArrayList<RegisteredUser>();
+    try {
+      FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/RegisteredUser.json");
+      JSONParser parser = new JSONParser();
+      JSONArray Registereds = (JSONArray) new JSONParser().parse(reader);
+      for (int i = 0; i < Registereds.size(); i++) {
+        JSONObject registered = (JSONObject) Registereds.get(i);
+
+        String firstName = (String) registered.get("firstName");
+        String lastName = (String) registered.get("lastName");
+        String userName = (String) registered.get("userName");
+        String email = (String) registered.get("email");
+        String password = (String) registered.get("password");
+
+        RegisteredUser addReg = new RegisteredUser(firstName,lastName,userName,email,password);
+        RegisteredsList.add(addReg);
+      }
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return RegisteredsList;
   }
 
 }

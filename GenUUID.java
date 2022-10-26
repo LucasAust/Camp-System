@@ -10,8 +10,10 @@ public class GenUUID {
          * }
          */
         DataReader dataReader = new DataReader();
-        dataReader.getAllSessions();
-        dataReader.getAllCounselors();
-        dataReader.saveAllUsers();
+       // DataReader.getAllSessions();
+       // DataReader.getAllCounselors();
+       // DataReader.saveAllUsers();
+       DataReader.getAllRegistered();
+        DataWriter.saveAllUsers(DataReader.getAllRegistered());
     }
 }

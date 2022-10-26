@@ -7,13 +7,13 @@
         "cabin":"ac37b1aa-cd15-438f-b984-5c6720d8658c",
         "schedule":"",
         "emergencyContact":
-        [{
+        {
             "name":"Sarah Adams",
             "relationship":"Mother",
             "phoneNumber":"372-545-2376"
-        }],
+        },
         "healthCare":
-        [{
+        {
             "name":"BlueCross BlueShield",
             "policyNumber":"76373267",
             "doctor":"Dr. Kramer"
