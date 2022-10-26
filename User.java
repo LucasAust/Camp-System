@@ -13,4 +13,8 @@ public class User {
 
     public void saveUser() {
     }
+    public void addUser(RegisteredUser registeredUser)
+    {
+        //userList.add(registeredUser);
+    }
 }

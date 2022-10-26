@@ -3,6 +3,26 @@ public class Guardian extends RegisteredUser  {
         super(firstName, lastName, userName, email, password);
     }
 
+    public String getFirstName()
+    {
+        return firstName;
+    }
+    public String getLastName()
+    {
+        return lastName;
+    }
+    public String getUserName()
+    {
+       return userName; 
+    }
+    public String getEmail()
+    {
+        return email;
+    }
+    public String getPassword()
+    {
+        return password;
+    }
     public void registerChild(Child child) {
         
     }

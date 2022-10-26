@@ -6,6 +6,8 @@ public class SessionList {
     public ArrayList<Sessions> sessionsList() {
         DataReader dataReader = new DataReader();
         sessions = dataReader.getAllSessions();
+        return sessions;
+        
     }
 
 }

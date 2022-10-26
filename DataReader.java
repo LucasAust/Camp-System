@@ -12,8 +12,8 @@ public class DataReader {
 
   JSONParser jsonParser = new JSONParser();
 
-  public static ArrayList<User> saveAllUsers() {
-    ArrayList<User> users = new ArrayList<User>();
+  public static ArrayList<RegisteredUser> saveAllUsers() {
+    ArrayList<RegisteredUser> users = new ArrayList<RegisteredUser>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/Child.json");
       JSONParser parser = new JSONParser();
@@ -122,7 +122,8 @@ public class DataReader {
           Cabin addCabin = new Cabin("10-8", null, 10, id, cabinID);
           sessionCabins.add(addCabin);
         }
-        Sessions addSession = new Sessions(id,title, i,cabins);
+        Sessions addSession = new Sessions(id, title, cost);
+        sessionsList.add(addSession);
       }
     } catch (Exception e) {
       e.printStackTrace();

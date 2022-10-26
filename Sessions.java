@@ -2,17 +2,34 @@ import java.util.ArrayList;
 
 public class Sessions {
 
+    public String id;
     public String title;
     public double cost;
     public ArrayList<Child> campers;
     public ArrayList<Cabin> cabins;
 
-<<<<<<< HEAD
-    public Sessions(String id, String title, double cost, ArrayList<Cabin> cabins)
-    {
-=======
-    public Sessions(String title, double cost) {
->>>>>>> 6ebdaecad7790a7f8eb3c63e93138b3c1bd31b48
+    public String getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    public ArrayList<Child> getCampers() {
+        return campers;
+    }
+
+    public ArrayList<Cabin> getCabins() {
+        return cabins;
+    }
+
+    public Sessions(String id, String title, double cost) {
+        this.id=id;
         this.title = title;
         this.cost = cost;
     }

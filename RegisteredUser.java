@@ -6,12 +6,11 @@ public class RegisteredUser extends User {
   public String password;
 
   public RegisteredUser(String firstName, String lastName, String userName, String email, String password) {
-    this.firstName = "craig";
-    this.lastName = "johnston";
-    this.userName = "bib";
-    this.email = "bib@email.sc.edu";
-    this.password = "walrus12";
-
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.userName = userName;
+    this.email = email;
+    this.password = password;
   }
 
 
@@ -46,4 +45,10 @@ public class RegisteredUser extends User {
   public void editChildInfo(Child child) {
 
   }
+
+
+public static RegisteredUser addUser(String firstName2, String lastName2, String email2, String username2,
+		String password2) {
+	return null;
+}
 }
