@@ -27,7 +27,8 @@ public class Facade
         {
             User user = user.get(i);
 
-            if(password==user.getPassword && username==user.getUsername)
+            //.equals or ==
+            if(password.equals(user.getPassword) && username.equals(user.getUsername))
             {
                 return;
             }
@@ -65,10 +66,10 @@ public class Facade
 
     public void addCabin(Cabin cabin)
     {
-        //max_campers
+        //MAX_CAMPERS
     }
 
-    public void registerChild(Child child)
+    public void registerChild(String firstName, String lastName, String email, String username, String password, Child child)
     {
 
     }
