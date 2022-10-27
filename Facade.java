@@ -113,6 +113,11 @@ public class Facade
 
     }
 
+    public void editChild(Child child)
+    {
+        
+    }
+
     public void assignCabins(Cabin cabin)
     {
 
