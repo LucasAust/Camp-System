@@ -35,9 +35,14 @@ public class DataWriter {
         return true;
     }
 
-    public static void writeRoster(ArrayList<String> roster)
+    public static void writeRoster(ArrayList<String> roster) throws IOException
     {
-
+        FileWriter file = new FileWriter("output.txt");
+        for(String str: roster)
+        {
+            file.write(str + System.lineSeparator());
+        }
+        file.close();
     }
     public static void writeVitals(ArrayList<String> vitals)
     {
