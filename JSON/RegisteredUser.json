@@ -12,5 +12,12 @@
         "userName":"bt12",
         "email":"bt12@email.sc.edu",
         "password":"bt12"
+    },
+    {
+        "firstName":"Jason",
+        "lastName":"Street",
+        "userName":"JSt",
+        "email":"JStreet@email.sc.edu",
+        "password":"TexasForever"
     }
 ]

@@ -6,7 +6,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 public class DataWriter {
-    
+    //Add method for each type of user
     public static boolean saveAllUsers(ArrayList<RegisteredUser> users)
     {
         JSONArray JSONUsers = new JSONArray();
@@ -35,9 +35,22 @@ public class DataWriter {
         return true;
     }
 
-    public static boolean saveAllSchedules(ArrayList<Schedule> schedules)
+    public static void writeRoster(ArrayList<String> roster) throws IOException
     {
-        return true;
+        FileWriter file = new FileWriter("output.txt");
+        for(String str: roster)
+        {
+            file.write(str + System.lineSeparator());
+        }
+        file.close();
+    }
+    public static void writeVitals(ArrayList<String> vitals)
+    {
+
+    }
+    public static void writeSchedule(ArrayList<String> schedule)
+    {
+
     }
 
 }
