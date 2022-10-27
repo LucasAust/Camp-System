@@ -133,6 +133,7 @@ public class CampUI {
             ArrayList<String> medications = new ArrayList<String>();
             medications.add(medication);
             scanner.nextLine();
+           // facade.registerChild();
         }
         else
         {
@@ -156,6 +157,22 @@ public class CampUI {
 
     public void directorDisplay() {
         System.out.println("-----Welcome Director-----");
+        System.out.println(" ");
+        System.out.println("Would you like to \n1. Add an activity \n2. Remove an activity \n3. Edit schedule");
+        int choice = scanner.nextInt();
+        switch (choice) {
+            case 1:
+                //add activitivy
+                Activity activity = new Activity(null, null);
+                activity.createActivity();
+                break;
+            case 2: 
+                // remove
+                break;
+            case 3:
+                //edit schedule
+                break;
+        }
     }
 
     public static void main(String[] args) {
