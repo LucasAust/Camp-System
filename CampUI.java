@@ -44,7 +44,7 @@ public class CampUI {
             }
             System.out.println("Would you like to exit the program? Enter 'yes' or 'no'.");
             String ans = scanner.nextLine();
-            if(ans.equals("n"))
+            if(ans.equals("no"))
             {
                 run = true;
                 run();
