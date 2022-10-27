@@ -1,15 +1,6 @@
 import java.util.ArrayList;
 
 public class Schedule {
-<<<<<<< HEAD
-    public ArrayList<Activity> activities = new ArrayList<Activity>();
-
-    public void addActivity(Activity activity) {
-        for(int i=0;i<activities.size();i++) {
-            activities.add(activity);            
-        }
-    }    
-=======
     public ArrayList<Activity> activities;
 
     public void addActivity(Activity activity) {
@@ -38,5 +29,4 @@ public class Schedule {
     public static Schedule getInstance() {
         return null;
     }
->>>>>>> f54d9345bfc76348b7f8836d067730023a33a803
 }
