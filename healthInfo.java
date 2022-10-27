@@ -16,4 +16,28 @@ public class healthInfo {
         this.allergies = allergies2;
         this.medications = medications;
     }
+    public String getInsurance()
+    {
+        return insurance;
+    }
+    public String policyNumber()
+    {
+        return policyNumber;
+    }
+    public String doctor()
+    {
+        return doctor;
+    }
+    public ArrayList<String> getMedications()
+    {
+        return medications;
+    }
+    public ArrayList<String> getAllergies()
+    {
+        return allergies;
+    }
+    public ArrayList<String> getDietaryRestrictions()
+    {
+        return dietaryRestrictions;
+    }
 }

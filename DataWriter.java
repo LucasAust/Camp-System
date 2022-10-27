@@ -7,8 +7,31 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 public class DataWriter {
     
-    public static boolean saveAllUsers(ArrayList<User> users)
+    public static boolean saveAllUsers(ArrayList<RegisteredUser> users)
     {
+        JSONArray JSONUsers = new JSONArray();
+        for(int i=0;i<users.size();i++)
+        {
+        JSONObject user = new JSONObject();
+        RegisteredUser registeredUser = users.get(i);
+        user.put("First Name",registeredUser.getFirstName());
+        user.put("Last Name",registeredUser.getLastName());
+        user.put("Username",registeredUser.getUserName());
+        user.put("Email",registeredUser.getEmail());
+        user.put("Password", registeredUser.getPassword());
+        
+        JSONUsers.add(user);
+        }
+        try
+        {
+            FileWriter file = new FileWriter("test.json");
+            file.write(JSONUsers.toJSONString());
+            file.flush();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
         return true;
     }
 

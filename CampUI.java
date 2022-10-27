@@ -10,7 +10,7 @@ public class CampUI {
 
     public CampUI() {
         scanner = new Scanner(System.in);
-        facade = new Facade();
+        facade = new Facade(null, null, null, null, null, null);
         rand = new Random();
     }
 
@@ -44,7 +44,7 @@ public class CampUI {
             }
             System.out.println("Would you like to exit the program? Enter 'yes' or 'no'.");
             String ans = scanner.nextLine();
-            if(ans.equals("n"))
+            if(ans.equals("no"))
             {
                 run = true;
                 run();
@@ -59,11 +59,9 @@ public class CampUI {
 
     public void login() {
         System.out.println("What is your username");
-        String username = scanner.nextLine();
-        scanner.nextLine();
+        String username = scanner.next();
         System.out.println("What is your password");
-        String password = scanner.nextLine();
-        scanner.nextLine();
+        String password = scanner.next();
         facade.login(username, password);
     }
 
@@ -105,7 +103,7 @@ public class CampUI {
             int age = scanner.nextInt();
             scanner.nextLine();
             System.out.println("Which session would you like to register for");
-            Sessions session = scanner.nextLine();
+            String sessionID = scanner.next();
             scanner.nextLine();
             System.out.println("What is the name of the emergency contact for the child");
             String name = scanner.nextLine();
@@ -126,11 +124,16 @@ public class CampUI {
             String doctor = scanner.nextLine();
             scanner.nextLine();
             System.out.println("Enter any allergies your child may have. Enter 'none' if they do not have any. If more than one add a space between each, then press enter when done.");
-            ArrayList<String> allergies = scanner.nextLine();
+            String allergy = scanner.nextLine();
+            ArrayList<String> allergies = new ArrayList<String>();
+            allergies.add(allergy);
             scanner.nextLine();
             System.out.println("Enter any medications your child may be on. Enter 'none' if they do not have any. If more than one add a space between each, then press enter when done.");
-            ArrayList<String> medications = scanner.nextLine();
+            String medication = scanner.nextLine();
+            ArrayList<String> medications = new ArrayList<String>();
+            medications.add(medication);
             scanner.nextLine();
+           // facade.registerChild();
         }
         else
         {
@@ -154,6 +157,22 @@ public class CampUI {
 
     public void directorDisplay() {
         System.out.println("-----Welcome Director-----");
+        System.out.println(" ");
+        System.out.println("Would you like to \n1. Add an activity \n2. Remove an activity \n3. Edit schedule");
+        int choice = scanner.nextInt();
+        switch (choice) {
+            case 1:
+                //add activitivy
+                Activity activity = new Activity(null, null);
+                activity.createActivity();
+                break;
+            case 2: 
+                // remove
+                break;
+            case 3:
+                //edit schedule
+                break;
+        }
     }
 
     public static void main(String[] args) {
