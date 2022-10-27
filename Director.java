@@ -3,6 +3,14 @@ import java.util.ArrayList;
 //Ali Omer
 public class Director extends RegisteredUser{
 
+public ArrayList<Activity> getActivities() {
+    return activities;
+  }
+
+  public ArrayList<Sessions> getSessions() {
+    return sessions;
+  }
+
 private ArrayList<Activity> activities = new ArrayList<Activity>();
 private ArrayList<Sessions> sessions = new ArrayList<Sessions>();
 

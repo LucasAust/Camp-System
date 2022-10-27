@@ -11,7 +11,27 @@ public class RegisteredUser extends User {
     this.userName = userName;
     this.email = email;
     this.password = password;
+  }
 
+
+  public String getFirstName() {
+    return firstName;
+  }
+
+  public String getLastName() {
+    return lastName;
+  }
+
+  public String getUserName() {
+    return userName;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+
+  public String getPassword() {
+    return password;
   }
 
   public void addChild(Child child) {
@@ -25,4 +45,10 @@ public class RegisteredUser extends User {
   public void editChildInfo(Child child) {
 
   }
+
+
+public static RegisteredUser addUser(String firstName2, String lastName2, String email2, String username2,
+		String password2) {
+	return null;
+}
 }

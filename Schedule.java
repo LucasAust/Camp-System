@@ -29,4 +29,8 @@ public class Schedule {
     public static Schedule getInstance() {
         return null;
     }
+
+    public ArrayList<Activity> getActivities() {
+        return activities;
+    }
 }

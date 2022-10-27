@@ -2,6 +2,50 @@ import java.util.ArrayList;
 
 public class Child extends RegisteredUser{
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public String getAllergy() {
+        return allergy;
+    }
+
+    public String getMedication() {
+        return medication;
+    }
+
+    public Sessions getSession() {
+        return Session;
+    }
+
+    public emergencyContact getEmergencyContact() {
+        return emergencyContact;
+    }
+
+    public healthInfo getHealthInfo() {
+        return healthInfo;
+    }
+
+    public ArrayList<String> getAllergies() {
+        return allergies;
+    }
+
+    public ArrayList<String> getMedications() {
+        return medications;
+    }
+
+    public ArrayList<emergencyContact> getEmergencyContacts() {
+        return emergencyContacts;
+    }
+
     public String firstName;
     public String lastName;
     public String age;

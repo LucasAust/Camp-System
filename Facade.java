@@ -1,7 +1,10 @@
+import java.util.ArrayList;
+
 import javax.lang.model.util.ElementScanner14;
 
 public class Facade
 {
+    private ArrayList<RegisteredUser> userList;
     private User user;
     private Schedule schedule;
     private Activity activity;
@@ -12,35 +15,52 @@ public class Facade
 
     public Facade(User user, Schedule schedule, Activity activity, Sessions session, Cabin cabin, Child child)
     {
+        userList = DataReader.getAllRegistered();
         user = User.getInstance();
         schedule = Schedule.getInstance();
         activity = new Activity(null, null);
-        session = new Sessions(null, 0);
+        //session = new Sessions(session.getID(), null, 0);
         this.cabin = cabin;
         this.child = child;
     }
 
     public void login(String username, String password)
     {
+        userList = DataReader.getAllRegistered();
         System.out.println("Logging you in...");
-        for(int i=0;i<user.length;i++)
+        boolean ret =false;
+        for(int i=0;i<userList.size();i++)
         {
-            User user = user.get(i);
+           
+            RegisteredUser user = userList.get(i);
 
-            if(password==user.getPassword && username==user.getUsername)
+            if(password.equals(user.password) && username.equals(user.userName))
             {
-                return;
+                ret=true;
             }
             else
             {
                 continue;
             }
+            
+
         }
+        if(ret==true)
+        {
+            System.out.println("success");
+        }
+        else
+        {
+        System.out.println("unsuccessful. Try again");
+        CampUI campUI = new CampUI();
+        campUI.login();
+        }
+        
     }
 
-    public User signup(String firstName, String lastName, String email, String username, String password)
+    public RegisteredUser signup(String firstName, String lastName, String email, String username, String password)
     {
-        return user.addUser(firstName, lastName, email, username, password);
+        return RegisteredUser.addUser(firstName, lastName, email, username, password);
     }
 
     public Schedule getWeeklySchedule(Schedule schedule)

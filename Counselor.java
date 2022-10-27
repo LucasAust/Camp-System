@@ -1,6 +1,40 @@
 import java.util.ArrayList;
 
 public class Counselor{
+    public static String getGetAge() {
+        return getAge;
+    }
+    public String getFirstName() {
+        return firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+    public Long getAge() {
+        return age;
+    }
+    public Schedule getSchedule() {
+        return schedule;
+    }
+    public ArrayList<Cabin> getCabins() {
+        return cabins;
+    }
+    public emergencyContact getEmergencyContact() {
+        return emergencyContact;
+    }
+    public healthInfo getHealthInfo() {
+        return healthInfo;
+    }
+    public String getAllergy() {
+        return allergy;
+    }
+    public ArrayList<String> getAllergies() {
+        return allergies;
+    }
+    public ArrayList<emergencyContact> getEmergencyContacts() {
+        return emergencyContacts;
+    }
+
     public static String getAge;
     protected String firstName;
     protected String lastName;

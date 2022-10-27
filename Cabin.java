@@ -11,6 +11,30 @@ public class Cabin {
     public String id;
     public String age;
 
+    public String getAgeRange() {
+        return ageRange;
+    }
+    public Counselor getCounselor() {
+        return counselor;
+    }
+    public int getMaxCampers() {
+        return maxCampers;
+    }
+    public ArrayList<Child> getCampers() {
+        return campers;
+    }
+    public ArrayList<Cabin> getCabins() {
+        return cabins;
+    }
+    public String getSessionID() {
+        return sessionID;
+    }
+    public String getId() {
+        return id;
+    }
+    public String getAge() {
+        return age;
+    }
     public Cabin(String ageRange, Counselor counselor , int maxCampers, String sessionID, String id)
     {
         this.ageRange = ageRange;

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class UserList {
   private static UserList UserList;
-  private ArrayList<User> users;
+  private ArrayList<RegisteredUser> users;
 
   private UserList() {
     DataReader dataReader = new DataReader();
@@ -21,7 +21,7 @@ public class UserList {
     users.add(new RegisteredUser(firstName, lastName, username, email, password));
   }
 
-  public ArrayList<User> getUser() {
+  public ArrayList<RegisteredUser> getUser() {
     return users;
   }
 
