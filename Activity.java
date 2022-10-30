@@ -29,5 +29,9 @@ public class Activity {
         return newActivity;
 
     }
+    public String toString()
+    {
+        return this.name+": "+this.description;
+    }
 
 }

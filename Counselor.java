@@ -109,7 +109,7 @@ public class Counselor{
             System.out.println("Enter which week number you would like to view your schedule for.");
             int week = scanner.nextInt();
             Cabin cabin = cabins.get(week-1);
-            Schedule sched = cabin.getSchedule();
+            //ArrayList<String> sched = cabin.getSchedule();
             
             
             

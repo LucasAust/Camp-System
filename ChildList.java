@@ -2,12 +2,12 @@ import java.util.ArrayList;
 
 public class ChildList {
   private static ChildList UserList;
-  public ArrayList<RegisteredUser> users;
-  public ArrayList<RegisteredUser> newUsers = new ArrayList<RegisteredUser>();
+  public ArrayList<Child> children= new ArrayList<Child>();
+  public ArrayList<Child> newChildren = new ArrayList<Child>();
 
   private ChildList() {
     DataReader dataReader = new DataReader();
-    users = dataReader.saveAllChildren();
+    children = DataReader.saveAllChildren();
   }
 
   public static ChildList getInstance() {
@@ -18,27 +18,27 @@ public class ChildList {
   }
 
   // Add a User
-  public void addUser(String firstName, String lastName, String username, String email, String password) {
-    users.add(new RegisteredUser(firstName, lastName, username, email, password));
+  public void addChild(String firstName, String lastName, String username, String email, String password) {
+    //children.add(new RegisteredUser(firstName, lastName, username, email, password));
     }
 
-  public ArrayList<RegisteredUser> getUser() {
-    return users;
+  public ArrayList<Child> getChildren() {
+    return children;
   }
 
   public void saveUser() {
     //DataWriter.saveAllGuardians(users);
   }
-  public void addNewUser(String firstName,String lastName, String username, String email, String password)
+  public void addNewChild(String firstName,String lastName, String username, String email, String password)
   {
-    newUsers.add(new RegisteredUser(firstName,lastName,username,email,password));
-    users.add(new RegisteredUser(firstName,lastName,username,email,password));
+    //newChildren.add(new RegisteredUser(firstName,lastName,username,email,password));
+    //users.add(new RegisteredUser(firstName,lastName,username,email,password));
     //DataWriter.saveAllUsers(newUsers);
 
   }
-  public ArrayList<RegisteredUser> getNewUsers()
+  public ArrayList<Child> getNewUsers()
   {
-    return newUsers;
+    return newChildren;
   }
 
 }

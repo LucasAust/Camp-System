@@ -4,7 +4,37 @@
         "firstName":"Lacy",
         "lastName":"Adams",
         "age":16,
-        "cabin":"ac37b1aa-cd15-438f-b984-5c6720d8658c",
+        "cabin":[{
+            "session": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
+            "id": "55651d66-926d-4a50-a957-019ad82e5873"
+        },{
+            "session": "41ef8608-392d-49cc-bcbd-82bdadaeed1d",
+            "id": "b4739f65-7917-42e8-8f61-7588a3476195"
+        },{
+            "session": "7acfa5ec-c0ab-4250-8640-8cbc42e12def",
+            "id": "cf480267-230d-498c-bc54-fa72df71d5ed"
+        },{
+            "session": "b91d5a20-8821-478b-a1c6-d31a1aea43ed",
+            "id": "250be1fa-a065-4e58-8c22-4536f63a620d"
+        },{
+            "session": "3cf6b143-bd60-4dc9-a78c-e3d6ecb8b14a",
+            "id": "80cc802c-b8e4-4268-83bd-31ae569a8d81"
+        },{
+            "session": "e121ce90-0a69-49b1-81c1-eae1ab0fd58b",
+            "id": "dff80c7a-0e7a-4306-952d-b14ac71074bc"
+        },{
+            "session": "c136c6f9-478c-483a-96fa-4df7537ae75f",
+            "id": "80c5b5d3-56fb-48d0-b935-ee143c3a5e80"
+        },{
+            "session": "c985d1a0-de60-4f30-9b21-5d9e8afd1d26",
+            "id": "90bc0354-9992-4a17-ac43-e31784bfba27"
+        },{
+            "session": "d43cbfd2-978e-4712-822d-8e347ec24222",
+            "id": "169dda60-63fa-4463-a983-6e861f9d99ab"
+        },{
+            "session": "662d4674-dbf1-472a-9d07-aa3091baa21b",
+            "id": "37acc096-513d-4b6b-90f6-6398d93f79ed"
+        }],
         "schedule":"",
         "emergencyContact":
         {

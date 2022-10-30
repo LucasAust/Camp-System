@@ -2,14 +2,10 @@ import java.util.ArrayList;
 
 import javax.lang.model.util.ElementScanner14;
 
-<<<<<<< HEAD
 public class Facade {
     private ArrayList<Guardian> guardianList;
-=======
-public class Facade
-{
-    private ArrayList<RegisteredUser> userList;
->>>>>>> 085bd0bc0d0ca32aca8d849c2f73fb035a98eb9f
+    private ArrayList<Counselor> counselorList;
+    private ArrayList<Director> directorList;
     private User user;
     private Schedule schedule;
     private Activity activity;
@@ -17,15 +13,11 @@ public class Facade
     private Cabin cabin;
     private Child child;
     public static final int MAX_CAMPERS = 8;
+    public Sessions viewSession;
+    public Cabin viewCabin;
 
-<<<<<<< HEAD
     public Facade(User user, Schedule schedule, Activity activity, Sessions session, Cabin cabin, Child child) {
-        guardianList = DataReader.getAllGuardians();
-=======
-    public Facade(User user, Schedule schedule, Activity activity, Sessions session, Cabin cabin, Child child)
-    {
-        userList = DataReader.getAllRegistered();
->>>>>>> 085bd0bc0d0ca32aca8d849c2f73fb035a98eb9f
+        guardianList = this.guardianList;
         user = User.getInstance();
         schedule = Schedule.getInstance();
         activity = new Activity(null, null);
@@ -34,25 +26,15 @@ public class Facade
         this.child = child;
     }
 
-<<<<<<< HEAD
-    public void login(String username, String password) {
+    public void login(String username, String password,int j) {
+        if (j==1)
+        {
         guardianList = GuardianList.getInstance().getGuardians();
         System.out.println("Logging you in...");
         boolean ret = false;
         for (int i = 0; i < guardianList.size(); i++) {
 
             RegisteredUser user = guardianList.get(i);
-=======
-    public void login(String username, String password)
-    {
-        userList = DataReader.getAllRegistered();
-        System.out.println("Logging you in...");
-        boolean ret =false;
-        for(int i=0;i<userList.size();i++)
-        {
-           
-            RegisteredUser user = userList.get(i);
->>>>>>> 085bd0bc0d0ca32aca8d849c2f73fb035a98eb9f
 
             if(password.equals(user.password) && username.equals(user.userName))
             {
@@ -73,20 +55,89 @@ public class Facade
         {
         System.out.println("unsuccessful. Try again");
         CampUI campUI = new CampUI();
-        campUI.login();
+        campUI.login(1);
         }
+    }
+    if (j==2)
+    {
+     counselorList = CounselorList.getInstance().getCounselors();
+    System.out.println("Logging you in...");
+    boolean ret = false;
+    for (int i = 0; i < counselorList.size(); i++) {
+
+        Counselor counselor = counselorList.get(i);
+
+        if(password.equals(counselor.lastName) && username.equals(counselor.firstName))
+        {
+            ret=true;
+        }
+        else
+        {
+            continue;
+        }
+        
+
+    }
+    if(ret==true)
+    {
+        System.out.println("success");
+    }
+    else
+    {
+    System.out.println("unsuccessful. Try again");
+    CampUI campUI = new CampUI();
+    campUI.login(2);
+    }
+    }
+
+    if (j==3)
+    {
+     directorList = DirectorList.getInstance().getDirectors();
+    System.out.println("Logging you in...");
+    boolean ret = false;
+    for (int i = 0; i < directorList.size(); i++) {
+
+        Director director = directorList.get(i);
+
+        if(password.equals(director.password) && username.equals(director.userName))
+        {
+            ret=true;
+        }
+        else
+        {
+            continue;
+        }
+        
+
+        }
+        if(ret==true)
+        {
+            System.out.println("success");
+        }
+        else
+        {
+            System.out.println("unsuccessful. Try again");
+            CampUI campUI = new CampUI();
+            campUI.login(3);
+        }
+    }
         
     }
 
-<<<<<<< HEAD
-    public void signup(String firstName, String lastName, String email, String username, String password) {
-        Guardian.addUser(firstName, lastName, email, username, password);
-        GuardianList.getInstance().addGuardian(firstName,lastName,email,username,password);
-=======
-    public RegisteredUser signup(String firstName, String lastName, String email, String username, String password)
-    {
-        return RegisteredUser.addUser(firstName, lastName, email, username, password);
->>>>>>> 085bd0bc0d0ca32aca8d849c2f73fb035a98eb9f
+    public void signup(String firstName, String lastName, String email, String username, String password, String accountType) {
+        //Guardian.addUser(firstName, lastName, username, email, password);
+        if(accountType.equalsIgnoreCase("Guardian"))
+        {
+        GuardianList.getInstance().addGuardian(firstName,lastName,username,email,password);
+        }
+        else if (accountType.equalsIgnoreCase("Director"))
+        {
+            DirectorList.getInstance().addDirector(firstName,lastName,username,email,password);
+        }
+        else if (accountType.equalsIgnoreCase("Counselor"))
+        {
+            CounselorList.getInstance().addCounselor(firstName,lastName,username,email,password);
+        }
     }
 
     public Schedule getWeeklySchedule(Schedule schedule)
@@ -105,11 +156,11 @@ public class Facade
     }
 
     public void addSession(Sessions session) {
-        session = new Sessions(null, null, MAX_CAMPERS);
+        SessionList.getInstance().addSession(session);
     }
 
     public void addCabin(Cabin cabin) {
-        cabin = new Cabin(null, null, MAX_CAMPERS, null, null);
+        cabin = new Cabin(null, null, MAX_CAMPERS, null, null,null);
     }
 
     public void setCounselorSchedule(Schedule schedule)
@@ -134,5 +185,50 @@ public class Facade
     public void generateSchedule(Schedule schedule)
     {
         
+    }
+    public void registerChild(Child child)
+    {
+
+    }
+    public void removeActivity(Activity activity)
+    {
+
+    }
+
+    public void viewSchedule(String sessionName, String cabinName) {
+        ArrayList<Sessions> sessions = DataReader.getAllSessions2();
+        for( int i =0;i<sessions.size();i++)
+        {
+            Sessions session = sessions.get(i);
+            if(sessionName.equalsIgnoreCase(session.title))
+            {
+                viewSession=session;
+            }
+        }
+        ArrayList<Cabin> cabins = viewSession.getCabins();
+        for(int i =0;i<cabins.size();i++)
+        {
+            Cabin cabin = cabins.get(i);
+            if(cabinName.equalsIgnoreCase(cabin.id))
+            {
+                viewCabin = cabin;
+            }
+        }
+        ArrayList schedule = viewCabin.getSchedule();
+        for(int i=0;i<5;i++)
+        {
+            System.out.println("Day "+(i+1));
+            ArrayList<Activity> day = (ArrayList)schedule.get(i);
+            for(int j=0;j<7;j++)
+            {
+                Activity activity = day.get(j);
+                System.out.println(activity.name+": "+activity.description);
+            }
+            System.out.println();
+        }
+        
+        
+
+
     }
 }

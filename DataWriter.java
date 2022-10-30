@@ -13,19 +13,19 @@ public class DataWriter {
         for(int i=0;i<guardians.size();i++)
         {
         JSONObject user = new JSONObject();
-        RegisteredUser registeredUser = guardians.get(i);
-        user.put("First Name",registeredUser.getFirstName());
-        user.put("Last Name",registeredUser.getLastName());
-        user.put("Username",registeredUser.getUserName());
-        user.put("Email",registeredUser.getEmail());
-        user.put("Password", registeredUser.getPassword());
+        RegisteredUser guardian = guardians.get(i);
+        user.put("firstName",guardian.getFirstName());
+        user.put("lastName",guardian.getLastName());
+        user.put("username",guardian.getUserName());
+        user.put("email",guardian.getEmail());
+        user.put("password", guardian.getPassword());
         
         JSONUsers.add(user);
         }
         try
         {
             FileWriter file = new FileWriter("/Users/ljaus/Camp-System/JSON/Guardian.json");
-            file.append(JSONUsers.toJSONString());
+            file.write(JSONUsers.toJSONString());
             file.flush();
         }
         catch(Exception e)
@@ -62,5 +62,65 @@ public class DataWriter {
         }
         file.close();
     }
+    public static boolean saveAllSessions(ArrayList<Sessions> sessions, ArrayList<Cabin> cabins)
+    {
+        JSONArray JSONUsers = new JSONArray();
+        JSONArray cabinsList = new JSONArray();
+        JSONArray schedule = new JSONArray();
+        for(int i=0;i<sessions.size();i++)
+        {
+        JSONObject session = new JSONObject();
+        Sessions Session = sessions.get(i);
+        session.put("id",Session.getId());
+        session.put("theme",Session.getTheme());
+        session.put("cost",Session.getCost());
+        session.put("cabins",cabinsList);
+        for(int j=0;j<6;j++)
+        {
+            JSONObject cabin = new JSONObject();
+            Cabin Cabin = cabins.get(j);
+            cabin.put("name",Cabin.getId());
+            cabin.put("ageRange",Cabin.getAgeRange());
+            cabin.put("schedule",schedule);
+            for(int h=0;h<5;h++)
+            {
+                JSONObject date = new JSONObject();
+                date.put("day","day "+(h+1));
+                schedule.add(date);
+                for(int k =0;k<7;k++)
+                {
+                Activity activity = (Activity) Cabin.getSchedule().get(h).get(k);
+                JSONObject add = new JSONObject();
+               JSONObject day = new JSONObject();
+              // day.put("day",("day "+(h+1)));
+               add.put("name",activity.name);
+               add.put("description",activity.description);
+               day.put("activity "+(k+1), add);
+               schedule.add(day);
+              // schedule.add("day"+(h+1));
+                }
+                
+            }
+            cabinsList.add(cabin);
+        }
+    
+        
 
+        
+        //session.put("password", Session.getPassword());
+        
+        JSONUsers.add(session);
+        }
+        try
+        {
+            FileWriter file = new FileWriter("test.JSON");
+            file.write(JSONUsers.toJSONString());
+            file.flush();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        return true;
+    }
 }

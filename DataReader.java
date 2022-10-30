@@ -13,8 +13,8 @@ public class DataReader {
   JSONParser jsonParser = new JSONParser();
   public static final ArrayList<Guardian> guardianList= new ArrayList<Guardian>();
 
-  public static ArrayList<RegisteredUser> saveAllChildren() {
-    ArrayList<RegisteredUser> children = new ArrayList<RegisteredUser>();
+  public static ArrayList<Child> saveAllChildren() {
+    ArrayList<Child> children = new ArrayList<Child>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/Child.json");
       JSONParser parser = new JSONParser();
@@ -78,7 +78,7 @@ public class DataReader {
         JSONObject cabin = (JSONObject)cabins.get(i);
         String session = (String)cabin.get("session");
         String cabinId = (String)cabin.get("id");
-        Cabin addCabin = new Cabin("10-8", null, 10, session, cabinId);
+        Cabin addCabin = new Cabin("10-8", null, 10, session, cabinId,null);
         counselorCabins.add(addCabin);
         }
         JSONObject emergencyContact = (JSONObject) counselor.get("emergencyContact");
@@ -112,6 +112,7 @@ public class DataReader {
         String id = (String) session.get("id");
         String title = (String) session.get("title");
         Long cost = (Long) session.get("cost");
+        String theme = (String) session.get("theme");
         JSONArray cabins = (JSONArray) session.get("cabins");
         ArrayList<Cabin> sessionCabins = new ArrayList<Cabin>();
         for(int j=0;j<cabins.size()-1;j++)
@@ -120,10 +121,10 @@ public class DataReader {
           String cabinID = (String)cabin.get("id");
           String counselorID = (String)cabin.get("counselor");
           ArrayList<String>camperIDs = (ArrayList<String>)cabin.get("campers");
-          Cabin addCabin = new Cabin("10-8", null, 10, id, cabinID);
+          Cabin addCabin = new Cabin("10-8", null, 10, id, cabinID,null);
           sessionCabins.add(addCabin);
         }
-        Sessions addSession = new Sessions(id, title, cost);
+        Sessions addSession = new Sessions(id, title, cost,theme,sessionCabins);
         sessionsList.add(addSession);
       }
     } catch (Exception e) {
@@ -133,22 +134,21 @@ public class DataReader {
   }
 
   public static ArrayList<Guardian> getAllGuardians() {
-   //public static ArrayList<RegisteredUser> RegisteredsList = new ArrayList<RegisteredUser>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/Guardian.json");
       JSONParser parser = new JSONParser();
-      JSONArray Registereds = (JSONArray) new JSONParser().parse(reader);
-      for (int i = 0; i < Registereds.size(); i++) {
-        JSONObject registered = (JSONObject) Registereds.get(i);
+      JSONArray guardians = (JSONArray) new JSONParser().parse(reader);
+      for (int i = 0; i < guardians.size(); i++) {
+        JSONObject guardian = (JSONObject) guardians.get(i);
 
-        String firstName = (String) registered.get("firstName");
-        String lastName = (String) registered.get("lastName");
-        String userName = (String) registered.get("userName");
-        String email = (String) registered.get("email");
-        String password = (String) registered.get("password");
+        String firstName = (String) guardian.get("firstName");
+        String lastName = (String) guardian.get("lastName");
+        String email = (String) guardian.get("email");
+        String password = (String) guardian.get("password");
+        String username = (String) guardian.get("username");
 
-        Guardian addReg = new Guardian(firstName,lastName,userName,email,password);
-        //guardianList.add(addReg);
+        Guardian addReg = new Guardian(firstName,lastName,username,email,password);
+        guardianList.add(addReg);
       }
     } catch (Exception e) {
       e.printStackTrace();
@@ -156,4 +156,78 @@ public class DataReader {
     return guardianList;
   }
 
+  public static ArrayList<Director> getAllDirectors() {
+    ArrayList<Director> directorList = new ArrayList<Director>();
+    try {
+      FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/Director.json");
+      JSONParser parser = new JSONParser();
+      JSONArray directors = (JSONArray) new JSONParser().parse(reader);
+      for (int i = 0; i < directors.size(); i++) {
+        JSONObject director = (JSONObject) directors.get(i);
+
+        String firstName = (String) director.get("firstName");
+        String lastName = (String) director.get("lastName");
+        String email = (String) director.get("email");
+        String password = (String) director.get("password");
+        String username = (String) director.get("username");
+
+        Director addDir = new Director(firstName,lastName,username,email,password);
+        directorList.add(addDir);
+      }
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return directorList;
+  }
+
+
+  public static ArrayList<Sessions> getAllSessions2() {
+    ArrayList<Sessions> sessionsList = new ArrayList<Sessions>();
+    ArrayList<Activity> daySched = new ArrayList<Activity>();
+    ArrayList<ArrayList> weekSched = new ArrayList<ArrayList>();
+    ArrayList<Cabin> cabinList = new ArrayList<Cabin>();
+    
+    try {
+      FileReader reader = new FileReader("/Users/ljaus/Camp-System/test.JSON");
+      JSONParser parser = new JSONParser();
+      JSONArray sessions = (JSONArray) new JSONParser().parse(reader);
+      for (int i = 0; i < sessions.size(); i++) {
+        JSONObject session = (JSONObject) sessions.get(i);
+
+        double cost = (double) session.get("cost");
+        String theme = (String) session.get("theme");
+        String id = (String) session.get("id");
+        JSONArray cabins = (JSONArray) session.get("cabins");
+        for(int j=0;j<6;j++)
+        {
+          JSONObject cabin =(JSONObject) cabins.get(j);
+          String ageRange = (String) cabin.get("ageRange");
+          String cName = (String) cabin.get("name");
+          JSONArray schedule = (JSONArray) cabin.get("schedule");
+          JSONObject help = (JSONObject) schedule.get(0);
+          for (int l=0;l<5;l++)
+          {
+          String day = help.get("day").toString();
+          for(int k=1;k<7;k++)
+          {
+            JSONObject activity = (JSONObject) schedule.get(k);
+            JSONObject activityN = (JSONObject) activity.get("activity "+k);
+            String Aname = (String)activityN.get("name");
+            String desc = (String)activityN.get("description");
+            daySched.add(new Activity(Aname,desc));
+          }
+          weekSched.add(daySched);
+         
+          }
+          cabinList.add( new Cabin(ageRange,null,8,id,cName,weekSched));
+          
+        }
+        sessionsList.add(new Sessions(null,id,cost,theme,cabinList));
+        
+      }
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return sessionsList;
+  }
 }
