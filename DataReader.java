@@ -11,9 +11,10 @@ import org.json.simple.parser.JSONParser;
 public class DataReader {
 
   JSONParser jsonParser = new JSONParser();
+  public static final ArrayList<Guardian> guardianList= new ArrayList<Guardian>();
 
-  public static ArrayList<RegisteredUser> saveAllUsers() {
-    ArrayList<RegisteredUser> users = new ArrayList<RegisteredUser>();
+  public static ArrayList<RegisteredUser> saveAllChildren() {
+    ArrayList<RegisteredUser> children = new ArrayList<RegisteredUser>();
     try {
       FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/Child.json");
       JSONParser parser = new JSONParser();
@@ -49,12 +50,12 @@ public class DataReader {
         healthInfo healthInfo = new healthInfo(hName, hPolicyNumber, hDoctor, dietaryRestrictions, allergies,
             medications);
         emergencyContact eContact = new emergencyContact(eName, eRelationship, ePhoneNumber);
-        users.add(new Child(firstName, lastName, age, healthInfo, eContact));
+        children.add(new Child(firstName, lastName, age, healthInfo, eContact));
       }
     } catch (Exception e) {
       e.printStackTrace();
     }
-    return users;
+    return children;
   }
 
   public static ArrayList<Counselor> getAllCounselors() {
@@ -131,10 +132,10 @@ public class DataReader {
     return sessionsList;
   }
 
-  public static ArrayList<RegisteredUser> getAllRegistered() {
-    ArrayList<RegisteredUser> RegisteredsList = new ArrayList<RegisteredUser>();
+  public static ArrayList<Guardian> getAllGuardians() {
+   //public static ArrayList<RegisteredUser> RegisteredsList = new ArrayList<RegisteredUser>();
     try {
-      FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/RegisteredUser.json");
+      FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/Guardian.json");
       JSONParser parser = new JSONParser();
       JSONArray Registereds = (JSONArray) new JSONParser().parse(reader);
       for (int i = 0; i < Registereds.size(); i++) {
@@ -146,13 +147,13 @@ public class DataReader {
         String email = (String) registered.get("email");
         String password = (String) registered.get("password");
 
-        RegisteredUser addReg = new RegisteredUser(firstName,lastName,userName,email,password);
-        RegisteredsList.add(addReg);
+        Guardian addReg = new Guardian(firstName,lastName,userName,email,password);
+        //guardianList.add(addReg);
       }
     } catch (Exception e) {
       e.printStackTrace();
     }
-    return RegisteredsList;
+    return guardianList;
   }
 
 }

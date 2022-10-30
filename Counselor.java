@@ -103,11 +103,16 @@ public class Counselor{
         }
 
     }
-    public void viewSchedule() {
+    public void viewSchedule(ArrayList<Schedule> schedule) {
 
-            ArrayList<String> schedule = new ArrayList<String>();
-            System.out.println("Enter which week you would like to view your schedule for.");
-            String week = scanner.next();
+            ArrayList<String> dailySchedule = new ArrayList<String>();
+            System.out.println("Enter which week number you would like to view your schedule for.");
+            int week = scanner.nextInt();
+            Cabin cabin = cabins.get(week-1);
+            Schedule sched = cabin.getSchedule();
+            
+            
+            
             
 
 

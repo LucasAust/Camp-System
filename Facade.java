@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import javax.lang.model.util.ElementScanner14;
 
 public class Facade {
-    private ArrayList<RegisteredUser> userList;
+    private ArrayList<Guardian> guardianList;
     private User user;
     private Schedule schedule;
     private Activity activity;
@@ -13,7 +13,7 @@ public class Facade {
     public static final int MAX_CAMPERS = 8;
 
     public Facade(User user, Schedule schedule, Activity activity, Sessions session, Cabin cabin, Child child) {
-        userList = DataReader.getAllRegistered();
+        guardianList = DataReader.getAllGuardians();
         user = User.getInstance();
         schedule = Schedule.getInstance();
         activity = new Activity(null, null);
@@ -23,12 +23,12 @@ public class Facade {
     }
 
     public void login(String username, String password) {
-        userList = DataReader.getAllRegistered();
+        guardianList = GuardianList.getInstance().getGuardians();
         System.out.println("Logging you in...");
         boolean ret = false;
-        for (int i = 0; i < userList.size(); i++) {
+        for (int i = 0; i < guardianList.size(); i++) {
 
-            RegisteredUser user = userList.get(i);
+            RegisteredUser user = guardianList.get(i);
 
             if (password.equals(user.password) && username.equals(user.userName)) {
                 ret = true;
@@ -47,8 +47,9 @@ public class Facade {
 
     }
 
-    public RegisteredUser signup(String firstName, String lastName, String email, String username, String password) {
-        return RegisteredUser.addUser(firstName, lastName, email, username, password);
+    public void signup(String firstName, String lastName, String email, String username, String password) {
+        Guardian.addUser(firstName, lastName, email, username, password);
+        GuardianList.getInstance().addGuardian(firstName,lastName,email,username,password);
     }
 
     public Schedule getWeeklySchedule(Schedule schedule) {

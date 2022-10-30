@@ -1,0 +1,9 @@
+[
+    {
+        "mon":["Breakfast","Activity 1", "Activity 2","Lunch","Activity 3","Activity 4","Dinner"],
+        "tues":["Breakfast","Activity 1", "Activity 2","Lunch","Activity 3","Activity 4","Dinner"],
+        "wed":["Breakfast","Activity 1", "Activity 2","Lunch","Activity 3","Activity 4","Dinner"],
+        "thurs":["Breakfast","Activity 1", "Activity 2","Lunch","Activity 3","Activity 4","Dinner"],
+        "fri":["Breakfast","Activity 1", "Activity 2","Lunch","Activity 3","Activity 4","Dinner"]
+    }
+]

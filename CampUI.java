@@ -19,6 +19,7 @@ public class CampUI {
         while(run) 
         {
             System.out.println("-----Welcome to South Carolina Summer Camp-----");
+            //DataReader.getAllGuardians();
             System.out.println(FIRST_PROMPT);
             int n = scanner.nextInt();
             switch (n) 
@@ -38,8 +39,9 @@ public class CampUI {
                 case 4:
                     createUser();
                     System.out.println(" ");
-                    System.out.println("Now you can login");
-                    login();
+                    System.out.println("Account successfully created. You will now be returned to the home screen to login.");
+                    DataWriter.saveAllGuardians(GuardianList.getInstance().getGuardians());
+                    run();
                     break;
             }
             System.out.println("Would you like to exit the program? Enter 'yes' or 'no'.");
@@ -51,6 +53,7 @@ public class CampUI {
             }
             else {
                 run = false;
+                DataWriter.saveAllGuardians(GuardianList.getInstance().getGuardians());
                 System.out.println("Thank you for looking at our camp.");
                 System.exit(0);
             }        

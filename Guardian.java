@@ -26,4 +26,8 @@ public class Guardian extends RegisteredUser  {
     public void registerChild(Child child) {
         
     }
+    public static void addGuardian(String firstName2,String lastName2, String email2, String userName2, String password2)
+    {
+        GuardianList.getInstance().addGuardian(firstName2,lastName2,userName2,email2,password2);
+    }
 }

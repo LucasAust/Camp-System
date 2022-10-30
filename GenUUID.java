@@ -13,7 +13,8 @@ public class GenUUID {
        // DataReader.getAllSessions();
        // DataReader.getAllCounselors();
        // DataReader.saveAllUsers();
-       DataReader.getAllRegistered();
-        DataWriter.saveAllUsers(DataReader.getAllRegistered());
+       DataReader.getAllGuardians();
+        //DataWriter.saveAllUsers(ChildList.getInstance().getNewUsers());
+
     }
 }

@@ -7,13 +7,13 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 public class DataWriter {
     //Add method for each type of user
-    public static boolean saveAllUsers(ArrayList<RegisteredUser> users)
+    public static boolean saveAllGuardians(ArrayList<Guardian> guardians)
     {
         JSONArray JSONUsers = new JSONArray();
-        for(int i=0;i<users.size();i++)
+        for(int i=0;i<guardians.size();i++)
         {
         JSONObject user = new JSONObject();
-        RegisteredUser registeredUser = users.get(i);
+        RegisteredUser registeredUser = guardians.get(i);
         user.put("First Name",registeredUser.getFirstName());
         user.put("Last Name",registeredUser.getLastName());
         user.put("Username",registeredUser.getUserName());
@@ -24,8 +24,8 @@ public class DataWriter {
         }
         try
         {
-            FileWriter file = new FileWriter("test.json");
-            file.write(JSONUsers.toJSONString());
+            FileWriter file = new FileWriter("/Users/ljaus/Camp-System/JSON/Guardian.json");
+            file.append(JSONUsers.toJSONString());
             file.flush();
         }
         catch(Exception e)
