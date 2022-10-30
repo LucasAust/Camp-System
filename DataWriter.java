@@ -35,17 +35,32 @@ public class DataWriter {
         return true;
     }
 
-    public static void writeRoster(ArrayList<String> roster)
+    public static void writeRoster(ArrayList<String> roster) throws IOException
     {
-
+        FileWriter file = new FileWriter("roster.txt");
+        for(String str: roster)
+        {
+            file.write(str + System.lineSeparator());
+        }
+        file.close();
     }
-    public static void writeVitals(ArrayList<String> vitals)
+    public static void writeVitals(ArrayList<String> vitals) throws IOException
     {
-
+        FileWriter file = new FileWriter("vitals.txt");
+        for(String str: vitals)
+        {
+            file.write(str + System.lineSeparator());
+        }
+        file.close();
     }
-    public static void writeSchedule(ArrayList<String> schedule)
+    public static void writeSchedule(ArrayList<String> schedule) throws IOException
     {
-
+        FileWriter file = new FileWriter("schedule.txt");
+        for(String str: schedule)
+        {
+            file.write(str + System.lineSeparator());
+        }
+        file.close();
     }
 
 }
