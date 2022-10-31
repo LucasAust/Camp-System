@@ -58,7 +58,8 @@ public void generateSchedule() {
       int randomActivity = new Random().nextInt(activities.size());
       System.out.println("-----------------------------");
       System.out.println("----------Cabin " + i +"------------");
-      System.out.println(activities.get(randomActivity));
+      System.out.println("| " + activities.get(randomActivity) + " |");
+      System.out.println("-----------------------------");
     }
 }
 
