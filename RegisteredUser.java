@@ -1,5 +1,5 @@
 public class RegisteredUser extends User {
-  protected static String firstName;
+  protected String firstName;
   protected String lastName;
   protected String userName;
   protected String email;
