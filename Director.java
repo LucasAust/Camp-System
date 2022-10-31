@@ -57,8 +57,8 @@ public void generateSchedule() {
     for(int i=1;i<10;i++) {
       int randomActivity = new Random().nextInt(activities.size());
       System.out.println("-----------------------------");
-      System.out.println("----------Cabin " + i +"------------")
-      System.out.println(activities[randomActivity]);
+      System.out.println("----------Cabin " + i +"------------");
+      System.out.println(activities.get(randomActivity));
     }
 }
 
@@ -68,5 +68,5 @@ public void removeChild(Child child){
 
 public void addSession(Sessions session){
     sessions.add(session);
-}
+};
 }

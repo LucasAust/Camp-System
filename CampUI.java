@@ -156,20 +156,25 @@ public class CampUI {
     }
 
     public void directorDisplay() {
+        //--------NEED TO SET PARAMETERS--------------
+        Director director = new Director(FIRST_PROMPT, FIRST_PROMPT, FIRST_PROMPT, FIRST_PROMPT, FIRST_PROMPT);
         System.out.println("-----Welcome Director-----");
         System.out.println(" ");
-        System.out.println("Would you like to \n1. Add an activity \n2. Remove an activity \n3. Edit schedule");
+        System.out.println("Would you like to \n1. Set sessions \n2. Add an activity \n3. Remove an activity \n4. Edit schedule");
         int choice = scanner.nextInt();
         switch (choice) {
             case 1:
+                //set sessions
+                director.setSessions();
+            case 2: 
                 //add activitivy
                 Activity activity = new Activity(null, null);
                 activity.createActivity();
-                break;
-            case 2: 
-                // remove
-                break;
+                break;           
             case 3:
+                //remove activity
+                break;
+            case 4:
                 //edit schedule
                 break;
         }
