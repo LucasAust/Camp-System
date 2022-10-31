@@ -8,6 +8,7 @@ public class CampUI {
     public Child editChild;
     private Random rand;
     public RegisteredUser registeredUser;
+    public Guardian guardian;
     private static final String FIRST_PROMPT = "1. Guardian Login \n2. Counselor Login \n3. Director Login \n4. Create Account \n5. Logout";
 
     public CampUI() {
@@ -27,8 +28,8 @@ public class CampUI {
             switch (n) 
             {
                 case 1:
-                    login(1);
-                    userDisplay();
+                    guardian=(Guardian) login(1);
+                    userDisplay(guardian);
                     break;
                 case 2:
                     login(2);
@@ -64,12 +65,13 @@ public class CampUI {
         }
     }
 
-    public void login(int i) {
+    public RegisteredUser login(int i) {
         System.out.println("What is your username");
         String username = scanner.next();
         System.out.println("What is your password");
         String password = scanner.next();
         registeredUser=facade.login(username, password,i);
+        return registeredUser;
     }
 
     public void logout() {
@@ -100,10 +102,10 @@ public class CampUI {
         facade.signup(firstName, lastName, email, username, password,accountType,null);
     }
 
-    public void userDisplay() {
+    public void userDisplay(Guardian guardian) {
         System.out.println("-----Welcome Guardian-----");
         System.out.println(" ");
-        Guardian guardian = (Guardian) registeredUser;
+        //Guardian guardian = (Guardian) registeredUser;
         System.out.println("Would you like to \n1. Add a child to your account \n2. Edit current child information \n3. View Children \n4. Register your child in a session \n5. View available sessions\n6. Logout");
         int choice = scanner.nextInt();
         switch (choice) {
