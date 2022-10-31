@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Child extends RegisteredUser{
+public class Child {
 
     public String getFirstName() {
         return firstName;
@@ -58,12 +58,11 @@ public class Child extends RegisteredUser{
     public ArrayList<String> medications = new ArrayList<String>();
     public ArrayList<emergencyContact> emergencyContacts;
 
-    public Child(String firstName, String lastName, String age, healthInfo healthInfo, emergencyContact emergencyContact,String session)
+    public Child(String firstName, String lastName,String age, String medication2, healthInfo healthInfo, emergencyContact emergencyContact,String session)
     {
-        super(firstName, lastName, firstName, lastName, age);
         this.firstName = firstName;
         this.lastName = lastName;
-        this.age = age;
+        this.age = medication2;
         this.healthInfo = healthInfo;
         this.emergencyContact=emergencyContact;
         this.session=session;
@@ -90,4 +89,5 @@ public class Child extends RegisteredUser{
     public static Child getChild() {
         return null;
     }
+    
 }

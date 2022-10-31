@@ -55,7 +55,7 @@ public class DataReader {
         healthInfo healthInfo = new healthInfo(hName, hPolicyNumber, hDoctor, dietaryRestrictions, allergies,
             medications);
         emergencyContact eContact = new emergencyContact(eName, eRelationship, ePhoneNumber);
-        children.add(new Child(firstName, lastName, age, healthInfo, eContact,session));
+        children.add(new Child(firstName, lastName, age, meds, healthInfo, eContact,session));
       }
     } catch (Exception e) {
       e.printStackTrace();
@@ -171,7 +171,7 @@ public class DataReader {
   public static ArrayList<Director> getAllDirectors() {
     ArrayList<Director> directorList = new ArrayList<Director>();
     try {
-      FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/Director.json");
+      FileReader reader = new FileReader("JSON/Director.json");
       JSONParser parser = new JSONParser();
       JSONArray directors = (JSONArray) new JSONParser().parse(reader);
       for (int i = 0; i < directors.size(); i++) {
