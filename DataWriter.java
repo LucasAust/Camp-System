@@ -25,7 +25,7 @@ public class DataWriter {
         }
         try
         {
-            FileWriter file = new FileWriter("/Users/ljaus/Camp-System/JSON/Guardian.json");
+            FileWriter file = new FileWriter("JSON/Guardian.json");
             file.write(JSONUsers.toJSONString());
             file.flush();
         }
@@ -173,7 +173,7 @@ public class DataWriter {
         }
         try
         {
-            FileWriter file = new FileWriter("/Users/ljaus/Camp-System/JSON/Child.json");
+            FileWriter file = new FileWriter("JSON/Child.json");
             file.write(JSONUsers.toJSONString());
             file.flush();
         }
