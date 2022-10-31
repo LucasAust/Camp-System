@@ -122,6 +122,7 @@ public class CampUI {
         String password = scanner.nextLine();
         scanner.nextLine();
         facade.signup(firstName, lastName, email, username, password,accountType,null);
+        
     }
 
     /**

@@ -108,6 +108,7 @@ public class Facade {
         // Guardian.addUser(firstName, lastName, username, email, password);
         if (accountType.equalsIgnoreCase("Guardian")) {
             GuardianList.getInstance().addGuardian(firstName, lastName, username, email, password, children);
+            DataWriter.saveAllGuardians(GuardianList.getInstance().getGuardians());
         } else if (accountType.equalsIgnoreCase("Director")) {
             DirectorList.getInstance().addDirector(firstName, lastName, username, email, password);
         } else if (accountType.equalsIgnoreCase("Counselor")) {
@@ -230,25 +231,8 @@ public class Facade {
         ArrayList<Child> childs = new ArrayList<Child>();
         String firstName = null;
         String lastName = null;
-<<<<<<< HEAD
-       ArrayList<String> children= registeredUser.getChildren();
-        childs = DataReader.saveAllChildren();
-       for(int i=0;i<children.size();i++)
-       {
-        System.out.println(children.get(i));
-        int x = children.get(i).indexOf(" ");
-         firstName = children.get(i).substring(0,x);
-         lastName = children.get(i).substring(x+1);
-        for(int j=0;j<childs.size();j++)
-        {
-            Child child = childs.get(j);
-            if(child.getFirstName().equals(firstName)&&child.getLastName().equals(lastName))
-            {
-                System.out.println(child.session);
-                break;
-=======
         ArrayList<String> children = registeredUser.getChildren();
-        ArrayList<Child> childs = DataReader.saveAllChildren();
+         childs = DataReader.saveAllChildren();
         for (int i = 0; i < children.size(); i++) {
             System.out.println(children.get(i));
             int x = children.get(i).indexOf(" ");
@@ -260,7 +244,6 @@ public class Facade {
                     System.out.println(child.session);
                     break;
                 }
->>>>>>> 81aa95fdbc3941f8ba314d46e97a745a6632930d
             }
         }
 
