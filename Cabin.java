@@ -52,8 +52,15 @@ public class Cabin {
     }
     public void addCampers()
     {
-        
-        campers.add(Child.getChild());
+        ArrayList<Child> children = DataReader.saveAllChildren();
+        ArrayList<Child> copy = children;
+        for( int i=0;i<copy.size();i++)
+        {
+            Child child = children.get(i);
+            if (ageRange.contains(child.age));
+            campers.add(child);
+            copy.remove(child);
+        }
     }
     public ArrayList<ArrayList> getSchedule()
     {

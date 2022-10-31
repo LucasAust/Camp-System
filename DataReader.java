@@ -21,7 +21,7 @@ public class DataReader {
       JSONArray userList = (JSONArray) new JSONParser().parse(reader);
       for (int i = 0; i < userList.size(); i++) {
         JSONObject user = (JSONObject) userList.get(i);
-
+        
         String id = (String) user.get("id");
         String firstName = (String) user.get("firstName");
         String lastName = (String) user.get("lastName");
@@ -37,8 +37,12 @@ public class DataReader {
         // ArrayList<String> allergies = null;
         ArrayList<String> medication = (ArrayList<String>) user.get("medications");
         ArrayList<String> medications = new ArrayList<String>();
-        medications.addAll(medication);
-        JSONObject emergencyContact = (JSONObject) user.get("healthCare");
+        for(int j=0;j<medication.size();j++)
+        {
+          String med = medication.get(j);
+          medications.add(med);
+        }
+        JSONObject emergencyContact = (JSONObject) user.get("emergencyContact");
         String eName = (String) emergencyContact.get("name");
         String eRelationship = (String) emergencyContact.get("relationship");
         String ePhoneNumber = (String) emergencyContact.get("phoneNumber");
@@ -50,7 +54,7 @@ public class DataReader {
         healthInfo healthInfo = new healthInfo(hName, hPolicyNumber, hDoctor, dietaryRestrictions, allergies,
             medications);
         emergencyContact eContact = new emergencyContact(eName, eRelationship, ePhoneNumber);
-        children.add(new Child(firstName, lastName, age, healthInfo, eContact));
+        children.add(new Child(firstName, lastName, age, healthInfo, eContact,session));
       }
     } catch (Exception e) {
       e.printStackTrace();
@@ -66,11 +70,11 @@ public class DataReader {
       JSONArray counselorList = (JSONArray) new JSONParser().parse(reader);
       for (int i = 0; i < counselorList.size(); i++) {
         JSONObject counselor = (JSONObject) counselorList.get(i);
-
+        String username = (String) counselor.get("username");
+        String password = (String) counselor.get("password");
         String id = (String) counselor.get("id");
         String firstName = (String) counselor.get("firstName");
         String lastName = (String) counselor.get("lastName");
-        Long age = (Long) counselor.get("age");
         JSONArray cabins = (JSONArray)counselor.get("cabin");
         ArrayList<Cabin> counselorCabins = new ArrayList<Cabin>();
         for(int j=0;i>cabins.size();j++)
@@ -91,7 +95,7 @@ public class DataReader {
         String policyNumber = (String) healthCare.get("policyNumber");
         String doctor = (String) healthCare.get("doctor");
         healthInfo healthInfo = new healthInfo(hName, policyNumber, doctor,null,null,null);
-        Counselor addCounselor = new Counselor(firstName, null, age, emergencyContact2, healthInfo, counselorList);
+        Counselor addCounselor = new Counselor(firstName, null, emergencyContact2, healthInfo, counselorCabins,username,password);
         counselors.add(addCounselor);
       }
     } catch (Exception e) {
@@ -146,8 +150,15 @@ public class DataReader {
         String email = (String) guardian.get("email");
         String password = (String) guardian.get("password");
         String username = (String) guardian.get("username");
+        ArrayList<String> children = new ArrayList<String>();
+        ArrayList<String> childs = (ArrayList<String>)guardian.get("children");
+        for(int j=0;j<childs.size();j++)
+        {
+        String child=childs.get(j);
+        children.add(child);
+        }
 
-        Guardian addReg = new Guardian(firstName,lastName,username,email,password);
+        Guardian addReg = new Guardian(firstName,lastName,username,email,password,children);
         guardianList.add(addReg);
       }
     } catch (Exception e) {

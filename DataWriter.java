@@ -13,12 +13,13 @@ public class DataWriter {
         for(int i=0;i<guardians.size();i++)
         {
         JSONObject user = new JSONObject();
-        RegisteredUser guardian = guardians.get(i);
+        Guardian guardian = guardians.get(i);
         user.put("firstName",guardian.getFirstName());
         user.put("lastName",guardian.getLastName());
         user.put("username",guardian.getUserName());
         user.put("email",guardian.getEmail());
         user.put("password", guardian.getPassword());
+        user.put("children",guardian.getChildren());
         
         JSONUsers.add(user);
         }
@@ -103,17 +104,60 @@ public class DataWriter {
             }
             cabinsList.add(cabin);
         }
-    
-        
-
-        
-        //session.put("password", Session.getPassword());
-        
         JSONUsers.add(session);
         }
         try
         {
             FileWriter file = new FileWriter("test.JSON");
+            file.write(JSONUsers.toJSONString());
+            file.flush();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        return true;
+    }
+    public static boolean saveAllChildren(ArrayList<Child> children)
+    {
+        JSONArray JSONUsers = new JSONArray();
+        JSONObject healthCare = new JSONObject();
+        JSONObject emergencyContact = new JSONObject();
+        JSONArray medications = new JSONArray();
+        for(int i=0;i<children.size();i++)
+        {
+        JSONObject user = new JSONObject();
+        Child child = children.get(i);
+        user.put("firstName",child.getFirstName());
+        user.put("lastName",child.getLastName());
+        user.put("medications",medications);
+        ArrayList<String> meds = child.getMedications();
+        for(int h=0;h<meds.size();h++)
+        {
+            String add = meds.get(h);
+            medications.add(add);
+        }
+        user.put("healthCare",healthCare);
+        ArrayList<String> dietaryRestrictions = child.getHealthInfo().getDietaryRestrictions();
+        String dietaryRestriction = null;
+        for(int k=0;k<dietaryRestrictions.size();k++)
+        {
+            dietaryRestriction=dietaryRestrictions.get(k);
+            user.put("deitaryRestrictions",dietaryRestriction);
+        }
+        user.put("session",child.getSession());
+        healthCare.put("name",child.getHealthInfo().getInsurance());
+        healthCare.put("policyNumber",child.getHealthInfo().getPolicyNumber());
+        healthCare.put("doctor",child.getHealthInfo().getDoctor());
+        user.put("emergencyContact",emergencyContact);
+        emergencyContact.put("name",child.getEmergencyContact().getName());
+        emergencyContact.put("relationship",child.getEmergencyContact().getRelationship());
+        emergencyContact.put("phoneNumber",child.getEmergencyContact().getPhoneNumber());
+        JSONUsers.add(user);
+        }
+        try
+        {
+            FileWriter file = new FileWriter("/Users/ljaus/Camp-System/JSON/Child.json");
             file.write(JSONUsers.toJSONString());
             file.flush();
         }

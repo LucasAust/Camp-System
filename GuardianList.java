@@ -17,10 +17,10 @@ public class GuardianList {
         }
         return guardianList;
     }
-    public void addGuardian(String firstName, String lastName, String username, String email, String password)
+    public void addGuardian(String firstName, String lastName, String username, String email, String password, ArrayList<String> children)
     {
-        guardians.add(new Guardian(firstName,lastName,username,email,password));
-        newGuardians.add(new Guardian(firstName,lastName,username,email,password));
+        guardians.add(new Guardian(firstName,lastName,username,email,password,children));
+        newGuardians.add(new Guardian(firstName,lastName,username,email,password,children));
     }
     public ArrayList<Guardian> getGuardians()
     {

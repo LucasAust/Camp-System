@@ -15,6 +15,7 @@ public class Facade {
     public static final int MAX_CAMPERS = 8;
     public Sessions viewSession;
     public Cabin viewCabin;
+    
 
     public Facade(User user, Schedule schedule, Activity activity, Sessions session, Cabin cabin, Child child) {
         guardianList = this.guardianList;
@@ -26,7 +27,7 @@ public class Facade {
         this.child = child;
     }
 
-    public void login(String username, String password,int j) {
+    public RegisteredUser login(String username, String password,int j) {
         if (j==1)
         {
         guardianList = GuardianList.getInstance().getGuardians();
@@ -39,6 +40,8 @@ public class Facade {
             if(password.equals(user.password) && username.equals(user.userName))
             {
                 ret=true;
+                System.out.println("success");
+                return user;
             }
             else
             {
@@ -49,7 +52,10 @@ public class Facade {
         }
         if(ret==true)
         {
+            
             System.out.println("success");
+            
+
         }
         else
         {
@@ -67,9 +73,10 @@ public class Facade {
 
         Counselor counselor = counselorList.get(i);
 
-        if(password.equals(counselor.lastName) && username.equals(counselor.firstName))
+        if(password.equals(counselor.password) && username.equals(counselor.username))
         {
             ret=true;
+            return counselor;
         }
         else
         {
@@ -102,6 +109,7 @@ public class Facade {
         if(password.equals(director.password) && username.equals(director.userName))
         {
             ret=true;
+            return director;
         }
         else
         {
@@ -121,14 +129,15 @@ public class Facade {
             campUI.login(3);
         }
     }
+    return null;
         
     }
 
-    public void signup(String firstName, String lastName, String email, String username, String password, String accountType) {
+    public void signup(String firstName, String lastName, String email, String username, String password, String accountType, ArrayList<String> children) {
         //Guardian.addUser(firstName, lastName, username, email, password);
         if(accountType.equalsIgnoreCase("Guardian"))
         {
-        GuardianList.getInstance().addGuardian(firstName,lastName,username,email,password);
+        GuardianList.getInstance().addGuardian(firstName,lastName,username,email,password,children);
         }
         else if (accountType.equalsIgnoreCase("Director"))
         {
@@ -186,10 +195,6 @@ public class Facade {
     {
         
     }
-    public void registerChild(Child child)
-    {
-
-    }
     public void removeActivity(Activity activity)
     {
 
@@ -230,5 +235,73 @@ public class Facade {
         
 
 
+    }
+
+    public void viewRoster() {
+    }
+
+    public void viewVitals() {
+    }
+
+    public void printSchedule() {
+    }
+
+    public void viewChildren(Guardian registeredUser) {
+        String firstName = null;
+        String lastName = null;
+       ArrayList<String> children= registeredUser.getChildren();
+       ArrayList<Child> childs = DataReader.saveAllChildren();
+       for(int i=0;i<children.size();i++)
+       {
+        System.out.println(children.get(i));
+        int x = children.get(i).indexOf(" ");
+         firstName = children.get(i).substring(0,x);
+         lastName = children.get(i).substring(x+1);
+        for(int j=0;j<childs.size();j++)
+        {
+            Child child = childs.get(i);
+            if(child.firstName.equals(firstName)&&child.lastName.equals(lastName))
+            {
+                System.out.println(child.session);
+                break;
+            }
+        }
+        }
+        
+        
+    }
+
+    public void addChild(String string,Guardian guardian) {
+        
+        guardian.addChild(string);
+    }
+
+    public void viewSessions() {
+        ArrayList<Sessions> sessions = new ArrayList<Sessions>();
+        sessions=DataReader.getAllSessions2();
+        for(int i = 0;i<sessions.size();i++)
+        {
+            Sessions session = sessions.get(i);
+            System.out.println(session.getTitle()+": "+session.getTheme());
+        }
+
+
+    }
+    public void registerChild(Child child)
+    {
+
+    }
+
+    public void registerChildForSession(String childFirstName, String childLastName, String session2) {
+        ArrayList<Child> children = DataReader.saveAllChildren();
+        for(int i=0;i<children.size();i++)
+        {
+            Child child = children.get(i);
+            if(child.firstName.equals(childFirstName)&&child.lastName.equals(childLastName))
+            {
+                child.session = session2;
+            }
+            DataWriter.saveAllChildren(children);
+        }
     }
 }

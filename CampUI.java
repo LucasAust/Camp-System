@@ -7,6 +7,7 @@ public class CampUI {
     private Facade facade = new Facade(null, null, null, null, null, null);
    public Child editChild;
     private Random rand;
+    public RegisteredUser registeredUser;
     private static final String FIRST_PROMPT = "1. Guardian Login \n2. Counselor Login \n3. Director Login \n4. Create Account \n5. Logout";
 
     public CampUI() {
@@ -68,7 +69,7 @@ public class CampUI {
         String username = scanner.next();
         System.out.println("What is your password");
         String password = scanner.next();
-        facade.login(username, password,i);
+        registeredUser=facade.login(username, password,i);
     }
 
     public void logout() {
@@ -96,13 +97,14 @@ public class CampUI {
         System.out.println("What would you like your password to be");
         String password = scanner.nextLine();
         scanner.nextLine();
-        facade.signup(firstName, lastName, email, username, password,accountType);
+        facade.signup(firstName, lastName, email, username, password,accountType,null);
     }
 
     public void userDisplay() {
         System.out.println("-----Welcome Guardian-----");
         System.out.println(" ");
-        System.out.println("Would you like to \n1. Register a child \n2. Edit current child information \n3. View Children \n4. Logout");
+        Guardian guardian = (Guardian) registeredUser;
+        System.out.println("Would you like to \n1. Add a child to your account \n2. Edit current child information \n3. View Children \n4. Register your child in a session \n5. View available sessions\n6. Logout");
         int choice = scanner.nextInt();
         switch (choice) {
             case 1:
@@ -114,9 +116,6 @@ public class CampUI {
                 scanner.nextLine();
                 System.out.println("What is your childs age");
                 int age = scanner.nextInt();
-                scanner.nextLine();
-                System.out.println("Which session would you like to register for");
-                String sessionID = scanner.next();
                 scanner.nextLine();
                 System.out.println("What is the name of the emergency contact for the child");
                 String name = scanner.nextLine();
@@ -146,7 +145,8 @@ public class CampUI {
                 ArrayList<String> medications = new ArrayList<String>();
                 medications.add(medication);
                 scanner.nextLine();
-                Child child = new Child(firstName, lastName, medication, null, null);
+                Child child = new Child(firstName, lastName, medication, null, null,null);
+                facade.addChild(firstName+" "+lastName,guardian);
                 
                 facade.registerChild(child);
                 break;
@@ -155,7 +155,7 @@ public class CampUI {
                 boolean ret = false;
                 while(!exit)
                 {
-                    Child finChild = new Child(null, null, null, null, null);
+                    Child finChild = new Child(null, null, null, null, null,null);
                     System.out.println("enter the first and last name of the child you would like to edit.");
                     String editFirstName = scanner.next();
                     System.out.println("Enter the last name of the child you would like to edit");
@@ -242,7 +242,26 @@ public class CampUI {
                     }
                 }   
                 break;
-            case 3:
+                case 3:
+                facade.viewChildren(guardian);
+                break;
+                case 4:
+                System.out.println("Enter the first name of the child you would like to register");
+                String childFirstName = scanner.next();
+                scanner.nextLine();
+                
+                System.out.println("Enter the last name of the child you would like to register");
+                String childLastName = scanner.next();
+                scanner.nextLine();
+                System.out.println("Enter the session that you would like to register your child for");
+                String session = scanner.nextLine();
+                scanner.nextLine();
+                facade.registerChildForSession(childFirstName,childLastName,session);
+                break;
+                case 5:
+                facade.viewSessions();
+                break;
+                case 6:
                 logout();
                 break;
         }
@@ -251,17 +270,17 @@ public class CampUI {
     public void counselorDisplay() {
         System.out.println("-----Welcome Counselor-----");
         System.out.println(" ");
-        System.out.println("Would you like to \n1. View Schedule \n2. View Campers \n3. Edit personal information \n4. Logout");
+        System.out.println("Would you like to \n1. View Roster \n2. View Vital Information \n3. View Schedule \n4. Logout");
         int choice = scanner.nextInt();
         switch (choice) {
             case 1:
-                //schedule
+                facade.viewRoster();
                 break;
             case 2:
-                //campers
+                facade.viewVitals();
                 break;
             case 3:
-                //edit info
+                facade.printSchedule();
                 break;
             case 4:
                 logout();
