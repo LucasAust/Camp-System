@@ -467,17 +467,17 @@
       "lastName": "Clark",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "243-853-8583",
+        "name": "Alice Clark",
+        "relationship": "Mother"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Usman",
+        "name": "Best Medical Practices",
+        "phoneNumber": "929-244-5839"
       },
       "deitaryRestrictions": "Gluten",
       "age": "14"
@@ -488,17 +488,17 @@
       "lastName": "Rios",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "234-996-2499",
+        "name": "Mary Rios",
+        "relationship": "Mother"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. James",
+        "name": "Socastee Medical Club",
+        "phoneNumber": "992-234-2342"
       },
       "deitaryRestrictions": "Gluten",
       "age": "15"
@@ -509,17 +509,17 @@
       "lastName": "Barkely",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "123-478-6363",
+        "name": "Saquon Barkely",
+        "relationship": "Father"
       },
       "medications": [
         "Epi-Pen"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Pollard",
+        "name": "Dallas Medical Center",
+        "phoneNumber": "234-663-3522"
       },
       "deitaryRestrictions": "Tree nuts",
       "age": "15"
@@ -530,17 +530,17 @@
       "lastName": "Scary",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "234-009-3782",
+        "name": "Freddy Scary",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Fitz",
+        "name": "Washington First Health",
+        "phoneNumber": "234-567-4654"
       },
       "deitaryRestrictions": "None",
       "age": "12"
@@ -551,17 +551,17 @@
       "lastName": "Shaheen",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "923-292-2356",
+        "name": "Gary Shaheen",
+        "relationship": "Grandfather"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Hornig",
+        "name": "Sam Power Health",
+        "phoneNumber": "020-244-7445"
       },
       "deitaryRestrictions": "Gluten",
       "age": "12"
@@ -572,17 +572,17 @@
       "lastName": "Shiesty",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "274-324-3463",
+        "name": "Burrow Shiesty",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Geno",
+        "name": "Geno's Medical Center",
+        "phoneNumber": "992-235-3462"
       },
       "deitaryRestrictions": "None",
       "age": "11"
@@ -593,17 +593,17 @@
       "lastName": "Cella",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "020-363-6587",
+        "name": "Hannah Cella",
+        "relationship": "Mother"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Talmadge",
+        "name": "Talmadge Helath and More PhD.",
+        "phoneNumber": "991-123-3468"
       },
       "deitaryRestrictions": "None",
       "age": "7"
@@ -614,17 +614,17 @@
       "lastName": "Granger",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "234-345-2344",
+        "name": "Ronny Granger",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. George",
+        "name": "Costanza Health and Care",
+        "phoneNumber": "234-738-8834"
       },
       "deitaryRestrictions": "None",
       "age": "12"
@@ -635,17 +635,17 @@
       "lastName": "Brown",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "234-345-8489",
+        "name": "AJ Brown",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Wilson",
+        "name": "Wilson PhD.",
+        "phoneNumber": "565-457-5865"
       },
       "deitaryRestrictions": "Gluten",
       "age": "10"
@@ -656,17 +656,17 @@
       "lastName": "Moore",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "234-23-9999",
+        "name": "Rondale Moore",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Hyatt",
+        "name": "Hyatt Health PhD.",
+        "phoneNumber": "992-342-3579"
       },
       "deitaryRestrictions": "None",
       "age": "11"
@@ -677,17 +677,17 @@
       "lastName": "Amendola",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "992-002-2353",
+        "name": "Danny Amendola",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Igor",
+        "name": "Best Health Care",
+        "phoneNumber": "773-992-2432"
       },
       "deitaryRestrictions": "None",
       "age": "12"
@@ -698,17 +698,17 @@
       "lastName": "McGregor",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "828-234-7544",
+        "name": "Margot McGregor",
+        "relationship": "Mother"
       },
       "medications": [
         "Zyrtec"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Jeremy",
+        "name": "Texas-Louisana Health Care",
+        "phoneNumber": "882-023-1242"
       },
       "deitaryRestrictions": "Vegetarian",
       "age": "13"
@@ -719,17 +719,17 @@
       "lastName": "Ferguson",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "924-234-9249",
+        "name": "Henry Ferguson",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Kylie",
+        "name": "Kylie and Partners PhD.",
+        "phoneNumber": "992-349-3634"
       },
       "deitaryRestrictions": "Lactose intolerant",
       "age": "14"
@@ -740,17 +740,17 @@
       "lastName": "Taylor",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "900-200-1000",
+        "name": "Elizabeth Taylor",
+        "relationship": "Mother"
       },
       "medications": [
         "Claritin"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Poe",
+        "name": "Baltimore Health",
+        "phoneNumber": "234-795-0345"
       },
       "deitaryRestrictions": "None",
       "age": "15"
@@ -761,17 +761,17 @@
       "lastName": "Byrant",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "004-242-4577",
+        "name": "Kobe Bryant",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Fred",
+        "name": "LA Health Associates",
+        "phoneNumber": "001-353-3463"
       },
       "deitaryRestrictions": "None",
       "age": "16"
@@ -782,17 +782,17 @@
       "lastName": "Kohut",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "092-247-5687",
+        "name": "Yella Kohut",
+        "relationship": "Mother"
       },
       "medications": [
         "Allegra"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Corrine",
+        "name": "Indigo Creek Medical Professionals",
+        "phoneNumber": "996-447-2346"
       },
       "deitaryRestrictions": "None",
       "age": "17"
@@ -803,17 +803,17 @@
       "lastName": "Bateman",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "898-426-4343",
+        "name": "Patrick Bateman",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Young",
+        "name": "Disney Health Care",
+        "phoneNumber": "889-990-2544"
       },
       "deitaryRestrictions": "None",
       "age": "18"
@@ -824,17 +824,17 @@
       "lastName": "Friend",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "345-235-3453",
+        "name": "Friendly Friend",
+        "relationship": "Mother"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Tim",
+        "name": "Brosnan Medical PhD.",
+        "phoneNumber": "887-558-2349"
       },
       "deitaryRestrictions": "None",
       "age": "7"
@@ -845,17 +845,17 @@
       "lastName": "Thomas",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "990-234-2346",
+        "name": "Miller Thomas",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Bee",
+        "name": "Bee Happy Medical Center",
+        "phoneNumber": "991-234-2357"
       },
       "deitaryRestrictions": "None",
       "age": "8"
@@ -866,17 +866,17 @@
       "lastName": "George",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "234-547-3463",
+        "name": "Gary George",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. JR",
+        "name": "JR Smith Healh Center",
+        "phoneNumber": "823-378-3428"
       },
       "deitaryRestrictions": "Vegetarian",
       "age": "9"
@@ -887,17 +887,17 @@
       "lastName": "England",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "992-235-4532",
+        "name": "Queen England",
+        "relationship": "Mother"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Ferdanand",
+        "name": "England Professional Health Center and More",
+        "phoneNumber": "190-990-2342"
       },
       "deitaryRestrictions": "None",
       "age": "10"
@@ -908,17 +908,17 @@
       "lastName": "Killament",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "232-325-7598",
+        "name": "Andrew Killament",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Howard",
+        "name": "Columbia Health Center",
+        "phoneNumber": "002-235-4735"
       },
       "deitaryRestrictions": "None",
       "age": "11"
@@ -929,17 +929,17 @@
       "lastName": "Sanders",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "249-658-4564",
+        "name": "AC Saunders",
+        "relationship": "Mother"
       },
       "medications": [
         "Claritin"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Kevin",
+        "name": "Kevin Medical Practices",
+        "phoneNumber": "999-992-2382"
       },
       "deitaryRestrictions": "None",
       "age": "12"
@@ -950,17 +950,17 @@
       "lastName": "Squires",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "238-235-5704",
+        "name": "Darius Squires",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Vann",
+        "name": "Vann Medical PhD.",
+        "phoneNumber": "992-264-4734"
       },
       "deitaryRestrictions": "None",
       "age": "13"
@@ -971,17 +971,17 @@
       "lastName": "Godbold",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "573-994-3458",
+        "name": "Bo Godbold",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Alex",
+        "name": "MI Medical Practice",
+        "phoneNumber": "772-825-3457"
       },
       "deitaryRestrictions": "None",
       "age": "14"
@@ -992,17 +992,17 @@
       "lastName": "Myers",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "772-234-3494",
+        "name": "Mason Myers",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Patrick",
+        "name": "NYC Health Professionals",
+        "phoneNumber": "234-886-3462"
       },
       "deitaryRestrictions": "Vegetarian",
       "age": "15"
@@ -1013,17 +1013,17 @@
       "lastName": "Omer",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "234-235-2637",
+        "name": "Oliver Omer",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Browning",
+        "name": "Browning Medical PhD.",
+        "phoneNumber": "774-930-0939"
       },
       "deitaryRestrictions": "None",
       "age": "16"
@@ -1034,17 +1034,17 @@
       "lastName": "Montana",
       "session": "Week 1",
       "emergencyContact": {
-        "phoneNumber": null,
-        "name": "Gary's Insurance",
-        "relationship": null
+        "phoneNumber": "235-997-3456",
+        "name": "Tony Montana",
+        "relationship": "Father"
       },
       "medications": [
         "None"
       ],
       "healthCare": {
-        "doctor": "Dr. Ivory",
-        "name": "Gary's Insurance",
-        "policyNumber": "GI2349050650"
+        "doctor": "Dr. Onion",
+        "name": "Onion Feild Medical",
+        "policyNumber": "022-346-2574"
       },
       "deitaryRestrictions": "None",
       "age": "17"
