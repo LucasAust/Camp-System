@@ -55,7 +55,7 @@ public class DataReader {
         healthInfo healthInfo = new healthInfo(hName, hPolicyNumber, hDoctor, dietaryRestrictions, allergies,
             medications);
         emergencyContact eContact = new emergencyContact(eName, eRelationship, ePhoneNumber);
-        children.add(new Child(firstName, lastName, age, healthInfo, eContact,session));
+        children.add(new Child(firstName, lastName, age, meds, healthInfo, eContact,session));
       }
     } catch (Exception e) {
       e.printStackTrace();
