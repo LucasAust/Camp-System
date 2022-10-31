@@ -105,6 +105,7 @@ public void generateSchedule() {
 }
 
 public void removeChild(Child child){
+    
     child.removeChild(child);
 }
 
