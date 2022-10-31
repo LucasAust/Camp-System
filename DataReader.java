@@ -43,7 +43,7 @@ public class DataReader {
         }
         ArrayList<String> medications = new ArrayList<String>();
         medications.add(meds);
-        JSONObject emergencyContact = (JSONObject) user.get("healthCare");
+        JSONObject emergencyContact = (JSONObject) user.get("emergencyContact");
         String eName = (String) emergencyContact.get("name");
         String eRelationship = (String) emergencyContact.get("relationship");
         String ePhoneNumber = (String) emergencyContact.get("phoneNumber");

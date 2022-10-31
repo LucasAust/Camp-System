@@ -232,9 +232,43 @@ public class Facade {
     }
 
     public void viewRoster() {
+        Cabin cabin = new Cabin("11-12", null, MAX_CAMPERS, null, null, null);
+        ArrayList<Child> children=cabin.addCampers(cabin);
+        for(int i = 0;i<children.size();i++)
+        {
+            Child child = children.get(i);
+            System.out.println(child.firstName+" "+child.lastName + " "+child.age);
+        }
     }
 
     public void viewVitals() {
+        Cabin cabin = new Cabin("11-12", null, MAX_CAMPERS, null, null, null);
+        ArrayList<Child> children=cabin.addCampers(cabin);
+        for(int i = 0;i<children.size();i++)
+        {
+            Child child = children.get(i);
+            System.out.println(child.firstName+" "+child.lastName + " age: "+child.age);
+            System.out.println("Health information");
+            ArrayList meds = child.getHealthInfo().getMedications();
+            for(int j = 0;j<meds.size();j++)
+            {
+                System.out.println(meds.get(j));
+            }
+            ArrayList allergies = child.getHealthInfo().getAllergies();
+            for(int j=0;j<allergies.size();j++)
+            {
+                System.out.println(allergies.get(j));
+            }
+            System.out.println("Insurance information");
+            System.out.println(child.getHealthInfo().getInsurance());
+            System.out.println(child.getHealthInfo().getPolicyNumber());
+            System.out.println(child.getHealthInfo().getDoctor());
+            System.out.println("emergency contact");
+            System.out.println(child.getEmergencyContact().getName());
+            System.out.println(child.getEmergencyContact().getRelationship());
+            System.out.println(child.getEmergencyContact().getPhoneNumber());
+
+        }
     }
 
     public void printSchedule() {

@@ -50,17 +50,22 @@ public class Cabin {
         Cabin cabin = new Cabin(ageRange, counselor, maxCampers,sessionID,id,schedule);
         //Counselor 
     }
-    public void addCampers()
+    public ArrayList<Child> addCampers(Cabin cabin)
     {
+        int j=0;
         ArrayList<Child> children = DataReader.saveAllChildren();
         ArrayList<Child> copy = children;
         for( int i=0;i<copy.size();i++)
         {
             Child child = children.get(i);
-            if (ageRange.contains(child.age));
+            if (cabin.getAgeRange().contains(child.getAge())&&j<cabin.maxCampers)
+            {
             campers.add(child);
             copy.remove(child);
+            j++;
+            }
         }
+        return campers;
     }
     public ArrayList<ArrayList> getSchedule()
     {
