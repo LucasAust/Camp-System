@@ -106,8 +106,8 @@ public class CampUI {
     public void createUser() {
         System.out.println("-----Creating New Account-----");
         System.out.println("What type of account would you like to make \"director\", \"counselor\",or \"guardian\"");
-        String accountType = scanner.next();
-        scanner.nextLine();
+        String accountType = scanner.nextLine();
+
         System.out.println("What is your first name");
         String firstName = scanner.next();
         scanner.nextLine();
@@ -144,7 +144,7 @@ public class CampUI {
                 String lastName = scanner.next();
                 scanner.nextLine();
                 System.out.println("What is your childs age");
-                int age = scanner.nextInt();
+                String age = scanner.nextLine();
                 scanner.nextLine();
                 System.out.println("What is the name of the emergency contact for the child");
                 String name = scanner.nextLine();
@@ -180,7 +180,7 @@ public class CampUI {
                 scanner.nextLine();
                 emergencyContact emergencyContact = new emergencyContact(name,relationship,phoneNumber);
                 healthInfo healthInfo = new healthInfo(insurance,policyNumber,doctor,dietaryRestrictions,allergies,medications);
-                Child child = new Child(firstName, lastName, medication, healthInfo, emergencyContact,null);
+                Child child = new Child(firstName, lastName,age, medication, healthInfo, emergencyContact,null);
                 facade.addChild(firstName+" "+lastName,guardian);
                 facade.registerChild(child);
                 System.out.println(" ");
@@ -192,7 +192,7 @@ public class CampUI {
                 boolean ret = false;
                 while(!exit)
                 {
-                    Child finChild = new Child(null, null, null, null, null,null);
+                    Child finChild = new Child(null, null, null, null, null,null, null);
                     System.out.println("enter the first and last name of the child you would like to edit.");
                     String editFirstName = scanner.next();
                     System.out.println("Enter the last name of the child you would like to edit");
