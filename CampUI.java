@@ -349,7 +349,7 @@ public class CampUI {
                 counselorDisplay();
                 break;
             case 4:
-                DataWriter.saveAllCounselors(CounselorList.getInstance().getCounselors());
+                //DataWriter.saveAllCounselors(CounselorList.getInstance().getCounselors());
                 System.out.println("Thank you for looking at our camp.");
                 logout();
                 break;
@@ -393,10 +393,12 @@ public class CampUI {
                 directorDisplay();
                 break;
             case 3:
-                //edit schedule
+                //generate schedule
                 break;
+            //case 4:
+
             case 4:
-                //add session
+                //create new session
                 boolean bre = false;
                 ArrayList<ArrayList> week = new ArrayList<ArrayList>();
                 ArrayList<Activity> daySchedule = new ArrayList<Activity>();
@@ -452,7 +454,6 @@ public class CampUI {
                         week.add(daySchedule);
                         }
                         cabin.schedule = week;
-
                     }
                 }   
                 DataWriter.saveAllSessions(sessions,cabins);
@@ -472,7 +473,8 @@ public class CampUI {
                 directorDisplay();
                 break;
             case 6:
-                DataWriter.saveAllDirectors(DirectorList.getInstance().getDirectors());
+            //logout
+                //DataWriter.saveAllDirectors(DirectorList.getInstance().getDirectors());
                 System.out.println("Thank you for looking at our camp.");
                 logout();
                 break;
