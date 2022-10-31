@@ -269,6 +269,8 @@ public class CampUI {
                 facade.viewSessions();
                 break;
             case 6:
+                DataWriter.saveAllGuardians(GuardianList.getInstance().getGuardians());
+                System.out.println("Thank you for looking at our camp.");
                 logout();
                 break;
         }
@@ -290,6 +292,8 @@ public class CampUI {
                 facade.printSchedule();
                 break;
             case 4:
+                DataWriter.saveAllCounselors(CounselorList.getInstance().getCounselors());
+                System.out.println("Thank you for looking at our camp.");
                 logout();
                 break;
         }
