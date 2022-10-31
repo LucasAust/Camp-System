@@ -275,10 +275,11 @@ public class Facade {
     }
 
     public void viewChildren(Guardian registeredUser) {
+        ArrayList<Child> childs = new ArrayList<Child>();
         String firstName = null;
         String lastName = null;
        ArrayList<String> children= registeredUser.getChildren();
-       ArrayList<Child> childs = DataReader.saveAllChildren();
+        childs = DataReader.saveAllChildren();
        for(int i=0;i<children.size();i++)
        {
         System.out.println(children.get(i));
@@ -287,8 +288,8 @@ public class Facade {
          lastName = children.get(i).substring(x+1);
         for(int j=0;j<childs.size();j++)
         {
-            Child child = childs.get(i);
-            if(child.firstName.equals(firstName)&&child.lastName.equals(lastName))
+            Child child = childs.get(j);
+            if(child.getFirstName().equals(firstName)&&child.getLastName().equals(lastName))
             {
                 System.out.println(child.session);
                 break;
