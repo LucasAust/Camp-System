@@ -140,7 +140,7 @@ public class DataReader {
 
   public static ArrayList<Guardian> getAllGuardians() {
     try {
-      FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/Guardian.json");
+      FileReader reader = new FileReader("JSON/Guardian.json");
       JSONParser parser = new JSONParser();
       JSONArray guardians = (JSONArray) new JSONParser().parse(reader);
       for (int i = 0; i < guardians.size(); i++) {

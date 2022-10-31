@@ -302,6 +302,7 @@ public class Facade {
     public void addChild(String string,Guardian guardian) {
         
         guardian.addChild(string);
+        guardian.children.add(string);
     }
 
     public void viewSessions() {
