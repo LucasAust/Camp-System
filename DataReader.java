@@ -171,7 +171,7 @@ public class DataReader {
   public static ArrayList<Director> getAllDirectors() {
     ArrayList<Director> directorList = new ArrayList<Director>();
     try {
-      FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/Director.json");
+      FileReader reader = new FileReader("JSON/Director.json");
       JSONParser parser = new JSONParser();
       JSONArray directors = (JSONArray) new JSONParser().parse(reader);
       for (int i = 0; i < directors.size(); i++) {

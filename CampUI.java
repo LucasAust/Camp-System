@@ -84,8 +84,8 @@ public class CampUI {
     public void createUser() {
         System.out.println("-----Creating New Account-----");
         System.out.println("What type of account would you like to make \"director\", \"counselor\",or \"guardian\"");
-        String accountType = scanner.nextLine();
-
+        String accountType = scanner.next();
+        scanner.nextLine();
         System.out.println("What is your first name");
         String firstName = scanner.next();
         scanner.nextLine();
