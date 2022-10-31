@@ -11,12 +11,18 @@ public class CampUI {
     public Guardian guardian;
     private static final String FIRST_PROMPT = "1. Guardian Login \n2. Counselor Login \n3. Director Login \n4. Create Account \n5. Logout";
 
+    /**
+     * creates a new user interface
+     */
     public CampUI() {
         scanner = new Scanner(System.in);
         facade = this.facade;
         rand = new Random();
     }
 
+    /**
+     * starts the program and prompts the user with different choices to log in
+     */
     public void run() {
         boolean run = true;
         while(run) 
@@ -28,18 +34,22 @@ public class CampUI {
             switch (n) 
             {
                 case 1:
+                    //login guardian
                     guardian=(Guardian) login(1);
                     userDisplay(guardian);
                     break;
                 case 2:
+                    //login counselor
                     login(2);
                     counselorDisplay();
                     break;
                 case 3:
+                    //login director
                     login(3);
                     directorDisplay();
                     break;
                 case 4:
+                    //create new user
                     createUser();
                     System.out.println(" ");
                     System.out.println("Account successfully created. You will now be returned to the home screen to login.");
@@ -49,6 +59,7 @@ public class CampUI {
                 case 5:
                     logout();
             }
+            /*
             System.out.println("Would you like to exit the program? Enter 'yes' or 'no'.");
             String ans = scanner.nextLine();
             if(ans.equals("no"))
@@ -61,19 +72,27 @@ public class CampUI {
                 DataWriter.saveAllGuardians(GuardianList.getInstance().getGuardians());
                 System.out.println("Thank you for looking at our camp.");
                 System.exit(0);
-            }        
+            }  */      
         }
     }
 
-    public RegisteredUser login(int i) {
+    /**
+     * logs the user into the system
+     * @param j the type of account being logged into (guardian, counselor, or director)
+     * @return if they were logged in to the program or not based on if the login matched 
+     */
+    public RegisteredUser login(int j) {
         System.out.println("What is your username");
         String username = scanner.next();
         System.out.println("What is your password");
         String password = scanner.next();
-        registeredUser=facade.login(username, password,i);
+        registeredUser = facade.login(username, password,j);
         return registeredUser;
     }
 
+    /**
+     * logs the user out of the system and exits the program
+     */
     public void logout() {
         System.out.println("-----Logging out and exiting the program-----"
         + "\n-----Thank you for visiting-----");
@@ -81,11 +100,14 @@ public class CampUI {
         System.exit(0);
     }
 
+    /**
+     * allows new users to create an account that the system will then store
+     */
     public void createUser() {
         System.out.println("-----Creating New Account-----");
         System.out.println("What type of account would you like to make \"director\", \"counselor\",or \"guardian\"");
-        String accountType = scanner.nextLine();
-
+        String accountType = scanner.next();
+        scanner.nextLine();
         System.out.println("What is your first name");
         String firstName = scanner.next();
         scanner.nextLine();
@@ -102,6 +124,10 @@ public class CampUI {
         facade.signup(firstName, lastName, email, username, password,accountType,null);
     }
 
+    /**
+     * the user menu that comes up when a gaurdian successfully logs in allowing them to view, edit, and register different information
+     * @param guardian the specific gaurdian that is logged in with specific data to their name
+     */
     public void userDisplay(Guardian guardian) {
         System.out.println("-----Welcome Guardian-----");
         System.out.println(" ");
@@ -110,6 +136,7 @@ public class CampUI {
         int choice = scanner.nextInt();
         switch (choice) {
             case 1:
+                //add child
                 System.out.println("What is your child's first name");
                 String firstName = scanner.next();
                 scanner.nextLine();
@@ -156,8 +183,11 @@ public class CampUI {
                 Child child = new Child(firstName, lastName, medication, healthInfo, emergencyContact,null);
                 facade.addChild(firstName+" "+lastName,guardian);
                 facade.registerChild(child);
+                System.out.println(" ");
+                userDisplay(guardian);
                 break;
             case 2:
+                //edit child info
                 boolean exit = false;
                 boolean ret = false;
                 while(!exit)
@@ -184,6 +214,7 @@ public class CampUI {
                     int edit = scanner.nextInt();
                     switch (edit) {
                         case 1:
+                            //update personal
                             System.out.println("What would you like your updated first name to be");
                             String fName = scanner.nextLine();
                             scanner.nextLine();
@@ -199,6 +230,7 @@ public class CampUI {
                             finChild.age=newAge;
                             break;
                         case 2:
+                            //update emergency contact
                             System.out.println("What would you like your updated emergency contacts name to be");
 
                             String newName = scanner.next();
@@ -212,13 +244,14 @@ public class CampUI {
                             finChild.emergencyContact.phoneNumber = newNum;
                             break;
                         case 3:
-                            System.out.println("What would you like your updated insurance provider to be");
+                            //update medical
+                            System.out.println("What would you like your updated doctors office to be");
                             String newInsurance = scanner.nextLine();
                             scanner.nextLine();
-                            System.out.println("What would you like your updated policy # to be");
+                            System.out.println("What would you like your updated doctor's phone # to be");
                             String newPolicy = scanner.nextLine();
                             scanner.nextLine();
-                            System.out.println("What would you like your updated doctor to be");
+                            System.out.println("What would you like your updated doctor name to be");
                             String newDoctor = scanner.nextLine();
                             scanner.nextLine();
                             System.out.println("What are the updated dietary restrictions");
@@ -248,11 +281,17 @@ public class CampUI {
                         exit = false;
                     }
                 }   
+                System.out.println(" ");
+                userDisplay(guardian);
                 break;
             case 3:
+                //view children on account
                 facade.viewChildren(guardian);
+                System.out.println(" ");
+                userDisplay(guardian);
                 break;
             case 4:
+                //register child
                 System.out.println("Enter the first name of the child you would like to register");
                 String childFirstName = scanner.next();
                 scanner.nextLine();
@@ -264,42 +303,68 @@ public class CampUI {
                 String session = scanner.nextLine();
                 scanner.nextLine();
                 facade.registerChildForSession(childFirstName,childLastName,session);
+                System.out.println(" ");
+                userDisplay(guardian);
                 break;
             case 5:
+                //view sessions
                 facade.viewSessions();
+                System.out.println(" ");
+                userDisplay(guardian);
                 break;
             case 6:
+                DataWriter.saveAllGuardians(GuardianList.getInstance().getGuardians());
+                System.out.println("Thank you for looking at our camp.");
                 logout();
                 break;
         }
     }
 
+    /**
+     * the menu that is displayed when a counselor successfully logs in allowing them to view and edit different information
+     */
     public void counselorDisplay() {
         System.out.println("-----Welcome Counselor-----");
         System.out.println(" ");
         System.out.println("Would you like to \n1. View Roster \n2. View Vital Information \n3. View Schedule \n4. Logout");
         int choice = scanner.nextInt();
+        System.out.println(" ");
         switch (choice) {
             case 1:
+                //view campers
                 facade.viewRoster();
+                System.out.println(" ");
+                counselorDisplay();
                 break;
             case 2:
+                //view information
                 facade.viewVitals();
+                System.out.println(" ");
+                counselorDisplay();
                 break;
             case 3:
+                //view schedule
                 facade.printSchedule();
+                System.out.println(" ");
+                counselorDisplay();
                 break;
             case 4:
+                DataWriter.saveAllCounselors(CounselorList.getInstance().getCounselors());
+                System.out.println("Thank you for looking at our camp.");
                 logout();
                 break;
         }
     }
 
+    /**
+     * the menu that is displayed when a director successfully logs in allowing them to make changes to the camp activities, schedules, sessions, and cabins
+     */
     public void directorDisplay() {
         System.out.println("-----Welcome Director-----");
         System.out.println(" ");
         System.out.println("Would you like to \n1. Add an activity \n2. Remove an activity \n3. Edit schedule \n4. Create a new Session \n5. View Cabin schedules \n6. Logout");
         int choice = scanner.nextInt();
+        System.out.println(" ");
         switch (choice) {
             case 1:
                 //add activity
@@ -311,9 +376,11 @@ public class CampUI {
                 scanner.nextLine();
                 Activity Aactivity = new Activity(Aname, Adescription);
                 facade.addActivity(Aactivity);
+                System.out.println(" ");
+                directorDisplay();
                 break;
             case 2: 
-                // remove
+                //remove activity
                 System.out.println("What is the name of the activity you would like to remove");
                 String Rname = scanner.nextLine();
                 scanner.nextLine();
@@ -322,11 +389,14 @@ public class CampUI {
                 scanner.nextLine();
                 Activity Ractivity = new Activity(Rname, Rdescription);
                 facade.removeActivity(Ractivity);
+                System.out.println(" ");
+                directorDisplay();
                 break;
             case 3:
                 //edit schedule
                 break;
             case 4:
+                //add session
                 boolean bre = false;
                 ArrayList<ArrayList> week = new ArrayList<ArrayList>();
                 ArrayList<Activity> daySchedule = new ArrayList<Activity>();
@@ -386,8 +456,11 @@ public class CampUI {
                     }
                 }   
                 DataWriter.saveAllSessions(sessions,cabins);
+                System.out.println(" ");
+                directorDisplay();
                 break;
             case 5:
+                //view cabin schedule
                 System.out.println("enter the session you would like to access");
                 scanner.nextLine();
                 String sessionName = scanner.nextLine();
@@ -395,13 +468,21 @@ public class CampUI {
                 String cabinName = scanner.nextLine();
                 scanner.nextLine();
                 facade.viewSchedule(sessionName,cabinName);
+                System.out.println(" ");
+                directorDisplay();
                 break;
             case 6:
+                DataWriter.saveAllDirectors(DirectorList.getInstance().getDirectors());
+                System.out.println("Thank you for looking at our camp.");
                 logout();
                 break;
         }
     }
 
+    /**
+     * main method that runs the entire program
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         CampUI campUI = new CampUI();
