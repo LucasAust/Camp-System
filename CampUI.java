@@ -223,7 +223,7 @@ public class CampUI {
                             scanner.nextLine();
                             System.out.println("What are the updated dietary restrictions");
                             String newRestriction = scanner.nextLine();
-                            ArrayList<String> newRestrictions = new ArrayList();
+                            ArrayList<String> newRestrictions = new ArrayList<String>();
                             newRestrictions.add(newRestriction);
                             scanner.nextLine();
                             System.out.println("What are the updated allergies");
