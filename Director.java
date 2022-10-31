@@ -27,9 +27,46 @@ private ArrayList<Sessions> sessions = new ArrayList<Sessions>();
     this.password = password;
   } 
 
-  public Director getDirector() {
-    return Director(firstName,lastName,userName,email,password);
+  public String getfirstName() {
+    return firstName;
   }
+
+  public String getlastName() {
+    return lastName;
+  }
+
+  public String getUserName() {
+    return userName;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+
+  public String getPassword() {
+    return password;
+  }
+
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
+
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
+  }
+
+  public void setUserName(String userName) {
+    this.userName = userName;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
+  public void setPassword(String password) {
+    this.password = password;
+  }
+
 
 public void addActivity(Activity activity){
     activities.add(activity);
