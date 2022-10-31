@@ -22,8 +22,8 @@ public class Child extends RegisteredUser{
         return medication;
     }
 
-    public Sessions getSession() {
-        return Session;
+    public String getSession() {
+        return session;
     }
 
     public emergencyContact getEmergencyContact() {
@@ -51,14 +51,14 @@ public class Child extends RegisteredUser{
     public String age;
     public String allergy;
     public String medication;
-    public Sessions Session;
+    public String session;
     public emergencyContact emergencyContact;
     public healthInfo healthInfo;
     public ArrayList<String> allergies = new ArrayList<String>();
     public ArrayList<String> medications = new ArrayList<String>();
     public ArrayList<emergencyContact> emergencyContacts;
 
-    public Child(String firstName, String lastName, String age, healthInfo healthInfo, emergencyContact emergencyContact)
+    public Child(String firstName, String lastName, String age, healthInfo healthInfo, emergencyContact emergencyContact,String session)
     {
         super(firstName, lastName, firstName, lastName, age);
         this.firstName = firstName;
@@ -66,6 +66,7 @@ public class Child extends RegisteredUser{
         this.age = age;
         this.healthInfo = healthInfo;
         this.emergencyContact=emergencyContact;
+        this.session=session;
     }
 
     public void addAllergies(ArrayList<String> allergies)

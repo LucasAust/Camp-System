@@ -6,7 +6,7 @@ public class Cabin {
     public int maxCampers;
     public ArrayList<Child> campers = new ArrayList<Child>();
     public ArrayList<Cabin> cabins = new ArrayList<Cabin>();
-    public Schedule schedule;
+    public ArrayList<ArrayList> schedule = new ArrayList<ArrayList>();
     public String sessionID;
     public String id;
     public String age;
@@ -35,27 +35,40 @@ public class Cabin {
     public String getAge() {
         return age;
     }
-    public Cabin(String ageRange, Counselor counselor , int maxCampers, String sessionID, String id)
+    public Cabin(String ageRange, Counselor counselor , int maxCampers, String sessionID, String id, ArrayList<ArrayList> schedule)
     {
         this.ageRange = ageRange;
         this.counselor = counselor;
         this.maxCampers = maxCampers;
         this.sessionID=sessionID;
         this.id=id;
+        this.schedule = schedule;
+
     }
-    public void addCounselor()
+    public void addCabin()
     {
-        Cabin cabin = new Cabin(ageRange, counselor, maxCampers,sessionID,id);
-        //Counselor counselor = new Counselor()
-        this.counselor=counselor;
+        Cabin cabin = new Cabin(ageRange, counselor, maxCampers,sessionID,id,schedule);
+        //Counselor 
     }
-    public void addCampers()
+    public ArrayList<Child> addCampers(Cabin cabin)
     {
-        
-        campers.add(Child.getChild());
+        int j=0;
+        ArrayList<Child> children = DataReader.saveAllChildren();
+        ArrayList<Child> copy = children;
+        for( int i=0;i<copy.size();i++)
+        {
+            Child child = children.get(i);
+            if (cabin.getAgeRange().contains(child.getAge())&&j<cabin.maxCampers)
+            {
+            campers.add(child);
+            copy.remove(child);
+            j++;
+            }
+        }
+        return campers;
     }
-    public Schedule getSchedule()
+    public ArrayList<ArrayList> getSchedule()
     {
-        return null;
+        return schedule;
     }
 }

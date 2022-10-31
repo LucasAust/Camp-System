@@ -1,6 +1,8 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Counselor{
+public class Counselor extends RegisteredUser{
+    private Scanner scanner= new Scanner(System.in);
     public static String getGetAge() {
         return getAge;
     }
@@ -34,6 +36,14 @@ public class Counselor{
     public ArrayList<emergencyContact> getEmergencyContacts() {
         return emergencyContacts;
     }
+    public String getUsername()
+    {
+        return username;
+    }
+    public String getPassword()
+    {
+        return password;
+    }
 
     public static String getAge;
     protected String firstName;
@@ -46,12 +56,19 @@ public class Counselor{
     protected String allergy;
     protected ArrayList<String> allergies = new ArrayList<String>();
     protected ArrayList<emergencyContact> emergencyContacts;
+    public String username;
+    public String password;
 
-    public Counselor(String firstName, String lastName, Long age2, emergencyContact emergencyContact,healthInfo healthInfo,ArrayList<Cabin> cabins)
+    public Counselor(String firstName, String lastName, emergencyContact emergencyContact,healthInfo healthInfo,ArrayList<Cabin> cabins, String username, String password)
     {
-
-    }
-    public void viewSchedule(Schedule schedule) {
+        super(firstName, lastName, username, username, password);
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.emergencyContact=emergencyContact;
+        this.healthInfo=healthInfo;
+        this.cabins=cabins;
+        this.username=username;
+        this.password=password;
 
     }
 
@@ -72,4 +89,47 @@ public class Counselor{
     {
         addHealthInfo(healthInfo);
     }
+    public void getRoster()
+    {
+        ArrayList<Child> roster = new ArrayList<Child>();
+        ArrayList<String> names = new ArrayList<String>();
+
+        for(int i=0;i<roster.size();i++)
+        {
+            Child child = roster.get(i);
+            String name = child.getFirstName()+" "+child.getLastName();
+            names.add(name);
+        }
+    
+    }
+    public void getVitalInfo(ArrayList<Child> roster)
+    {
+        ArrayList<String> vitals = new ArrayList<String>();
+        for(int i=0;i<roster.size();i++)
+        {
+            Child child = roster.get(i);
+            vitals.add(child.getFirstName()+" "+child.getLastName());
+            vitals.add("Allergies: "+child.getAllergies());
+            vitals.add("Emergency Contacts: "+child.getEmergencyContacts());
+            vitals.add("Medical Information: "+child.getHealthInfo());
+        }
+
+    }
+    public void viewSchedule(ArrayList<Schedule> schedule) {
+
+            ArrayList<String> dailySchedule = new ArrayList<String>();
+            System.out.println("Enter which week number you would like to view your schedule for.");
+            int week = scanner.nextInt();
+            Cabin cabin = cabins.get(week-1);
+            //ArrayList<String> sched = cabin.getSchedule();
+            
+            
+            
+            
+
+
+
+
+    }
+
 }

@@ -5,6 +5,14 @@ public class Schedule {
 
     public void addActivity(Activity activity) {
         schedule.add(activity);
+<<<<<<< HEAD
+=======
+    }
+
+
+    public Schedule generateSchedule() {
+        return null;
+>>>>>>> main
     }
 
     public void breakfastAll(Child child, Counselor counselor, Director director) {

@@ -27,11 +27,15 @@ private ArrayList<Sessions> sessions = new ArrayList<Sessions>();
     this.password = password;
   } 
 
-public void addActivities(Activity activity){
+  public Director getDirector() {
+    return Director(firstName,lastName,userName,email,password);
+  }
+
+public void addActivity(Activity activity){
     activities.add(activity);
 }
 
-public void Remove(Activity activity){
+public void removeActivity(Activity activity){
     activities.remove(activity);
 }
 
