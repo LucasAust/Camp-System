@@ -78,29 +78,12 @@ public class Facade
         activity = new Activity(null, null);
     }
 
-    public void addSession(Sessions session)
-    {
-        
+    public void addSession(Sessions session) {
+        session = new Sessions(null, null, MAX_CAMPERS);
     }
 
-    public void addCabin(Cabin cabin)
-    {
-        //max_campers
-    }
-
-    public void registerChild(Child child)
-    {
-
-    }
-
-    public void removeActivity(Activity activity)
-    {
-
-    }
-
-    public void editActivity(Activity activity)
-    {
-
+    public void addCabin(Cabin cabin) {
+        cabin = new Cabin(null, null, MAX_CAMPERS, null, null);
     }
 
     public void setCounselorSchedule(Schedule schedule)
@@ -113,8 +96,12 @@ public class Facade
 
     }
 
-    public void assignCabins(Cabin cabin)
+    public void editChild(Child child)
     {
+        
+    }
+
+    public void assignCabins(Cabin cabin) {
 
     }
 
