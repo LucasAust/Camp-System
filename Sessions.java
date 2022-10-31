@@ -1,5 +1,13 @@
 import java.util.ArrayList;
 
+/**
+ * @param id
+ * @param title
+ * @param cost
+ * @param theme
+ * @param campers
+ * @param cabins
+ */
 public class Sessions {
 
     public String id;
@@ -9,10 +17,10 @@ public class Sessions {
     public ArrayList<Child> campers;
     public ArrayList<Cabin> cabins;
 
-    public String getTheme()
-    {
+    public String getTheme() {
         return theme;
     }
+
     public String getId() {
         return id;
     }
@@ -34,23 +42,30 @@ public class Sessions {
     }
 
     public Sessions(String id, String title, double cost, String theme, ArrayList<Cabin> cabins) {
-        this.id=id;
+        this.id = id;
         this.title = title;
         this.cost = cost;
         this.theme = theme;
         this.cabins = cabins;
     }
 
+    /**
+     * @return true false if it is full if not return true
+     */
     public boolean isFull() {
         if (cabins.size() > 8) {
             return false;
         } else
             return true;
     }
-    public void addSession(Sessions session)
-    {
+
+    /**
+     * method to add a Session
+     * 
+     * @param session is added to a Session list array
+     */
+    public void addSession(Sessions session) {
         SessionList.getInstance().addSession(session);
     }
-
 
 }
