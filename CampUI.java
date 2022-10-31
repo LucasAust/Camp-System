@@ -119,22 +119,22 @@ public class CampUI {
                 scanner.nextLine();
                 System.out.println("What is the name of the emergency contact for the child");
                 String name = scanner.nextLine();
-                scanner.nextLine();
+                //scanner.nextLine();
                 System.out.println("What is the relationship of the emergency contact to the child");
                 String relationship = scanner.nextLine();
-                scanner.nextLine();
+                //scanner.nextLine();
                 System.out.println("What is the phone # of the emergency contact");
                 String phoneNumber = scanner.nextLine();
-                scanner.nextLine();
+               // scanner.nextLine();
                 System.out.println("What is the name your insurance provider");
                 String insurance = scanner.nextLine();
-                scanner.nextLine();
+                //scanner.nextLine();
                 System.out.println("What is your insurance policy #");
                 String policyNumber = scanner.nextLine();
-                scanner.nextLine();
+               // scanner.nextLine();
                 System.out.println("What is the name of your child's doctor");
                 String doctor = scanner.nextLine();
-                scanner.nextLine();
+             //   scanner.nextLine();
                 System.out.println("Enter any allergies your child may have. Enter 'none' if they do not have any. If more than one add a space between each, then press enter when done.");
                 String allergy = scanner.nextLine();
                 ArrayList<String> allergies = new ArrayList<String>();
@@ -144,10 +144,15 @@ public class CampUI {
                 String medication = scanner.nextLine();
                 ArrayList<String> medications = new ArrayList<String>();
                 medications.add(medication);
+                System.out.println("Enter any dietary restrictions your child may have.");
+                String dietaryRestriction=scanner.nextLine();
+                ArrayList<String>dietaryRestrictions = new ArrayList<String>();
+                dietaryRestrictions.add(dietaryRestriction);
                 scanner.nextLine();
-                Child child = new Child(firstName, lastName, medication, null, null,null);
+                emergencyContact emergencyContact = new emergencyContact(name,relationship,phoneNumber);
+                healthInfo healthInfo = new healthInfo(insurance,policyNumber,doctor,dietaryRestrictions,allergies,medications);
+                Child child = new Child(firstName, lastName, medication, healthInfo, emergencyContact,null);
                 facade.addChild(firstName+" "+lastName,guardian);
-                
                 facade.registerChild(child);
                 break;
             case 2:

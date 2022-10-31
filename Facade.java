@@ -289,7 +289,9 @@ public class Facade {
     }
     public void registerChild(Child child)
     {
-
+        ArrayList<Child> children = DataReader.saveAllChildren();
+        children.add(child);
+        DataWriter.saveAllChildren(children);
     }
 
     public void registerChildForSession(String childFirstName, String childLastName, String session2) {

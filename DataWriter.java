@@ -67,7 +67,7 @@ public class DataWriter {
     {
         JSONArray JSONUsers = new JSONArray();
         JSONArray cabinsList = new JSONArray();
-        JSONArray schedule = new JSONArray();
+       // JSONArray schedule = new JSONArray();
         for(int i=0;i<sessions.size();i++)
         {
         JSONObject session = new JSONObject();
@@ -82,7 +82,8 @@ public class DataWriter {
             Cabin Cabin = cabins.get(j);
             cabin.put("name",Cabin.getId());
             cabin.put("ageRange",Cabin.getAgeRange());
-            cabin.put("schedule",schedule);
+            JSONArray schedule = new JSONArray();
+            //cabin.put("schedule",schedule);
             for(int h=0;h<5;h++)
             {
                 JSONObject date = new JSONObject();
@@ -100,6 +101,7 @@ public class DataWriter {
                schedule.add(day);
               // schedule.add("day"+(h+1));
                 }
+                cabin.put("schedule",schedule);
                 
             }
             cabinsList.add(cabin);
@@ -123,20 +125,25 @@ public class DataWriter {
         JSONArray JSONUsers = new JSONArray();
         JSONObject healthCare = new JSONObject();
         JSONObject emergencyContact = new JSONObject();
-        JSONArray medications = new JSONArray();
+        
+       
         for(int i=0;i<children.size();i++)
         {
         JSONObject user = new JSONObject();
         Child child = children.get(i);
         user.put("firstName",child.getFirstName());
         user.put("lastName",child.getLastName());
-        user.put("medications",medications);
-        ArrayList<String> meds = child.getMedications();
+        ArrayList<String> meds = child.getHealthInfo().getMedications();
+        JSONArray medications = new JSONArray();
+        String add = null;
         for(int h=0;h<meds.size();h++)
         {
-            String add = meds.get(h);
+             add = meds.get(h);
             medications.add(add);
         }
+        user.put("medications",medications);
+        
+        
         user.put("healthCare",healthCare);
         ArrayList<String> dietaryRestrictions = child.getHealthInfo().getDietaryRestrictions();
         String dietaryRestriction = null;

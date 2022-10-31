@@ -35,14 +35,15 @@ public class DataReader {
         ArrayList<String> allergies = new ArrayList<String>();
         allergies.add(allergy);
         // ArrayList<String> allergies = null;
+        String meds = null;
         ArrayList<String> medication = (ArrayList<String>) user.get("medications");
-        ArrayList<String> medications = new ArrayList<String>();
         for(int j=0;j<medication.size();j++)
         {
-          String med = medication.get(j);
-          medications.add(med);
+          meds = medication.get(j);
         }
-        JSONObject emergencyContact = (JSONObject) user.get("emergencyContact");
+        ArrayList<String> medications = new ArrayList<String>();
+        medications.add(meds);
+        JSONObject emergencyContact = (JSONObject) user.get("healthCare");
         String eName = (String) emergencyContact.get("name");
         String eRelationship = (String) emergencyContact.get("relationship");
         String ePhoneNumber = (String) emergencyContact.get("phoneNumber");
