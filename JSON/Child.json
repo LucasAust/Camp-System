@@ -1,1 +1,1367 @@
-[{"allergies":"none","firstName":"Nutella","lastName":"Davis","session":"Week 4","emergencyContact":{"phoneNumber":"12","name":"Father","relationship":"Father"},"medications":["none"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"7"},{"allergies":null,"firstName":"Josh","lastName":"Huger","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Corn","age":"8"},{"allergies":null,"firstName":"Darrell","lastName":"Jones","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Epi-Pen"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Peanut foods","age":"9"},{"allergies":null,"firstName":"Jack","lastName":"Kole","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"10"},{"allergies":null,"firstName":"Amy","lastName":"Grasshopper","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"10"},{"allergies":null,"firstName":"Jill","lastName":"Smith","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Epi-Pen"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Seafood","age":"11"},{"allergies":null,"firstName":"Rebecca","lastName":"Ronald","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Seafood","age":"12"},{"allergies":null,"firstName":"Kasey","lastName":"Johnson","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"13"},{"allergies":null,"firstName":"Alex","lastName":"Adams","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"14"},{"allergies":null,"firstName":"Jeremy","lastName":"Owens","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"15"},{"allergies":null,"firstName":"Thomas","lastName":"Crocker","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Gluten","age":"16"},{"allergies":null,"firstName":"Thomas","lastName":"Crocker","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Gluten","age":"17"},{"allergies":null,"firstName":"Edison","lastName":"Thomas","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"18"},{"allergies":null,"firstName":"Carson","lastName":"Wentz","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Diabetes","age":"7"},{"allergies":null,"firstName":"Daisy","lastName":"Rogers","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"8"},{"allergies":null,"firstName":"Cedrick","lastName":"Highsmif","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Epi-Pen"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Gluten","age":"9"},{"allergies":null,"firstName":"Kevin","lastName":"Stark","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"9"},{"allergies":null,"firstName":"Oscar","lastName":"Cannister","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"10"},{"allergies":null,"firstName":"Jagger","lastName":"Attkison","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Gluten","age":"11"},{"allergies":null,"firstName":"Jerry","lastName":"Seinfeld","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"12"},{"allergies":null,"firstName":"Deep","lastName":"Patel","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"12"},{"allergies":null,"firstName":"Mercedes","lastName":"Tillup","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"13"},{"allergies":null,"firstName":"Austin","lastName":"Clark","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Gluten","age":"14"},{"allergies":null,"firstName":"Jafet","lastName":"Rios","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Gluten","age":"15"},{"allergies":null,"firstName":"Raza","lastName":"Barkely","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Epi-Pen"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Tree nuts","age":"15"},{"allergies":null,"firstName":"Terry","lastName":"Scary","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"12"},{"allergies":null,"firstName":"Matthew","lastName":"Shaheen","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Gluten","age":"12"},{"allergies":null,"firstName":"Joe","lastName":"Shiesty","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"11"},{"allergies":null,"firstName":"Norman","lastName":"Cella","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"7"},{"allergies":null,"firstName":"Emma","lastName":"Granger","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"12"},{"allergies":null,"firstName":"Marquise","lastName":"Brown","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Gluten","age":"10"},{"allergies":null,"firstName":"Kate","lastName":"Moore","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"11"},{"allergies":null,"firstName":"Miller","lastName":"Amendola","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"12"},{"allergies":null,"firstName":"Conor","lastName":"McGregor","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Zyrtec"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Vegetarian","age":"13"},{"allergies":null,"firstName":"Kennedy","lastName":"Ferguson","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Lactose intolerant","age":"14"},{"allergies":null,"firstName":"Tyrod","lastName":"Taylor","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Claritin"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"15"},{"allergies":null,"firstName":"Phillip","lastName":"Byrant","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"16"},{"allergies":null,"firstName":"Alyx","lastName":"Kohut","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Allegra"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"17"},{"allergies":null,"firstName":"Lucas","lastName":"Bateman","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"18"},{"allergies":null,"firstName":"Ali","lastName":"Friend","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"7"},{"allergies":null,"firstName":"Zach","lastName":"Thomas","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"8"},{"allergies":null,"firstName":"Paul","lastName":"George","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Vegetarian","age":"9"},{"allergies":null,"firstName":"Bishop","lastName":"England","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"10"},{"allergies":null,"firstName":"Maxwell","lastName":"Killament","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"11"},{"allergies":null,"firstName":"Paula","lastName":"Sanders","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Claritin"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"12"},{"allergies":null,"firstName":"Grayson","lastName":"Squires","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"13"},{"allergies":null,"firstName":"Casey","lastName":"Godbold","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"14"},{"allergies":null,"firstName":"Freddy","lastName":"Myers","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Vegetarian","age":"15"},{"allergies":null,"firstName":"Holland","lastName":"Omer","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"16"},{"allergies":null,"firstName":"Monty","lastName":"Montana","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"17"},{"allergies":null,"firstName":"Yellowstone","lastName":"National-Park","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Allegra"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"18"},{"allergies":null,"firstName":"Gucci","lastName":"Mane","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Epi-Pen"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"7"},{"allergies":null,"firstName":"Pax","lastName":"Dellinger","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"8"},{"allergies":null,"firstName":"Nico","lastName":"Mayes","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"9"},{"allergies":null,"firstName":"Nancy","lastName":"Attack","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Epi-Pen"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Vegetarian","age":"10"},{"allergies":null,"firstName":"Drake","lastName":"Bell","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Zyrtec"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"11"},{"allergies":null,"firstName":"Lacey","lastName":"Dale","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Allegra"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"12"},{"allergies":null,"firstName":"Aiden","lastName":"Nannerz","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Epi-Pen"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"13"},{"allergies":null,"firstName":"Colben","lastName":"McNasty","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"14"},{"allergies":null,"firstName":"Greta","lastName":"Band","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"15"},{"allergies":null,"firstName":"Julia","lastName":"Bykalo","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Vegetarian","age":"16"},{"allergies":null,"firstName":"Kairo","lastName":"Jordan","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["Epi-Pen"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"Gluten","age":"17"},{"allergies":null,"firstName":"Ryan","lastName":"Pickus","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"18"},{"allergies":null,"firstName":"Julie","lastName":"Henderson","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"7"},{"allergies":null,"firstName":"Megan","lastName":"TheeStallion","session":"Week 1","emergencyContact":{"phoneNumber":null,"name":"Gary's Insurance","relationship":null},"medications":["None"],"healthCare":{"doctor":"Dr. Ivory","name":"Gary's Insurance","policyNumber":"GI2349050650"},"deitaryRestrictions":"None","age":"8"},{"allergies":"none","firstName":"Daisy","lastName":"Boo","session":"Week 4","emergencyContact":{"phoneNumber":"1234567890","name":"Don Cheadle","relationship":"Father"},"medications":["none"],"healthCare":{"doctor":"nuts","name":"Ceedees","policyNumber":"12334"},"deitaryRestrictions":"","age":"none"}]
+[
+    {
+      "allergies": null,
+      "firstName": "Nutella",
+      "lastName": "Davis",
+      "session": "Week 4",
+      "emergencyContact": {
+        "phoneNumber": "123-554-5744",
+        "name": "Kaleb Davis",
+        "relationship": "Father"
+      },
+      "medications": [
+        "none"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Ivory's Health",
+        "phoneNumber": "843-234-4775"
+      },
+      "deitaryRestrictions": "None",
+      "age": "7"
+    },
+    {
+      "allergies": null,
+      "firstName": "Josh",
+      "lastName": "Huger",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Karl Huger",
+        "relationship": "Father"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Ivory's Health",
+        "phoneNumber": "853-994-0093"
+      },
+      "deitaryRestrictions": "Corn",
+      "age": "8"
+    },
+    {
+      "allergies": null,
+      "firstName": "Darrell",
+      "lastName": "Jones",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "948-904-2341",
+        "name": "Paula Jones",
+        "relationship": "Mother"
+      },
+      "medications": [
+        "Epi-Pen"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Gary",
+        "name": "Gary's Office",
+        "phoneNumber": "345-953-2132"
+      },
+      "deitaryRestrictions": "Peanut foods",
+      "age": "9"
+    },
+    {
+      "allergies": null,
+      "firstName": "Jack",
+      "lastName": "Kole",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "278-734-8832",
+        "name": "Kole Kole",
+        "relationship": "Grandfather"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Jones",
+        "name": "Jones Medical",
+        "phoneNumber": "990-990-9900"
+      },
+      "deitaryRestrictions": "None",
+      "age": "10"
+    },
+    {
+      "allergies": null,
+      "firstName": "Amy",
+      "lastName": "Grasshopper",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "745-343-2364",
+        "name": "Diamond Grasshopper",
+        "relationship": "Mother"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Karen",
+        "name": "Karen Medical and Associates",
+        "phoneNumber": "879-992-5623"
+      },
+      "deitaryRestrictions": "None",
+      "age": "10"
+    },
+    {
+      "allergies": null,
+      "firstName": "Jill",
+      "lastName": "Smith",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "990-654-1235",
+        "name": "Smith Smith",
+        "relationship": "Father"
+      },
+      "medications": [
+        "Epi-Pen"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Smith",
+        "name": "Little River Medical Center",
+        "phoneNumber": "992-342-1235"
+      },
+      "deitaryRestrictions": "Seafood",
+      "age": "11"
+    },
+    {
+      "allergies": null,
+      "firstName": "Rebecca",
+      "lastName": "Ronald",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "123-564-7462",
+        "name": "Jones Ronald",
+        "relationship": "Father"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Baker",
+        "name": "Baker Inc.",
+        "phoneNumber": "812-234-2673"
+      },
+      "deitaryRestrictions": "Seafood",
+      "age": "12"
+    },
+    {
+      "allergies": null,
+      "firstName": "Kasey",
+      "lastName": "Johnson",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "774-772-7839",
+        "name": "Megan Johnson",
+        "relationship": "Mother"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Baker",
+        "name": "Baker Inc.",
+        "phoneNumber": "812-523-6345"
+      },
+      "deitaryRestrictions": "None",
+      "age": "13"
+    },
+    {
+      "allergies": null,
+      "firstName": "Alex",
+      "lastName": "Adams",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "923-453-2353",
+        "name": "Amanda Adams",
+        "relationship": "Mother"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Jones Medical",
+        "phoneNumber": "298-234-4563"
+      },
+      "deitaryRestrictions": "None",
+      "age": "14"
+    },
+    {
+      "allergies": null,
+      "firstName": "Jeremy",
+      "lastName": "Owens",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "812-234-2155",
+        "name": "Jake Owens",
+        "relationship": "Father"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ty",
+        "name": "Ty PhD.",
+        "phoneNumber": "725-023-7894"
+      },
+      "deitaryRestrictions": "None",
+      "age": "15"
+    },
+    {
+      "allergies": null,
+      "firstName": "Thomas",
+      "lastName": "Crocker",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "234-234-4775",
+        "name": "Jennifer Crocker",
+        "relationship": "Mother"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Heredia",
+        "name": "Magnolia Health and Care",
+        "phoneNumber": "933-364-7354"
+      },
+      "deitaryRestrictions": "Gluten",
+      "age": "16"
+    },
+    {
+      "allergies": null,
+      "firstName": "Kate",
+      "lastName": "Crocker",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "234-234-4775",
+        "name": "Jennifer Crocker",
+        "relationship": "Mother"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Heredia",
+        "name": "Magnolia Health and Care",
+        "policyNumber": "933-364-7354"
+      },
+      "deitaryRestrictions": "Gluten",
+      "age": "17"
+    },
+    {
+      "allergies": null,
+      "firstName": "Edison",
+      "lastName": "Thomas",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "234-485-3821",
+        "name": "Julius Edison",
+        "relationship": "Grandfather"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Washington",
+        "name": "Washington First Health",
+        "phoneNumber": "239-478-0456"
+      },
+      "deitaryRestrictions": "None",
+      "age": "18"
+    },
+    {
+      "allergies": null,
+      "firstName": "Carson",
+      "lastName": "Wentz",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "774-992-0095",
+        "name": "Phobe Wentz",
+        "relationship": "Mother"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Tyrod",
+        "name": "USA Federal Care",
+        "phoneNumber": "842-849-0299"
+      },
+      "deitaryRestrictions": "Diabetes",
+      "age": "7"
+    },
+    {
+      "allergies": null,
+      "firstName": "Daisy",
+      "lastName": "Rogers",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "990-656-4123",
+        "name": "Jake Rogers",
+        "relationship": "Father"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. King",
+        "name": "King Health PhD.",
+        "phoneNumber": "991-412-8832"
+      },
+      "deitaryRestrictions": "None",
+      "age": "8"
+    },
+    {
+      "allergies": null,
+      "firstName": "Cedrick",
+      "lastName": "Highsmif",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "123-883-2342",
+        "name": "Pete Highsmif",
+        "relationship": "Father"
+      },
+      "medications": [
+        "Epi-Pen"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ronald",
+        "name": "Ronald and Friends Pediatrics",
+        "phoneNumber": "887-884-8882"
+      },
+      "deitaryRestrictions": "Gluten",
+      "age": "9"
+    },
+    {
+      "allergies": null,
+      "firstName": "Kevin",
+      "lastName": "Stark",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "123-994-2345",
+        "name": "Tony Stark",
+        "relationship": "Father"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Stark",
+        "name": "Stark Industries and Health",
+        "phoneNumber": "180-029-6767"
+      },
+      "deitaryRestrictions": "None",
+      "age": "9"
+    },
+    {
+      "allergies": null,
+      "firstName": "Oscar",
+      "lastName": "Cannister",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "234-884-3456",
+        "name": "Trevor Cannister",
+        "relationship": "Father"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Franklin",
+        "name": "LS Health Inc.",
+        "phoneNumber": "554-988-2435"
+      },
+      "deitaryRestrictions": "None",
+      "age": "10"
+    },
+    {
+      "allergies": null,
+      "firstName": "Jagger",
+      "lastName": "Attkison",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "532-002-9900",
+        "name": "Paul Attkison",
+        "relationship": "Father"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Killiment",
+        "name": "Killiment PhD.",
+        "phoneNumber": "234-099-8433"
+      },
+      "deitaryRestrictions": "Gluten",
+      "age": "11"
+    },
+    {
+      "allergies": null,
+      "firstName": "Jerry",
+      "lastName": "Seinfeld",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "777-012-5643",
+        "name": "Lois Seinfeld",
+        "relationship": "Mother"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Kramer",
+        "name": "Newman and Associates PhD.",
+        "phoneNumber": "009-882-8846"
+      },
+      "deitaryRestrictions": "None",
+      "age": "12"
+    },
+    {
+      "allergies": null,
+      "firstName": "Deep",
+      "lastName": "Patel",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "843-773-9293",
+        "name": "Shawn Patel",
+        "relationship": "Father"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Underpants",
+        "name": "Captain Underpants Health PhD.",
+        "phoneNumber": "556-982-7622"
+      },
+      "deitaryRestrictions": "None",
+      "age": "12"
+    },
+    {
+      "allergies": null,
+      "firstName": "Mercedes",
+      "lastName": "Tillup",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": "232-212-1231",
+        "name": "Austin Tillup",
+        "relationship": "Father"
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Operator",
+        "name": "Operator's Health PhD.",
+        "phoneNumber": "872-492-2345"
+      },
+      "deitaryRestrictions": "None",
+      "age": "13"
+    },
+    {
+      "allergies": null,
+      "firstName": "Austin",
+      "lastName": "Clark",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "Gluten",
+      "age": "14"
+    },
+    {
+      "allergies": null,
+      "firstName": "Jafet",
+      "lastName": "Rios",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "Gluten",
+      "age": "15"
+    },
+    {
+      "allergies": null,
+      "firstName": "Raza",
+      "lastName": "Barkely",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "Epi-Pen"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "Tree nuts",
+      "age": "15"
+    },
+    {
+      "allergies": null,
+      "firstName": "Terry",
+      "lastName": "Scary",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "12"
+    },
+    {
+      "allergies": null,
+      "firstName": "Matthew",
+      "lastName": "Shaheen",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "Gluten",
+      "age": "12"
+    },
+    {
+      "allergies": null,
+      "firstName": "Joe",
+      "lastName": "Shiesty",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "11"
+    },
+    {
+      "allergies": null,
+      "firstName": "Norman",
+      "lastName": "Cella",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "7"
+    },
+    {
+      "allergies": null,
+      "firstName": "Emma",
+      "lastName": "Granger",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "12"
+    },
+    {
+      "allergies": null,
+      "firstName": "Marquise",
+      "lastName": "Brown",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "Gluten",
+      "age": "10"
+    },
+    {
+      "allergies": null,
+      "firstName": "Kate",
+      "lastName": "Moore",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "11"
+    },
+    {
+      "allergies": null,
+      "firstName": "Miller",
+      "lastName": "Amendola",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "12"
+    },
+    {
+      "allergies": null,
+      "firstName": "Conor",
+      "lastName": "McGregor",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "Zyrtec"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "Vegetarian",
+      "age": "13"
+    },
+    {
+      "allergies": null,
+      "firstName": "Kennedy",
+      "lastName": "Ferguson",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "Lactose intolerant",
+      "age": "14"
+    },
+    {
+      "allergies": null,
+      "firstName": "Tyrod",
+      "lastName": "Taylor",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "Claritin"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "15"
+    },
+    {
+      "allergies": null,
+      "firstName": "Phillip",
+      "lastName": "Byrant",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "16"
+    },
+    {
+      "allergies": null,
+      "firstName": "Alyx",
+      "lastName": "Kohut",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "Allegra"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "17"
+    },
+    {
+      "allergies": null,
+      "firstName": "Lucas",
+      "lastName": "Bateman",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "18"
+    },
+    {
+      "allergies": null,
+      "firstName": "Ali",
+      "lastName": "Friend",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "7"
+    },
+    {
+      "allergies": null,
+      "firstName": "Zach",
+      "lastName": "Thomas",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "8"
+    },
+    {
+      "allergies": null,
+      "firstName": "Paul",
+      "lastName": "George",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "Vegetarian",
+      "age": "9"
+    },
+    {
+      "allergies": null,
+      "firstName": "Bishop",
+      "lastName": "England",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "10"
+    },
+    {
+      "allergies": null,
+      "firstName": "Maxwell",
+      "lastName": "Killament",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "11"
+    },
+    {
+      "allergies": null,
+      "firstName": "Paula",
+      "lastName": "Sanders",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "Claritin"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "12"
+    },
+    {
+      "allergies": null,
+      "firstName": "Grayson",
+      "lastName": "Squires",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "13"
+    },
+    {
+      "allergies": null,
+      "firstName": "Casey",
+      "lastName": "Godbold",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "14"
+    },
+    {
+      "allergies": null,
+      "firstName": "Freddy",
+      "lastName": "Myers",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "Vegetarian",
+      "age": "15"
+    },
+    {
+      "allergies": null,
+      "firstName": "Holland",
+      "lastName": "Omer",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "16"
+    },
+    {
+      "allergies": null,
+      "firstName": "Monty",
+      "lastName": "Montana",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "17"
+    },
+    {
+      "allergies": null,
+      "firstName": "Yellowstone",
+      "lastName": "National-Park",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "Allegra"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "18"
+    },
+    {
+      "allergies": null,
+      "firstName": "Gucci",
+      "lastName": "Mane",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "Epi-Pen"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "7"
+    },
+    {
+      "allergies": null,
+      "firstName": "Pax",
+      "lastName": "Dellinger",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "8"
+    },
+    {
+      "allergies": null,
+      "firstName": "Nico",
+      "lastName": "Mayes",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "9"
+    },
+    {
+      "allergies": null,
+      "firstName": "Nancy",
+      "lastName": "Attack",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "Epi-Pen"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "Vegetarian",
+      "age": "10"
+    },
+    {
+      "allergies": null,
+      "firstName": "Drake",
+      "lastName": "Bell",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "Zyrtec"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "11"
+    },
+    {
+      "allergies": null,
+      "firstName": "Lacey",
+      "lastName": "Dale",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "Allegra"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "12"
+    },
+    {
+      "allergies": null,
+      "firstName": "Aiden",
+      "lastName": "Nannerz",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "Epi-Pen"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "13"
+    },
+    {
+      "allergies": null,
+      "firstName": "Colben",
+      "lastName": "McNasty",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "14"
+    },
+    {
+      "allergies": null,
+      "firstName": "Greta",
+      "lastName": "Band",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "15"
+    },
+    {
+      "allergies": null,
+      "firstName": "Julia",
+      "lastName": "Bykalo",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "Vegetarian",
+      "age": "16"
+    },
+    {
+      "allergies": null,
+      "firstName": "Kairo",
+      "lastName": "Jordan",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "Epi-Pen"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "Gluten",
+      "age": "17"
+    },
+    {
+      "allergies": null,
+      "firstName": "Ryan",
+      "lastName": "Pickus",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "18"
+    },
+    {
+      "allergies": null,
+      "firstName": "Julie",
+      "lastName": "Henderson",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "7"
+    },
+    {
+      "allergies": null,
+      "firstName": "Megan",
+      "lastName": "TheeStallion",
+      "session": "Week 1",
+      "emergencyContact": {
+        "phoneNumber": null,
+        "name": "Gary's Insurance",
+        "relationship": null
+      },
+      "medications": [
+        "None"
+      ],
+      "healthCare": {
+        "doctor": "Dr. Ivory",
+        "name": "Gary's Insurance",
+        "policyNumber": "GI2349050650"
+      },
+      "deitaryRestrictions": "None",
+      "age": "8"
+    }
+  ]

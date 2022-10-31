@@ -152,7 +152,7 @@ public class DataWriter {
             JSONUsers.add(user);
         }
         try {
-            FileWriter file = new FileWriter("/Users/ljaus/Camp-System/JSON/Child.json");
+            FileWriter file = new FileWriter("JSON/Child.json");
             file.write(JSONUsers.toJSONString());
             file.flush();
         } catch (Exception e) {
