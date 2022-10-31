@@ -33,3 +33,4 @@ public class Activity {
     public void removeActivity(Activity activity){
         activities.remove(activity);
 }
+}

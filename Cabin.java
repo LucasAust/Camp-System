@@ -43,7 +43,6 @@ public class Cabin {
         this.sessionID=sessionID;
         this.id=id;
         this.schedule = schedule;
-
     }
     public void addCabin()
     {
