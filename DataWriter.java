@@ -66,10 +66,11 @@ public class DataWriter {
     public static boolean saveAllSessions(ArrayList<Sessions> sessions, ArrayList<Cabin> cabins)
     {
         JSONArray JSONUsers = new JSONArray();
-        JSONArray cabinsList = new JSONArray();
+        
        // JSONArray schedule = new JSONArray();
         for(int i=0;i<sessions.size();i++)
         {
+        JSONArray cabinsList = new JSONArray();
         JSONObject session = new JSONObject();
         Sessions Session = sessions.get(i);
         session.put("id",Session.getId());
@@ -123,28 +124,27 @@ public class DataWriter {
     public static boolean saveAllChildren(ArrayList<Child> children)
     {
         JSONArray JSONUsers = new JSONArray();
-        JSONObject healthCare = new JSONObject();
-        JSONObject emergencyContact = new JSONObject();
-        
-       
         for(int i=0;i<children.size();i++)
         {
+        JSONObject healthCare = new JSONObject();
+        JSONObject emergencyContact = new JSONObject();
         JSONObject user = new JSONObject();
         Child child = children.get(i);
+        user.put("age",child.getAge());
         user.put("firstName",child.getFirstName());
         user.put("lastName",child.getLastName());
         ArrayList<String> meds = child.getHealthInfo().getMedications();
-        JSONArray medications = new JSONArray();
+        //JSONArray medications = new JSONArray();
         String add = null;
         for(int h=0;h<meds.size();h++)
         {
              add = meds.get(h);
-            medications.add(add);
+            
         }
-        user.put("medications",medications);
+        user.put("medications",meds);
         
         
-        user.put("healthCare",healthCare);
+        //user.put("healthCare",healthCare);
         ArrayList<String> dietaryRestrictions = child.getHealthInfo().getDietaryRestrictions();
         String dietaryRestriction = null;
         for(int k=0;k<dietaryRestrictions.size();k++)
@@ -152,14 +152,23 @@ public class DataWriter {
             dietaryRestriction=dietaryRestrictions.get(k);
             user.put("deitaryRestrictions",dietaryRestriction);
         }
+        ArrayList<String> allergies = child.getHealthInfo().getAllergies();
+        String allerg = null;
+        for(int k=0;k<allergies.size();k++)
+        {
+            allerg = allergies.get(k);
+            user.put("allergies",allerg);
+        }
         user.put("session",child.getSession());
         healthCare.put("name",child.getHealthInfo().getInsurance());
         healthCare.put("policyNumber",child.getHealthInfo().getPolicyNumber());
         healthCare.put("doctor",child.getHealthInfo().getDoctor());
-        user.put("emergencyContact",emergencyContact);
+        user.put("healthCare",healthCare);
+        //user.put("emergencyContact",emergencyContact);
         emergencyContact.put("name",child.getEmergencyContact().getName());
         emergencyContact.put("relationship",child.getEmergencyContact().getRelationship());
         emergencyContact.put("phoneNumber",child.getEmergencyContact().getPhoneNumber());
+        user.put("emergencyContact",emergencyContact);
         JSONUsers.add(user);
         }
         try
