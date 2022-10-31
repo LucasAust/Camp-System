@@ -72,23 +72,35 @@ public class Counselor extends RegisteredUser{
 
     }
 
+    /**
+     * adds allergies to counselor info
+     * @param allergies
+     */
     public void addAllergies(ArrayList<String> allergies) {
         allergies.add(allergy);
     }
 
+    /**
+     * adds the emergenct contact to the counselor info
+     * @param emergencyContact
+     */
     public void addEmergencyContact(emergencyContact emergencyContact) {
         emergencyContact contact = new emergencyContact(emergencyContact.name,emergencyContact.relationship,emergencyContact.phoneNumber);
         emergencyContacts.add(contact);
     }
 
-    public void viewCabin() {
-
-    }
-
+    /**
+     * adds the health info to the counselor info
+     * @param healthInfo
+     */
     public void addHealthInfo(healthInfo healthInfo)
     {
         addHealthInfo(healthInfo);
     }
+
+    /**
+     * gets current cabin roster for the week
+     */
     public void getRoster()
     {
         ArrayList<Child> roster = new ArrayList<Child>();
@@ -102,6 +114,11 @@ public class Counselor extends RegisteredUser{
         }
     
     }
+
+    /**
+     * access childs important information in case of emergency
+     * @param roster
+     */
     public void getVitalInfo(ArrayList<Child> roster)
     {
         ArrayList<String> vitals = new ArrayList<String>();
@@ -115,6 +132,11 @@ public class Counselor extends RegisteredUser{
         }
 
     }
+
+    /**
+     * view the schedule for the day
+     * @param schedule
+     */
     public void viewSchedule(ArrayList<Schedule> schedule) {
 
             ArrayList<String> dailySchedule = new ArrayList<String>();
@@ -122,14 +144,6 @@ public class Counselor extends RegisteredUser{
             int week = scanner.nextInt();
             Cabin cabin = cabins.get(week-1);
             //ArrayList<String> sched = cabin.getSchedule();
-            
-            
-            
-            
-
-
-
-
     }
 
 }

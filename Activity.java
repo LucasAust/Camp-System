@@ -18,6 +18,10 @@ public class Activity {
         return this.name;
     }
 
+    /**
+     * creates a new activity and asks for the name and description
+     * @return the new activity being created
+     */
     public Activity createActivity() {
 
         Scanner keyboard = new Scanner(System.in);
@@ -29,6 +33,10 @@ public class Activity {
         return newActivity;
 
     }
+
+    /**
+     * returns the name and description of the activity
+     */
     public String toString()
     {
         return this.name+": "+this.description;

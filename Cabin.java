@@ -45,11 +45,21 @@ public class Cabin {
         this.schedule = schedule;
 
     }
+
+    /**
+     * adds a new cabin
+     */
     public void addCabin()
     {
         Cabin cabin = new Cabin(ageRange, counselor, maxCampers,sessionID,id,schedule);
         //Counselor 
     }
+
+    /**
+     * adds a camper to a cabin
+     * @param cabin that the camper is being assigned to
+     * @return the campers in the cabin
+     */
     public ArrayList<Child> addCampers(Cabin cabin)
     {
         int j=0;
@@ -67,6 +77,7 @@ public class Cabin {
         }
         return campers;
     }
+
     public ArrayList<ArrayList> getSchedule()
     {
         return schedule;

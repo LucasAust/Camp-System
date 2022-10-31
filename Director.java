@@ -27,14 +27,24 @@ private ArrayList<Sessions> sessions = new ArrayList<Sessions>();
     this.password = password;
   } 
 
+/**
+ * add an activity to the camp
+ */
 public void addActivities(Activity activity){
     activities.add(activity);
 }
 
+/**
+ * removes an activity from the camp
+ * @param activity
+ */
 public void Remove(Activity activity){
     activities.remove(activity);
 }
 
+/**
+ * set the themes for the seesions
+ */
 public void setSessions(){
     for(int i=1;i<10;i++) {
       System.out.println("Enter theme for Week " + i + ":");
@@ -44,6 +54,9 @@ public void setSessions(){
     } 
 }
 
+/**
+ * set up cabin assignments
+ */
 public void setCabins(){
   for(int i=1;i<7;i++) {  
     System.out.println("Set cabin " + i + " age range (enter value in the format '#-#'");
@@ -53,6 +66,9 @@ public void setCabins(){
   }
 }
 
+/**
+ * creates the schedule for each day
+ */
 public void generateSchedule() {
     for(int i=1;i<10;i++) {
       int randomActivity = new Random().nextInt(activities.size());
@@ -62,10 +78,10 @@ public void generateSchedule() {
     }
 }
 
-public void removeChild(Child child){
-    child.removeChild(child);
-}
-
+/**
+ * adds a new session to the camp
+ * @param session
+ */
 public void addSession(Sessions session){
     sessions.add(session);
 }
