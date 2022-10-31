@@ -16,7 +16,7 @@ public class DataReader {
   public static ArrayList<Child> saveAllChildren() {
     ArrayList<Child> children = new ArrayList<Child>();
     try {
-      FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/Child.json");
+      FileReader reader = new FileReader("JSON/Child.json");
       JSONParser parser = new JSONParser();
       JSONArray userList = (JSONArray) new JSONParser().parse(reader);
       for (int i = 0; i < userList.size(); i++) {
@@ -66,7 +66,7 @@ public class DataReader {
   public static ArrayList<Counselor> getAllCounselors() {
     ArrayList<Counselor> counselors = new ArrayList<Counselor>();
     try {
-      FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/counselor.json");
+      FileReader reader = new FileReader("JSON/counselor.json");
       JSONParser parser = new JSONParser();
       JSONArray counselorList = (JSONArray) new JSONParser().parse(reader);
       for (int i = 0; i < counselorList.size(); i++) {
@@ -108,7 +108,7 @@ public class DataReader {
   public static ArrayList<Sessions> getAllSessions() {
     ArrayList<Sessions> sessionsList = new ArrayList<Sessions>();
     try {
-      FileReader reader = new FileReader("/Users/ljaus/Camp-System/JSON/sessions.json");
+      FileReader reader = new FileReader("JSON/sessions.json");
       JSONParser parser = new JSONParser();
       JSONArray sessions = (JSONArray) new JSONParser().parse(reader);
       for (int i = 0; i < sessions.size(); i++) {
@@ -200,7 +200,7 @@ public class DataReader {
     ArrayList<Cabin> cabinList = new ArrayList<Cabin>();
     
     try {
-      FileReader reader = new FileReader("/Users/ljaus/Camp-System/test.JSON");
+      FileReader reader = new FileReader("test.JSON");
       JSONParser parser = new JSONParser();
       JSONArray sessions = (JSONArray) new JSONParser().parse(reader);
       for (int i = 0; i < sessions.size(); i++) {
