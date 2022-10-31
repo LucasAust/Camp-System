@@ -5,7 +5,7 @@ import java.util.Random;
 public class CampUI {
     private Scanner scanner;
     private Facade facade = new Facade(null, null, null, null, null, null);
-   public Child editChild;
+    public Child editChild;
     private Random rand;
     public RegisteredUser registeredUser;
     private static final String FIRST_PROMPT = "1. Guardian Login \n2. Counselor Login \n3. Director Login \n4. Create Account \n5. Logout";
@@ -247,10 +247,10 @@ public class CampUI {
                     }
                 }   
                 break;
-                case 3:
+            case 3:
                 facade.viewChildren(guardian);
                 break;
-                case 4:
+            case 4:
                 System.out.println("Enter the first name of the child you would like to register");
                 String childFirstName = scanner.next();
                 scanner.nextLine();
@@ -263,10 +263,10 @@ public class CampUI {
                 scanner.nextLine();
                 facade.registerChildForSession(childFirstName,childLastName,session);
                 break;
-                case 5:
+            case 5:
                 facade.viewSessions();
                 break;
-                case 6:
+            case 6:
                 logout();
                 break;
         }
@@ -325,75 +325,75 @@ public class CampUI {
                 //edit schedule
                 break;
             case 4:
-            boolean bre = false;
-            ArrayList<ArrayList> week = new ArrayList<ArrayList>();
-            ArrayList<Activity> daySchedule = new ArrayList<Activity>();
-            ArrayList<Sessions> sessions = new ArrayList<Sessions>();
-            ArrayList<Cabin> cabins = new ArrayList<Cabin>();
-            while(!bre)
-            {
-                
-                System.out.println("Enter the title of session you would like to add.");
-                scanner.nextLine();
-                String title = scanner.nextLine();
-                System.out.println("Enter the cost of this session");
-                double cost = scanner.nextInt();
-                scanner.nextLine();
-                System.out.println("Enter the theme of this session.");
-                String theme = scanner.nextLine();
-                scanner.nextLine();
-                System.out.println("cabins");
-                for(int x = 0;x<6;x++)
+                boolean bre = false;
+                ArrayList<ArrayList> week = new ArrayList<ArrayList>();
+                ArrayList<Activity> daySchedule = new ArrayList<Activity>();
+                ArrayList<Sessions> sessions = new ArrayList<Sessions>();
+                ArrayList<Cabin> cabins = new ArrayList<Cabin>();
+                while(!bre)
                 {
-                    System.out.println("enter the cabin name");
-                    String id = scanner.nextLine();
-                    System.out.println("age range");
-                    String ageRange = scanner.nextLine();
-                    cabins.add(new Cabin(ageRange,null,8,null,id,null));
-
-                }
-                facade.addSession(new Sessions(title,title,cost,theme,cabins));
-                sessions.add(new Sessions(title,title,cost,theme,cabins));
-                System.out.println("Would you like to add another session?");
-                String resp = scanner.nextLine();
-                scanner.nextLine();
-                if (resp.equalsIgnoreCase("no"))
-                {
-                    bre=true;
-                }
-            }
-            for (int z=0;z<sessions.size();z++)
-            {
-                Sessions schedSess = sessions.get(z);
-                for (int y=0;y<cabins.size();y++)
-                {
-                    Cabin cabin = cabins.get(y);
-                    for (int day=0;day<5;day++)
+                    
+                    System.out.println("Enter the title of session you would like to add.");
+                    scanner.nextLine();
+                    String title = scanner.nextLine();
+                    System.out.println("Enter the cost of this session");
+                    double cost = scanner.nextInt();
+                    scanner.nextLine();
+                    System.out.println("Enter the theme of this session.");
+                    String theme = scanner.nextLine();
+                    scanner.nextLine();
+                    System.out.println("cabins");
+                    for(int x = 0;x<6;x++)
                     {
-                    daySchedule.add(new Activity ("Breakfast","Breakfast with entire camp"));
-                    daySchedule.add(new Activity ("activity 1","Activity1 desc"));
-                    daySchedule.add(new Activity ("activity 2","Activity2 desc"));
-                    daySchedule.add(new Activity ("lunch","Lunch with entire camp"));
-                    daySchedule.add(new Activity ("activity 3","Activity3 desc"));
-                    daySchedule.add(new Activity ("activity 4","Activity4 desc"));
-                    daySchedule.add(new Activity ("dinner", "dinner with entire camp"));
-                    week.add(daySchedule);
-                    }
-                    cabin.schedule = week;
+                        System.out.println("enter the cabin name");
+                        String id = scanner.nextLine();
+                        System.out.println("age range");
+                        String ageRange = scanner.nextLine();
+                        cabins.add(new Cabin(ageRange,null,8,null,id,null));
 
+                    }
+                    facade.addSession(new Sessions(title,title,cost,theme,cabins));
+                    sessions.add(new Sessions(title,title,cost,theme,cabins));
+                    System.out.println("Would you like to add another session?");
+                    String resp = scanner.nextLine();
+                    scanner.nextLine();
+                    if (resp.equalsIgnoreCase("no"))
+                    {
+                        bre=true;
+                    }
                 }
-            }   
-            DataWriter.saveAllSessions(sessions,cabins);
-            break;
+                for (int z=0;z<sessions.size();z++)
+                {
+                    Sessions schedSess = sessions.get(z);
+                    for (int y=0;y<cabins.size();y++)
+                    {
+                        Cabin cabin = cabins.get(y);
+                        for (int day=0;day<5;day++)
+                        {
+                        daySchedule.add(new Activity ("Breakfast","Breakfast with entire camp"));
+                        daySchedule.add(new Activity ("Activity 1","Activity 1 description"));
+                        daySchedule.add(new Activity ("Activity 2","Activity 2 description"));
+                        daySchedule.add(new Activity ("Lunch","Lunch with entire camp"));
+                        daySchedule.add(new Activity ("Activity 3","Activity 3 description"));
+                        daySchedule.add(new Activity ("Activity 4","Activity 4 description"));
+                        daySchedule.add(new Activity ("Dinner", "Dinner with entire camp"));
+                        week.add(daySchedule);
+                        }
+                        cabin.schedule = week;
+
+                    }
+                }   
+                DataWriter.saveAllSessions(sessions,cabins);
+                break;
             case 5:
-            System.out.println("enter the session you would like to access");
-            scanner.nextLine();
-            String sessionName = scanner.nextLine();
-            System.out.println("enter the cabin name that you would like to view");
-            String cabinName = scanner.nextLine();
-            scanner.nextLine();
-            facade.viewSchedule(sessionName,cabinName);
-            break;
+                System.out.println("enter the session you would like to access");
+                scanner.nextLine();
+                String sessionName = scanner.nextLine();
+                System.out.println("enter the cabin name that you would like to view");
+                String cabinName = scanner.nextLine();
+                scanner.nextLine();
+                facade.viewSchedule(sessionName,cabinName);
+                break;
             case 6:
                 logout();
                 break;
@@ -401,7 +401,7 @@ public class CampUI {
     }
 
     public static void main(String[] args) {
-       Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         CampUI campUI = new CampUI();
         campUI.run();
     }
