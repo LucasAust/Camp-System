@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Counselor{
+public class Counselor extends RegisteredUser{
     private Scanner scanner= new Scanner(System.in);
     public static String getGetAge() {
         return getAge;
@@ -36,6 +36,14 @@ public class Counselor{
     public ArrayList<emergencyContact> getEmergencyContacts() {
         return emergencyContacts;
     }
+    public String getUsername()
+    {
+        return username;
+    }
+    public String getPassword()
+    {
+        return password;
+    }
 
     public static String getAge;
     protected String firstName;
@@ -48,15 +56,19 @@ public class Counselor{
     protected String allergy;
     protected ArrayList<String> allergies = new ArrayList<String>();
     protected ArrayList<emergencyContact> emergencyContacts;
+    public String username;
+    public String password;
 
-    public Counselor(String firstName, String lastName, Long age2, emergencyContact emergencyContact,healthInfo healthInfo,ArrayList<Cabin> cabins)
+    public Counselor(String firstName, String lastName, emergencyContact emergencyContact,healthInfo healthInfo,ArrayList<Cabin> cabins, String username, String password)
     {
+        super(firstName, lastName, username, username, password);
         this.firstName=firstName;
         this.lastName=lastName;
-        this.age=age2;
         this.emergencyContact=emergencyContact;
         this.healthInfo=healthInfo;
         this.cabins=cabins;
+        this.username=username;
+        this.password=password;
 
     }
 
@@ -103,11 +115,16 @@ public class Counselor{
         }
 
     }
-    public void viewSchedule() {
+    public void viewSchedule(ArrayList<Schedule> schedule) {
 
-            ArrayList<String> schedule = new ArrayList<String>();
-            System.out.println("Enter which week you would like to view your schedule for.");
-            String week = scanner.next();
+            ArrayList<String> dailySchedule = new ArrayList<String>();
+            System.out.println("Enter which week number you would like to view your schedule for.");
+            int week = scanner.nextInt();
+            Cabin cabin = cabins.get(week-1);
+            //ArrayList<String> sched = cabin.getSchedule();
+            
+            
+            
             
 
 

@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class RegisteredUser extends User {
   public String firstName;
   public String lastName;
@@ -47,8 +49,10 @@ public class RegisteredUser extends User {
   }
 
 
-public static RegisteredUser addUser(String firstName2, String lastName2, String email2, String username2,
+public static void addUser(String firstName2, String lastName2, String email2, String username2,
 		String password2) {
-	return null;
+    GuardianList.getInstance().addGuardian(firstName2,lastName2,username2,email2,password2,null);
+    
+
 }
 }

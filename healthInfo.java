@@ -20,11 +20,11 @@ public class healthInfo {
     {
         return insurance;
     }
-    public String policyNumber()
+    public String getPolicyNumber()
     {
         return policyNumber;
     }
-    public String doctor()
+    public String getDoctor()
     {
         return doctor;
     }
