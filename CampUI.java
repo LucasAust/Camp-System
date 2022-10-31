@@ -300,19 +300,6 @@ public class CampUI {
         Director director = new Director(FIRST_PROMPT, FIRST_PROMPT, FIRST_PROMPT, FIRST_PROMPT, FIRST_PROMPT);
         System.out.println("-----Welcome Director-----");
         System.out.println(" ");
-<<<<<<< HEAD
-        System.out.println("Would you like to \n1. Set sessions \n2. Add an activity \n3. Remove an activity \n4. Edit schedule");
-        int choice = scanner.nextInt();
-        switch (choice) {
-            case 1:
-                //set sessions
-                director.setSessions();
-            case 2: 
-                //add activitivy
-                Activity activity = new Activity(null, null);
-                activity.createActivity();
-                break;           
-=======
         System.out.println("Would you like to \n1. Add an activity \n2. Remove an activity \n3. Edit schedule \n4. Create a new Session \n5. View Cabin schedules \n6. Logout");
         int choice = scanner.nextInt();
         switch (choice) {
@@ -338,7 +325,6 @@ public class CampUI {
                 Activity Ractivity = new Activity(Rname, Rdescription);
                 facade.removeActivity(Ractivity);
                 break;
->>>>>>> main
             case 3:
                 //remove activity
                 break;

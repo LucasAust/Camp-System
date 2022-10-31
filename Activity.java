@@ -1,9 +1,11 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Activity {
 
     public String name;
     public String description;
+    private ArrayList<Activity> activities = new ArrayList<Activity>();
 
     public Activity(String name, String description) {
         this.name = name;
@@ -18,20 +20,16 @@ public class Activity {
         return this.name;
     }
 
-    public Activity createActivity() {
-
+    public void createActivity() {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter activity name: ");
         name = keyboard.nextLine();
         System.out.println("Enter activity description: ");
         description = keyboard.nextLine();
-        Activity newActivity = new Activity(name, description);
-        return newActivity;
-
-    }
-    public String toString()
-    {
-        return this.name+": "+this.description;
+        //new Activity(name,description);
+        activities.add(new Activity(name,description));
     }
 
+    public void removeActivity(Activity activity){
+        activities.remove(activity);
 }

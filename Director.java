@@ -73,5 +73,5 @@ public void removeChild(Child child){
 
 public void addSession(Sessions session){
     sessions.add(session);
-};
+}
 }
