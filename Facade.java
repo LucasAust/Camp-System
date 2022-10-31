@@ -47,15 +47,10 @@ public class Facade {
             {
                 continue;
             }
-            
-
         }
         if(ret==true)
         {
-            
             System.out.println("success");
-            
-
         }
         else
         {
@@ -66,35 +61,34 @@ public class Facade {
     }
     if (j==2)
     {
-     counselorList = CounselorList.getInstance().getCounselors();
-    System.out.println("Logging you in...");
-    boolean ret = false;
-    for (int i = 0; i < counselorList.size(); i++) {
-
-        Counselor counselor = counselorList.get(i);
-
-        if(password.equals(counselor.password) && username.equals(counselor.username))
+        counselorList = CounselorList.getInstance().getCounselors();
+        System.out.println("Logging you in...");
+        boolean ret = false;
+        for (int i = 0; i < counselorList.size(); i++) 
         {
-            ret=true;
-            return counselor;
+
+            Counselor counselor = counselorList.get(i);
+
+            if(password.equals(counselor.password) && username.equals(counselor.username))
+            {
+                ret=true;
+                return counselor;
+            }
+            else
+            {
+                continue;
+            }
+        }
+        if(ret==true)
+        {
+            System.out.println("success");
         }
         else
         {
-            continue;
+            System.out.println("unsuccessful. Try again");
+            CampUI campUI = new CampUI();
+            campUI.login(2);
         }
-        
-
-    }
-    if(ret==true)
-    {
-        System.out.println("success");
-    }
-    else
-    {
-    System.out.println("unsuccessful. Try again");
-    CampUI campUI = new CampUI();
-    campUI.login(2);
-    }
     }
 
     if (j==3)
