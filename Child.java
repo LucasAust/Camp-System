@@ -68,19 +68,38 @@ public class Child {
         this.session=session;
     }
 
+    /**
+     * adds allergies to data
+     * @param allergies
+     */
     public void addAllergies(ArrayList<String> allergies)
     {
         allergies.add(allergy);
     }
+
+    /**
+     * adds medications to data
+     * @param medications
+     */
     public void addMedication(ArrayList<String> medications)
     {
         medications.add(medication);
     }
+
+    /**
+     * adds the emergency contact info to the childs data
+     * @param emergencyContact
+     */
     public void addEmergencyContact(emergencyContact emergencyContact)
     {
         emergencyContact contact = new emergencyContact(emergencyContact.name,emergencyContact.relationship,emergencyContact.phoneNumber);
         emergencyContacts.add(contact);
     }
+
+    /**
+     * adds the health info to the childs data
+     * @param healthInfo
+     */
     public void addHealthInfo(healthInfo healthInfo)
     {
         addHealthInfo(healthInfo);

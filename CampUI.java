@@ -122,6 +122,7 @@ public class CampUI {
         String password = scanner.nextLine();
         scanner.nextLine();
         facade.signup(firstName, lastName, email, username, password,accountType,null);
+        
     }
 
     /**
@@ -155,10 +156,10 @@ public class CampUI {
                 System.out.println("What is the phone # of the emergency contact");
                 String phoneNumber = scanner.nextLine();
                // scanner.nextLine();
-                System.out.println("What is the name your insurance provider");
+                System.out.println("What is the name of your doctors office");
                 String insurance = scanner.nextLine();
                 //scanner.nextLine();
-                System.out.println("What is your insurance policy #");
+                System.out.println("What is your doctors office phone #");
                 String policyNumber = scanner.nextLine();
                // scanner.nextLine();
                 System.out.println("What is the name of your child's doctor");

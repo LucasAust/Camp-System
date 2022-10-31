@@ -20,14 +20,37 @@ public class Activity {
         return this.name;
     }
 
+<<<<<<< HEAD
     public void createActivity() {
+=======
+    /**
+     * creates a new activity and asks for the name and description
+     * @return the new activity being created
+     */
+    public Activity createActivity() {
+
+>>>>>>> ba1c8070bb20d31018e187d025f5d4f9df113638
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter activity name: ");
         name = keyboard.nextLine();
         System.out.println("Enter activity description: ");
         description = keyboard.nextLine();
+<<<<<<< HEAD
         //new Activity(name,description);
         activities.add(new Activity(name,description));
+=======
+        Activity newActivity = new Activity(name, description);
+        return newActivity;
+
+    }
+
+    /**
+     * returns the name and description of the activity
+     */
+    public String toString()
+    {
+        return this.name+": "+this.description;
+>>>>>>> ba1c8070bb20d31018e187d025f5d4f9df113638
     }
 
     public void removeActivity(Activity activity){

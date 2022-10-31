@@ -15,6 +15,12 @@ public class emergencyContact {
         return phoneNumber;
     }
 
+    /**
+     * creates a new emergency contact
+     * @param name
+     * @param relationship
+     * @param phoneNumber
+     */
     public emergencyContact(String name, String relationship, String phoneNumber) {
         this.name = name;
         this.relationship = relationship;
