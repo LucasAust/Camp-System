@@ -2,6 +2,14 @@ import java.util.ArrayList;
 
 import javax.lang.model.util.ElementScanner14;
 
+/**
+ * @param user
+ * @param schedule
+ * @param activity
+ * @param session
+ * @param cabin
+ * @param child
+ */
 public class Facade {
     private ArrayList<Guardian> guardianList;
     private ArrayList<Counselor> counselorList;
@@ -26,6 +34,12 @@ public class Facade {
         this.child = child;
     }
 
+    /**
+     * @param username
+     * @param password
+     * @param j
+     * @return
+     */
     public RegisteredUser login(String username, String password, int j) {
         if (j == 1) {
             guardianList = GuardianList.getInstance().getGuardians();
@@ -103,6 +117,15 @@ public class Facade {
 
     }
 
+    /**
+     * @param firstName
+     * @param lastName
+     * @param email
+     * @param username
+     * @param password
+     * @param accountType
+     * @param children
+     */
     public void signup(String firstName, String lastName, String email, String username, String password,
             String accountType, ArrayList<String> children) {
         // Guardian.addUser(firstName, lastName, username, email, password);
@@ -116,10 +139,17 @@ public class Facade {
         }
     }
 
+    /**
+     * @param schedule
+     * @return
+     */
     public Schedule getWeeklySchedule(Schedule schedule) {
         return null;
     }
 
+    /**
+     * method to logout and save the user
+     */
     public void logout() {
         user.saveUser();
     }
@@ -160,6 +190,10 @@ public class Facade {
 
     }
 
+    /**
+     * @param sessionName
+     * @param cabinName
+     */
     public void viewSchedule(String sessionName, String cabinName) {
         ArrayList<Sessions> sessions = DataReader.getAllSessions2();
         for (int i = 0; i < sessions.size(); i++) {
@@ -188,6 +222,9 @@ public class Facade {
 
     }
 
+    /**
+     * 
+     */
     public void viewRoster() {
         Cabin cabin = new Cabin("11-12", null, MAX_CAMPERS, null, null, null);
         ArrayList<Child> children = cabin.addCampers(cabin);
@@ -197,6 +234,9 @@ public class Facade {
         }
     }
 
+    /**
+     * 
+     */
     public void viewVitals() {
         Cabin cabin = new Cabin("11-12", null, MAX_CAMPERS, null, null, null);
         ArrayList<Child> children = cabin.addCampers(cabin);
@@ -224,15 +264,21 @@ public class Facade {
         }
     }
 
+    /**
+     * 
+     */
     public void printSchedule() {
     }
 
+    /**
+     * @param registeredUser
+     */
     public void viewChildren(Guardian registeredUser) {
         ArrayList<Child> childs = new ArrayList<Child>();
         String firstName = null;
         String lastName = null;
         ArrayList<String> children = registeredUser.getChildren();
-         childs = DataReader.saveAllChildren();
+        childs = DataReader.saveAllChildren();
         for (int i = 0; i < children.size(); i++) {
             System.out.println(children.get(i));
             int x = children.get(i).indexOf(" ");
@@ -249,12 +295,19 @@ public class Facade {
 
     }
 
+    /**
+     * @param string
+     * @param guardian
+     */
     public void addChild(String string, Guardian guardian) {
 
         guardian.addChild(string);
         guardian.children.add(string);
     }
 
+    /**
+     * 
+     */
     public void viewSessions() {
         ArrayList<Sessions> sessions = new ArrayList<Sessions>();
         sessions = DataReader.getAllSessions2();
@@ -265,12 +318,20 @@ public class Facade {
 
     }
 
+    /**
+     * @param child
+     */
     public void registerChild(Child child) {
         ArrayList<Child> children = DataReader.saveAllChildren();
         children.add(child);
         DataWriter.saveAllChildren(children);
     }
 
+    /**
+     * @param childFirstName
+     * @param childLastName
+     * @param session2
+     */
     public void registerChildForSession(String childFirstName, String childLastName, String session2) {
         ArrayList<Child> children = DataReader.saveAllChildren();
         for (int i = 0; i < children.size(); i++) {
