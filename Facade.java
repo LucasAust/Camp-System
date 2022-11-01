@@ -152,7 +152,8 @@ public class Facade {
     }
 
     public void generateSchedule(Schedule schedule) {
-
+        Director generateSchedule = new Director("Sam", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
+        generateSchedule.generateSchedule();
     }
 
     public void removeActivity(Activity activity) {
