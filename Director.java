@@ -91,20 +91,23 @@ public void generateSchedule() {
         if (i==1) {
           Schedule breakfast = new Schedule();
           breakfast.breakfastAll(null, null, null);
+          System.out.println(breakfast);
         }
         else if (i==4) {
           Schedule lunch = new Schedule();
           lunch.lunchAll(null, null, null);
+          System.out.println(lunch);
         }
         else if (i==7) {
           Schedule dinner = new Schedule();
           dinner.dinnerAll(null, null, null);
+          System.out.println(dinner);
         }
         else {
-        System.out.println("| " + activities.get(randomActivity) + " |");
+        System.out.println(activities.get(randomActivity));
         }
       }
-      System.out.println("-----------------------------");
+      //System.out.println("-----------------------------");
     }
 }
  

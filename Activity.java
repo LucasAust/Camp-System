@@ -24,6 +24,10 @@ public class Activity {
      * creates a new activity and asks for the name and description
      * @return the new activity being created
      */
+    /**
+     * creates a new activity and asks for the name and description
+     * @return the new activity being created
+     */
     public Activity createActivity() {
 
         Scanner keyboard = new Scanner(System.in);
