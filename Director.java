@@ -119,7 +119,7 @@ public void generateSchedule() {
         System.out.println(activities.get(randomActivity));
         }
       }
-      System.out.println("-----------------------------");
+      //System.out.println("-----------------------------");
     }
 }
  
