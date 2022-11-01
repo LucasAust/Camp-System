@@ -30,6 +30,26 @@ private ArrayList<Sessions> sessions = new ArrayList<Sessions>();
 public void addActivities(Activity activity){
     activities.add(activity);
 }
+public String getFirstName()
+{
+  return firstName;
+}
+public String getLastName()
+{
+  return lastName;
+}
+public String getUsername()
+{
+  return userName;
+}
+public String getEmail()
+{
+  return email;
+}
+public String getPassword()
+{
+  return password;
+}
 
 public void Remove(Activity activity){
     activities.remove(activity);
@@ -66,12 +86,28 @@ public void generateSchedule() {
     for(int i=1;i<10;i++) {
       int randomActivity = new Random().nextInt(activities.size());
       System.out.println("-----------------------------");
-      System.out.println("----------Cabin " + i +"------------");
-      System.out.println("| " + activities.get(randomActivity) + " |");
+      System.out.println("            Cabin " + i +"            ");
+      for(int j=1;j<8;j++) {
+        if (i==1) {
+          Schedule breakfast = new Schedule();
+          breakfast.breakfastAll(null, null, null);
+        }
+        else if (i==4) {
+          Schedule lunch = new Schedule();
+          lunch.lunchAll(null, null, null);
+        }
+        else if (i==7) {
+          Schedule dinner = new Schedule();
+          dinner.dinnerAll(null, null, null);
+        }
+        else {
+        System.out.println("| " + activities.get(randomActivity) + " |");
+        }
+      }
       System.out.println("-----------------------------");
     }
 }
-
+ 
 public void removeChild(Child child){
     child.removeChild(child);
 }
@@ -79,4 +115,5 @@ public void removeChild(Child child){
 public void addSession(Sessions session){
     sessions.add(session);
 }
+
 }

@@ -60,6 +60,7 @@ public class Counselor extends RegisteredUser{
     }
 
     public static String getAge;
+    public String email;
     protected String firstName;
     protected String lastName;
     protected Long age;
@@ -73,7 +74,7 @@ public class Counselor extends RegisteredUser{
     public String username;
     public String password;
 
-    public Counselor(String firstName, String lastName, emergencyContact emergencyContact,healthInfo healthInfo,ArrayList<Cabin> cabins, String username, String password)
+    public Counselor(String firstName, String lastName, String email, emergencyContact emergencyContact,healthInfo healthInfo,ArrayList<Cabin> cabins, String username, String password)
     {
         super(firstName, lastName, username, email, password);
         this.firstName=firstName;

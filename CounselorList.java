@@ -30,7 +30,7 @@ public class CounselorList {
      */
     public void addCounselor(String firstName, String lastName, String username, String email, String password )
     {
-        counselors.add(new Counselor(firstName, lastName, null, null, null, null, username));
+        counselors.add(new Counselor(firstName, lastName,email, null, null, null, null, username));
 
     }
     public ArrayList<Counselor> getCounselors()

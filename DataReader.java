@@ -96,7 +96,7 @@ public class DataReader {
         String policyNumber = (String) healthCare.get("policyNumber");
         String doctor = (String) healthCare.get("doctor");
         healthInfo healthInfo = new healthInfo(hName, policyNumber, doctor,null,null,null);
-        Counselor addCounselor = new Counselor(firstName, null, emergencyContact2, healthInfo, counselorCabins,username,password);
+        Counselor addCounselor = new Counselor(firstName, null,null, emergencyContact2, healthInfo, counselorCabins,username,password);
         counselors.add(addCounselor);
       }
     } catch (Exception e) {
