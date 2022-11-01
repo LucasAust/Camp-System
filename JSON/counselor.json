@@ -2,6 +2,8 @@
     {
         "id":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
         "firstName":"Lacy",
+        "username":"LAdams",
+        "password":"password",
         "lastName":"Adams",
         "age":16,
         "cabin":"ac37b1aa-cd15-438f-b984-5c6720d8658c",

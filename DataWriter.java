@@ -160,4 +160,50 @@ public class DataWriter {
         }
         return true;
     }
+    public static boolean saveAllCounselors(ArrayList<Counselor> counselors) {
+        JSONArray JSONUsers = new JSONArray();
+        for (int i = 0; i < counselors.size(); i++) {
+            JSONObject user = new JSONObject();
+            Counselor counselor = counselors.get(i);
+            user.put("firstName", counselor.getFirstName());
+            user.put("lastName", counselor.getLastName());
+            user.put("username", counselor.getUserName());
+            user.put("email", counselor.getEmail());
+            user.put("password", counselor.getPassword());
+            //user.put("children", counselor.getChildren());
+
+            JSONUsers.add(user);
+        }
+        try {
+            FileWriter file = new FileWriter("JSON/Guardian.json");
+            file.write(JSONUsers.toJSONString());
+            file.flush();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return true;
+    }
+    public static boolean saveAllDirectors(ArrayList<Director> directors) {
+        JSONArray JSONUsers = new JSONArray();
+        for (int i = 0; i < directors.size(); i++) {
+            JSONObject user = new JSONObject();
+            Director director = directors.get(i);
+            user.put("firstName", director.getFirstName());
+            user.put("lastName", director.getLastName());
+            user.put("username", director.getUserName());
+            user.put("email", director.getEmail());
+            user.put("password", director.getPassword());
+           // user.put("children", director.getChildren());
+
+            JSONUsers.add(user);
+        }
+        try {
+            FileWriter file = new FileWriter("JSON/Guardian.json");
+            file.write(JSONUsers.toJSONString());
+            file.flush();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return true;
+    }
 }

@@ -61,7 +61,7 @@ public class Counselor extends RegisteredUser{
 
     public Counselor(String firstName, String lastName, emergencyContact emergencyContact,healthInfo healthInfo,ArrayList<Cabin> cabins, String username, String password)
     {
-        super(firstName, lastName, username, username, password);
+        super(firstName, lastName, username, email, password);
         this.firstName=firstName;
         this.lastName=lastName;
         this.emergencyContact=emergencyContact;

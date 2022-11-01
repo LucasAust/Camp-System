@@ -4,7 +4,7 @@ public class RegisteredUser extends User {
   public String firstName;
   public String lastName;
   public String userName;
-  public String email;
+  public static String email;
   public String password;
 
   public RegisteredUser(String firstName, String lastName, String userName, String email, String password) {
