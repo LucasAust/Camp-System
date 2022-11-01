@@ -17,6 +17,15 @@ public class DirectorList {
         }
         return directorList;
     }
+
+    /**
+     * adds a new director
+     * @param firstName
+     * @param lastName
+     * @param username
+     * @param email
+     * @param password
+     */
     public void addDirector(String firstName,String lastName, String username, String email, String password)
     {
         directors.add(new Director(firstName, lastName, username, email, password));

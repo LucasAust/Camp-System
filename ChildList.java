@@ -26,9 +26,21 @@ public class ChildList {
     return children;
   }
 
+  /*
+   * saves the user
+   */
   public void saveUser() {
     //DataWriter.saveAllGuardians(users);
   }
+
+  /**
+   * adds a new child to the account
+   * @param firstName
+   * @param lastName
+   * @param username
+   * @param email
+   * @param password
+   */
   public void addNewChild(String firstName,String lastName, String username, String email, String password)
   {
     //newChildren.add(new RegisteredUser(firstName,lastName,username,email,password));

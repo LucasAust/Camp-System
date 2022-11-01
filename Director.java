@@ -30,11 +30,34 @@ private ArrayList<Sessions> sessions = new ArrayList<Sessions>();
 public void addActivities(Activity activity){
     activities.add(activity);
 }
+public String getFirstName()
+{
+  return firstName;
+}
+public String getLastName()
+{
+  return lastName;
+}
+public String getUsername()
+{
+  return userName;
+}
+public String getEmail()
+{
+  return email;
+}
+public String getPassword()
+{
+  return password;
+}
 
 public void Remove(Activity activity){
     activities.remove(activity);
 }
 
+/**
+ * set the themes for the seesions
+ */
 public void setSessions(){
     for(int i=1;i<10;i++) {
       System.out.println("Enter theme for Week " + i + ":");
@@ -44,6 +67,9 @@ public void setSessions(){
     } 
 }
 
+/**
+ * set up cabin assignments
+ */
 public void setCabins(){
   for(int i=1;i<7;i++) {  
     System.out.println("Set cabin " + i + " age range (enter value in the format '#-#'");
@@ -53,12 +79,16 @@ public void setCabins(){
   }
 }
 
+/**
+ * creates the schedule for each day
+ */
 public void generateSchedule() {
     for(int i=1;i<10;i++) {
       int randomActivity = new Random().nextInt(activities.size());
       System.out.println("-----------------------------");
       System.out.println("----------Cabin " + i +"------------");
-      System.out.println(activities[randomActivity]);
+      System.out.println("| " + activities.get(randomActivity) + " |");
+      System.out.println("-----------------------------");
     }
 }
 
@@ -69,4 +99,5 @@ public void removeChild(Child child){
 public void addSession(Sessions session){
     sessions.add(session);
 }
+
 }

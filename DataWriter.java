@@ -167,8 +167,7 @@ public class DataWriter {
             Counselor counselor = counselors.get(i);
             user.put("firstName", counselor.getFirstName());
             user.put("lastName", counselor.getLastName());
-            user.put("username", counselor.getUserName());
-            user.put("email", counselor.getEmail());
+            user.put("username", counselor.getUsername());
             user.put("password", counselor.getPassword());
             //user.put("children", counselor.getChildren());
 
@@ -190,7 +189,7 @@ public class DataWriter {
             Director director = directors.get(i);
             user.put("firstName", director.getFirstName());
             user.put("lastName", director.getLastName());
-            user.put("username", director.getUserName());
+            user.put("username", director.getUsername());
             user.put("email", director.getEmail());
             user.put("password", director.getPassword());
            // user.put("children", director.getChildren());

@@ -19,9 +19,18 @@ public class CounselorList {
         }
         return counselorList;
     }
+
+    /**
+     * adds a new counselor
+     * @param firstName
+     * @param lastName
+     * @param username
+     * @param email
+     * @param password
+     */
     public void addCounselor(String firstName, String lastName, String username, String email, String password )
     {
-        counselors.add(new Counselor(firstName, lastName, null, null, null, null, username));
+        counselors.add(new Counselor(firstName, lastName,email, null, null, null, null, username));
 
     }
     public ArrayList<Counselor> getCounselors()
