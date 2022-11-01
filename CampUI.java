@@ -427,7 +427,6 @@ public class CampUI {
                         System.out.println("Age range for cabin " + x);
                         String ageRange = scanner.nextLine();
                         cabins.add(new Cabin(ageRange,null,8,null,id,null));
-
                     }
                     facade.addSession(new Sessions(title,title,cost,theme,cabins));
                     sessions.add(new Sessions(title,title,cost,theme,cabins));
