@@ -7,10 +7,6 @@ public class Director extends RegisteredUser{
   Sessions sessions2;
   Cabin cabin;
 
-  public ArrayList<Activity> setActivities(ArrayList<Activity> activities) {
-    this.activities = activities;
-  }
-
 public ArrayList<Activity> getActivities() {
     return activities;
   }
