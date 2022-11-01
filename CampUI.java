@@ -373,7 +373,6 @@ public class CampUI {
                 scanner.nextLine();
                 System.out.println("What is the description of the activity");
                 String Adescription = scanner.nextLine();
-                scanner.nextLine();
                 Activity Aactivity = new Activity(Aname, Adescription);
                 facade.addActivity(Aactivity);
                 System.out.println(" ");
@@ -386,7 +385,6 @@ public class CampUI {
                 scanner.nextLine();
                 System.out.println("What is the description of the activity you would like to remove");
                 String Rdescription = scanner.nextLine();
-                scanner.nextLine();
                 Activity Ractivity = new Activity(Rname, Rdescription);
                 facade.removeActivity(Ractivity);
                 System.out.println(" ");
@@ -397,7 +395,9 @@ public class CampUI {
                 break;
             case 4:
                 //generate schedule
-                facade.generateSchedule(null);
+                Director newSchedule = new Director("Sam", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
+                newSchedule.generateSchedule();
+                //facade.generateSchedule(null);
                 directorDisplay();
                 break;
             case 5:
