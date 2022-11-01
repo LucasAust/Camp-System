@@ -29,7 +29,7 @@ public class Facade {
     public RegisteredUser login(String username, String password, int j) {
         if (j == 1) {
             guardianList = GuardianList.getInstance().getGuardians();
-            System.out.println("Logging you in...");
+            System.out.println("Logging you in..." + "\n ");
             boolean ret = false;
             for (int i = 0; i < guardianList.size(); i++) {
 
