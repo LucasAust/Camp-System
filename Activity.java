@@ -35,8 +35,17 @@ public class Activity {
         name = keyboard.nextLine();
         System.out.println("Enter activity description: ");
         description = keyboard.nextLine();
-        //new Activity(name,description);
-        activities.add(new Activity(name,description));
+        Activity newActivity = new Activity(name, description);
+        return newActivity;
+
+    }
+
+    /**
+     * returns the name and description of the activity
+     */
+    public String toString()
+    {
+        return this.name+": "+this.description;
     }
 
     public void removeActivity(Activity activity){

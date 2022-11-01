@@ -30,6 +30,26 @@ private ArrayList<Sessions> sessions = new ArrayList<Sessions>();
 public void addActivities(Activity activity){
     activities.add(activity);
 }
+public String getFirstName()
+{
+  return firstName;
+}
+public String getLastName()
+{
+  return lastName;
+}
+public String getUsername()
+{
+  return userName;
+}
+public String getEmail()
+{
+  return email;
+}
+public String getPassword()
+{
+  return password;
+}
 
 public void Remove(Activity activity){
     activities.remove(activity);
@@ -98,4 +118,5 @@ public void removeChild(Child child){
 public void addSession(Sessions session){
     sessions.add(session);
 }
+
 }
