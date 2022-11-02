@@ -95,9 +95,9 @@ public void setCabins(){
 }
 
 public void generateSchedule() {
-    for(int i=1;i<10;i++) {
+    for(int i=1;i<=6;i++) {
       System.out.println("-----------------------------");
-      System.out.println("            Cabin " + i +"            ");
+      System.out.println("          Cabin " + i +"            ");
       for(int j=1;j<8;j++) {
         if (i==1) {
           Schedule breakfast = new Schedule();

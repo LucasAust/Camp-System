@@ -1,16 +1,17 @@
 import java.util.ArrayList;
 
 public class Schedule {
-    public ArrayList<Activity> schedule;
+    //public ArrayList<Activity> schedule;
+    public ArrayList<Activity> schedule = new ArrayList<Activity>();
 
     public void addActivity(Activity activity) {
         schedule.add(activity);
     }
 
 
-    public Schedule generateSchedule() {
-        return null;
-    }
+   // public Schedule generateSchedule() {
+  //      return null;
+   // }
 
     public void breakfastAll(Child child, Counselor counselor, Director director) {
         Activity breakfast = new Activity("breakfast","Breakfast with the entire camp");

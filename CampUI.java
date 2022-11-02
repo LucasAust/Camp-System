@@ -363,7 +363,7 @@ public class CampUI {
     public void directorDisplay() {
         System.out.println("-----Welcome Director-----");
         System.out.println(" ");
-        System.out.println("Would you like to \n1. Add an activity \n2. Remove an activity \n3. Edit schedule \n4. Generate schedule \n5. Create a new Session \n6. View Cabin schedules \n7. Logout");
+        System.out.println("Would you like to \n1. Add an activity \n2. Remove an activity \n3. Edit schedule\n4. Set up a new Session \n5. View Cabin schedules \n6. Logout");
         int choice = scanner.nextInt();
         System.out.println(" ");
         switch (choice) {
@@ -395,13 +395,6 @@ public class CampUI {
                 //Edit schedule
                 break;
             case 4:
-                //generate schedule
-                Director newSchedule = new Director("Sam", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
-                newSchedule.generateSchedule();
-                //facade.generateSchedule(null);
-                directorDisplay();
-                break;
-            case 5:
                 //create new session
                 boolean bre = false;
                 ArrayList<ArrayList> week = new ArrayList<ArrayList>();
@@ -409,8 +402,7 @@ public class CampUI {
                 ArrayList<Sessions> sessions = new ArrayList<Sessions>();
                 ArrayList<Cabin> cabins = new ArrayList<Cabin>();
                 while(!bre)
-                {
-                    
+                {                   
                     System.out.println("Enter the title of session you would like to add.");
                     scanner.nextLine();
                     String title = scanner.nextLine();
@@ -419,11 +411,10 @@ public class CampUI {
                     scanner.nextLine();
                     System.out.println("Enter the theme of this session.");
                     String theme = scanner.nextLine();
-                    scanner.nextLine();
                     System.out.println("cabins");
                     for(int x = 1;x<7;x++)
                     {
-                        System.out.println("Enter cabin " + x + "name");
+                        System.out.println("Enter cabin " + x + " name");
                         String id = scanner.nextLine();
                         System.out.println("Age range for cabin " + x);
                         String ageRange = scanner.nextLine();
@@ -433,7 +424,6 @@ public class CampUI {
                     sessions.add(new Sessions(title,title,cost,theme,cabins));
                     System.out.println("Would you like to add another session?");
                     String resp = scanner.nextLine();
-                    scanner.nextLine();
                     if (resp.equalsIgnoreCase("no"))
                     {
                         bre=true;
@@ -441,6 +431,12 @@ public class CampUI {
                 }
                 for (int z=0;z<sessions.size();z++)
                 {
+                //------------------------------------------------------
+                //generate schedule
+                Director newSchedule = new Director("Sam", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
+                newSchedule.generateSchedule();
+                //facade.generateSchedule(null);
+                //-----------------------------------------------------
                     Sessions schedSess = sessions.get(z);
                     for (int y=0;y<cabins.size();y++)
                     {
@@ -463,7 +459,7 @@ public class CampUI {
                 System.out.println(" ");
                 directorDisplay();
                 break;
-            case 6:
+            case 5:
                 //view cabin schedule
                 System.out.println("enter the session you would like to access");
                 scanner.nextLine();
@@ -475,7 +471,7 @@ public class CampUI {
                 System.out.println(" ");
                 directorDisplay();
                 break;
-            case 7:
+            case 6:
             //logout
                 //DataWriter.saveAllDirectors(DirectorList.getInstance().getDirectors());
                 System.out.println("Thank you for looking at our camp.");
