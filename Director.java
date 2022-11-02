@@ -95,6 +95,8 @@ public void setCabins(){
 }
 
 public void generateSchedule() {
+  Activity activity = new Activity("name", "description");
+  ArrayList<Activity> activities = activity.getList();
     for(int i=1;i<=6;i++) {
       System.out.println("-----------------------------");
       System.out.println("          Cabin " + i +"            ");

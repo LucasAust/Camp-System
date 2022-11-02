@@ -376,6 +376,8 @@ public class CampUI {
                 String Adescription = scanner.nextLine();
                 Activity Aactivity = new Activity(Aname, Adescription);
                 facade.addActivity(Aactivity);
+                Activity activities = new Activity(Aname, Adescription);
+                activities.addActivity(Aactivity);
                 System.out.println(" ");
                 directorDisplay();
                 break;
@@ -429,14 +431,15 @@ public class CampUI {
                         bre=true;
                     }
                 }
-                for (int z=0;z<sessions.size();z++)
-                {
                 //------------------------------------------------------
                 //generate schedule
                 Director newSchedule = new Director("Sam", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
                 newSchedule.generateSchedule();
-                //facade.generateSchedule(null);
+                facade.generateSchedule(null);
                 //-----------------------------------------------------
+                /*
+                for (int z=0;z<sessions.size();z++)
+                {
                     Sessions schedSess = sessions.get(z);
                     for (int y=0;y<cabins.size();y++)
                     {
@@ -455,6 +458,7 @@ public class CampUI {
                         cabin.schedule = week;
                     }
                 }   
+                */
                 DataWriter.saveAllSessions(sessions,cabins);
                 System.out.println(" ");
                 directorDisplay();

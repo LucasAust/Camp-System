@@ -20,6 +20,10 @@ public class Activity {
         return this.name;
     }
 
+    public ArrayList<Activity> getList() {
+        return activities;
+    }
+
     /**
      * creates a new activity and asks for the name and description
      * @return the new activity being created
@@ -36,6 +40,7 @@ public class Activity {
         System.out.println("Enter activity description: ");
         description = keyboard.nextLine();
         Activity newActivity = new Activity(name, description);
+        activities.add(newActivity);
         return newActivity;
 
     }
