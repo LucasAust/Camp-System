@@ -365,27 +365,35 @@ public class CampUI {
     public void directorDisplay() {
         System.out.println("-----Welcome Director-----");
         System.out.println(" ");
-        System.out.println("Would you like to \n1. Add an activity \n2. Remove an activity \n3. Edit schedule \n4. Generate schedule \n5. Create a new Session \n6. View Cabin schedules \n7. Logout");
+        System.out.println("Would you like to \n1. Add an activity \n2. Remove an activity \n3. Edit schedule\n4. Set up a new Session \n5. View Cabin schedules \n6. Logout");
         int choice = scanner.nextInt();
         System.out.println(" ");
         switch (choice) {
             case 1:
                 //add activity
-                System.out.println("What is the name of the activity");
-                String Aname = scanner.nextLine();
-                scanner.nextLine();
-                System.out.println("What is the description of the activity");
-                String Adescription = scanner.nextLine();
-                Activity Aactivity = new Activity(Aname, Adescription);
-                facade.addActivity(Aactivity);
-                System.out.println(" ");
+                for(int i=1;i<5;i++) {
+                    Activity createActivity = new Activity("name", "description");
+                    createActivity.createActivity(createActivity);
+                    createActivity.addActivity(createActivity);
+                    /*
+                    System.out.println("What is the name of activity " + i);
+                    String Aname = scanner.nextLine();
+                    scanner.nextLine();
+                    System.out.println("What is the description of activity " + i);
+                    String Adescription = scanner.nextLine();
+                    Activity Aactivity = new Activity(Aname, Adescription);
+                    facade.addActivity(Aactivity);
+                    Activity activities = new Activity(Aname, Adescription);
+                    activities.addActivity(Aactivity);
+                    System.out.println(" ");
+                    */
+                }
                 directorDisplay();
                 break;
             case 2: 
                 //remove activity
                 System.out.println("What is the name of the activity you would like to remove");
                 String Rname = scanner.nextLine();
-                scanner.nextLine();
                 System.out.println("What is the description of the activity you would like to remove");
                 String Rdescription = scanner.nextLine();
                 Activity Ractivity = new Activity(Rname, Rdescription);
@@ -395,24 +403,17 @@ public class CampUI {
                 break;
             case 3:
                 //Edit schedule
-                break;
-            case 4:
-                //generate schedule
-                Director newSchedule = new Director("Sam", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
-                newSchedule.generateSchedule();
-                //facade.generateSchedule(null);
                 directorDisplay();
                 break;
-            case 5:
-                //create new session
+            case 4:
+                //create new session and generate schedule
                 boolean bre = false;
                 ArrayList<ArrayList> week = new ArrayList<ArrayList>();
                 ArrayList<Activity> daySchedule = new ArrayList<Activity>();
                 ArrayList<Sessions> sessions = new ArrayList<Sessions>();
                 ArrayList<Cabin> cabins = new ArrayList<Cabin>();
                 while(!bre)
-                {
-                    
+                {                   
                     System.out.println("Enter the title of session you would like to add.");
                     scanner.nextLine();
                     String title = scanner.nextLine();
@@ -428,7 +429,7 @@ public class CampUI {
                     System.out.println("cabins");
                     for(int x = 1;x<7;x++)
                     {
-                        System.out.println("Enter cabin " + x + "name");
+                        System.out.println("Enter cabin " + x + " name");
                         String id = scanner.nextLine();
                         System.out.println("Age range for cabin " + x);
                         String ageRange = scanner.nextLine();
@@ -438,13 +439,19 @@ public class CampUI {
                     sessions.add(new Sessions(title,title,cost,theme,dates,cabins));
                     System.out.println("Would you like to add another session?");
                     String resp = scanner.nextLine();
-                    scanner.nextLine();
                     if (resp.equalsIgnoreCase("no"))
                     {
                         DataWriter.saveAllUserSessions(sessions);
                         bre=true;
                     }
                 }
+                //------------------------------------------------------
+                //generate schedule
+                Director newSchedule = new Director("Sam", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
+                newSchedule.generateSchedule();
+                //facade.generateSchedule(null);
+                //-----------------------------------------------------
+                /*
                 for (int z=0;z<sessions.size();z++)
                 {
                     Sessions schedSess = sessions.get(z);
@@ -457,7 +464,7 @@ public class CampUI {
                         daySchedule.add(new Activity ("Activity 1","Activity 1 description"));
                         daySchedule.add(new Activity ("Activity 2","Activity 2 description"));
                         daySchedule.add(new Activity ("Lunch","Lunch with entire camp"));
-                        daySchedule.add(new Activity ("Activity 3","Activity 3 description"));
+                        daySchedule.add(new Activity ("Activity 3","Activity 3 description"3));
                         daySchedule.add(new Activity ("Activity 4","Activity 4 description"));
                         daySchedule.add(new Activity ("Dinner", "Dinner with entire camp"));
                         week.add(daySchedule);
@@ -465,11 +472,12 @@ public class CampUI {
                         cabin.schedule = week;
                     }
                 }   
+                */
                 DataWriter.saveAllSessions(sessions,cabins);
                 System.out.println(" ");
                 directorDisplay();
                 break;
-            case 6:
+            case 5:
                 //view cabin schedule
                 System.out.println("enter the session you would like to access");
                 scanner.nextLine();
@@ -481,7 +489,7 @@ public class CampUI {
                 System.out.println(" ");
                 directorDisplay();
                 break;
-            case 7:
+            case 6:
             //logout
                 //DataWriter.saveAllDirectors(DirectorList.getInstance().getDirectors());
                 System.out.println("Thank you for looking at our camp.");

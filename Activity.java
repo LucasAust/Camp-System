@@ -5,7 +5,7 @@ public class Activity {
 
     public String name;
     public String description;
-    private ArrayList<Activity> activities = new ArrayList<Activity>();
+    public ArrayList<Activity> activities = new ArrayList<Activity>();
 
     public Activity(String name, String description) {
         this.name = name;
@@ -46,6 +46,10 @@ public class Activity {
     public String toString()
     {
         return this.name+": "+this.description;
+    }
+
+    public void addActivity(Activity activity) {
+        activities.add(activity);
     }
 
     public void removeActivity(Activity activity){
