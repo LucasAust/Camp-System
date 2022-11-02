@@ -93,9 +93,13 @@ public void setCabins(){
 public void generateSchedule() {
   Activity activity = new Activity("name", "description");
   ArrayList<Activity> activities = activity.getList();
-    for(int i=1;i<6;i++) {
+    for(int i=1;i<7;i++) {
       System.out.println("-----------Cabin " + i + "-----------");
       for(int j=0;j<=6;j++) {
+        activities.add(new Activity("9:00AM - Arts", "Arts"));
+        activities.add(new Activity("5:00PM - Swimming", "Swimming"));
+        activities.add(new Activity("1:00PM - Survival", "Survival"));
+        activities.add(new Activity("3:00PM - Kayaking", "Kayaking"));
         if (j==0) {
           activities.add(new Activity("8:00AM - Breakfast", "breakfast"));
           /*

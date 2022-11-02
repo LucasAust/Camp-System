@@ -454,7 +454,7 @@ public class CampUI {
                         for (int day=0;day<5;day++)
                         {
                         daySchedule.add(new Activity ("Breakfast","Breakfast with entire camp"));
-                        daySchedule.add(new Activity ("Activity 1","Activity 1 description"));
+                        daySchedule.add(nw Activity ("Activity 1","Activity 1 description"));
                         daySchedule.add(new Activity ("Activity 2","Activity 2 description"));
                         daySchedule.add(new Activity ("Lunch","Lunch with entire camp"));
                         daySchedule.add(new Activity ("Activity 3","Activity 3 description"3));
@@ -466,7 +466,7 @@ public class CampUI {
                     }
                 }   
                 */
-                DataWriter.saveAllSessions(sessions,cabins);
+                //DataWriter.saveAllSessions(sessions,cabins);
                 System.out.println(" ");
                 directorDisplay();
                 break;
@@ -477,7 +477,6 @@ public class CampUI {
                 String sessionName = scanner.nextLine();
                 System.out.println("enter the cabin name that you would like to view");
                 String cabinName = scanner.nextLine();
-                scanner.nextLine();
                 facade.viewSchedule(sessionName,cabinName);
                 System.out.println(" ");
                 directorDisplay();
