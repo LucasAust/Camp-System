@@ -1,8 +1,0 @@
-Name: Nutella Davis Age: 12
-Name: Josh Huger Age: 12
-Name: Jack Kole Age: 11
-Name: Jill Smith Age: 12
-Name: Jeremy Owens Age: 11
-Name: Oscar Cannister Age: 12
-Name: Jerry Seinfeld Age: 12
-Name: Marquise Brown Age: 11
