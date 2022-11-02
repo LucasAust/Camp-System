@@ -4,7 +4,7 @@
         "id": "5e924cf3-6a83-4e6b-aa07-39494990c55c",
         "title": "Week 1",
         "cost": 800,
-        "theme":"",
+        "theme":"Hawaiian",
         "cabins":[
         {
             "id":"ac37b1aa-cd15-438f-b984-5c6720d8658c",
@@ -45,7 +45,7 @@
         "id": "41ef8608-392d-49cc-bcbd-82bdadaeed1d",
         "title": "Week 2",
         "cost": 900,
-        "theme":"",
+        "theme":"Rockstars",
         "cabins":[
             {
                 "id":"5aa4527d-f9d2-44c7-9a13-0806848c96b1",
@@ -86,7 +86,7 @@
         "id": "7acfa5ec-c0ab-4250-8640-8cbc42e12def",
         "title": "Week 3",
         "cost": 1000,
-        "theme":"",
+        "theme":"Ninja Warriors",
         "cabins":[
             {
                 "id":"afa846e6-0d8f-48f0-972e-e9afee0a0f04",
@@ -127,7 +127,7 @@
         "id": "b91d5a20-8821-478b-a1c6-d31a1aea43ed",
         "title": "Week 4",
         "cost": 1150,
-        "theme":"",
+        "theme":"Willy Wonks",
         "cabins":[
             {
                 "id":"8a3d1a9b-c7bd-49b9-8f99-1c4d5a77d161",
@@ -168,7 +168,7 @@
         "id": "3cf6b143-bd60-4dc9-a78c-e3d6ecb8b14a",
         "title": "Week 5",
         "cost": 1200,
-        "theme":"",
+        "theme":"Hollywood",
         "cabins":[
             {
                 "id":"11211328-19a0-4440-b707-f01ccabef943",
@@ -209,7 +209,7 @@
         "id": "e121ce90-0a69-49b1-81c1-eae1ab0fd58b",
         "title": "Week 6",
         "cost": 1300,
-        "theme":"",
+        "theme":"Legos",
         "cabins":[
             {
                 "id":"54dd7887-3eca-459f-9226-650064ccd710",
@@ -250,7 +250,7 @@
         "id": "c136c6f9-478c-483a-96fa-4df7537ae75f",
         "title": "Week 7",
         "cost": 1250,
-        "theme":"",
+        "theme":"Cops and Robbers",
         "cabins":[
             {
                 "id":"b7e68670-439b-45db-9b3c-7cab993a4018",
@@ -291,7 +291,7 @@
         "id": "c985d1a0-de60-4f30-9b21-5d9e8afd1d26",
         "title": "Week 8",
         "cost": 1000,
-        "theme":"",
+        "theme":"Shark Tank",
         "cabins":[
             {
                 "id":"8bb26a56-a0de-49fc-a5bb-d5f0b4155fd4",
@@ -332,7 +332,7 @@
         "id": "d43cbfd2-978e-4712-822d-8e347ec24222",
         "title": "Week 9",
         "cost": 1000,
-        "theme":"",
+        "theme":"Smores",
         "cabins":[
             {
                 "id":"920e6b1e-10be-4fac-ba77-c95b0fd48c64",
@@ -368,46 +368,8 @@
                 "campers":["aadc474f-d2c5-4354-9c03-2342735153ce","5e677279-6d0c-4136-af37-0dcc4122d172","f08e9d28-cdf7-4eba-bb85-0565de2ff93a","2e980b0d-3e01-48ff-971e-aa811f47cbd4","885a8a39-cf4e-4cbe-b927-19ad00ccddb3","dc5ce24a-de96-4fbf-bb71-b395b6875a58","7f590065-7bfa-41a2-8edd-a93a509ca76c","a6127c00-b78c-44c4-ad6d-bd797a03cb14"]
             }
         ]
-    },
-    {
-        "id": "662d4674-dbf1-472a-9d07-aa3091baa21b",
-        "title": "Week 10",
-        "cost": 950,
-        "theme":"",
-        "cabins":[
-            {
-                "id":"ac6f2ad6-4aa4-4a8c-965f-eaf02a419443",
-                "counselor":"2aec168f-cf5c-43d3-a9fd-97f68d6c0447",
-                "campers":["e475bb77-a0dc-4674-ad25-10d60a46543a","cf1fae41-8f6f-4d8f-956c-23a5f96f8eb3","a5d7de67-ca23-4eee-940e-0f6a10c4bb03","5982c264-fd6a-412b-80ba-bd8747c54018","69208ee5-36ba-46d0-b3a1-0853baf66750","3b835a4e-04b4-411c-b659-ad20dc839d0b","830914d7-43d1-4968-8d6d-4998b6a114d5","48d3ad0c-898b-4748-94ba-2141b5819bfd"]
-            },{
-                "id":"37acc096-513d-4b6b-90f6-6398d93f79ed",
-                "counselor":"cf1622cd-1ada-4e9c-98f6-ea677cb47265",
-                "campers":["58b991d3-d8d0-4f6c-9d97-1f6e1429e4f0","2f8d7d4b-5b44-4de8-9f6e-a9084e337b37","e93bb46c-23bc-4396-b1f9-245f585a332e","cc9ee694-d699-40d6-9523-aa595c5c60ab","4ff4b955-c14b-432c-8053-4f96dc768bb7","c5a93f27-ff76-4510-a92e-1968f9f7405a","abb72433-83f5-48ab-9498-b31d44013aa1","5ab41cce-81ff-405b-82f1-bda2a90445f1"]
-            },{
-                "id":"7bc6a9a7-2577-4b46-b820-a346439b6014",
-                "counselor":"542a6a0e-aecb-42f5-aeb1-ddf0c6551bcd",
-                "campers":["2bae6f1d-8336-4ad6-bf3e-94968256c7de","c4af637e-40f9-4b9d-ae8e-a5f8d5d30c70","aa5d7b20-97e9-4407-8ecc-c01a59cbc4fd","fcade056-c374-4340-8473-be1ce555d368","e64e357b-afdd-472a-adc1-a18661d8cda2","e519f1fc-414e-4378-af57-e3925ec49cf9","70cc5db7-9fe1-4546-bf57-a67c1db5187d","3370c4aa-fdad-4523-8f50-cba266c2db50"]
-            },{
-                "id":"d64461ff-cf38-465f-a470-bca8f8b63677",
-                "counselor":"5f28d4a8-2ec8-4c49-a04f-b661a2979d3c",
-                "campers":["64870d35-c0b0-48ae-a62a-ed8e32139688","22fcb1ad-3f36-4aa9-8a03-3726dcce27bf","897270be-5645-4a62-812d-85ef852be92e","80556eeb-8a98-40d0-ada4-c07644296baa","0c038cbd-5dbe-418d-b042-c951823faecc","900d6026-8198-4d0b-be64-4d12bacdfecb","9d254c43-de49-4adb-8e6f-61f22b645a9e","5a716eac-706a-42a0-9fb8-95b38f489c5f"]
-            },{
-                "id":"59d253a3-27ba-4b17-b8a9-948b14173b75",
-                "counselor":"aba8e8f7-4c41-4a79-be76-a4793c6f5ceb",
-                "campers":["88755a6c-d6b0-455a-a430-282b3d2ebfa6","07e55e4c-c6b5-4b05-8bcb-9a427acc971b","da6a2eb0-f45e-4926-bb73-e79e4e446d19","0a2b0ee3-e5e8-4083-ab55-6afdf765836c","eef68e30-3fdd-4036-8de3-bd1beffd5140","550b5425-29ce-440c-850e-7fd6b27a3f0a","37f09407-b2b7-4741-bcad-bac336eefa80","d590c299-5446-4968-8e54-116cf66902cc"]
-            },{
-                "id":"c53f9bf4-f0ab-44c8-9948-e9822af94b5a",
-                "counselor":"2f97af20-172e-49df-8d4c-c427f9422679",
-                "campers":["9164b7d5-9d6e-4216-b67c-83436113b31b","3313ccfa-55b7-4d70-814c-f1895a0017a4","9e01b4b4-d82b-4cc7-98b1-ae5c33e1262f","6f75102e-23a7-4110-a5d9-c7e763d956b1","a6fccb7f-86ee-4c5b-bd84-6a9b5f8c27e6","ec1b81e2-35d2-47ef-8428-6ace9b7a2eb6","06de3ae7-2b31-4a29-91ac-894ee829cbc7","e1a77ac1-3949-42de-9a2d-ecfd09f6d734"]
-            },{
-                "id":"bd8874da-95a4-45d4-83a4-a7fefc9e94b4",
-                "counselor":"aa4d03ba-b56f-4d10-8a91-7275ef010193",
-                "campers":["0d1d31df-2dd7-4977-b0f1-bf0e460d973f","29eee993-423d-4de0-ba68-7f7120abe0f8","dc261186-269b-48c2-a5b5-dfb652587ceb","0059ffd7-f5c3-42a6-8ccc-5c48b572f9c2","c4b9f136-091e-44ba-b801-fd654c304979","7fa217cb-bd8d-4a3b-b0da-3800fea92f7e","0fcdcc92-0cf9-4296-a79d-10a6539d4c8f","0b282749-13f4-4889-b4ac-2031a27f8ded"]
-            },{
-                "id":"9ef22a97-f3b1-402b-8c9a-3998010a06ac",
-                "counselor":"d35374a2-9b52-42b9-9148-a1e2ad9a20fc",
-                "campers":["689e5ee4-7eb6-4755-8af9-69713ebdf908","c38f5bcf-9c1e-4982-be32-5e45982b0a7f","22fbb1ef-1048-41e8-a1ca-2616c9880ce3","3e62fa97-fc02-40b3-8143-27af7db5547e","abc9eaa1-7524-4103-bb53-ca29053dbed8","ece85000-048f-4425-85dd-eb3bc9b18f97","858b372c-2fcb-422d-aa81-3492eff97aac","5145bb5d-100a-4768-aff4-a65c9bf64949"]
-            }
-        ]
     }
-  ]
+        
+        ]
+    
+  

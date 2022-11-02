@@ -205,4 +205,26 @@ public class DataWriter {
         }
         return true;
     }
+    public static boolean saveAllUserSessions(ArrayList<Sessions> sessions) {
+        JSONArray JSONUsers = new JSONArray();
+        for (int i = 0; i < sessions.size(); i++) {
+            JSONObject user = new JSONObject();
+            Sessions session = sessions.get(i);
+            user.put("id", session.getTitle());
+            user.put("theme", session.getTheme());
+            user.put("cost", session.getCost());
+           
+           // user.put("children", director.getChildren());
+
+            JSONUsers.add(user);
+        }
+        try {
+            FileWriter file = new FileWriter("JSON/UserSession.json");
+            file.write(JSONUsers.toJSONString());
+            file.flush();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return true;
+}
 }

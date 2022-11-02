@@ -19,6 +19,10 @@ public class Activity {
     public String getDescription() {
         return this.name;
     }
+    public ArrayList<Activity> getActivies()
+    {
+        return activities;
+    }
 
     /**
      * creates a new activity and asks for the name and description
@@ -28,15 +32,11 @@ public class Activity {
      * creates a new activity and asks for the name and description
      * @return the new activity being created
      */
-    public Activity createActivity() {
+    public Activity createActivity(Activity activity) {
 
-        Scanner keyboard = new Scanner(System.in);
-        System.out.println("Enter activity name: ");
-        name = keyboard.nextLine();
-        System.out.println("Enter activity description: ");
-        description = keyboard.nextLine();
-        Activity newActivity = new Activity(name, description);
-        return newActivity;
+       
+        activities.add(activity);
+        return activity;
 
     }
 

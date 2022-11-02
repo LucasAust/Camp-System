@@ -129,7 +129,7 @@ public class DataReader {
           Cabin addCabin = new Cabin("10-8", null, 10, id, cabinID,null);
           sessionCabins.add(addCabin);
         }
-        Sessions addSession = new Sessions(id, title, cost,theme,sessionCabins);
+        Sessions addSession = new Sessions(id, title, cost,theme,null,sessionCabins);
         sessionsList.add(addSession);
       }
     } catch (Exception e) {
@@ -193,14 +193,10 @@ public class DataReader {
   }
 
 
-  public static ArrayList<Sessions> getAllSessions2() {
+  public static ArrayList<Sessions> getAllUserSessions() {
     ArrayList<Sessions> sessionsList = new ArrayList<Sessions>();
-    ArrayList<Activity> daySched = new ArrayList<Activity>();
-    ArrayList<ArrayList> weekSched = new ArrayList<ArrayList>();
-    ArrayList<Cabin> cabinList = new ArrayList<Cabin>();
-    
     try {
-      FileReader reader = new FileReader("test.JSON");
+      FileReader reader = new FileReader("JSON/UserSession.json");
       JSONParser parser = new JSONParser();
       JSONArray sessions = (JSONArray) new JSONParser().parse(reader);
       for (int i = 0; i < sessions.size(); i++) {
@@ -209,37 +205,14 @@ public class DataReader {
         double cost = (double) session.get("cost");
         String theme = (String) session.get("theme");
         String id = (String) session.get("id");
-        JSONArray cabins = (JSONArray) session.get("cabins");
-        for(int j=0;j<6;j++)
-        {
-          JSONObject cabin =(JSONObject) cabins.get(j);
-          String ageRange = (String) cabin.get("ageRange");
-          String cName = (String) cabin.get("name");
-          JSONArray schedule = (JSONArray) cabin.get("schedule");
-          JSONObject help = (JSONObject) schedule.get(0);
-          for (int l=0;l<5;l++)
-          {
-          String day = help.get("day").toString();
-          for(int k=1;k<7;k++)
-          {
-            JSONObject activity = (JSONObject) schedule.get(k);
-            JSONObject activityN = (JSONObject) activity.get("activity "+k);
-            String Aname = (String)activityN.get("name");
-            String desc = (String)activityN.get("description");
-            daySched.add(new Activity(Aname,desc));
-          }
-          weekSched.add(daySched);
-         
-          }
-          cabinList.add( new Cabin(ageRange,null,8,id,cName,weekSched));
-          
-        }
-        sessionsList.add(new Sessions(null,id,cost,theme,cabinList));
+        String dates = (String) session.get("dates");
         
+        sessionsList.add(new Sessions(null,id,cost,theme,dates,null));
       }
     } catch (Exception e) {
       e.printStackTrace();
     }
     return sessionsList;
   }
+  
 }
