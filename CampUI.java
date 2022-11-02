@@ -369,23 +369,24 @@ public class CampUI {
         switch (choice) {
             case 1:
                 //add activity
-                System.out.println("What is the name of the activity");
-                String Aname = scanner.nextLine();
-                scanner.nextLine();
-                System.out.println("What is the description of the activity");
-                String Adescription = scanner.nextLine();
-                Activity Aactivity = new Activity(Aname, Adescription);
-                facade.addActivity(Aactivity);
-                Activity activities = new Activity(Aname, Adescription);
-                activities.addActivity(Aactivity);
-                System.out.println(" ");
+                for(int i=1;i<5;i++) {
+                    System.out.println("What is the name of activity " + i);
+                    String Aname = scanner.nextLine();
+                    scanner.nextLine();
+                    System.out.println("What is the description of activity " + i);
+                    String Adescription = scanner.nextLine();
+                    Activity Aactivity = new Activity(Aname, Adescription);
+                    facade.addActivity(Aactivity);
+                    Activity activities = new Activity(Aname, Adescription);
+                    activities.addActivity(Aactivity);
+                    System.out.println(" ");
+                }
                 directorDisplay();
                 break;
             case 2: 
                 //remove activity
                 System.out.println("What is the name of the activity you would like to remove");
                 String Rname = scanner.nextLine();
-                scanner.nextLine();
                 System.out.println("What is the description of the activity you would like to remove");
                 String Rdescription = scanner.nextLine();
                 Activity Ractivity = new Activity(Rname, Rdescription);
@@ -395,9 +396,10 @@ public class CampUI {
                 break;
             case 3:
                 //Edit schedule
+                directorDisplay();
                 break;
             case 4:
-                //create new session
+                //create new session and generate schedule
                 boolean bre = false;
                 ArrayList<ArrayList> week = new ArrayList<ArrayList>();
                 ArrayList<Activity> daySchedule = new ArrayList<Activity>();
@@ -435,7 +437,7 @@ public class CampUI {
                 //generate schedule
                 Director newSchedule = new Director("Sam", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
                 newSchedule.generateSchedule();
-                facade.generateSchedule(null);
+                //facade.generateSchedule(null);3
                 //-----------------------------------------------------
                 /*
                 for (int z=0;z<sessions.size();z++)

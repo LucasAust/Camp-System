@@ -15,17 +15,17 @@ public class Schedule {
 
     public void breakfastAll(Child child, Counselor counselor, Director director) {
         Activity breakfast = new Activity("breakfast","Breakfast with the entire camp");
-        schedule.add(1,breakfast);
+        schedule.add(0,breakfast);
     }
 
     public void lunchAll(Child child, Counselor counselor, Director director) {
         Activity lunch = new Activity("Lunch","Lunch with the entire camp");
-        schedule.add(4,lunch);
+        schedule.add(3,lunch);
     }
 
     public void dinnerAll(Child child, Counselor counselor, Director director) {
         Activity dinner = new Activity("Dinner","Dinner with the entire camp.");
-        schedule.add(7,dinner);
+        schedule.add(6,dinner);
     }
     public static Schedule getInstance() {
         return null;

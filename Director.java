@@ -7,10 +7,6 @@ public class Director extends RegisteredUser{
   Sessions sessions2;
   Cabin cabin;
 
-public ArrayList<Activity> getActivities() {
-    return activities;
-  }
-
   public ArrayList<Sessions> getSessions() {
     return sessions;
   }
@@ -86,8 +82,8 @@ public void setSessions(){
 }
 
 public void setCabins(){
-  for(int i=1;i<7;i++) {  
-    System.out.println("Set cabin " + i + " age range (enter value in the format '#-#'");
+  for(int i=0;i<=6;i++) {  
+    System.out.println("Set cabin " + i+1 + " age range (enter value in the format '#-#'");
     Scanner ageRangeScanner = new Scanner(System.in);
     String ageRange = ageRangeScanner.nextLine();
     cabin.ageRange = ageRange;
@@ -97,21 +93,20 @@ public void setCabins(){
 public void generateSchedule() {
   Activity activity = new Activity("name", "description");
   ArrayList<Activity> activities = activity.getList();
-    for(int i=1;i<=6;i++) {
-      System.out.println("-----------------------------");
-      System.out.println("          Cabin " + i +"            ");
-      for(int j=1;j<8;j++) {
-        if (i==1) {
+    for(int i=0;i<=5;i++) {
+      System.out.println("-----------Cabin " + i + "-----------");
+      for(int j=0;j<=6;j++) {
+        if (i==0) {
           Schedule breakfast = new Schedule();
           breakfast.breakfastAll(null, null, null);
           System.out.println(breakfast);
         }
-        else if (i==4) {
+        else if (i==3) {
           Schedule lunch = new Schedule();
           lunch.lunchAll(null, null, null);
           System.out.println(lunch);
         }
-        else if (i==7) {
+        else if (i==6) {
           Schedule dinner = new Schedule();
           dinner.dinnerAll(null, null, null);
           System.out.println(dinner);
