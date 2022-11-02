@@ -183,78 +183,114 @@ public class Counselor extends RegisteredUser{
         ArrayList<Activity> thurs = new ArrayList<Activity>();
         ArrayList<Activity> fri = new ArrayList<Activity>();
         Random random = new Random();
-        ArrayList<Activity> mAct = activities;
-        ArrayList<Activity> tAct = activities;
-        ArrayList<Activity> wAct = activities;
-        ArrayList<Activity> thAct = activities;
-        ArrayList<Activity> fAct = activities;
+        ArrayList<Activity> mAct= new ArrayList<Activity>();
+        for(int i =0;i<activities.size();i++)
+        {
+            mAct.add(activities.get(i));
+        }
+        ArrayList<Activity> tAct = new ArrayList<Activity>();
+        for(int i =0;i<activities.size();i++)
+        {
+            tAct.add(activities.get(i));
+        }
+        ArrayList<Activity> wAct = new ArrayList<Activity>();
+        for(int i =0;i<activities.size();i++)
+        {
+            wAct.add(activities.get(i));
+        }
+        ArrayList<Activity> thAct = new ArrayList<Activity>();
+        for(int i =0;i<activities.size();i++)
+        {
+            thAct.add(activities.get(i));
+        }
+        ArrayList<Activity> fAct = new ArrayList<Activity>();
+        for(int i =0;i<activities.size();i++)
+        {
+            fAct.add(activities.get(i));
+        }
         
         mon.add(0,breakfast); tues.add(0,breakfast); wed.add(0,breakfast); thurs.add(0,breakfast); fri.add(0,breakfast);
+        int m = 10;
+        int t = 10;
+        int w = 10;
+        int th = 10;
+        int f = 10;
+
         for(int j=1;j<3;j++)
         {
-            int i = random.nextInt(10)+1;
+            int i = random.nextInt(m);
             mon.add(j,mAct.get(i));
             mAct.remove(mAct.get(i));
+            m--;
 
         }
         for(int j=1;j<3;j++)
         {
-            int i = random.nextInt(10)+1;
-            tues.add(j,activities.get(i));
-            tAct.remove(mAct.get(i));
+            int i = random.nextInt(t);
+            tues.add(j,tAct.get(i));
+            tAct.remove(tAct.get(i));
+            t--;
 
         }
         for(int j=1;j<3;j++)
         {
-            int i = random.nextInt(10)+1;
-            wed.add(j,activities.get(i));
-            wAct.remove(mAct.get(i));
+            int i = random.nextInt(w);
+            wed.add(j,wAct.get(i));
+            wAct.remove(wAct.get(i));
+            w--;
 
         }
         for(int j=1;j<3;j++)
         {
-            int i = random.nextInt(10)+1;
-            thurs.add(j,activities.get(i));
-            thAct.remove(mAct.get(i));
+            int i = random.nextInt(th);
+            thurs.add(j,thAct.get(i));
+            thAct.remove(thAct.get(i));
+            th--;
 
         }
         for(int j=1;j<3;j++)
         {
-            int i = random.nextInt(10)+1;
-            fri.add(j,activities.get(i));
-            fAct.remove(mAct.get(i));
+            int i = random.nextInt(f);
+            fri.add(j,fAct.get(i));
+            fAct.remove(fAct.get(i));
+            f--;
 
         }
         mon.add(3,lunch); tues.add(3,lunch); wed.add(3,lunch); thurs.add(3,lunch); fri.add(3,lunch);
         for(int j=4;j<6;j++)
         {
-            int i = random.nextInt(10)+1;
-            mon.add(j,activities.get(i));
+            int i = random.nextInt(m);
+            mon.add(j,mAct.get(i));
             mAct.remove(mAct.get(i));
+            m--;
         }
         for(int j=4;j<6;j++)
         {
-            int i = random.nextInt(10)+1;
-            tues.add(j,activities.get(i));
-            tAct.remove(mAct.get(i));
+            int i = random.nextInt(t);
+            tues.add(j,tAct.get(i));
+            tAct.remove(tAct.get(i));
+            t--;
         }
         for(int j=4;j<6;j++)
         {
-            int i = random.nextInt(10)+1;
-            wed.add(j,activities.get(i));
-            wAct.remove(mAct.get(i));
+            int i = random.nextInt(w);
+            wed.add(j,wAct.get(i));
+            wAct.remove(wAct.get(i));
+            w--;
         }
         for(int j=4;j<6;j++)
         {
-            int i = random.nextInt(10)+1;
-            thurs.add(j,activities.get(i));
-            thAct.remove(mAct.get(i));
+            int i = random.nextInt(th);
+            thurs.add(j,thAct.get(i));
+            thAct.remove(thAct.get(i));
+            th--;
         }
         for(int j=4;j<6;j++)
         {
-            int i = random.nextInt(10)+1;
-            fri.add(j,activities.get(i));
-            fAct.remove(mAct.get(i));
+            int i = random.nextInt(f);
+            fri.add(j,fAct.get(i));
+            fAct.remove(fAct.get(i));
+            f--;
         }
         mon.add(6,dinner); tues.add(6,dinner); wed.add(6,dinner); thurs.add(6,dinner); fri.add(6,dinner);
     
@@ -342,7 +378,7 @@ public class Counselor extends RegisteredUser{
                 vitals.add("Allergies: "+allergies.get(j));
             }
             vitals.add(" ");
-            vitals.add("Insurance Information: ");
+            vitals.add("Medical Information: ");
             vitals.add("Doctors office: "+child.getHealthInfo().getInsurance());
             vitals.add("Doctors Phone Number: "+child.getHealthInfo().getPolicyNumber());
             vitals.add("Doctor: "+child.getHealthInfo().getDoctor());
