@@ -125,10 +125,9 @@ public void generateSchedule() {
     }
 }
  
-public void removeChild(Child child){
-    
-    child.removeChild(child);
-}
+//public void removeChild(Child child){
+//    child.removeChild(child);
+//}
 
 public void addSession(Sessions session){
     sessions.add(session);
