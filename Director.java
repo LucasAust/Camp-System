@@ -96,20 +96,29 @@ public void generateSchedule() {
     for(int i=0;i<=5;i++) {
       System.out.println("-----------Cabin " + i + "-----------");
       for(int j=0;j<=6;j++) {
-        if (i==0) {
+        if (j==0) {
+          activities.add(new Activity("8:00AM - Breakfast", "breakfast"));
+          /*
           Schedule breakfast = new Schedule();
           breakfast.breakfastAll(null, null, null);
           System.out.println(breakfast);
+          */
         }
-        else if (i==3) {
+        else if (j==3) {
+          activities.add(new Activity("12:00PM - Lunch", "lunch"));
+          /*
           Schedule lunch = new Schedule();
-          lunch.lunchAll(null, null, null);
+          lunchs.lunchAll(null, null, null);
           System.out.println(lunch);
+          */
         }
-        else if (i==6) {
+        else if (j==6) {
+          activities.add(new Activity("6:00PM - Dinner", "dinner"));
+          /*
           Schedule dinner = new Schedule();
           dinner.dinnerAll(null, null, null);
           System.out.println(dinner);
+          */
         }
         else {
           if(!activities.isEmpty()) {
@@ -118,7 +127,7 @@ public void generateSchedule() {
           }
         }
       }
-      System.out.println("-----------------------------");
+      System.out.println("-----------------------------\n");
     }
 }
  

@@ -370,6 +370,9 @@ public class CampUI {
             case 1:
                 //add activity
                 for(int i=1;i<5;i++) {
+                    Activity createActivity = new Activity("name", "description");
+                    createActivity.createActivity();
+                    /*
                     System.out.println("What is the name of activity " + i);
                     String Aname = scanner.nextLine();
                     scanner.nextLine();
@@ -380,6 +383,7 @@ public class CampUI {
                     Activity activities = new Activity(Aname, Adescription);
                     activities.addActivity(Aactivity);
                     System.out.println(" ");
+                    */
                 }
                 directorDisplay();
                 break;
@@ -452,7 +456,7 @@ public class CampUI {
                         daySchedule.add(new Activity ("Activity 1","Activity 1 description"));
                         daySchedule.add(new Activity ("Activity 2","Activity 2 description"));
                         daySchedule.add(new Activity ("Lunch","Lunch with entire camp"));
-                        daySchedule.add(new Activity ("Activity 3","Activity 3 description"));
+                        daySchedule.add(new Activity ("Activity 3","Activity 3 description"3));
                         daySchedule.add(new Activity ("Activity 4","Activity 4 description"));
                         daySchedule.add(new Activity ("Dinner", "Dinner with entire camp"));
                         week.add(daySchedule);

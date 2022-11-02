@@ -19,6 +19,10 @@ public class Activity {
     public String getDescription() {
         return this.name;
     }
+    
+    public void setList(ArrayList activities) {
+        this.activities = activities;
+    }
 
     public ArrayList<Activity> getList() {
         return activities;
