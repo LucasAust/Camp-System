@@ -127,6 +127,11 @@ public class Counselor extends RegisteredUser{
             names.add(name);
         }
     }
+
+    /**
+     * calls the vital information for each child for the roster of the cabin
+     * @param roster
+     */
     public void getVitalInfo(ArrayList<Child> roster)
     {
         ArrayList<String> vitals = new ArrayList<String>();
@@ -139,6 +144,11 @@ public class Counselor extends RegisteredUser{
             vitals.add("Medical Information: "+child.getHealthInfo());
         }
     }
+
+    /**
+     * view a specific scedule for specific cabin
+     * @param schedule
+     */
     public void viewSchedule(ArrayList<Schedule> schedule) {
             ArrayList<String> dailySchedule = new ArrayList<String>();
             System.out.println("Enter which week number you would like to view your schedule for.");
@@ -149,6 +159,10 @@ public class Counselor extends RegisteredUser{
             
 
     }
+
+    /**
+     * prints the schedule of each day for the cabin
+     */
     public static void view()
     {
         ArrayList<String> schedule = new ArrayList<String>();
@@ -343,6 +357,10 @@ public class Counselor extends RegisteredUser{
             e.printStackTrace();
         }
     }
+
+    /**
+     * prints the text document of the cabin roster
+     */
     public static void view2()
     {
         ArrayList<String> roster = new ArrayList<String>();
@@ -359,6 +377,10 @@ public class Counselor extends RegisteredUser{
             e.printStackTrace();
         }
     }
+
+    /**
+     * prints the text file of the rosters vital information 
+     */
     public static void view3()
     {
         ArrayList<String> vitals = new ArrayList<String>();
@@ -390,8 +412,6 @@ public class Counselor extends RegisteredUser{
             vitals.add("Phone Number: "+child.getEmergencyContact().getPhoneNumber());
             vitals.add("                    ");
             vitals.add(" ");
-            vitals.add(" ");
-
         }
         try {
             DataWriter.writeVitals(vitals);
