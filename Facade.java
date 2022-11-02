@@ -1,4 +1,6 @@
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
 import javax.lang.model.util.ElementScanner14;
 
@@ -151,11 +153,13 @@ public class Facade {
      * method to logout and save the user
      */
     public void logout() {
-        user.saveUser();
+        System.exit(0);
+
     }
 
     public void addActivity(Activity activity) {
         activity = new Activity(null, null);
+        activity.createActivity(activity);
     }
 
     public void addSession(Sessions session) {
@@ -196,7 +200,7 @@ public class Facade {
      * @param cabinName
      */
     public void viewSchedule(String sessionName, String cabinName) {
-        ArrayList<Sessions> sessions = DataReader.getAllSessions2();
+        ArrayList<Sessions> sessions = DataReader.getAllSessions();
         for (int i = 0; i < sessions.size(); i++) {
             Sessions session = sessions.get(i);
             if (sessionName.equalsIgnoreCase(session.title)) {
@@ -222,47 +226,24 @@ public class Facade {
         }
 
     }
+    public void view()
+    {
+        Counselor.view();
+        
+    }
 
     /**
      * 
      */
     public void viewRoster() {
-        Cabin cabin = new Cabin("11-12", null, MAX_CAMPERS, null, null, null);
-        ArrayList<Child> children = cabin.addCampers(cabin);
-        for (int i = 0; i < children.size(); i++) {
-            Child child = children.get(i);
-            System.out.println(child.firstName + " " + child.lastName + " " + child.age);
-        }
+        Counselor.view2();
     }
 
     /**
      * 
      */
     public void viewVitals() {
-        Cabin cabin = new Cabin("11-12", null, MAX_CAMPERS, null, null, null);
-        ArrayList<Child> children = cabin.addCampers(cabin);
-        for (int i = 0; i < children.size(); i++) {
-            Child child = children.get(i);
-            System.out.println(child.firstName + " " + child.lastName + " age: " + child.age);
-            System.out.println("Health information");
-            ArrayList meds = child.getHealthInfo().getMedications();
-            for (int j = 0; j < meds.size(); j++) {
-                System.out.println(meds.get(j));
-            }
-            ArrayList allergies = child.getHealthInfo().getAllergies();
-            for (int j = 0; j < allergies.size(); j++) {
-                System.out.println(allergies.get(j));
-            }
-            System.out.println("Insurance information");
-            System.out.println(child.getHealthInfo().getInsurance());
-            System.out.println(child.getHealthInfo().getPolicyNumber());
-            System.out.println(child.getHealthInfo().getDoctor());
-            System.out.println("emergency contact");
-            System.out.println(child.getEmergencyContact().getName());
-            System.out.println(child.getEmergencyContact().getRelationship());
-            System.out.println(child.getEmergencyContact().getPhoneNumber());
-
-        }
+        Counselor.view3();
     }
 
     /**
@@ -286,9 +267,9 @@ public class Facade {
             firstName = children.get(i).substring(0, x);
             lastName = children.get(i).substring(x + 1);
             for (int j = 0; j < childs.size(); j++) {
-                Child child = childs.get(i);
-                if (child.firstName.equals(firstName) && child.lastName.equals(lastName)) {
-                    System.out.println(child.session);
+                Child child = childs.get(j);
+                if (child.getFirstName().equals(firstName) && child.getLastName().equals(lastName)) {
+                    System.out.println(child.getSession());
                     break;
                 }
             }
@@ -303,7 +284,7 @@ public class Facade {
     public void addChild(String string, Guardian guardian) {
 
         guardian.addChild(string);
-        guardian.children.add(string);
+        DataWriter.saveAllGuardians(GuardianList.getInstance().getGuardians());
     }
 
     /**
@@ -311,10 +292,10 @@ public class Facade {
      */
     public void viewSessions() {
         ArrayList<Sessions> sessions = new ArrayList<Sessions>();
-        sessions = DataReader.getAllSessions2();
+        sessions = DataReader.getAllUserSessions();
         for (int i = 0; i < sessions.size(); i++) {
             Sessions session = sessions.get(i);
-            System.out.println(session.getTitle() + ": " + session.getTheme());
+            System.out.println(session.getTitle() + ": " + session.getTheme()+" Cost: "+session.cost+" Start date: "+session.dates);
         }
 
     }

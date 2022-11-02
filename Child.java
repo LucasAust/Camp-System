@@ -62,7 +62,7 @@ public class Child {
     {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.age = medication2;
+        this.age = age;
         this.healthInfo = healthInfo;
         this.emergencyContact=emergencyContact;
         this.session=session;

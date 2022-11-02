@@ -16,7 +16,12 @@ public class Sessions {
     public String theme;
     public ArrayList<Child> campers;
     public ArrayList<Cabin> cabins;
+    public String dates;
 
+    public String getDates()
+    {
+        return dates;
+    }
     public String getTheme() {
         return theme;
     }
@@ -41,12 +46,13 @@ public class Sessions {
         return cabins;
     }
 
-    public Sessions(String id, String title, double cost, String theme, ArrayList<Cabin> cabins) {
+    public Sessions(String id, String title, double cost, String theme, String dates, ArrayList<Cabin> cabins) {
         this.id = id;
         this.title = title;
         this.cost = cost;
         this.theme = theme;
         this.cabins = cabins;
+        this.dates=dates;
     }
 
     /**

@@ -19,12 +19,8 @@ public class Activity {
     public String getDescription() {
         return this.name;
     }
-    
-    public void setList(ArrayList<Activity> activities) {
-        this.activities = activities;
-    }
-
-    public ArrayList<Activity> getList() {
+    public ArrayList<Activity> getActivies()
+    {
         return activities;
     }
 

@@ -147,10 +147,10 @@ public class CampUI {
                 System.out.println("What is your childs age");
                 String age = scanner.nextLine();
                 scanner.nextLine();
-                System.out.println("What is the name of the emergency contact for the child");
+                System.out.println("What is the name of the emergency contact for the child. If entering multiple contacts, separate the information with a slash.");
                 String name = scanner.nextLine();
                 //scanner.nextLine();
-                System.out.println("What is the relationship of the emergency contact to the child");
+                System.out.println("What is the relationship of the emergency contact to the child ");
                 String relationship = scanner.nextLine();
                 //scanner.nextLine();
                 System.out.println("What is the phone # of the emergency contact");
@@ -184,7 +184,7 @@ public class CampUI {
                 Child child = new Child(firstName, lastName,age, medication, healthInfo, emergencyContact,null);
                 facade.addChild(firstName+" "+lastName,guardian);
                 facade.registerChild(child);
-                System.out.println(" ");
+                System.out.println("You have successfully added "+firstName+" "+lastName+" to your account");
                 userDisplay(guardian);
                 break;
             case 2:
@@ -304,7 +304,7 @@ public class CampUI {
                 String session = scanner.nextLine();
                 scanner.nextLine();
                 facade.registerChildForSession(childFirstName,childLastName,session);
-                System.out.println(" ");
+                System.out.println("You have successfully registered "+childFirstName+" "+childLastName+" for "+session);
                 userDisplay(guardian);
                 break;
             case 5:
@@ -345,7 +345,9 @@ public class CampUI {
                 break;
             case 3:
                 //view schedule
-                facade.printSchedule();
+                System.out.println("Enter the session you would like to view the schedule for");
+               // facade.generateSchedule(session,week);
+                facade.view();
                 System.out.println(" ");
                 counselorDisplay();
                 break;
@@ -371,7 +373,7 @@ public class CampUI {
                 //add activity
                 for(int i=1;i<5;i++) {
                     Activity createActivity = new Activity("name", "description");
-                    createActivity.createActivity();
+                    createActivity.createActivity(createActivity);
                     createActivity.addActivity(createActivity);
                     /*
                     System.out.println("What is the name of activity " + i);
@@ -420,6 +422,10 @@ public class CampUI {
                     scanner.nextLine();
                     System.out.println("Enter the theme of this session.");
                     String theme = scanner.nextLine();
+                    scanner.nextLine();
+                    System.out.println("Enter the week this session runs");
+                    String dates = scanner.nextLine();
+                    scanner.nextLine();
                     System.out.println("cabins");
                     for(int x = 1;x<7;x++)
                     {
@@ -429,12 +435,13 @@ public class CampUI {
                         String ageRange = scanner.nextLine();
                         cabins.add(new Cabin(ageRange,null,8,null,id,null));
                     }
-                    facade.addSession(new Sessions(title,title,cost,theme,cabins));
-                    sessions.add(new Sessions(title,title,cost,theme,cabins));
+                    facade.addSession(new Sessions(title,title,cost,theme,dates,cabins));
+                    sessions.add(new Sessions(title,title,cost,theme,dates,cabins));
                     System.out.println("Would you like to add another session?");
                     String resp = scanner.nextLine();
                     if (resp.equalsIgnoreCase("no"))
                     {
+                        DataWriter.saveAllUserSessions(sessions);
                         bre=true;
                     }
                 }
@@ -495,6 +502,7 @@ public class CampUI {
      * @param args
      */
     public static void main(String[] args) {
+       
         Scanner scanner = new Scanner(System.in);
         CampUI campUI = new CampUI();
         campUI.run();

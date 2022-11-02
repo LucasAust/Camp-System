@@ -92,6 +92,8 @@ public void setCabins(){
 
 public void generateSchedule() {
   Activity activity = new Activity("name", "description");
+  //ArrayList<Activity> activities = activity.getList();
+    for(int i=1;i<6;i++) {
   ArrayList<Activity> activities = activity.getList();
     for(int i=1;i<7;i++) {
       System.out.println("-----------Cabin " + i + "-----------");
@@ -136,9 +138,9 @@ public void generateSchedule() {
     }
 }
  
-//public void removeChild(Child child){
-//    child.removeChild(child);
-//}
+public void removeChild(Child child){
+    //child.removeChild(child);
+}
 
 public void addSession(Sessions session){
     sessions.add(session);
