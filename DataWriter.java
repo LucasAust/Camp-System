@@ -187,9 +187,9 @@ public class DataWriter {
         for (int i = 0; i < directors.size(); i++) {
             JSONObject user = new JSONObject();
             Director director = directors.get(i);
-            user.put("firstName", director.getFirstName());
-            user.put("lastName", director.getLastName());
-            user.put("username", director.getUsername());
+            user.put("firstName", director.getfirstName());
+            user.put("lastName", director.getlastName());
+            user.put("username", director.getUserName());
             user.put("email", director.getEmail());
             user.put("password", director.getPassword());
            // user.put("children", director.getChildren());
