@@ -372,6 +372,7 @@ public class CampUI {
                 for(int i=1;i<5;i++) {
                     Activity createActivity = new Activity("name", "description");
                     createActivity.createActivity();
+                    createActivity.addActivity(createActivity);
                     /*
                     System.out.println("What is the name of activity " + i);
                     String Aname = scanner.nextLine();
@@ -441,7 +442,7 @@ public class CampUI {
                 //generate schedule
                 Director newSchedule = new Director("Sam", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
                 newSchedule.generateSchedule();
-                //facade.generateSchedule(null);3
+                //facade.generateSchedule(null);
                 //-----------------------------------------------------
                 /*
                 for (int z=0;z<sessions.size();z++)

@@ -93,7 +93,7 @@ public void setCabins(){
 public void generateSchedule() {
   Activity activity = new Activity("name", "description");
   ArrayList<Activity> activities = activity.getList();
-    for(int i=0;i<=5;i++) {
+    for(int i=1;i<6;i++) {
       System.out.println("-----------Cabin " + i + "-----------");
       for(int j=0;j<=6;j++) {
         if (j==0) {
@@ -122,8 +122,9 @@ public void generateSchedule() {
         }
         else {
           if(!activities.isEmpty()) {
-          int randomActivity = new Random().nextInt(activities.size());
-          System.out.println(activities.get(randomActivity));
+          int index = (int)(Math.random() * activities.size());
+         // int randomActivity = new Random().nextInt(activities.size());
+          System.out.println(activities.get(index));
           }
         }
       }

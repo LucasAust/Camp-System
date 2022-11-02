@@ -5,7 +5,7 @@ public class Activity {
 
     public String name;
     public String description;
-    private ArrayList<Activity> activities = new ArrayList<Activity>();
+    public ArrayList<Activity> activities = new ArrayList<Activity>();
 
     public Activity(String name, String description) {
         this.name = name;
@@ -20,7 +20,7 @@ public class Activity {
         return this.name;
     }
     
-    public void setList(ArrayList activities) {
+    public void setList(ArrayList<Activity> activities) {
         this.activities = activities;
     }
 
@@ -37,7 +37,6 @@ public class Activity {
      * @return the new activity being created
      */
     public Activity createActivity() {
-
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter activity name: ");
         name = keyboard.nextLine();
@@ -46,7 +45,6 @@ public class Activity {
         Activity newActivity = new Activity(name, description);
         activities.add(newActivity);
         return newActivity;
-
     }
 
     /**
