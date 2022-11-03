@@ -91,19 +91,19 @@ public void setCabins(){
 }
 
 public void generateSchedule() {
-  Activity activity = new Activity("name", "description");
+  //Activity activity = new Activity("name", "description",);
   //ArrayList<Activity> activities = activity.getList();
     for(int i=1;i<6;i++) {
-  ArrayList<Activity> activities = activity.getList();
-    for(int i=1;i<7;i++) {
+  //ArrayList<Activity> activities = activity.getList();
+    for(int h=1;h<7;h++) {
       System.out.println("-----------Cabin " + i + "-----------");
       for(int j=0;j<=6;j++) {
-        activities.add(new Activity("9:00AM - Arts", "Arts"));
-        activities.add(new Activity("5:00PM - Swimming", "Swimming"));
-        activities.add(new Activity("1:00PM - Survival", "Survival"));
-        activities.add(new Activity("3:00PM - Kayaking", "Kayaking"));
+        //activities.add(new Activity("9:00AM - Arts", "Arts"));
+        //activities.add(new Activity("5:00PM - Swimming", "Swimming"));
+        //activities.add(new Activity("1:00PM - Survival", "Survival"));
+        //activities.add(new Activity("3:00PM - Kayaking", "Kayaking"));
         if (j==0) {
-          activities.add(new Activity("8:00AM - Breakfast", "breakfast"));
+          //activities.add(new Activity("8:00AM - Breakfast", "breakfast"));
           /*
           Schedule breakfast = new Schedule();
           breakfast.breakfastAll(null, null, null);
@@ -111,7 +111,7 @@ public void generateSchedule() {
           */
         }
         else if (j==3) {
-          activities.add(new Activity("12:00PM - Lunch", "lunch"));
+         // activities.add(new Activity("12:00PM - Lunch", "lunch"));
           /*
           Schedule lunch = new Schedule();
           lunchs.lunchAll(null, null, null);
@@ -119,7 +119,7 @@ public void generateSchedule() {
           */
         }
         else if (j==6) {
-          activities.add(new Activity("6:00PM - Dinner", "dinner"));
+          //activities.add(new Activity("6:00PM - Dinner", "dinner"));
           /*
           Schedule dinner = new Schedule();
           dinner.dinnerAll(null, null, null);
@@ -136,6 +136,7 @@ public void generateSchedule() {
       }
       System.out.println("-----------------------------\n");
     }
+  }
 }
  
 public void removeChild(Child child){

@@ -30,7 +30,7 @@ public class Facade {
         guardianList = this.guardianList;
         user = User.getInstance();
         schedule = Schedule.getInstance();
-        activity = new Activity(null, null);
+        activity = new Activity(null, null,null);
         // session = new Sessions(session.getID(), null, 0);
         this.cabin = cabin;
         this.child = child;
@@ -158,8 +158,8 @@ public class Facade {
     }
 
     public void addActivity(Activity activity) {
-        activity = new Activity(null, null);
-        activity.createActivity(activity);
+        activity = new Activity(null, null,null);
+        activity.createActivity();
     }
 
     public void addSession(Sessions session) {

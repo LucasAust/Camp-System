@@ -167,30 +167,29 @@ public class Counselor extends RegisteredUser{
     {
         ArrayList<String> schedule = new ArrayList<String>();
         ArrayList<Activity> activities = new ArrayList<Activity>();
-        Activity breakfast = new Activity("breakfast","breakfast with the whole camp");
-        activities.add(breakfast);
-        Activity fencing = new Activity ("fencing","Learn how to fence from an instructor straight from the netherlands");
+        Activity breakfast = new Activity("breakfast","breakfast with the whole camp","Mess hall");
+        Activity fencing = new Activity ("fencing","Learn how to fence from an instructor straight from the netherlands","sandbox");
         activities.add(fencing);
-        Activity swimming = new Activity("Swimming","Open swim time in the lake");
+        Activity swimming = new Activity("Swimming","Open swim time in the lake","lake");
         activities.add(swimming);
-        Activity lunch = new Activity("Lunch","Lunch with the whole camp");
-        Activity basketball = new Activity("basketball","Learn the fundamentals of basketball with NBA superstar Zion Williamson");
+        Activity lunch = new Activity("Lunch","Lunch with the whole camp","Mess hall");
+        Activity basketball = new Activity("basketball","Learn the fundamentals of basketball with NBA superstar Zion Williamson","Gym");
         activities.add(basketball);
-        Activity arts = new Activity("Arts and Crafts","Complete art projects with your friends.");
+        Activity arts = new Activity("Arts and Crafts","Complete art projects with your friends.","Club room");
         activities.add(arts);
-        Activity science= new Activity("Science","Master basic chemistry with Professor Walter White");
+        Activity science= new Activity("Science","Master basic chemistry with Professor Walter White","Club room");
         activities.add(science);
-        Activity philosophy = new Activity("Philosophy","Question why we exist");
+        Activity philosophy = new Activity("Philosophy","Question why we exist","firepit");
         activities.add(philosophy);
-        Activity archery = new Activity("Archery","Learn how to hit the bullseye every time");
+        Activity archery = new Activity("Archery","Learn how to hit the bullseye every time","archery range");
         activities.add(archery);
-        Activity baseball = new Activity("Baseball","Learn the fundamentals of baseball with MLB legend Jackie Bradley JR.");
+        Activity baseball = new Activity("Baseball","Learn the fundamentals of baseball with MLB legend Jackie Bradley JR.","baseball diamond");
         activities.add(baseball);
-        Activity music = new Activity("Music","Learn music theory with Darius Rucker");
+        Activity music = new Activity("Music","Learn music theory with Darius Rucker","auditorium");
         activities.add(music);
-        Activity kayak = new Activity("Kayaking","learn how to kayak on our lake");
+        Activity kayak = new Activity("Kayaking","learn how to kayak on our lake","lake");
         activities.add(kayak);
-        Activity dinner = new Activity("Dinner","Dinner with the whole camp");
+        Activity dinner = new Activity("Dinner","Dinner with the whole camp","Mess hall");
         ArrayList<Activity> mon = new ArrayList<Activity>();
         ArrayList<Activity> tues = new ArrayList<Activity>();
         ArrayList<Activity> wed = new ArrayList<Activity>();
@@ -200,6 +199,7 @@ public class Counselor extends RegisteredUser{
         ArrayList<Activity> mAct= new ArrayList<Activity>();
         for(int i =0;i<activities.size();i++)
         {
+            
             mAct.add(activities.get(i));
         }
         ArrayList<Activity> tAct = new ArrayList<Activity>();
@@ -308,47 +308,72 @@ public class Counselor extends RegisteredUser{
         }
         mon.add(6,dinner); tues.add(6,dinner); wed.add(6,dinner); thurs.add(6,dinner); fri.add(6,dinner);
     
+        int hr=8;
         
         schedule.add("Monday");
         schedule.add("----------");
         for(int j=0;j<7;j++)
         {
-            schedule.add(mon.get(j).toString());
-           
+            schedule.add(hr+":00 "+mon.get(j).toString());
+            if(hr==12)
+            {
+            hr=0;
+            }
+            hr=hr+2;
         }
         schedule.add(" ");
         schedule.add("Tuesday");
         schedule.add("----------");
-        
+        hr=8;
         for(int j=0;j<7;j++)
         {
-            schedule.add(tues.get(j).toString());
+            schedule.add(hr+":00 "+tues.get(j).toString());
+            if(hr==12)
+            {
+                hr=0;
+            }
+            hr=hr+2;
             
         }
         schedule.add(" ");
         schedule.add("Wednesday");
         schedule.add("----------");
-        
+        hr=8;
         for(int j=0;j<7;j++)
         {
-            schedule.add(wed.get(j).toString());
+            schedule.add(hr+":00 "+wed.get(j).toString());
+            if(hr==12)
+            {
+                hr=0;
+            }
+            hr=hr+2;
            
         }
         schedule.add(" ");
         schedule.add("Thursday");
         schedule.add("----------");
-        
+        hr=8;
         for(int j=0;j<7;j++)
         {
-            schedule.add(thurs.get(j).toString());
-            
+            schedule.add(hr+":00 "+thurs.get(j).toString());
+            if(hr==12)
+            {
+                hr=0;
+            }
+            hr=hr+2;
         }
         schedule.add(" ");
         schedule.add("Friday");
         schedule.add("----------");
+        hr=8;
         for(int j=0;j<7;j++)
         {
-            schedule.add(fri.get(j).toString());
+            schedule.add(hr+":00 "+fri.get(j).toString());
+            if(hr==12)
+            {
+                hr=0;
+            }
+            hr=hr+2;
            
         }
         try {
