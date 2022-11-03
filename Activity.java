@@ -5,9 +5,10 @@ public class Activity {
 
     public String name;
     public String description;
+    public String location;
     public ArrayList<Activity> activities = new ArrayList<Activity>();
 
-    public Activity(String name, String description) {
+    public Activity(String name, String description, String location) {
         this.name = name;
         this.description = description;
     }
@@ -38,7 +39,9 @@ public class Activity {
         name = keyboard.nextLine();
         System.out.println("Enter activity description: ");
         description = keyboard.nextLine();
-        Activity newActivity = new Activity(name, description);
+        System.out.println("Enter location");
+        location = keyboard.nextLine();
+        Activity newActivity = new Activity(name, description,location);
         activities.add(newActivity); 
     }
 

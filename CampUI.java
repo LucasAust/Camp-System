@@ -372,8 +372,8 @@ public class CampUI {
             case 1:
                 //add activity
                 for(int i=1;i<5;i++) {
-                    Activity createActivity = new Activity("name", "description");
-                    createActivity.createActivity(createActivity);
+                    Activity createActivity = new Activity("name", "description","location");
+                    createActivity.createActivity();
                     createActivity.addActivity(createActivity);
                     /*
                     System.out.println("What is the name of activity " + i);
@@ -396,7 +396,9 @@ public class CampUI {
                 String Rname = scanner.nextLine();
                 System.out.println("What is the description of the activity you would like to remove");
                 String Rdescription = scanner.nextLine();
-                Activity Ractivity = new Activity(Rname, Rdescription);
+                System.out.println("What is the location");
+                String location = scanner.nextLine();
+                Activity Ractivity = new Activity(Rname, Rdescription,location);
                 facade.removeActivity(Ractivity);
                 System.out.println(" ");
                 directorDisplay();
