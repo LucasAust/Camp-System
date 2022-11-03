@@ -30,7 +30,7 @@ public class Facade {
         guardianList = this.guardianList;
         user = User.getInstance();
         schedule = Schedule.getInstance();
-        activity = new Activity(null, null,null);
+        activity = new Activity(null, null);
         // session = new Sessions(session.getID(), null, 0);
         this.cabin = cabin;
         this.child = child;

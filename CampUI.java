@@ -398,7 +398,7 @@ public class CampUI {
                 String Rdescription = scanner.nextLine();
                 System.out.println("What is the location");
                 String location = scanner.nextLine();
-                Activity Ractivity = new Activity(Rname, Rdescription,location);
+                Activity Ractivity = new Activity(Rname, Rdescription);
                 facade.removeActivity(Ractivity);
                 System.out.println(" ");
                 directorDisplay();

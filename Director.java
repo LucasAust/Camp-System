@@ -93,7 +93,7 @@ public void setCabins(){
 public void generateSchedule() {
 for(int g=1;g<10;g++) {
   System.out.println("----------Session " + g + "----------");
-  Activity activity = new Activity("name", "description", email);
+  Activity activity = new Activity("name", "description");
   ArrayList<Activity> activities = activity.getActivities();
     for(int i=1;i<7;i++) {
       System.out.println("-----------Cabin " + i + "-----------");

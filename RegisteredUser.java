@@ -14,15 +14,5 @@ public class RegisteredUser extends User {
 
   }
 
-  public void addChild(Child child) {
-      
-  }
-
-  public void removeChild(Child child) {
-
-  }
-
-  public void editChildInfo(Child child) {
-
-  }
+ 
 }
