@@ -68,33 +68,6 @@ public class DataWriter {
             session.put("theme", Session.getTheme());
             session.put("cost", Session.getCost());
             session.put("cabins", cabinsList);
-            for (int j = 0; j < 6; j++) {
-                JSONObject cabin = new JSONObject();
-                Cabin Cabin = cabins.get(j);
-                cabin.put("name", Cabin.getId());
-                cabin.put("ageRange", Cabin.getAgeRange());
-                JSONArray schedule = new JSONArray();
-                // cabin.put("schedule",schedule);
-                for (int h = 0; h < 5; h++) {
-                    JSONObject date = new JSONObject();
-                    date.put("day", "day " + (h + 1));
-                    schedule.add(date);
-                    for (int k = 0; k < 7; k++) {
-                        Activity activity = (Activity) Cabin.getSchedule().get(h).get(k);
-                        JSONObject add = new JSONObject();
-                        JSONObject day = new JSONObject();
-                        // day.put("day",("day "+(h+1)));
-                        add.put("name", activity.name);
-                        add.put("description", activity.description);
-                        day.put("activity " + (k + 1), add);
-                        schedule.add(day);
-                        // schedule.add("day"+(h+1));
-                    }
-                    cabin.put("schedule", schedule);
-
-                }
-                cabinsList.add(cabin);
-            }
             JSONUsers.add(session);
         }
         try {

@@ -69,7 +69,7 @@ public class Cabin {
      */
     public ArrayList<Child> addCampers(Cabin cabin) {
         int j = 0;
-        ArrayList<Child> children = DataReader.saveAllChildren();
+        ArrayList<Child> children = DataReader.getAllChildren();
         ArrayList<Child> copy = children;
         for (int i = 0; i < copy.size(); i++) {
             Child child = children.get(i);

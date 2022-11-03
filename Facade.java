@@ -30,17 +30,18 @@ public class Facade {
         guardianList = this.guardianList;
         user = User.getInstance();
         schedule = Schedule.getInstance();
-        activity = new Activity(null, null);
+        activity = new Activity(null, null,null);
         // session = new Sessions(session.getID(), null, 0);
         this.cabin = cabin;
         this.child = child;
     }
 
     /**
+     * logging in a registered user
      * @param username
      * @param password
-     * @param j
-     * @return
+     * @param j signifies type of account
+     * @return returns the registered user
      */
     public RegisteredUser login(String username, String password, int j) {
         if (j == 1) {
@@ -120,6 +121,7 @@ public class Facade {
     }
 
     /**
+     * signing up a user based on their account type
      * @param firstName
      * @param lastName
      * @param email
@@ -161,23 +163,38 @@ public class Facade {
         activity = new Activity(null, null,null);
         activity.createActivity();
     }
-
+    /**
+     * Adds new session
+     * @param session session to be added
+     */
     public void addSession(Sessions session) {
         SessionList.getInstance().addSession(session);
     }
-
+/**
+ * Adds a new cabin
+ * @param cabin to be added
+ */
     public void addCabin(Cabin cabin) {
         cabin = new Cabin(null, null, MAX_CAMPERS, null, null, null);
     }
 
+/**
+ * generates schedule
+ * @return returns a schedule
+ */
     public void generateSchedule(Schedule schedule) {
         Director generateSchedule = new Director("Sam", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
         generateSchedule.generateSchedule();
     }
 
+    public void removeActivity(Activity activity) {
+
+    }
+
     /**
-     * @param sessionName
-     * @param cabinName
+     * Allows user to view schedule
+     * @param sessionName name of session to be viewed
+     * @param cabinName name of cabin to be viewed
      */
     public void viewSchedule(String sessionName, String cabinName) {
         ArrayList<Sessions> sessions = DataReader.getAllSessions();
@@ -194,7 +211,7 @@ public class Facade {
                 viewCabin = cabin;
             }
         }
-        ArrayList schedule = viewCabin.getSchedule();
+        ArrayList<ArrayList> schedule = new ArrayList<ArrayList>();
         for (int i = 0; i < 5; i++) {
             System.out.println("Day " + (i + 1));
             ArrayList<Activity> day = (ArrayList) schedule.get(i);
@@ -224,6 +241,12 @@ public class Facade {
      */
     public void viewVitals() {
         Counselor.view3();
+    }
+
+    /**
+     * 
+     */
+    public void printSchedule() {
     }
 
     /**
