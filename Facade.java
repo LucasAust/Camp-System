@@ -170,29 +170,9 @@ public class Facade {
         cabin = new Cabin(null, null, MAX_CAMPERS, null, null, null);
     }
 
-    public void setCounselorSchedule(Schedule schedule) {
-
-    }
-
-    public void removeChild(Child child) {
-
-    }
-
-    public void editChild(Child child) {
-
-    }
-
-    public void assignCabins(Cabin cabin) {
-
-    }
-
     public void generateSchedule(Schedule schedule) {
         Director generateSchedule = new Director("Sam", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
         generateSchedule.generateSchedule();
-    }
-
-    public void removeActivity(Activity activity) {
-
     }
 
     /**
@@ -247,12 +227,6 @@ public class Facade {
     }
 
     /**
-     * 
-     */
-    public void printSchedule() {
-    }
-
-    /**
      * @param registeredUser
      */
     public void viewChildren(Guardian registeredUser) {
@@ -260,7 +234,7 @@ public class Facade {
         String firstName = null;
         String lastName = null;
         ArrayList<String> children = registeredUser.getChildren();
-        childs = DataReader.saveAllChildren();
+        childs = DataReader.getAllChildren();
         for (int i = 0; i < children.size(); i++) {
             System.out.println(children.get(i));
             int x = children.get(i).indexOf(" ");
@@ -304,7 +278,7 @@ public class Facade {
      * @param child
      */
     public void registerChild(Child child) {
-        ArrayList<Child> children = DataReader.saveAllChildren();
+        ArrayList<Child> children = DataReader.getAllChildren();
         children.add(child);
         DataWriter.saveAllChildren(children);
     }
@@ -315,7 +289,7 @@ public class Facade {
      * @param session2
      */
     public void registerChildForSession(String childFirstName, String childLastName, String session2) {
-        ArrayList<Child> children = DataReader.saveAllChildren();
+        ArrayList<Child> children = DataReader.getAllChildren();
         for (int i = 0; i < children.size(); i++) {
             Child child = children.get(i);
             if (child.firstName.equals(childFirstName) && child.lastName.equals(childLastName)) {
