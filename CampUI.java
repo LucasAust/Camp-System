@@ -486,11 +486,11 @@ public class CampUI {
                 String cabinName = scanner.nextLine();
                 if(cabinName.equalsIgnoreCase("Cabin 2")) {
                     System.out.println("-----------Cabin 2-----------");
-                    System.out.println("1:00PM - Survival: Survival");
                     System.out.println("8:00AM - Breakfast: breakfast");
-                    System.out.println("3:00PM - Kayaking: Kayaking");
+                    System.out.println("9:00AM - Survival: Survival");                    
                     System.out.println("12:00PM - Lunch: lunch");
-                    System.out.println("9:00AM - Arts: Arts");
+                    System.out.println("1:00PM - Kayaking: Kayaking");
+                    System.out.println("3:00PM - Arts: Arts");
                     System.out.println("6:00PM - Dinner: dinner");
                     System.out.println("-----------------------------\n");
                 }
