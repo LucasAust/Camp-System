@@ -13,7 +13,7 @@ public class DataReader {
   JSONParser jsonParser = new JSONParser();
   public static final ArrayList<Guardian> guardianList= new ArrayList<Guardian>();
 
-  public static ArrayList<Child> saveAllChildren() {
+  public static ArrayList<Child> getAllChildren() {
     ArrayList<Child> children = new ArrayList<Child>();
     try {
       FileReader reader = new FileReader("JSON/Child.json");
