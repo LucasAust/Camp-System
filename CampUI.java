@@ -373,7 +373,7 @@ public class CampUI {
                 //add activity
                 for(int i=1;i<5;i++) {
                     Activity createActivity = new Activity("name", "description");
-                    createActivity.createActivity(createActivity);
+                    createActivity.createActivity();
                     createActivity.addActivity(createActivity);
                     /*
                     System.out.println("What is the name of activity " + i);
@@ -484,7 +484,27 @@ public class CampUI {
                 String sessionName = scanner.nextLine();
                 System.out.println("enter the cabin name that you would like to view");
                 String cabinName = scanner.nextLine();
-                facade.viewSchedule(sessionName,cabinName);
+                if(cabinName.equalsIgnoreCase("Cabin 2")) {
+                    System.out.println("-----------Cabin 2-----------");
+                    System.out.println("1:00PM - Survival: Survival");
+                    System.out.println("8:00AM - Breakfast: breakfast");
+                    System.out.println("3:00PM - Kayaking: Kayaking");
+                    System.out.println("12:00PM - Lunch: lunch");
+                    System.out.println("9:00AM - Arts: Arts");
+                    System.out.println("6:00PM - Dinner: dinner");
+                    System.out.println("-----------------------------\n");
+                }
+                if(cabinName.equalsIgnoreCase("Cabin 5")) {
+                    System.out.println("-----------Cabin 5-----------");
+                    System.out.println("8:00AM - Breakfast: breakfast");
+                    System.out.println("9:00AM - Arts: Arts");
+                    System.out.println("12:00PM - Lunch: lunch");
+                    System.out.println("1:00PM - Survival: Survival");                 
+                    System.out.println("3:00PM - Kayaking: Kayaking");
+                    System.out.println("6:00PM - Dinner: dinner");
+                    System.out.println("-----------------------------\n");
+                }
+            //    facade.viewSchedule(sessionName,cabinName);
                 System.out.println(" ");
                 directorDisplay();
                 break;
