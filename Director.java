@@ -91,6 +91,8 @@ public void setCabins(){
 }
 
 public void generateSchedule() {
+for(int g=1;g<10;g++) {
+  System.out.println("----------Session " + g + "----------");
   Activity activity = new Activity("name", "description");
   ArrayList<Activity> activities = activity.getActivities();
     for(int i=1;i<7;i++) {
@@ -129,17 +131,25 @@ public void generateSchedule() {
   //      }
       
   //      else {
+    
           if(!activities.isEmpty()) {
           int index = (int)(Math.random() * activities.size());
          // int randomActivity = new Random().nextInt(activities.size());
           System.out.println(activities.get(index));
           activities.remove(activities.get(index));
+          
           }
-  //      }
-      }
-      System.out.println("-----------------------------\n");
+        }
+        System.out.println("-----------------------------\n");
     }
-}
+    }
+  }
+
+      
+  //      }
+    //  }
+    
+
  
 public void removeChild(Child child){
     //child.removeChild(child);
@@ -149,3 +159,4 @@ public void addSession(Sessions session){
     sessions.add(session);
 }
 }
+
