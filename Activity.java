@@ -8,7 +8,7 @@ public class Activity {
     public String location;
     public ArrayList<Activity> activities = new ArrayList<Activity>();
 
-    public Activity(String name, String description, String location) {
+    public Activity(String name, String description) {
         this.name = name;
         this.description = description;
     }
@@ -20,9 +20,13 @@ public class Activity {
     public String getDescription() {
         return this.name;
     }
-    public ArrayList<Activity> getActivies()
+    public ArrayList<Activity> getActivities()
     {
         return activities;
+    }
+
+    public void setActivities(ArrayList activities) {
+        this.activities = activities;
     }
 
     /**
@@ -41,7 +45,7 @@ public class Activity {
         description = keyboard.nextLine();
         System.out.println("Enter location");
         location = keyboard.nextLine();
-        Activity newActivity = new Activity(name, description,location);
+        Activity newActivity = new Activity(name, description);
         activities.add(newActivity); 
     }
 

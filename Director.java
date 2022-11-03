@@ -91,53 +91,65 @@ public void setCabins(){
 }
 
 public void generateSchedule() {
-  //Activity activity = new Activity("name", "description",);
-  //ArrayList<Activity> activities = activity.getList();
-    for(int i=1;i<6;i++) {
-  //ArrayList<Activity> activities = activity.getList();
-    for(int h=1;h<7;h++) {
+for(int g=1;g<10;g++) {
+  System.out.println("----------Session " + g + "----------");
+  Activity activity = new Activity("name", "description", email);
+  ArrayList<Activity> activities = activity.getActivities();
+    for(int i=1;i<7;i++) {
       System.out.println("-----------Cabin " + i + "-----------");
       for(int j=0;j<=6;j++) {
-        //activities.add(new Activity("9:00AM - Arts", "Arts"));
-        //activities.add(new Activity("5:00PM - Swimming", "Swimming"));
-        //activities.add(new Activity("1:00PM - Survival", "Survival"));
-        //activities.add(new Activity("3:00PM - Kayaking", "Kayaking"));
-        if (j==0) {
-          //activities.add(new Activity("8:00AM - Breakfast", "breakfast"));
+        activities.add(new Activity("8:00AM - Breakfast", "breakfast"));
+        activities.add(new Activity("9:00AM - Arts", "Arts"));
+        activities.add(new Activity("12:00PM - Lunch", "lunch"));
+        activities.add(new Activity("5:00PM - Swimming", "Swimming"));
+        activities.add(new Activity("1:00PM - Survival", "Survival"));
+        activities.add(new Activity("3:00PM - Kayaking", "Kayaking"));
+        activities.add(new Activity("6:00PM - Dinner", "dinner"));
+  //      if (j==0) {
+  //        activities.add(new Activity("8:00AM - Breakfast", "breakfast"));
           /*
           Schedule breakfast = new Schedule();
           breakfast.breakfastAll(null, null, null);
           System.out.println(breakfast);
           */
-        }
-        else if (j==3) {
-         // activities.add(new Activity("12:00PM - Lunch", "lunch"));
+  //      }
+  //      else if (j==3) {
+  //        activities.add(new Activity("12:00PM - Lunch", "lunch"));
           /*
           Schedule lunch = new Schedule();
           lunchs.lunchAll(null, null, null);
           System.out.println(lunch);
           */
-        }
-        else if (j==6) {
-          //activities.add(new Activity("6:00PM - Dinner", "dinner"));
+   //     }
+   //     else if (j==6) {
+   //       activities.add(new Activity("6:00PM - Dinner", "dinner"));
           /*
           Schedule dinner = new Schedule();
           dinner.dinnerAll(null, null, null);
           System.out.println(dinner);
           */
-        }
-        else {
+  //      }
+      
+  //      else {
+    
           if(!activities.isEmpty()) {
           int index = (int)(Math.random() * activities.size());
          // int randomActivity = new Random().nextInt(activities.size());
           System.out.println(activities.get(index));
+          activities.remove(activities.get(index));
+          
           }
         }
-      }
-      System.out.println("-----------------------------\n");
+        System.out.println("-----------------------------\n");
+    }
     }
   }
-}
+
+      
+  //      }
+    //  }
+    
+
  
 public void removeChild(Child child){
     //child.removeChild(child);
@@ -147,3 +159,4 @@ public void addSession(Sessions session){
     sessions.add(session);
 }
 }
+
