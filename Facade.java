@@ -158,8 +158,8 @@ public class Facade {
     }
 
     public void addActivity(Activity activity) {
-        activity = new Activity(null, null);
-        activity.createActivity(activity);
+        activity = new Activity(null, null,null);
+        activity.createActivity();
     }
 
     public void addSession(Sessions session) {
