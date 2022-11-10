@@ -1,5 +1,10 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+        "junit-platform-console-standalone-1.8.2.jar"
+        "json-simple-1.1.1.jar"
+    ],
+    "java.test.config": {
+        "workingDirectory": "${workspaceFolder}"
+    }
 }

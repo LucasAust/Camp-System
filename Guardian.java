@@ -44,9 +44,6 @@ public class Guardian extends RegisteredUser {
     /**
      * @param child
      */
-    public void registerChild(Child child) {
-
-    }
 
     /**
      * adds a guardian

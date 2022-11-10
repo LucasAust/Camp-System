@@ -1,0 +1,136 @@
+Name: Nutella Davis Age: 12
+------------
+Health Information:
+Medications: zyrtec
+Allergies: None
+ 
+Medical Information: 
+Doctors office: Ivory's Health
+Doctors Phone Number: 803-459-9732
+Doctor: Dr. Ivory
+                        
+Emergency Contact: 
+Name: Buzz Davis
+Relationship: Father
+Phone Number: 124-789-123
+                    
+ 
+Name: Josh Huger Age: 12
+------------
+Health Information:
+Medications: None
+Allergies: Peanuts
+ 
+Medical Information: 
+Doctors office: Ivory's Health
+Doctors Phone Number: 803-434-1778
+Doctor: Dr. Ivory
+                        
+Emergency Contact: 
+Name: Karl Huger
+Relationship: Father
+Phone Number: 126-556-1219
+                    
+ 
+Name: Jack Kole Age: 11
+------------
+Health Information:
+Medications: None
+Allergies: Bee stings
+ 
+Medical Information: 
+Doctors office: Jones Medical
+Doctors Phone Number: 803-582-9075
+Doctor: Dr. Jones
+                        
+Emergency Contact: 
+Name: Kole Kole
+Relationship: Grandfather
+Phone Number: 278-734-8832
+                    
+ 
+Name: Jill Smith Age: 12
+------------
+Health Information:
+Medications: Epi-Pen
+Allergies: Peanuts
+ 
+Medical Information: 
+Doctors office: Little River Medical Center
+Doctors Phone Number: 803-894-7427
+Doctor: Dr. Smith
+                        
+Emergency Contact: 
+Name: Smith Smith
+Relationship: Father
+Phone Number: 990-654-1235
+                    
+ 
+Name: Jeremy Owens Age: 11
+------------
+Health Information:
+Medications: None
+Allergies: Grass
+ 
+Medical Information: 
+Doctors office: Ty PhD.
+Doctors Phone Number: 803-439-9090
+Doctor: Dr. Ty
+                        
+Emergency Contact: 
+Name: Jake Owens
+Relationship: Father
+Phone Number: 812-234-2155
+                    
+ 
+Name: Oscar Cannister Age: 12
+------------
+Health Information:
+Medications: None
+Allergies: Sesame seeds
+ 
+Medical Information: 
+Doctors office: LS Health Inc.
+Doctors Phone Number: 803-622-3349
+Doctor: Dr. Franklin
+                        
+Emergency Contact: 
+Name: Trevor Cannister
+Relationship: Father
+Phone Number: 234-884-3456
+                    
+ 
+Name: Jerry Seinfeld Age: 12
+------------
+Health Information:
+Medications: None
+Allergies: Tree nuts
+ 
+Medical Information: 
+Doctors office: Newman and Associates PhD.
+Doctors Phone Number: 803-763-4071
+Doctor: Dr. Kramer
+                        
+Emergency Contact: 
+Name: Lois Seinfeld
+Relationship: Mother
+Phone Number: 777-012-5643
+                    
+ 
+Name: Marquise Brown Age: 11
+------------
+Health Information:
+Medications: None
+Allergies: leather
+ 
+Medical Information: 
+Doctors office: Wilson PhD.
+Doctors Phone Number: 803-332-3923
+Doctor: Dr. Wilson
+                        
+Emergency Contact: 
+Name: AJ Brown
+Relationship: Father
+Phone Number: 234-345-8489
+                    
+ 

@@ -93,18 +93,18 @@ public void setCabins(){
 public void generateSchedule() {
 for(int g=1;g<10;g++) {
   System.out.println("----------Session " + g + "----------");
-  Activity activity = new Activity("name", "description");
+  Activity activity = new Activity("name", "description","location");
   ArrayList<Activity> activities = activity.getActivities();
     for(int i=1;i<7;i++) {
       System.out.println("-----------Cabin " + i + "-----------");
       for(int j=0;j<=6;j++) {
-        activities.add(new Activity("8:00AM - Breakfast", "breakfast"));
-        activities.add(new Activity("9:00AM - Arts", "Arts"));
-        activities.add(new Activity("12:00PM - Lunch", "lunch"));
-        activities.add(new Activity("5:00PM - Swimming", "Swimming"));
-        activities.add(new Activity("1:00PM - Survival", "Survival"));
-        activities.add(new Activity("3:00PM - Kayaking", "Kayaking"));
-        activities.add(new Activity("6:00PM - Dinner", "dinner"));
+        activities.add(new Activity("8:00AM - Breakfast", "breakfast","mess hall"));
+        activities.add(new Activity("9:00AM - Arts", "Arts","club room"));
+        activities.add(new Activity("12:00PM - Lunch", "lunch","mess hall"));
+        activities.add(new Activity("5:00PM - Swimming", "Swimming","lake"));
+        activities.add(new Activity("1:00PM - Survival", "Survival","field"));
+        activities.add(new Activity("3:00PM - Kayaking", "Kayaking","lake"));
+        activities.add(new Activity("6:00PM - Dinner", "dinner","diner"));
   //      if (j==0) {
   //        activities.add(new Activity("8:00AM - Breakfast", "breakfast"));
           /*

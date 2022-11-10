@@ -7,7 +7,7 @@ public class ChildList {
 
   private ChildList() {
     DataReader dataReader = new DataReader();
-    children = DataReader.saveAllChildren();
+    children = DataReader.getAllChildren();
   }
 
   public static ChildList getInstance() {

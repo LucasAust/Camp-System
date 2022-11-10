@@ -37,10 +37,11 @@ public class Facade {
     }
 
     /**
+     * logging in a registered user
      * @param username
      * @param password
-     * @param j
-     * @return
+     * @param j signifies type of account
+     * @return returns the registered user
      */
     public RegisteredUser login(String username, String password, int j) {
         if (j == 1) {
@@ -120,6 +121,7 @@ public class Facade {
     }
 
     /**
+     * signing up a user based on their account type
      * @param firstName
      * @param lastName
      * @param email
@@ -161,31 +163,25 @@ public class Facade {
         activity = new Activity(null, null,null);
         activity.createActivity();
     }
-
+    /**
+     * Adds new session
+     * @param session session to be added
+     */
     public void addSession(Sessions session) {
         SessionList.getInstance().addSession(session);
     }
-
+/**
+ * Adds a new cabin
+ * @param cabin to be added
+ */
     public void addCabin(Cabin cabin) {
         cabin = new Cabin(null, null, MAX_CAMPERS, null, null, null);
     }
 
-    public void setCounselorSchedule(Schedule schedule) {
-
-    }
-
-    public void removeChild(Child child) {
-
-    }
-
-    public void editChild(Child child) {
-
-    }
-
-    public void assignCabins(Cabin cabin) {
-
-    }
-
+/**
+ * generates schedule
+ * @return returns a schedule
+ */
     public void generateSchedule(Schedule schedule) {
         Director generateSchedule = new Director("Sam", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
         generateSchedule.generateSchedule();
@@ -196,8 +192,9 @@ public class Facade {
     }
 
     /**
-     * @param sessionName
-     * @param cabinName
+     * Allows user to view schedule
+     * @param sessionName name of session to be viewed
+     * @param cabinName name of cabin to be viewed
      */
     public void viewSchedule(String sessionName, String cabinName) {
         ArrayList<Sessions> sessions = DataReader.getAllSessions();
@@ -214,7 +211,7 @@ public class Facade {
                 viewCabin = cabin;
             }
         }
-        ArrayList schedule = viewCabin.getSchedule();
+        ArrayList<ArrayList> schedule = new ArrayList<ArrayList>();
         for (int i = 0; i < 5; i++) {
             System.out.println("Day " + (i + 1));
             ArrayList<Activity> day = (ArrayList) schedule.get(i);
@@ -260,7 +257,7 @@ public class Facade {
         String firstName = null;
         String lastName = null;
         ArrayList<String> children = registeredUser.getChildren();
-        childs = DataReader.saveAllChildren();
+        childs = DataReader.getAllChildren();
         for (int i = 0; i < children.size(); i++) {
             System.out.println(children.get(i));
             int x = children.get(i).indexOf(" ");
@@ -304,7 +301,7 @@ public class Facade {
      * @param child
      */
     public void registerChild(Child child) {
-        ArrayList<Child> children = DataReader.saveAllChildren();
+        ArrayList<Child> children = DataReader.getAllChildren();
         children.add(child);
         DataWriter.saveAllChildren(children);
     }
@@ -315,7 +312,7 @@ public class Facade {
      * @param session2
      */
     public void registerChildForSession(String childFirstName, String childLastName, String session2) {
-        ArrayList<Child> children = DataReader.saveAllChildren();
+        ArrayList<Child> children = DataReader.getAllChildren();
         for (int i = 0; i < children.size(); i++) {
             Child child = children.get(i);
             if (child.firstName.equals(childFirstName) && child.lastName.equals(childLastName)) {

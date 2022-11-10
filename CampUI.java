@@ -198,7 +198,7 @@ public class CampUI {
                     String editFirstName = scanner.next();
                     System.out.println("Enter the last name of the child you would like to edit");
                     String editLastName = scanner.next();
-                    ArrayList<Child> children = DataReader.saveAllChildren();
+                    ArrayList<Child> children = DataReader.getAllChildren();
                     for (int i =0;i<children.size();i++)
                     {
                         Child editChild = children.get(i);
@@ -372,7 +372,7 @@ public class CampUI {
             case 1:
                 //add activity
                 for(int i=1;i<5;i++) {
-                    Activity createActivity = new Activity("name", "description");
+                    Activity createActivity = new Activity("name", "description","location");
                     createActivity.createActivity();
                     createActivity.addActivity(createActivity);
                     /*
@@ -398,7 +398,7 @@ public class CampUI {
                 String Rdescription = scanner.nextLine();
                 System.out.println("What is the location");
                 String location = scanner.nextLine();
-                Activity Ractivity = new Activity(Rname, Rdescription,location);
+                Activity Ractivity = new Activity(Rname, Rdescription, location);
                 facade.removeActivity(Ractivity);
                 System.out.println(" ");
                 directorDisplay();
