@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertAll;
 
 import org.junit.After;
 import org.junit.Before;
@@ -24,10 +25,11 @@ public class SessionsTest {
     @Test
     public void testIsFull() {
         Schedule schedule = new Schedule();
-        cabins = new ArrayList<Cabin>();
+        ArrayList<Cabin> cabins = new ArrayList<Cabin>();
         Cabin cabin1 = new Cabin("10-11", null, 8, "15563245", "94582521", schedule);
-        cabins.add(new Cabin("10-11", null, 8, "15563245", "94582521", schedule));
-    }
+        cabins.add(cabin1);
+        assertEquals(cabins, cabin1);;
+      }
     
     @Test
     public void testAddSession() {
