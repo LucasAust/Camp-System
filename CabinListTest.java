@@ -37,6 +37,12 @@ public class CabinListTest {
         assertEquals(false,result);
     }
     @Test
+    public void testAddCabinInvalidageRange()
+    {
+        boolean result =CabinList.getInstance().addCabin("16-12", null, 6, "SessionID", "id", null);
+        assertEquals(false,result);
+    }
+    @Test
     public void testAddCabninNullCounselor()
     {
         boolean result =CabinList.getInstance().addCabin("10-11", null, 6, "SessionID", "id", null);
