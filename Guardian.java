@@ -1,8 +1,4 @@
-//tested by Deep N Patel
 import java.util.ArrayList;
-
-import org.junit.Test;
-import org.junit.jupiter.params.ParameterizedTest;
 
 public class Guardian extends RegisteredUser {
     public ArrayList<String> children = new ArrayList<String>();
@@ -71,18 +67,4 @@ public class Guardian extends RegisteredUser {
     public void addChild(String string) {
         children.add(string);
     }
-
-    @Test
-    public void testAddChild(){
-        String child = "Gibby";
-        addChild(child);
-    }
-
-    @Test
-    public void testAddGuardian() {
-        ArrayList<String> children = new ArrayList<String>();
-        children.add("Shelby");
-        addGuardian("Joe", "Hunter", "jhunt23@gmail.com", "JHunt34", "hunter34123", children);
-    }
-
 }
