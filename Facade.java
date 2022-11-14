@@ -45,7 +45,6 @@ public class Facade {
      * @param j signifies type of account
      * @return returns the registered user
      */
-    @Test
     public RegisteredUser login(String username, String password, int j) {
         if (j == 1) {
             guardianList = GuardianList.getInstance().getGuardians();
@@ -133,7 +132,6 @@ public class Facade {
      * @param accountType
      * @param children
      */
-    @Test
     public void signup(String firstName, String lastName, String email, String username, String password,
             String accountType, ArrayList<String> children) {
         // Guardian.addUser(firstName, lastName, username, email, password);
@@ -147,11 +145,15 @@ public class Facade {
         }
     }
 
+    @Test
+    public void testSignup(){
+        
+    }
+
     /**
      * @param schedule
      * @return
      */
-    @Test
     public Schedule getWeeklySchedule(Schedule schedule) {
         return null;
     }
@@ -159,46 +161,72 @@ public class Facade {
     /**
      * method to logout and save the user
      */
-    @Test
     public void logout() {
         System.exit(0);
 
     }
 
     @Test
+    public void testLogout(){
+
+    }
+
     public void addActivity(Activity activity) {
         activity = new Activity(null, null,null);
         activity.createActivity();
     }
+
+@Test
+public void testAddActivity(){
+
+}
+
     /**
      * Adds new session
      * @param session session to be added
      */
-    @Test
     public void addSession(Sessions session) {
         SessionList.getInstance().addSession(session);
     }
+
+@Test
+public void testAddSession(){
+
+}
+
 /**
  * Adds a new cabin
  * @param cabin to be added
  */
-@Test
     public void addCabin(Cabin cabin) {
         cabin = new Cabin(null, null, MAX_CAMPERS, null, null, null);
     }
+
+@Test
+public void testAddCabin(){
+
+}
 
 /**
  * generates schedule
  * @return returns a schedule
  */
-@Test
     public void generateSchedule(Schedule schedule) {
         Director generateSchedule = new Director("Sam", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
         generateSchedule.generateSchedule();
     }
 
     @Test
+    public void teestGenerateSchedule(){
+
+    }
+
     public void removeActivity(Activity activity) {
+
+    }
+
+    @Test
+    public void testRemoveActivity(){
 
     }
 
@@ -207,7 +235,6 @@ public class Facade {
      * @param sessionName name of session to be viewed
      * @param cabinName name of cabin to be viewed
      */
-    @Test
     public void viewSchedule(String sessionName, String cabinName) {
         ArrayList<Sessions> sessions = DataReader.getAllSessions();
         for (int i = 0; i < sessions.size(); i++) {
@@ -235,40 +262,61 @@ public class Facade {
         }
 
     }
-    @Test
+
+@Test
+public void testViewSchedule(){
+
+}
+
     public void view()
     {
         Counselor.view();
         
     }
 
+    @Test
+    public void testView(){
+
+    }
+
     /**
      * 
      */
-    @Test
     public void viewRoster() {
         Counselor.view2();
     }
 
-    /**
-     * 
-     */
     @Test
-    public void viewVitals() {
-        Counselor.view3();
+    public void testViewRoster(){
+
     }
 
     /**
      * 
      */
+    public void viewVitals() {
+        Counselor.view3();
+    }
+
     @Test
+    public void testViewVitals(){
+
+    }
+
+    /**
+     * 
+     */
     public void printSchedule() {
+    }
+
+    @Test
+    public void testPrintSchedule(){
+
     }
 
     /**
      * @param registeredUser
      */
-    @Test
     public void viewChildren(Guardian registeredUser) {
         ArrayList<Child> childs = new ArrayList<Child>();
         String firstName = null;
@@ -291,21 +339,29 @@ public class Facade {
 
     }
 
+    @Test
+    public void testViewChildren(){
+
+    }
+
     /**
      * @param string
      * @param guardian
      */
-    @Test
     public void addChild(String string, Guardian guardian) {
 
         guardian.addChild(string);
         DataWriter.saveAllGuardians(GuardianList.getInstance().getGuardians());
     }
 
+    @Test
+    public void testAddChild(){
+
+    }
+
     /**
      * 
      */
-    @Test
     public void viewSessions() {
         ArrayList<Sessions> sessions = new ArrayList<Sessions>();
         sessions = DataReader.getAllUserSessions();
@@ -316,14 +372,23 @@ public class Facade {
 
     }
 
+    @Test
+    public void testViewSesssions(){
+
+    }
+
     /**
      * @param child
      */
-    @Test
     public void registerChild(Child child) {
         ArrayList<Child> children = DataReader.getAllChildren();
         children.add(child);
         DataWriter.saveAllChildren(children);
+    }
+
+    @Test
+    public void testRegisterChild(){
+
     }
 
     /**
@@ -331,7 +396,6 @@ public class Facade {
      * @param childLastName
      * @param session2
      */
-    @Test
     public void registerChildForSession(String childFirstName, String childLastName, String session2) {
         ArrayList<Child> children = DataReader.getAllChildren();
         for (int i = 0; i < children.size(); i++) {
@@ -341,5 +405,10 @@ public class Facade {
             }
             DataWriter.saveAllChildren(children);
         }
+    }
+
+    @Test
+    public void testRegisterChildForSession(){
+        
     }
 }
