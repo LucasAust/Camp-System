@@ -1,8 +1,5 @@
-//tested by Deep N Patel
 import java.util.ArrayList;
 import java.util.Scanner;
-
-import org.junit.Test;
 
 import java.util.Random;
 
@@ -72,20 +69,9 @@ public void addActivity(Activity activity){
     activities.add(activity);
 }
 
-@Test
-public void testAddActivity() {
-  Activity activity = new Activity("Kobe", "BBaller32","griffinthings");
-  addActivity(activity);
-}
 
 public void removeActivity(Activity activity){
     activities.remove(activity);
-}
-
-@Test
-public void testRemoveActivity() {
-  Activity activity = new Activity("Kobe", "BBaller32","griffinthings");
-  removeActivity(activity);
 }
 
 public void setSessions(){
@@ -169,42 +155,6 @@ for(int g=1;g<10;g++) {
  
 public void removeChild(Child child){
     //child.removeChild(child);
-}
-
-@Test
-public void testRemoveChild() {
-  emergencyContact emergencyContact = new emergencyContact("debbie", "mother", "123-465-7890");
-  ArrayList<String> dietaryRestrictions = new ArrayList<String>();
-  dietaryRestrictions.add("Milk");
-  ArrayList<String> allergies = new ArrayList<String>();
-  allergies.add("peanuts");
-  ArrayList<String> medications = new ArrayList<String>();
-  medications.add("Benadryl");
-  healthInfo healthInfo = new healthInfo("12390812481", "1231273", "Marcus Waters", dietaryRestrictions, allergies, medications);
-  Child child = new Child("John", "Smith", "11", "johnsmith33", healthInfo, emergencyContact, "2");
-  removeChild(child);
-}
-
-public void addSession(Sessions session){
-    sessions.add(session);
-}
-
-@Test
-public void testAddSession() {
-  ArrayList<Cabin> cabins = new ArrayList<Cabin>();
-  emergencyContact emergencyContact = new emergencyContact("debbie", "mother", "123-465-7890");
-  ArrayList<String> dietaryRestrictions = new ArrayList<String>();
-  ArrayList<String> allergies = new ArrayList<String>();
-  allergies.add("peanuts");
-  ArrayList<String> medications = new ArrayList<String>();
-  medications.add("Benadryl");
-  healthInfo healthInfo = new healthInfo("12390812481", "1231273", "Marcus Waters", dietaryRestrictions, allergies, medications);
-  Child child = new Child("John", "Smith", "11", "johnsmith33", healthInfo, emergencyContact, "2");
-  Counselor counselor = new Counselor("Mark", "Townsend", "mtown@gmail.com", emergencyContact, healthInfo, cabins, "MTown", "Mtown2");
-  ArrayList<ArrayList> schedule = new ArrayList<ArrayList>();
-  Cabin cabin = new Cabin("Cabin1", null, 80, "2342349123", "9234923", schedule);
-  Sessions sessions = new Sessions("Rockstar", "Rockstar", 300.0, "Rockstar", "10/1/22-10/7/22", cabins);
-  addSession(sessions);
 }
 }
 
