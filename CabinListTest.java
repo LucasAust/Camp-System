@@ -14,6 +14,7 @@ public class CabinListTest {
     {
          cabins = new ArrayList<Cabin>();
          cabins.add(new Cabin("10-11", null, 6, "SessionID", "id", null));
+         CabinList.getInstance().addCabin("10-11", null, 6, "SessionID", "id", null);
          
     }
 
@@ -66,7 +67,7 @@ public class CabinListTest {
         assertEquals(false,result);
     }
     @Test
-    public void testAddCabinNullCounselor()
+    public void testAddCabinNullSchedule()
     {
         boolean result =CabinList.getInstance().addCabin("10-11", null, 6, "SessionID", "id", null);
         assertEquals(true,result);

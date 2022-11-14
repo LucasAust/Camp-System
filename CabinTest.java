@@ -31,6 +31,7 @@ public class CabinTest {
         Cabin cabin= new Cabin(null,null,6,"sessionID","ID",null);
         cabin.addCampers(cabin);
     }
+   
 }
    
 
