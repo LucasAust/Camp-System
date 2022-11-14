@@ -1,7 +1,11 @@
 //tested by Deep N Patel
 import java.util.ArrayList;
 
-import org.junit.Test;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.jupiter.api.Test;
 
 public class Child {
 
@@ -80,13 +84,6 @@ public class Child {
         allergies.add(allergy);
     }
 
-    @Test
-    public void testAddAllergies() {
-        ArrayList<String> allergy = new ArrayList<String>();
-        allergy.add("Sneeze");
-        addAllergies(allergy);
-    }
-
     /**
      * adds medications to data
      * @param medications
@@ -94,13 +91,6 @@ public class Child {
     public void addMedication(ArrayList<String> medications)
     {
         medications.add(medication);
-    }
-
-    @Test
-    public void testAddMedication() {
-        ArrayList<String> medication = new ArrayList<String>();
-        medication.add("Tylenol");
-        addMedication(medication);
     }
 
     /**
@@ -113,12 +103,6 @@ public class Child {
         emergencyContacts.add(contact);
     }
 
-    @Test
-    public void testEmergencyContact() {
-        emergencyContact contact = new emergencyContact("Paul Bryant","father","123-456-7890");
-        addEmergencyContact(contact);
-    }
-
     /**
      * adds the health info to the childs data
      * @param healthInfo
@@ -128,25 +112,66 @@ public class Child {
         addHealthInfo(healthInfo);
     }
 
+
+    public static Child getChild() {
+        return null;
+    }
+    
+
+    @BeforeClass
+    public static void oneTimeSetup() {
+
+    }
+
+    @AfterClass
+    public static void oneTimeTearDown() {
+
+    }
+
+    @Before
+    public static void setup() {
+
+    }
+
+    @After
+    public static void tearDown() {
+        
+    }
+
+    @Test
+    public void testAddAllergies() {
+        ArrayList<String> allergy = new ArrayList<String>();
+        allergy.add("Sneeze");
+        addAllergies(allergy);
+    }
+
+    @Test
+    public void testAddMedication() {
+        ArrayList<String> medication = new ArrayList<String>();
+        medication.add("Tylenol");
+        addMedication(medication);
+    }
+
+    @Test
+    public void testEmergencyContact() {
+        emergencyContact contact = new emergencyContact("Paul Bryant","father","123-456-7890");
+        addEmergencyContact(contact);
+    }
+
     @Test
     public void testHealthInfo() {
         ArrayList<String> dietaryRestrictions = new ArrayList<String>();
         dietaryRestrictions.add("milk");
         ArrayList<String> allergies = new ArrayList<String>();
-        allergies.add("Pollem");
+        allergies.add("Pollen");
         ArrayList<String> medications = new ArrayList<String>();
         medications.add("Tylenol");
         healthInfo health = new healthInfo("Julie", "Sneeze", "10", dietaryRestrictions, allergies, medications);
         addHealthInfo(health);
     }
 
-    public static Child getChild() {
-        return null;
-    }
-
     @Test
     public void testGetChild() {
         getChild();
     }
-    
 }

@@ -1,4 +1,7 @@
+//tested by Deep N Patel
 import java.util.ArrayList;
+
+import org.junit.Test;
 
 public class DirectorList {
     private static DirectorList directorList;
@@ -34,4 +37,9 @@ public class DirectorList {
         return directors;
     }
 
+
+    @Test
+    public void testAddDirector() {
+        addDirector("Samantha", "Samuels", "SSamuels", "ssamuels@camp.com", "password");
+    }
 }
