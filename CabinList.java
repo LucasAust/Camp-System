@@ -25,9 +25,12 @@ return cabinList;
  * @param id
  * @param schedule
  */
-public void addCabin(String ageRange, Counselor counselor, int maxCampers, String sessionId, String id,ArrayList<ArrayList> schedule)
+public boolean addCabin(String ageRange, Counselor counselor, int maxCampers, String sessionId, String id,ArrayList<ArrayList> schedule)
 {
-    cabins.add(new Cabin(ageRange, counselor, maxCampers, sessionId, id,schedule));
+    if(cabins.add(new Cabin(ageRange, counselor, maxCampers, sessionId, id,schedule)))
+    return true;
+    else
+    return false;
 }
 public ArrayList<Cabin>  getCabins()
 {

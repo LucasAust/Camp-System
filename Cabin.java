@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+import javax.lang.model.util.ElementScanner14;
+
 public class Cabin {
     public String ageRange;
     public Counselor counselor;
@@ -58,6 +60,8 @@ public class Cabin {
      */
     public void addCabin() {
         Cabin cabin = new Cabin(ageRange, counselor, maxCampers, sessionID, id, schedule);
+        
+        
         // Counselor
     }
 
