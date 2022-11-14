@@ -4,6 +4,8 @@ import java.util.Random;
 
 import javax.lang.model.util.ElementScanner14;
 
+import org.junit.Test;
+
 /**
  * @param user
  * @param schedule
@@ -143,6 +145,11 @@ public class Facade {
         }
     }
 
+    @Test
+    public void testSignup(){
+        
+    }
+
     /**
      * @param schedule
      * @return
@@ -159,10 +166,21 @@ public class Facade {
 
     }
 
+    @Test
+    public void testLogout(){
+
+    }
+
     public void addActivity(Activity activity) {
         activity = new Activity(null, null,null);
         activity.createActivity();
     }
+
+@Test
+public void testAddActivity(){
+
+}
+
     /**
      * Adds new session
      * @param session session to be added
@@ -170,6 +188,12 @@ public class Facade {
     public void addSession(Sessions session) {
         SessionList.getInstance().addSession(session);
     }
+
+@Test
+public void testAddSession(){
+
+}
+
 /**
  * Adds a new cabin
  * @param cabin to be added
@@ -177,6 +201,11 @@ public class Facade {
     public void addCabin(Cabin cabin) {
         cabin = new Cabin(null, null, MAX_CAMPERS, null, null, null);
     }
+
+@Test
+public void testAddCabin(){
+
+}
 
 /**
  * generates schedule
@@ -187,7 +216,17 @@ public class Facade {
         generateSchedule.generateSchedule();
     }
 
+    @Test
+    public void teestGenerateSchedule(){
+
+    }
+
     public void removeActivity(Activity activity) {
+
+    }
+
+    @Test
+    public void testRemoveActivity(){
 
     }
 
@@ -223,10 +262,21 @@ public class Facade {
         }
 
     }
+
+@Test
+public void testViewSchedule(){
+
+}
+
     public void view()
     {
         Counselor.view();
         
+    }
+
+    @Test
+    public void testView(){
+
     }
 
     /**
@@ -236,6 +286,11 @@ public class Facade {
         Counselor.view2();
     }
 
+    @Test
+    public void testViewRoster(){
+
+    }
+
     /**
      * 
      */
@@ -243,10 +298,20 @@ public class Facade {
         Counselor.view3();
     }
 
+    @Test
+    public void testViewVitals(){
+
+    }
+
     /**
      * 
      */
     public void printSchedule() {
+    }
+
+    @Test
+    public void testPrintSchedule(){
+
     }
 
     /**
@@ -274,6 +339,11 @@ public class Facade {
 
     }
 
+    @Test
+    public void testViewChildren(){
+
+    }
+
     /**
      * @param string
      * @param guardian
@@ -282,6 +352,11 @@ public class Facade {
 
         guardian.addChild(string);
         DataWriter.saveAllGuardians(GuardianList.getInstance().getGuardians());
+    }
+
+    @Test
+    public void testAddChild(){
+
     }
 
     /**
@@ -297,6 +372,11 @@ public class Facade {
 
     }
 
+    @Test
+    public void testViewSesssions(){
+
+    }
+
     /**
      * @param child
      */
@@ -304,6 +384,11 @@ public class Facade {
         ArrayList<Child> children = DataReader.getAllChildren();
         children.add(child);
         DataWriter.saveAllChildren(children);
+    }
+
+    @Test
+    public void testRegisterChild(){
+
     }
 
     /**
@@ -320,5 +405,10 @@ public class Facade {
             }
             DataWriter.saveAllChildren(children);
         }
+    }
+
+    @Test
+    public void testRegisterChildForSession(){
+        
     }
 }

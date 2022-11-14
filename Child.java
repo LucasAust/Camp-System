@@ -105,8 +105,8 @@ public class Child {
         addHealthInfo(healthInfo);
     }
 
+
     public static Child getChild() {
         return null;
     }
-    
 }

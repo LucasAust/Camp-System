@@ -57,11 +57,18 @@ public class Activity {
         return this.name+": "+this.description;
     }
 
-    public void addActivity(Activity activity) {
-        activities.add(activity);
+    public boolean addActivity(Activity activity) {
+        if(activities.add(activity))
+        return true;
+        else
+        return false;
     }
 
-    public void removeActivity(Activity activity){
-        activities.remove(activity);
+    public boolean removeActivity(Activity activity){
+        
+        if(activities.remove(activity))
+        return true;
+        else
+        return false;
 }
 }

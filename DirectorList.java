@@ -33,5 +33,4 @@ public class DirectorList {
     public ArrayList<Director> getDirectors(){
         return directors;
     }
-
 }

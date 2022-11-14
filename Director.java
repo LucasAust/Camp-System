@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+
 import java.util.Random;
 
 public class Director extends RegisteredUser{
@@ -67,6 +68,7 @@ private ArrayList<Sessions> sessions = new ArrayList<Sessions>();
 public void addActivity(Activity activity){
     activities.add(activity);
 }
+
 
 public void removeActivity(Activity activity){
     activities.remove(activity);
@@ -153,10 +155,6 @@ for(int g=1;g<10;g++) {
  
 public void removeChild(Child child){
     //child.removeChild(child);
-}
-
-public void addSession(Sessions session){
-    sessions.add(session);
 }
 }
 
