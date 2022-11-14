@@ -1,8 +1,6 @@
 // tested by Max Eisenhardt
 import java.util.ArrayList;
 
-import org.junit.Test;
-
 /**
  * @param id
  * @param title

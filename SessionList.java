@@ -1,9 +1,6 @@
 // tested by Max Eisenhardt
 import java.util.ArrayList;
 
-import org.junit.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-
 public class SessionList {
     private static SessionList sessionList;
     public ArrayList<Sessions> sessions;

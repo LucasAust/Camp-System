@@ -3,8 +3,6 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-import org.junit.Test;
-
 public class Counselor extends RegisteredUser{
 
     private Scanner scanner= new Scanner(System.in);
