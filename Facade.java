@@ -28,6 +28,12 @@ public class Facade {
     public Sessions viewSession;
     public Cabin viewCabin;
 
+    public Facade(){
+        user = User.getInstance();
+        schedule = Schedule.getInstance();
+        activity = new Activity(null, null,null);
+    }
+    
     public Facade(User user, Schedule schedule, Activity activity, Sessions session, Cabin cabin, Child child) {
         guardianList = this.guardianList;
         user = User.getInstance();

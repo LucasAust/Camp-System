@@ -4,12 +4,14 @@ import org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 public class FacadeTest {
+    Facade facade = new Facade();
     @Before
     public void oneTimeSetup()
     {
@@ -22,10 +24,12 @@ public class FacadeTest {
 
     }
 
+    //make boolean to get return value
     @Test
     public void testAddActivity(){
-    Activity activity = new Activity("Waterpark", "Having fun at the waterpark with your other campers.", "Charlotte Waterpark");
-    addActivity(activity);
+        Activity activity = new Activity("Waterpark", "Having fun at the waterpark with your other campers.", "Charlotte Waterpark");
+        facade.addActivity(activity);
+        assertTrue(true);
     }
 
     @Test
@@ -71,56 +75,26 @@ public void testRemoveActivity(){
     removeActivity(activity);
 }
 
-@Test
-public void testViewSchedule(){
+    @Test
+    public void testViewChildren(){
+        ArrayList<Child> childs = new ArrayList<Child>();
+        String firstName = "Charlie";
+        String lastName = "Brown";
+        ArrayList<String> children = registeredUser.getChildren();
+        childs = DataReader.getAllChildren();
+        for (int i = 0; i < children.size(); i++) {
+            System.out.println(children.get(i));
 
-}
-
-@Test
-public void testViewRoster(){
-
-}
-
-@Test
-public void testViewVitals(){
-
-}
-
-@Test
-public void testPrintSchedule(){
-
-}
-
-@Test
-public void testViewChildren(){
-    ArrayList<Child> childs = new ArrayList<Child>();
-    String firstName = "Charlie";
-    String lastName = "Brown";
-    ArrayList<String> children = registeredUser.getChildren();
-    childs = DataReader.getAllChildren();
-    for (int i = 0; i < children.size(); i++) {
-        System.out.println(children.get(i));
-
-        int x = children.get(i).indexOf(" ");
-        firstName = children.get(i).substring(0, x);
-        lastName = children.get(i).substring(x + 1);
-        for (int j = 0; j < childs.size(); j++) {
-            Child child = childs.get(j);
-            if (child.getFirstName().equals(firstName) && child.getLastName().equals(lastName)) {
-                System.out.println(child.getSession());
-                break;
+            int x = children.get(i).indexOf(" ");
+            firstName = children.get(i).substring(0, x);
+            lastName = children.get(i).substring(x + 1);
+            for (int j = 0; j < childs.size(); j++) {
+                Child child = childs.get(j);
+                if (child.getFirstName().equals(firstName) && child.getLastName().equals(lastName)) {
+                    System.out.println(child.getSession());
+                    break;
+                }
             }
-        }
-    } 
-}
-
-@Test
-public void testViewSesssions(){
-
-}
-
-@Test
-public void testRegisterChildForSession(){
-
-}
+        } 
+    }
 }
